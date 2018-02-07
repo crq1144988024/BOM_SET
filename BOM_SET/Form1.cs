@@ -14,6 +14,8 @@ using System.IO;
 using OfficeOpenXml.Style;
 using System.Data.Linq;
 using BOM_SET.sql;
+using System.Data.Linq.SqlClient;
+using BOM_SET.Tools;
 
 namespace BOM_SET
 {
@@ -230,6 +232,34 @@ namespace BOM_SET
         private void skinButton6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void skinButton7_Click(object sender, EventArgs e)
+        {
+
+            if (dataGridView1.Rows.Count > 0)
+            {
+           //     dataGridView1.Rows.Clear();
+            }
+
+            string sort_keywords = textbox_sort.Text;
+            var q = from c in data_bom.Table_bom_all
+
+                  where SqlMethods.Like(c.代码, '%' + sort_keywords + '%')
+                  //  where c.代码.Contains(sort_keywords)
+                    select c;
+
+          
+           
+            dataGridView1.DataSource = q;
+
+          
+        }
+
+        private void skinButton9_Click(object sender, EventArgs e)
+        {
+            string[] str = { "", "s" };
+          //  xmloperate.write(str);
         }
     }
 }

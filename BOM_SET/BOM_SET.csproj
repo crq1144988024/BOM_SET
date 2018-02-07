@@ -77,6 +77,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form2_project_configuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2_project_configuration.Designer.cs">
+      <DependentUpon>Form2_project_configuration.cs</DependentUpon>
+    </Compile>
     <Compile Include="sql\DataClasses_bomall.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -91,11 +97,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\xmloperate.cs" />
     <None Include="sql\DataClasses_bomall.dbml.layout">
       <DependentUpon>DataClasses_bomall.dbml</DependentUpon>
     </None>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2_project_configuration.resx">
+      <DependentUpon>Form2_project_configuration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -129,6 +139,7 @@
   <ItemGroup>
     <Content Include="CSkin.dll" />
     <Content Include="CSkin.XML" />
+    <None Include="Resources\箭头.jpg" />
     <Content Include="sql\Database1.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -137,6 +148,7 @@
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="EPPlus.dll" />
+    <Content Include="picture\箭头.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">

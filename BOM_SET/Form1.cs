@@ -208,6 +208,90 @@ namespace BOM_SET
                 i++;
             }
         }
+        ////
+        public void search_datagridview(DataGridView datagridview_1)
+        {
+            //  if (comboxcode_A.SelectedText == null | comboxcode_B.SelectedText == null) return;
+            string codeA = "";
+            string codeB = "";
+            string codeC = "";
+
+            if (comboxcode_A.SelectedItem != null) { codeA = comboxcode_A.SelectedItem.ToString().Substring(0,3); }
+            if (comboxcode_B.SelectedItem != null) {  codeB = comboxcode_B.SelectedItem.ToString().Substring(0,3); }
+            if (comboxcode_C.SelectedItem != null) {  codeC = comboxcode_C.SelectedItem.ToString().Substring(0,1); }
+
+          
+           
+            var q_abc = from a in data_bom.Table_bom_all
+
+                    //  where a.代码.Substring(0,3) == codeA && a.d == codeB
+                      //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                      //where B.分类代码A.Contains(codeA)
+                      select a;
+           
+
+            List<string[]> list = new List<string[]>() { };
+
+            foreach(var li in q_abc)
+            {
+                string[] strs = new string[] { li.代码, li.名称, li.品牌, li.技术参数 };
+                if ((int)strs[0][0] > 127) { continue; }
+                   
+                if (codeA != "" && strs[0].Trim().Length >= 3)
+                {
+                    if (strs[0].Trim().Substring(0, 3) == codeA)
+                    {
+
+                       
+                        if (codeB != ""&& strs[0].Trim().Length>=6)
+                        {
+                            if (strs[0].Trim().Substring(3, 3) == codeB)
+                            {
+                                if (codeC != "" && strs[0].Trim().Length >= 8)
+                                {
+                                    if (strs[0].Trim().Substring(6, 1) == ".")
+                                    {
+                                        if (strs[0].Trim().Substring(7, 1) == codeC)
+                                        {
+                                            list.Add(strs);
+                                        }
+                                        else { }
+
+                                    }
+                                    else { if (strs[0].Trim().Substring(6, 1) == codeC) { list.Add(strs); } }
+                                }
+                                else { list.Add(strs); }
+                            }
+                        }
+                        else { list.Add(strs); }
+                    }
+                }
+                else { list.Add(strs); }
+               
+               
+            }
+            int i = 0;
+            var newlist = list.Distinct();
+            foreach (var li in newlist)
+            {
+                DataGridViewRow row = new DataGridViewRow();
+                datagridview_1.Rows.Add(row);
+                datagridview_1.Rows[i].Cells[0].Value = li[0];
+
+                i++;
+                
+            }
+
+
+        }
+
+
+
+
+
+
+
+
         /// <summary>
         /// 此函数用来搜索数据
         /// </summary>
@@ -407,7 +491,8 @@ namespace BOM_SET
 
         private void skinButton6_Click(object sender, EventArgs e)
         {
-
+            datagridview_matter.Rows.Clear();
+            search_datagridview(datagridview_matter);
         }
 
         private void skinButton7_Click(object sender, EventArgs e)

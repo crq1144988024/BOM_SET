@@ -96,6 +96,12 @@ namespace BOM_SET.sql
 		
 		private string _图片;
 		
+		private System.Nullable<int> _价格;
+		
+		private string _技术参数;
+		
+		private string _品牌;
+		
     #region 可扩展性方法定义
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -116,6 +122,12 @@ namespace BOM_SET.sql
     partial void On附件Changed();
     partial void On图片Changing(string value);
     partial void On图片Changed();
+    partial void On价格Changing(System.Nullable<int> value);
+    partial void On价格Changed();
+    partial void On技术参数Changing(string value);
+    partial void On技术参数Changed();
+    partial void On品牌Changing(string value);
+    partial void On品牌Changed();
     #endregion
 		
 		public Table_bom_all()
@@ -279,6 +291,66 @@ namespace BOM_SET.sql
 					this._图片 = value;
 					this.SendPropertyChanged("图片");
 					this.On图片Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_价格", DbType="Int")]
+		public System.Nullable<int> 价格
+		{
+			get
+			{
+				return this._价格;
+			}
+			set
+			{
+				if ((this._价格 != value))
+				{
+					this.On价格Changing(value);
+					this.SendPropertyChanging();
+					this._价格 = value;
+					this.SendPropertyChanged("价格");
+					this.On价格Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_技术参数", DbType="NVarChar(255)")]
+		public string 技术参数
+		{
+			get
+			{
+				return this._技术参数;
+			}
+			set
+			{
+				if ((this._技术参数 != value))
+				{
+					this.On技术参数Changing(value);
+					this.SendPropertyChanging();
+					this._技术参数 = value;
+					this.SendPropertyChanged("技术参数");
+					this.On技术参数Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_品牌", DbType="NVarChar(255)")]
+		public string 品牌
+		{
+			get
+			{
+				return this._品牌;
+			}
+			set
+			{
+				if ((this._品牌 != value))
+				{
+					this.On品牌Changing(value);
+					this.SendPropertyChanging();
+					this._品牌 = value;
+					this.SendPropertyChanged("品牌");
+					this.On品牌Changed();
 				}
 			}
 		}

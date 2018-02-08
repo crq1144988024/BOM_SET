@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Database1" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True" SettingsObjectName="BOM_SET.Properties.Settings" SettingsPropertyName="Database1ConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\sql\Database1.mdf;Integrated Security=True" SettingsObjectName="BOM_SET.Properties.Settings" SettingsPropertyName="Database1ConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Table_bom_all" Member="Table_bom_all">
     <Type Name="Table_bom_all">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -10,6 +10,9 @@
       <Column Name="审核人" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="附件" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="图片" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="价格" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="技术参数" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="品牌" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

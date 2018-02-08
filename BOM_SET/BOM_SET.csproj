@@ -54,9 +54,9 @@
     <Reference Include="Awesomium.Core, Version=1.6.6.0, Culture=neutral, PublicKeyToken=e1a0d7c8071a5214" />
     <Reference Include="Awesomium.Windows.Forms, Version=1.6.6.0, Culture=neutral, PublicKeyToken=9bd24830fbe304a0, processorArchitecture=x86" />
     <Reference Include="CSkin, Version=16.1.14.2, Culture=neutral, processorArchitecture=MSIL" />
-    <Reference Include="EPPlus, Version=4.5.0.2, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+    <Reference Include="EPPlus, Version=4.1.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EPPlus.4.5.0.2-rc\lib\net40\EPPlus.dll</HintPath>
+      <HintPath>..\packages\EPPlus.4.1.1\lib\net40\EPPlus.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="PresentationCore" />
@@ -104,6 +104,7 @@
     </Compile>
     <Compile Include="Tools\Global1.cs" />
     <Compile Include="Tools\xmloperate.cs" />
+    <None Include="packages.config" />
     <None Include="sql\DataClasses_Code_ABC.dbml.layout">
       <DependentUpon>DataClasses_Code_ABC.dbml</DependentUpon>
     </None>
@@ -131,7 +132,6 @@
       <LastGenOutput>DataClasses_bomall.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

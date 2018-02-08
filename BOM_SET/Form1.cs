@@ -208,6 +208,8 @@ namespace BOM_SET
                 i++;
             }
         }
+
+
         /// <summary>
         /// 此函数用来搜索数据
         /// </summary>
@@ -235,14 +237,72 @@ namespace BOM_SET
             BTN.UseColumnTextForButtonValue = true;
 
                         DataGridViewRow row = new DataGridViewRow();
-          
+            
             datagridview_1.Rows.Add(row);
 
             row.Cells[3] = text;
             row.Cells[4] = BTN;
             datagridview_1.Rows[0].Cells[4].Value = "提交";
         }
+        /// <summary>
+        /// 搜索三级菜单的数据
+        /// </summary>
+        /// <param name="ws"></param>
+        /// 
+        public void search(DataGridView datagridview_1)
+        {
+            if (datagridview_1.Rows.Count > 0)
+            {
+                //     dataGridView1.Rows.Clear();
+            }
+            string codeA = "";
+                 string codeB = "";
+                string codeC = "";
+            if (comboxcode_A.SelectedItem != null)
+            {
+                codeA = comboxcode_A.SelectedItem.ToString().Substring(0, 3);
+            }
+          
+           codeB = comboxcode_B.SelectedItem.ToString();
+             codeC = comboxcode_C.SelectedItem.ToString();
 
+            int i = 0;
+            var q = from c in data_bom.Table_bom_all
+
+                    //where SqlMethods.Like(c.代码, '%' + sort_keywords + '%')
+                      where c.代码.Contains(codeA)
+                    select c;
+
+            List<string[]> list = new List<string[]>() { };
+
+            foreach (var li in q)
+            {
+
+                string[] strs = new string[] { li.代码,li.全名,li.名称,li.图片,li.审核人,li.规格型号,li.附件,li.价格.ToString(),li.技术参数,li.品牌};
+
+                list.Add(strs);
+
+
+            }
+            var newlist = list.Distinct();
+
+
+
+            foreach (var item in newlist)
+            {
+                DataGridViewRow row = new DataGridViewRow();
+                datagridview_1.Rows.Add(row);
+                datagridview_1.Rows[i].Cells[1].Value = item[0];//代码
+                datagridview_1.Rows[i].Cells[2].Value = item[2];//代码
+                datagridview_1.Rows[i].Cells[3].Value = item[8];//代码
+                datagridview_1.Rows[i].Cells[4].Value = item[9];//代码
+                datagridview_1.Rows[i].Cells[5].Value = "提交";
+                i++;
+            }
+
+
+            
+        }
         private static void CreateWorksheetAbAssets(ExcelWorksheet ws)
 
         {
@@ -406,7 +466,7 @@ namespace BOM_SET
 
         private void skinButton6_Click(object sender, EventArgs e)
         {
-
+            search(datagridview_matter);
         }
 
         private void skinButton7_Click(object sender, EventArgs e)

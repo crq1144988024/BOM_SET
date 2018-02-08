@@ -237,18 +237,22 @@ namespace BOM_SET
                 string[] strs = new string[] { li.代码, li.名称, li.品牌, li.技术参数 };
                 if ((int)strs[0][0] > 127) { continue; }
                    
-                if (codeA != "" && strs[0].Trim().Length >= 3)
+                if (codeA != ""  )
                 {
+                    if(strs[0].Trim().Length < 3) { continue; }
+
                     if (strs[0].Trim().Substring(0, 3) == codeA)
                     {
 
                        
-                        if (codeB != ""&& strs[0].Trim().Length>=6)
+                        if (codeB != "" )
                         {
+                            if (strs[0].Trim().Length < 6) { continue; }
                             if (strs[0].Trim().Substring(3, 3) == codeB)
                             {
-                                if (codeC != "" && strs[0].Trim().Length >= 8)
+                                if (codeC != "" )
                                 {
+                                    if (strs[0].Trim().Length < 8) { continue; }
                                     if (strs[0].Trim().Substring(6, 1) == ".")
                                     {
                                         if (strs[0].Trim().Substring(7, 1) == codeC)

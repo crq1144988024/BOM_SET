@@ -33,6 +33,7 @@ namespace BOM_SET
             InitializeComponent();
             Global.dataset.Tables.Add("table1");
             codeA();
+            find_add_datagridview(datagridview_matter);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -197,7 +198,7 @@ namespace BOM_SET
 
 
           
-            foreach (var item in newlist)//q.Where(s => s.Hometown == "多家营"))
+            foreach (var item in newlist)
             {
                 ComboboxItem comboxitem = new ComboboxItem();
                 comboxitem.Text = item.ToString();
@@ -206,6 +207,41 @@ namespace BOM_SET
 
                 i++;
             }
+        }
+        /// <summary>
+        /// 此函数用来搜索数据
+        /// </summary>
+        /// <param name="ws"></param>
+        public void find_add_datagridview(DataGridView datagridview_1)
+        {
+            // string strAlbumID = ((DataGridViewTextBoxCell)this.dataGridView1.Rows[e.RowIndex].Cells["txt_A"]).Value.ToString().Trim();
+
+            for (int i = 0; i < 8; i++)
+            {
+                
+               
+            }
+
+            //DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
+            //  btn.Name = "colbtn";
+            //  btn.HeaderText = "查询明细";
+            //  btn.DefaultCellStyle.NullValue = "查询明细";
+            DataGridViewTextBoxCell text = new DataGridViewTextBoxCell();
+            
+
+            DataGridViewButtonCell BTN = new DataGridViewButtonCell();
+            BTN.Value = "添加2";
+            BTN.ToolTipText = "添加2";
+            BTN.UseColumnTextForButtonValue = true;
+
+                        DataGridViewRow row = new DataGridViewRow();
+          
+            datagridview_1.Rows.Add(row);
+
+            row.Cells[3] = text;
+            row.Cells[4] = BTN;
+           // row.Cells[4] = "添加2";
+
         }
 
         private static void CreateWorksheetAbAssets(ExcelWorksheet ws)

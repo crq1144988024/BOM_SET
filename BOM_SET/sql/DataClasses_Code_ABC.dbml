@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Database1" Class="DataClasses_Code_ABCDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\sql\Database1.mdf;Integrated Security=True" SettingsObjectName="BOM_SET.Properties.Settings" SettingsPropertyName="Database1ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Table_structure_bom" Member="Table_structure_bom">
+    <Type Name="Table_structure_bom">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="分类代码A" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="分类代码B" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="分类代码C" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="型号码D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="物品代码E" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="物料名称" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="注释" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

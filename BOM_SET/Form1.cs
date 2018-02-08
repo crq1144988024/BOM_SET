@@ -16,11 +16,15 @@ using System.Data.Linq;
 using BOM_SET.sql;
 using System.Data.Linq.SqlClient;
 using BOM_SET.Tools;
+using static BOM_SET.Tools.Global1;
 
 namespace BOM_SET
 {
+    
     public partial class Form1 : Skin_Metro
     {
+
+        DataClasses_Code_ABCDataContext Code_ABC = new DataClasses_Code_ABCDataContext();
         private const string kSheetNameAbAssets = "Sheet1";
 
         private const string kSheetNameAbDetail = "Sheet2";
@@ -28,6 +32,7 @@ namespace BOM_SET
         {
             InitializeComponent();
             Global.dataset.Tables.Add("table1");
+            codeA();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -68,6 +73,141 @@ namespace BOM_SET
             }
 
         }
+
+        /// <summary>
+        /// 有关第一级菜单加载
+        /// </summary>
+        public void codeA()
+        {
+            comboxcode_A.Items.Clear();
+            
+            comboxcode_B.Items.Clear();
+            comboxcode_B.Text = "";
+
+            comboxcode_C.Items.Clear();
+            comboxcode_C.Text = "";
+            var q_A = from A in Code_ABC.Table_structure_bom
+
+                          //where c.分类代码A == codeA
+                          //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                          //where c.代码.Contains(sort_keywords)
+                        //  where A.分类代码A
+                      select A;
+            ///查重
+
+            List<string> list = new List<string>() { };
+            
+            foreach (var li in q_A)
+            {
+                list.Add(li.分类代码A);
+            }
+            var newlist = list.Distinct();
+
+            /////
+
+            int i = 1;
+            foreach (var item in newlist)//q.Where(s => s.Hometown == "多家营"))
+            {
+                ComboboxItem comboxitem = new ComboboxItem();
+                comboxitem.Text = item.ToString();
+                comboxitem.Value = i;
+                comboxcode_A.Items.Add(comboxitem);
+                //comboxcode_A.Items[i].
+               
+            }
+
+       
+
+
+        }
+        /// <summary>
+        /// 根据A来读取B
+        /// </summary>
+        public void codeB()
+        {
+            if (comboxcode_A.SelectedText == null) return;
+            comboxcode_B.Items.Clear();
+            comboxcode_B.Text = "";
+
+            comboxcode_C.Items.Clear();
+            comboxcode_C.Text = "";
+
+            string codeA = comboxcode_A.SelectedItem.ToString();
+            var q_B = from B in Code_ABC.Table_structure_bom
+
+                          where B.分类代码A == codeA
+                          //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                      //where B.分类代码A.Contains(codeA)
+                      select B;
+            int i = 1;
+            ///查重
+
+            List<string> list = new List<string>() { };
+
+            foreach (var li in q_B)
+            {
+                list.Add(li.分类代码B);
+            }
+            var newlist = list.Distinct();
+
+
+            foreach (var item in newlist)//q.Where(s => s.Hometown == "多家营"))
+            {
+                ComboboxItem comboxitem = new ComboboxItem();
+                comboxitem.Text = item.ToString();
+                comboxitem.Value = i;
+                comboxcode_B.Items.Add(comboxitem);
+               
+                i++;
+            }
+        }
+        /// <summary>
+        /// 根据A  B来读取C
+        /// </summary>
+        /// <param name="ws"></param>
+        public void codeC()
+        {
+            if (comboxcode_A.SelectedText == null| comboxcode_B.SelectedText == null) return;
+            comboxcode_C.Items.Clear();
+            comboxcode_C.Text = "";
+            string codeA = comboxcode_A.SelectedItem.ToString();
+            string codeB = comboxcode_B.SelectedItem.ToString();
+           
+            var q_C = from C in Code_ABC.Table_structure_bom
+
+                      where C.分类代码A == codeA && C.分类代码B ==codeB
+                      //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                      //where B.分类代码A.Contains(codeA)
+                      select C;
+            int i = 1;
+            ///查重
+         
+            List<string> list = new List<string>() { };
+
+            foreach (var li in q_C)
+            {
+                
+              
+                   
+                    list.Add(li.分类代码C);
+
+               
+            }
+            var newlist = list.Distinct();
+
+
+          
+            foreach (var item in newlist)//q.Where(s => s.Hometown == "多家营"))
+            {
+                ComboboxItem comboxitem = new ComboboxItem();
+                comboxitem.Text = item.ToString();
+                comboxitem.Value = i;
+                comboxcode_C.Items.Add(comboxitem);
+
+                i++;
+            }
+        }
+
         private static void CreateWorksheetAbAssets(ExcelWorksheet ws)
 
         {
@@ -260,6 +400,16 @@ namespace BOM_SET
         {
             string[] str = { "", "s" };
           //  xmloperate.write(str);
+        }
+
+        private void comboxcode_A_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            codeB();
+        }
+
+        private void comboxcode_B_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            codeC();
         }
     }
 }

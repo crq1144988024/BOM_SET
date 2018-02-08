@@ -240,8 +240,7 @@ namespace BOM_SET
 
             row.Cells[3] = text;
             row.Cells[4] = BTN;
-           // row.Cells[4] = "添加2";
-
+            datagridview_1.Rows[0].Cells[4].Value = "提交";
         }
 
         private static void CreateWorksheetAbAssets(ExcelWorksheet ws)

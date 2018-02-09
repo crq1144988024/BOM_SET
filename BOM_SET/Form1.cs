@@ -20,7 +20,7 @@ using static BOM_SET.Tools.Global1;
 
 namespace BOM_SET
 {
-    
+
     public partial class Form1 : Skin_Metro
     {
 
@@ -36,6 +36,7 @@ namespace BOM_SET
             Global.dataset.Tables.Add("table1");
             codeA();
             find_add_datagridview(datagridview_matter);
+            datagridview_matter.Rows.Clear();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -83,7 +84,7 @@ namespace BOM_SET
         public void codeA()
         {
             comboxcode_A.Items.Clear();
-            
+
             comboxcode_B.Items.Clear();
             comboxcode_B.Text = "";
 
@@ -94,12 +95,12 @@ namespace BOM_SET
                           //where c.分类代码A == codeA
                           //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
                           //where c.代码.Contains(sort_keywords)
-                        //  where A.分类代码A
+                          //  where A.分类代码A
                       select A;
             ///查重
 
             List<string> list = new List<string>() { };
-            
+
             foreach (var li in q_A)
             {
                 list.Add(li.分类代码A);
@@ -116,10 +117,10 @@ namespace BOM_SET
                 comboxitem.Value = i;
                 comboxcode_A.Items.Add(comboxitem);
                 //comboxcode_A.Items[i].
-               
+
             }
 
-       
+
 
 
         }
@@ -138,8 +139,8 @@ namespace BOM_SET
             string codeA = comboxcode_A.SelectedItem.ToString();
             var q_B = from B in Code_ABC.Table_structure_bom
 
-                          where B.分类代码A == codeA
-                          //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                      where B.分类代码A == codeA
+                      //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
                       //where B.分类代码A.Contains(codeA)
                       select B;
             int i = 1;
@@ -160,7 +161,7 @@ namespace BOM_SET
                 comboxitem.Text = item.ToString();
                 comboxitem.Value = i;
                 comboxcode_B.Items.Add(comboxitem);
-               
+
                 i++;
             }
         }
@@ -170,36 +171,36 @@ namespace BOM_SET
         /// <param name="ws"></param>
         public void codeC()
         {
-            if (comboxcode_A.SelectedText == null| comboxcode_B.SelectedText == null) return;
+            if (comboxcode_A.SelectedText == null | comboxcode_B.SelectedText == null) return;
             comboxcode_C.Items.Clear();
             comboxcode_C.Text = "";
             string codeA = comboxcode_A.SelectedItem.ToString();
             string codeB = comboxcode_B.SelectedItem.ToString();
-        
+
             var q_C = from C in Code_ABC.Table_structure_bom
 
-                      where C.分类代码A == codeA && C.分类代码B ==codeB
+                      where C.分类代码A == codeA && C.分类代码B == codeB
                       //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
                       //where B.分类代码A.Contains(codeA)
                       select C;
             int i = 1;
             ///查重
-         
+
             List<string> list = new List<string>() { };
 
             foreach (var li in q_C)
             {
-                
-              
-                   
-                    list.Add(li.分类代码C);
 
-               
+
+
+                list.Add(li.分类代码C);
+
+
             }
             var newlist = list.Distinct();
 
 
-          
+
             foreach (var item in newlist)
             {
                 ComboboxItem comboxitem = new ComboboxItem();
@@ -210,6 +211,8 @@ namespace BOM_SET
                 i++;
             }
         }
+        List<string> list_ID_FIND = new List<string>();
+        List<string[]> list0_all = new List<string[]>() { };
         ////
         public void search_datagridview(DataGridView datagridview_1)
         {
@@ -222,10 +225,10 @@ namespace BOM_SET
 
                                      //  where a.代码.Substring(0,3) == codeA && a.d == codeB
                                      //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
-                                 //where t.代码.Contains(find_condition_text) || t.价格.ToString().Contains(find_condition_text) || t.全名.Contains(find_condition_text)
-                                 //|| t.名称.Contains(find_condition_text) || t.品牌.Contains(find_condition_text) || t.图片.Contains(find_condition_text)
-                                 //|| t.审核人.Contains(find_condition_text) || t.技术参数.Contains(find_condition_text) || t.规格型号.Contains(find_condition_text)
-                                 //|| t.附件.Contains(find_condition_text)
+                                     //where t.代码.Contains(find_condition_text) || t.价格.ToString().Contains(find_condition_text) || t.全名.Contains(find_condition_text)
+                                     //|| t.名称.Contains(find_condition_text) || t.品牌.Contains(find_condition_text) || t.图片.Contains(find_condition_text)
+                                     //|| t.审核人.Contains(find_condition_text) || t.技术参数.Contains(find_condition_text) || t.规格型号.Contains(find_condition_text)
+                                     //|| t.附件.Contains(find_condition_text)
                                  select t;
 
 
@@ -240,10 +243,10 @@ namespace BOM_SET
                         {
                             if (strs[k].Contains(find_condition_text)) { strs[0] = k.ToString(); list0.Add(strs); break; }
                         }
-                       
+
                     }
 
-                    
+
                     //if (strs[2].Contains(find_condition_text)) { strs[0] = "2"; list0.Add(strs); return; }
                     //if (strs[3].Contains(find_condition_text)) { strs[0] = "3"; list0.Add(strs); return; }
                     //if (strs[4].Contains(find_condition_text)) { strs[0] = "4"; list0.Add(strs); return; }
@@ -259,20 +262,22 @@ namespace BOM_SET
                 foreach (var li in list0)
                 {
 
-                   
+
 
                     DataGridViewRow row = new DataGridViewRow();
                     datagridview_1.Rows.Add(row);
-                    datagridview_1.Rows[n].Cells[0].Value = li[1];
-                    datagridview_1.Rows[n].Cells[1].Value = li[2];
-                    datagridview_1.Rows[n].Cells[2].Value = li[3];
-                    datagridview_1.Rows[n].Cells[3].Value = li[4];
-                    datagridview_1.Rows[n].Cells[4].Value = "添加";
+                    datagridview_1.Rows[n].Cells[1].Value = li[1];
+                    datagridview_1.Rows[n].Cells[2].Value = li[2];
+                    datagridview_1.Rows[n].Cells[3].Value = li[3];
+                    datagridview_1.Rows[n].Cells[4].Value = li[4];
+                    datagridview_1.Rows[n].Cells[0].Value = li[10];
+                    datagridview_1.Rows[n].Cells[5].Value = "添加";
+
 
                     n++;
 
                 }
-
+                list0_all = list0;
                 return;
             } else { }
             //  if (comboxcode_A.SelectedText == null | comboxcode_B.SelectedText == null) return;
@@ -280,41 +285,41 @@ namespace BOM_SET
             string codeB = "";
             string codeC = "";
 
-            if (comboxcode_A.SelectedItem != null) { codeA = comboxcode_A.SelectedItem.ToString().Substring(0,3); }
-            if (comboxcode_B.SelectedItem != null) {  codeB = comboxcode_B.SelectedItem.ToString().Substring(0,3); }
-            if (comboxcode_C.SelectedItem != null) {  codeC = comboxcode_C.SelectedItem.ToString().Substring(0,1); }
+            if (comboxcode_A.SelectedItem != null) { codeA = comboxcode_A.SelectedItem.ToString().Substring(0, 3); }
+            if (comboxcode_B.SelectedItem != null) { codeB = comboxcode_B.SelectedItem.ToString().Substring(0, 3); }
+            if (comboxcode_C.SelectedItem != null) { codeC = comboxcode_C.SelectedItem.ToString().Substring(0, 1); }
 
-          
-           
+
+
             var q_abc = from a in data_bom.Table_bom_all
 
-                    //  where a.代码.Substring(0,3) == codeA && a.d == codeB
-                      //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
-                      //where B.分类代码A.Contains(codeA)
-                      select a;
+                            //  where a.代码.Substring(0,3) == codeA && a.d == codeB
+                            //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                            //where B.分类代码A.Contains(codeA)
+                        select a;
 
             List<string[]> list = new List<string[]>() { };
 
 
             foreach (var li in q_abc)
             {
-                string[] strs = new string[] { li.代码, li.名称, li.品牌, li.技术参数,li.价格.ToString(),li.图片,li.规格型号,li.附件,li.全名,li.审核人 };
+                string[] strs = new string[] { li.代码, li.名称, li.品牌, li.技术参数, li.价格.ToString(), li.图片, li.规格型号, li.附件, li.全名, li.审核人, li.ID.ToString() };
                 if ((int)strs[0][0] > 127) { continue; }
-                   
-                if (codeA != ""  )
+
+                if (codeA != "")
                 {
-                    if(strs[0].Trim().Length < 3) { continue; }
+                    if (strs[0].Trim().Length < 3) { continue; }
 
                     if (strs[0].Trim().Substring(0, 3) == codeA)
                     {
 
-                       
-                        if (codeB != "" )
+
+                        if (codeB != "")
                         {
                             if (strs[0].Trim().Length < 6) { continue; }
                             if (strs[0].Trim().Substring(3, 3) == codeB)
                             {
-                                if (codeC != "" )
+                                if (codeC != "")
                                 {
                                     if (strs[0].Trim().Length < 8) { continue; }
                                     if (strs[0].Trim().Substring(6, 1) == ".")
@@ -335,28 +340,28 @@ namespace BOM_SET
                     }
                 }
                 else { list.Add(strs); }
-               
-               
+
+
             }
             int i = 0;
             if (list.Count <= 0) { return; }
             var newlist = list.Distinct();
-            
-           
+
+            list0_all = list;
             foreach (var li in newlist)
             {
                 bool condition_text = false;
-               if( find_condition_text == "")//搜索框为空的时候
+                if (find_condition_text == "")//搜索框为空的时候
                 {
                     condition_text = true;
-                    
+
                 }
                 else
                 {
-                    
+
                     foreach (var str in li)//搜索框不为空的时候 遍历string[]每个字符串 看看是否有关键字
                     {
-                        if (String.IsNullOrEmpty(str)||str=="" ) { continue; }
+                        if (String.IsNullOrEmpty(str) || str == "") { continue; }
                         if (str.Contains(find_condition_text))
                         {
 
@@ -365,22 +370,24 @@ namespace BOM_SET
                         }
                     }
                 }
-              
+
 
                 if (condition_text == true)
                 {
                     DataGridViewRow row = new DataGridViewRow();
                     datagridview_1.Rows.Add(row);
-                    if (li[0] != "") { datagridview_1.Rows[i].Cells[0].Value = li[0]; }
-                    if (li[1] != "") { datagridview_1.Rows[i].Cells[1].Value = li[1]; }
-                    if (li[2] != "") { datagridview_1.Rows[i].Cells[2].Value = li[2]; }
-                    if (li[3] != "") { datagridview_1.Rows[i].Cells[3].Value = li[3]; }
-                    datagridview_1.Rows[i].Cells[4].Value = "添加";
+                    if (li[0] != "") { datagridview_1.Rows[i].Cells[1].Value = li[0]; }
+                    if (li[1] != "") { datagridview_1.Rows[i].Cells[2].Value = li[1]; }
+                    if (li[2] != "") { datagridview_1.Rows[i].Cells[3].Value = li[2]; }
+                    if (li[3] != "") { datagridview_1.Rows[i].Cells[4].Value = li[3]; }
+                    if (li[10] != "") { datagridview_1.Rows[i].Cells[0].Value = li[10]; }
+                    datagridview_1.Rows[i].Cells[5].Value = "添加";
+                    list_ID_FIND.Add(li[10]);
                     i++;
                 }
 
-               
-                
+
+
             }
 
 
@@ -403,8 +410,8 @@ namespace BOM_SET
 
             for (int i = 0; i < 8; i++)
             {
-                
-               
+
+
             }
 
             //DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
@@ -412,27 +419,28 @@ namespace BOM_SET
             //  btn.HeaderText = "查询明细";
             //  btn.DefaultCellStyle.NullValue = "查询明细";
             DataGridViewTextBoxCell text = new DataGridViewTextBoxCell();
-            
+
 
             DataGridViewButtonCell BTN = new DataGridViewButtonCell();
             BTN.Value = "添加2";
             BTN.ToolTipText = "添加2";
             BTN.UseColumnTextForButtonValue = true;
 
-                        DataGridViewRow row = new DataGridViewRow();
-          
+            DataGridViewRow row = new DataGridViewRow();
+
             datagridview_1.Rows.Add(row);
 
             row.Cells[3] = text;
             row.Cells[4] = BTN;
-           // row.Cells[4] = "添加2";
+            // row.Cells[4] = "添加2";
 
         }
+
         /// <summary>
         /// 此函数用来向BOM暂存区添加数据的  
         /// </summary>
         /// <param name="datagridview_1"></param>
-        public void add_datagridview_hold(DataGridView datagridview_1,int ID)
+        public void add_datagridview_hold(DataGridView datagridview_1, int ID)
         {
 
             var q_ = from a in data_bom.Table_bom_all // bom_hold.Table_BOM_HOLD
@@ -442,18 +450,41 @@ namespace BOM_SET
                          //where B.分类代码A.Contains(codeA)
                      where a.ID == ID
                      select a;
-            int i = 0;
-            List<string[]> list = new List<string[]>() { };
 
+
+
+            List<string[]> list = new List<string[]>() { };
+            int i = datagridview_1.Rows.Count;
+
+            if (i > 0)
+            {
+                for (int i_d_find = 0; i_d_find < i; i_d_find++)
+                {
+
+                    if (datagridview_1.Rows[i_d_find].Cells[1].Value.ToString().Trim() == ID.ToString().Trim())
+                    {
+                        MessageBox.Show("BOM里已有此物料！");
+                        return;
+
+                    }
+                }
+
+            }
             foreach (var K in q_)
             {
+
+                string[] strs = new string[] { K.ID.ToString(), K.代码, K.规格型号, K.名称, K.品牌, K.技术参数 };
+                list.Add(strs);
                 DataGridViewRow row = new DataGridViewRow();
                 datagridview_1.Rows.Add(row);
-                //if (K.代码 != "") { datagridview_1.Rows[i].Cells[0].Value = li[0]; }
-                //if (li[1] != "") { datagridview_1.Rows[i].Cells[1].Value = li[1]; }
-                //if (li[2] != "") { datagridview_1.Rows[i].Cells[2].Value = li[2]; }
-                //if (li[3] != "") { datagridview_1.Rows[i].Cells[3].Value = li[3]; }
-                datagridview_1.Rows[i].Cells[4].Value = "添加";
+                if (strs[0] != "") { datagridview_1.Rows[i].Cells["ID"].Value = strs[0]; }
+                if (strs[1] != "") { datagridview_1.Rows[i].Cells["物料代码"].Value = strs[1]; }
+                if (strs[2] != "") { datagridview_1.Rows[i].Cells["规格型号"].Value = strs[2]; }
+                if (strs[3] != "") { datagridview_1.Rows[i].Cells["物料名称"].Value = strs[3]; }
+                if (strs[4] != "") { datagridview_1.Rows[i].Cells["品牌"].Value = strs[4]; }
+                if (strs[5] != "") { datagridview_1.Rows[i].Cells["技术参数"].Value = strs[5]; }
+
+                datagridview_1.Rows[i].Cells["删除"].Value = "删除";
                 i++;
             }
 
@@ -595,24 +626,24 @@ namespace BOM_SET
 
 
 
-        public static void set_datagridview(DataGridView grid,DataSet dataset,string tablename)
+        public static void set_datagridview(DataGridView grid, DataSet dataset, string tablename)
         {
             grid.DataSource = dataset.Tables[tablename];
-           
+
         }
-        
+
         private void skinButton2_Click(object sender, EventArgs e)
         {
-            
+
             set_datagridview(DataGridView_BOM_Hold, Global.dataset, "table1");
 
         }
         DataClasses1DataContext data_bom = new DataClasses1DataContext();
         private void skinButton3_Click(object sender, EventArgs e)
         {
-               
-              
-            var q = from c in data_bom.Table_bom_all where c.ID <= 300  select c;
+
+
+            var q = from c in data_bom.Table_bom_all where c.ID <= 300 select c;
             DataGridView_BOM_Hold.DataSource = q;
         }
 
@@ -632,27 +663,27 @@ namespace BOM_SET
 
             if (dataGridView1.Rows.Count > 0)
             {
-           //     dataGridView1.Rows.Clear();
+                //     dataGridView1.Rows.Clear();
             }
 
             string sort_keywords = textbox_sort.Text;
             var q = from c in data_bom.Table_bom_all
 
-                  where SqlMethods.Like(c.代码, '%' + sort_keywords + '%')
-                  //  where c.代码.Contains(sort_keywords)
+                    where SqlMethods.Like(c.代码, '%' + sort_keywords + '%')
+                    //  where c.代码.Contains(sort_keywords)
                     select c;
 
-          
-           
+
+
             dataGridView1.DataSource = q;
 
-          
+
         }
 
         private void skinButton9_Click(object sender, EventArgs e)
         {
             string[] str = { "", "s" };
-          //  xmloperate.write(str);
+            //  xmloperate.write(str);
         }
 
         private void comboxcode_A_SelectedIndexChanged(object sender, EventArgs e)
@@ -667,9 +698,73 @@ namespace BOM_SET
 
         private void datagridview_matter_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            datagridview_matter.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+            // string cell_value_now=  datagridview_matter.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+            int i = datagridview_matter.Rows.Count;
+            if (i <= 0) { return; }
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+
+           
+                string nowcellname = datagridview_matter.Columns[e.ColumnIndex].HeaderText;
+            string cell_value = datagridview_matter.Rows[e.RowIndex].Cells[0].Value.ToString();
+
+            try
+            {
+                if (nowcellname == "添加")
+                {
+                    int ID = Convert.ToInt32(cell_value);
+                    add_datagridview_hold(DataGridView_BOM_Hold, ID);
+                }
+
+            }
+            catch { }
+            }
+
+        }
+
+        private void DataGridView_BOM_Hold_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i = DataGridView_BOM_Hold.Rows.Count;
+            if (i <= 0) { return; }
+            string cell_value = "";
+
+            string nowcellname = "";
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+
+           
+            try {
+                 cell_value = DataGridView_BOM_Hold.Rows[e.RowIndex].Cells["ID"].Value.ToString();
+
+                 nowcellname = DataGridView_BOM_Hold.Columns[e.ColumnIndex].HeaderText;
+            } catch { }
+            
+            try
+            {
+
+                int ID = Convert.ToInt32(cell_value);
+                if (nowcellname == "删除")
+                {
+                    for (int i_d_find = 0; i_d_find < i; i_d_find++)
+                    {
+
+                        if (DataGridView_BOM_Hold.Rows[i_d_find].Cells["ID"].Value.ToString().Trim() == ID.ToString().Trim())
+                        {
+                            DataGridViewRow row = DataGridView_BOM_Hold.Rows[e.RowIndex];
+                            DataGridView_BOM_Hold.Rows.Remove(row);
+                            MessageBox.Show("删除成功！");
+                            return;
+
+                        }
+                    }
+                }
+                   
 
 
+
+            }
+            catch { }
+            }
         }
     }
 }

@@ -83,6 +83,16 @@
     <Compile Include="Form2_project_configuration.Designer.cs">
       <DependentUpon>Form2_project_configuration.cs</DependentUpon>
     </Compile>
+    <Compile Include="sql\bom_hoid.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bom_hoid.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="sql\bom_sort.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bom_sort.dbml</DependentUpon>
+    </Compile>
     <Compile Include="sql\DataClasses_bomall.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -105,7 +115,23 @@
     <Compile Include="Tools\datagridview_set.cs" />
     <Compile Include="Tools\Global1.cs" />
     <Compile Include="Tools\xmloperate.cs" />
+    <None Include="sql\bom_sort.dbml.layout">
+      <DependentUpon>bom_sort.dbml</DependentUpon>
+    </None>
+    <None Include="sql\bom_hoid.dbml.layout">
+      <DependentUpon>bom_hoid.dbml</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="sql\bom_hoid.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>bom_hoid.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sql\bom_sort.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>bom_sort.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
     <None Include="sql\DataClasses_Code_ABC.dbml.layout">
       <DependentUpon>DataClasses_Code_ABC.dbml</DependentUpon>
     </None>

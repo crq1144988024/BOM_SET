@@ -25,6 +25,8 @@ namespace BOM_SET
     {
 
         DataClasses_Code_ABCDataContext Code_ABC = new DataClasses_Code_ABCDataContext();
+        bom_hoidDataContext bom_hold = new bom_hoidDataContext();
+        bom_sortDataContext bom_sort = new bom_sortDataContext();
         private const string kSheetNameAbAssets = "Sheet1";
 
         private const string kSheetNameAbDetail = "Sheet2";
@@ -426,7 +428,38 @@ namespace BOM_SET
            // row.Cells[4] = "添加2";
 
         }
+        /// <summary>
+        /// 此函数用来向BOM暂存区添加数据的  
+        /// </summary>
+        /// <param name="datagridview_1"></param>
+        public void add_datagridview_hold(DataGridView datagridview_1,int ID)
+        {
 
+            var q_ = from a in data_bom.Table_bom_all // bom_hold.Table_BOM_HOLD
+
+                         //  where a.代码.Substring(0,3) == codeA && a.d == codeB
+                         //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                         //where B.分类代码A.Contains(codeA)
+                     where a.ID == ID
+                     select a;
+            int i = 0;
+            List<string[]> list = new List<string[]>() { };
+
+            foreach (var K in q_)
+            {
+                DataGridViewRow row = new DataGridViewRow();
+                datagridview_1.Rows.Add(row);
+                //if (K.代码 != "") { datagridview_1.Rows[i].Cells[0].Value = li[0]; }
+                //if (li[1] != "") { datagridview_1.Rows[i].Cells[1].Value = li[1]; }
+                //if (li[2] != "") { datagridview_1.Rows[i].Cells[2].Value = li[2]; }
+                //if (li[3] != "") { datagridview_1.Rows[i].Cells[3].Value = li[3]; }
+                datagridview_1.Rows[i].Cells[4].Value = "添加";
+                i++;
+            }
+
+
+
+        }
         private static void CreateWorksheetAbAssets(ExcelWorksheet ws)
 
         {
@@ -571,7 +604,7 @@ namespace BOM_SET
         private void skinButton2_Click(object sender, EventArgs e)
         {
             
-            set_datagridview(skinDataGridView1, Global.dataset, "table1");
+            set_datagridview(DataGridView_BOM_Hold, Global.dataset, "table1");
 
         }
         DataClasses1DataContext data_bom = new DataClasses1DataContext();
@@ -580,7 +613,7 @@ namespace BOM_SET
                
               
             var q = from c in data_bom.Table_bom_all where c.ID <= 300  select c;
-            skinDataGridView1.DataSource = q;
+            DataGridView_BOM_Hold.DataSource = q;
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -630,6 +663,13 @@ namespace BOM_SET
         private void comboxcode_B_SelectedIndexChanged(object sender, EventArgs e)
         {
             codeC();
+        }
+
+        private void datagridview_matter_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            datagridview_matter.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+
+
         }
     }
 }

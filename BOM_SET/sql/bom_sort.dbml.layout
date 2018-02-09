@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="bom_sort">
+  <DataContextMoniker Name="/bom_sortDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ce90cc82-2ea0-4362-a401-6196d00e362e" absoluteBounds="5.75, 3.375, 2, 2.3356245930989585">
+      <DataClassMoniker Name="/bom_sortDataContext/Table_BOM_struct_sort_" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ac88539-1ded-4cfe-94fc-029fb10ae668" absoluteBounds="5.765, 3.835, 1.9700000000000002, 1.7756245930989585" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

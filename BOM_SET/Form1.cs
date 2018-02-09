@@ -173,7 +173,7 @@ namespace BOM_SET
             comboxcode_C.Text = "";
             string codeA = comboxcode_A.SelectedItem.ToString();
             string codeB = comboxcode_B.SelectedItem.ToString();
-           
+        
             var q_C = from C in Code_ABC.Table_structure_bom
 
                       where C.分类代码A == codeA && C.分类代码B ==codeB
@@ -211,6 +211,68 @@ namespace BOM_SET
         ////
         public void search_datagridview(DataGridView datagridview_1)
         {
+            string find_condition_text = Textbox_find.Text.Trim();
+            List<string[]> list0 = new List<string[]>() { };
+            if (CheckBox1_find_condition.Checked == false)
+            {
+                if (find_condition_text == "") { return; }
+                var q_abc_text = from t in data_bom.Table_bom_all
+
+                                     //  where a.代码.Substring(0,3) == codeA && a.d == codeB
+                                     //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                                 //where t.代码.Contains(find_condition_text) || t.价格.ToString().Contains(find_condition_text) || t.全名.Contains(find_condition_text)
+                                 //|| t.名称.Contains(find_condition_text) || t.品牌.Contains(find_condition_text) || t.图片.Contains(find_condition_text)
+                                 //|| t.审核人.Contains(find_condition_text) || t.技术参数.Contains(find_condition_text) || t.规格型号.Contains(find_condition_text)
+                                 //|| t.附件.Contains(find_condition_text)
+                                 select t;
+
+
+                foreach (var li in q_abc_text)
+                {
+                    string[] strs = new string[] { "", li.代码, li.名称, li.品牌, li.技术参数, li.价格.ToString(), li.图片, li.规格型号, li.附件, li.全名, li.审核人 };
+                    if ((int)strs[1][0] > 127) { continue; }
+
+                    for (int k = 1; k < 10; k++)
+                    {
+                        if (strs[k] != null)
+                        {
+                            if (strs[k].Contains(find_condition_text)) { strs[0] = k.ToString(); list0.Add(strs); break; }
+                        }
+                       
+                    }
+
+                    
+                    //if (strs[2].Contains(find_condition_text)) { strs[0] = "2"; list0.Add(strs); return; }
+                    //if (strs[3].Contains(find_condition_text)) { strs[0] = "3"; list0.Add(strs); return; }
+                    //if (strs[4].Contains(find_condition_text)) { strs[0] = "4"; list0.Add(strs); return; }
+                    //if (strs[5].Contains(find_condition_text)) { strs[0] = "5"; list0.Add(strs); return; }
+                    //if (strs[6].Contains(find_condition_text)) { strs[0] = "6"; list0.Add(strs); return; }
+                    //if (strs[7].Contains(find_condition_text)) { strs[0] = "7"; list0.Add(strs); return; }
+                    //if (strs[8].Contains(find_condition_text)) { strs[0] = "8"; list0.Add(strs); return; }
+                    //if (strs[9].Contains(find_condition_text)) { strs[0] = "9"; list0.Add(strs); return; }
+                    //if (strs[10].Contains(find_condition_text)) { strs[0] = "10"; list0.Add(strs); return; }
+
+                }
+                int n = 0;
+                foreach (var li in list0)
+                {
+
+                   
+
+                    DataGridViewRow row = new DataGridViewRow();
+                    datagridview_1.Rows.Add(row);
+                    datagridview_1.Rows[n].Cells[0].Value = li[1];
+                    datagridview_1.Rows[n].Cells[1].Value = li[2];
+                    datagridview_1.Rows[n].Cells[2].Value = li[3];
+                    datagridview_1.Rows[n].Cells[3].Value = li[4];
+                    datagridview_1.Rows[n].Cells[4].Value = "添加";
+
+                    n++;
+
+                }
+
+                return;
+            } else { }
             //  if (comboxcode_A.SelectedText == null | comboxcode_B.SelectedText == null) return;
             string codeA = "";
             string codeB = "";
@@ -228,13 +290,13 @@ namespace BOM_SET
                       //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
                       //where B.分类代码A.Contains(codeA)
                       select a;
-           
 
             List<string[]> list = new List<string[]>() { };
 
-            foreach(var li in q_abc)
+
+            foreach (var li in q_abc)
             {
-                string[] strs = new string[] { li.代码, li.名称, li.品牌, li.技术参数 };
+                string[] strs = new string[] { li.代码, li.名称, li.品牌, li.技术参数,li.价格.ToString(),li.图片,li.规格型号,li.附件,li.全名,li.审核人 };
                 if ((int)strs[0][0] > 127) { continue; }
                    
                 if (codeA != ""  )
@@ -275,14 +337,47 @@ namespace BOM_SET
                
             }
             int i = 0;
+            if (list.Count <= 0) { return; }
             var newlist = list.Distinct();
+            
+           
             foreach (var li in newlist)
             {
-                DataGridViewRow row = new DataGridViewRow();
-                datagridview_1.Rows.Add(row);
-                datagridview_1.Rows[i].Cells[0].Value = li[0];
+                bool condition_text = false;
+               if( find_condition_text == "")//搜索框为空的时候
+                {
+                    condition_text = true;
+                    
+                }
+                else
+                {
+                    
+                    foreach (var str in li)//搜索框不为空的时候 遍历string[]每个字符串 看看是否有关键字
+                    {
+                        if (String.IsNullOrEmpty(str)||str=="" ) { continue; }
+                        if (str.Contains(find_condition_text))
+                        {
 
-                i++;
+                            condition_text = true;
+                            break;
+                        }
+                    }
+                }
+              
+
+                if (condition_text == true)
+                {
+                    DataGridViewRow row = new DataGridViewRow();
+                    datagridview_1.Rows.Add(row);
+                    if (li[0] != "") { datagridview_1.Rows[i].Cells[0].Value = li[0]; }
+                    if (li[1] != "") { datagridview_1.Rows[i].Cells[1].Value = li[1]; }
+                    if (li[2] != "") { datagridview_1.Rows[i].Cells[2].Value = li[2]; }
+                    if (li[3] != "") { datagridview_1.Rows[i].Cells[3].Value = li[3]; }
+                    datagridview_1.Rows[i].Cells[4].Value = "添加";
+                    i++;
+                }
+
+               
                 
             }
 

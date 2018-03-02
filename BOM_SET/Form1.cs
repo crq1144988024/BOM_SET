@@ -435,6 +435,59 @@ namespace BOM_SET
             // row.Cells[4] = "添加2";
 
         }
+        /// <summary>
+        /// 从BOM1表中去Table_bom_all 表中查询配件的ID   添加到BOM 表2 配件中
+        /// </summary>
+        /// <param name="datagridview1"></param>
+        /// <param name="ID"></param>
+        public void find_datagridview_now_bom(DataGridView datagridview1,int Main_ID)
+        {
+            datagridview1.Rows.Clear();
+            var q_ = from a in  bom_sort.Table_BOM_struct_sort_ // bom_hold.Table_BOM_HOLD
+
+                         //  where a.代码.Substring(0,3) == codeA && a.d == codeB
+                         //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                         //where B.分类代码A.Contains(codeA)
+                     where a.main_BOMID == Main_ID
+                     select a;
+
+                
+            int i = 0;
+            foreach (var id in q_)
+            {
+
+                var q_id = from a in data_bom.Table_bom_all // bom_hold.Table_BOM_HOLD
+
+                             //  where a.代码.Substring(0,3) == codeA && a.d == codeB
+                             //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                             //where B.分类代码A.Contains(codeA)
+                         where a.ID == id.son_ID         
+                           select a;
+               
+
+
+                List<string[]> list = new List<string[]>() { };
+                foreach (var K in q_id)
+                {
+                   // MessageBox.Show(K.ID.ToString());
+                    string[] strs = new string[] { K.ID.ToString(), K.代码, K.名称, K.品牌, K.技术参数 };
+                    list.Add(strs);
+                    DataGridViewRow row = new DataGridViewRow();
+                    datagridview1.Rows.Add(row);
+                    if (strs[0] != "") { datagridview1.Rows[i].Cells[0].Value = strs[0]; }
+                    if (strs[1] != "") { datagridview1.Rows[i].Cells[1].Value = strs[1]; }
+                  //  if (strs[2] != "") { datagridview1.Rows[i].Cells["规格型号"].Value = strs[2]; }
+                   if (strs[2] != "") { datagridview1.Rows[i].Cells[2].Value = strs[2]; }
+                    if (strs[3] != "") { datagridview1.Rows[i].Cells[3].Value = strs[3]; }
+                    if (strs[4] != "") { datagridview1.Rows[i].Cells[4].Value = strs[4]; }
+
+                    datagridview1.Rows[i].Cells[5].Value = "添加";
+                    i++;
+                }
+            }
+
+
+        }
 
         /// <summary>
         /// 此函数用来向BOM暂存区添加数据的  
@@ -696,7 +749,7 @@ namespace BOM_SET
             codeC();
         }
 
-        private void datagridview_matter_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void datagridview_matter_CellContentClick(object sender, DataGridViewCellEventArgs  e)
         {
             // string cell_value_now=  datagridview_matter.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
             int i = datagridview_matter.Rows.Count;
@@ -708,12 +761,23 @@ namespace BOM_SET
                 string nowcellname = datagridview_matter.Columns[e.ColumnIndex].HeaderText;
             string cell_value = datagridview_matter.Rows[e.RowIndex].Cells[0].Value.ToString();
 
-            try
+                try
+                {
+                    int ID1 = Convert.ToInt32(cell_value);
+
+                    find_datagridview_now_bom(DataGridView2_parts, ID1);
+
+                } catch
+                {
+
+                }
+                try
             {
                 if (nowcellname == "添加")
                 {
                     int ID = Convert.ToInt32(cell_value);
                     add_datagridview_hold(DataGridView_BOM_Hold, ID);
+
                 }
 
             }
@@ -721,6 +785,11 @@ namespace BOM_SET
             }
 
         }
+        /// <summary>
+        /// 单击bom_all单元格内容部分
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void DataGridView_BOM_Hold_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -766,5 +835,58 @@ namespace BOM_SET
             catch { }
             }
         }
+        /// <summary>
+        /// 单击bom_all单元格任意部分
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void datagridview_matter_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i = DataGridView_BOM_Hold.Rows.Count;
+            if (i <= 0) { return; }
+            string cell_value = "";
+
+            string nowcellname = "";
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+
+
+                try
+                {
+                    cell_value = DataGridView_BOM_Hold.Rows[e.RowIndex].Cells["ID"].Value.ToString();
+
+                    nowcellname = DataGridView_BOM_Hold.Columns[e.ColumnIndex].HeaderText;
+                }
+                catch { }
+
+            }
+        }
+        private void DataGridView2_parts_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i = datagridview_matter.Rows.Count;
+            if (i <= 0) { return; }
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+
+
+                string nowcellname = datagridview_matter.Columns[e.ColumnIndex].HeaderText;
+                string cell_value = datagridview_matter.Rows[e.RowIndex].Cells[0].Value.ToString();
+
+              
+                try
+                {
+                    if (nowcellname == "添加")
+                    {
+                        int ID = Convert.ToInt32(cell_value);
+                        add_datagridview_hold(DataGridView_BOM_Hold, ID);
+
+                    }
+
+                }
+                catch { }
+            }
+        }
+
+      
     }
 }

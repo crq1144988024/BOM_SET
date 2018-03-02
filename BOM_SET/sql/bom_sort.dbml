@@ -3,7 +3,7 @@
   <Table Name="dbo.[Table_BOM_struct_sort ]" Member="Table_BOM_struct_sort_">
     <Type Name="Table_BOM_struct_sort_">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="备用ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="son_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="一级菜单" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="二级菜单" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="三级菜单" Type="System.String" DbType="NChar(10)" CanBeNull="true" />

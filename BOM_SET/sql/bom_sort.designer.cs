@@ -82,7 +82,7 @@ namespace BOM_SET.sql
 		
 		private int _ID;
 		
-		private int _备用ID;
+		private int _son_ID;
 		
 		private string _一级菜单;
 		
@@ -102,8 +102,8 @@ namespace BOM_SET.sql
     partial void OnCreated();
     partial void OnIDChanging(int value);
     partial void OnIDChanged();
-    partial void On备用IDChanging(int value);
-    partial void On备用IDChanged();
+    partial void Onson_IDChanging(int value);
+    partial void Onson_IDChanged();
     partial void On一级菜单Changing(string value);
     partial void On一级菜单Changed();
     partial void On二级菜单Changing(string value);
@@ -143,22 +143,22 @@ namespace BOM_SET.sql
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_备用ID", DbType="Int NOT NULL")]
-		public int 备用ID
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_son_ID", DbType="Int NOT NULL")]
+		public int son_ID
 		{
 			get
 			{
-				return this._备用ID;
+				return this._son_ID;
 			}
 			set
 			{
-				if ((this._备用ID != value))
+				if ((this._son_ID != value))
 				{
-					this.On备用IDChanging(value);
+					this.Onson_IDChanging(value);
 					this.SendPropertyChanging();
-					this._备用ID = value;
-					this.SendPropertyChanged("备用ID");
-					this.On备用IDChanged();
+					this._son_ID = value;
+					this.SendPropertyChanged("son_ID");
+					this.Onson_IDChanged();
 				}
 			}
 		}

@@ -75,8 +75,18 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Wilbit.AppUpdate, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Wilbit.AppUpdate.0.2.0\lib\net40-client\Wilbit.AppUpdate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form2_procurement .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2_procurement .Designer.cs">
+      <DependentUpon>Form2_procurement .cs</DependentUpon>
+    </Compile>
     <Compile Include="Form2_project_configuration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +125,7 @@
     <Compile Include="Tools\datagridview_set.cs" />
     <Compile Include="Tools\Global1.cs" />
     <Compile Include="Tools\xmloperate.cs" />
+    <None Include="excel\采购申请模板.xlsx" />
     <None Include="sql\bom_sort.dbml.layout">
       <DependentUpon>bom_sort.dbml</DependentUpon>
     </None>
@@ -140,6 +151,9 @@
     </None>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2_procurement .resx">
+      <DependentUpon>Form2_procurement .cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2_project_configuration.resx">
       <DependentUpon>Form2_project_configuration.cs</DependentUpon>
@@ -181,6 +195,20 @@
     <Content Include="CSkin.dll" />
     <Content Include="CSkin.XML" />
     <None Include="Resources\箭头.jpg" />
+    <Content Include="picture\bexit.ico" />
+    <Content Include="picture\Log%2520Out.png" />
+    <Content Include="picture\NetByte Design Studio - 0056.png" />
+    <Content Include="picture\NetByte Design Studio - 0063.png" />
+    <Content Include="picture\NetByte Design Studio - 0073.png" />
+    <Content Include="picture\中机儒拉玛特LOGO.JPG" />
+    <Content Include="picture\修改密码.png" />
+    <Content Include="picture\增加用户.png" />
+    <Content Include="picture\浏览.png" />
+    <Content Include="picture\用户.png" />
+    <Content Include="picture\设置.png" />
+    <Content Include="picture\退出.png" />
+    <Content Include="picture\选项.png" />
+    <Content Include="picture\邮件.png" />
     <Content Include="sql\Database1.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

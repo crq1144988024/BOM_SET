@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOM_SET", "BOM_SET\BOM_SET.csproj", "{02352429-1850-431F-A5CD-6A9D76755148}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CF2FE340-EC22-4E1D-B4B8-68C50FF3820D} = {CF2FE340-EC22-4E1D-B4B8-68C50FF3820D}
+		{4BA4719C-C6AB-49BA-9754-848CA24C1FD6} = {4BA4719C-C6AB-49BA-9754-848CA24C1FD6}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoUpdater", "D:\搜狗高速下载\win7更新\autoUpdater\AutoUpdater\AutoUpdater.csproj", "{4BA4719C-C6AB-49BA-9754-848CA24C1FD6}"
 EndProject

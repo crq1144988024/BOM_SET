@@ -10,9 +10,9 @@
       <Column Name="审核人" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="附件" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="图片" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="价格" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="技术参数" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="品牌" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-      <Column Name="价格" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Database1" Class="bom_sortDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\sql\Database1.mdf;Integrated Security=True" SettingsObjectName="BOM_SET.Properties.Settings" SettingsPropertyName="Database1ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[Table_BOM_struct_sort ]" Member="Table_BOM_struct_sort_">
+    <Type Name="Table_BOM_struct_sort_">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="son_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="一级菜单" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="二级菜单" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="三级菜单" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="main_BOMID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="名称" Type="System.String" DbType="NChar(255)" CanBeNull="true" />
+      <Column Name="备注" Type="System.String" DbType="NChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

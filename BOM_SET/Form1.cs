@@ -47,8 +47,12 @@ namespace BOM_SET
         private void skinButton1_Click(object sender, EventArgs e)
         {
             //using (OfficeOpenXml.ExcelPackage package = new ExcelPackage(new FileInfo(@"d:\test.xlsx"))) { }
-            PrintReporter();
-            MessageBox.Show("生成成功！");
+            add_list_bom();
+            if (Form2_procurement_open == false)
+            {
+                PrintReporter();
+                MessageBox.Show("生成成功！");
+            }
         }
         public  void PrintReporter()
 

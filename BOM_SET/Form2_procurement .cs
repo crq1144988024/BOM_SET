@@ -31,7 +31,7 @@ namespace BOM_SET
         DataClasses1DataContext data_bom = new DataClasses1DataContext();
         private void Form2_procurement_Load(object sender, EventArgs e)
         {
-
+            skinTextBox2.Text = Global.project_name + "-" + Global.project_ST_name;//
             dateTimePicker1.Value= DateTime.Now.ToLocalTime();
 
 
@@ -120,13 +120,13 @@ namespace BOM_SET
                     FillWorksheetAbAssets(package.Workbook.Worksheets[worksheet_now+1]);
                         worksheet_now ++;
 
-                    MessageBox.Show("SAS");
+                  //  MessageBox.Show("SAS");
 
                 } while (sheets_add_do==false);
                 package.Workbook.Worksheets.Delete("Sheet0");
                 package.Save();
 
-
+                MessageBox.Show("导出成功！");
             }
         }
         private static void CreateWorksheetAbAssets(ExcelWorksheet ws)
@@ -165,8 +165,8 @@ namespace BOM_SET
 
             
             ws.Cells[4, 1].Value = Global.project_name+"-"+ Global.project_ST_name;//
-          
-          
+         
+
             int k = 7;
             int eve_row = nowrows+26 ;
             if(eve_row>= datagridview_matter.Rows.Count) { eve_row = datagridview_matter.Rows.Count; sheets_add_do = true; } else { sheets_add_do = false; }
@@ -190,8 +190,8 @@ namespace BOM_SET
                     k++;
                     nowrows++;
                 }
+            ws.Cells[33, 3].Value = skinTextBox1.Text;//备注
 
-            
 
 
             //ws.Cells[3, 1].Hyperlink = new ExcelHyperLink(kSheetNameAbDetail + "!A3", "SubTerrainObjs_1_1.assetbundle");

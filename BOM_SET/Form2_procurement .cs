@@ -76,7 +76,7 @@ namespace BOM_SET
         {
             string sourceFile = System.AppDomain.CurrentDomain.BaseDirectory + "excel\\采购申请模板.xlsx";
 
-            string destinationFile = @"c:\" + Global.project_name + ".xlsx";
+            string destinationFile = @"d:\" + Global.project_name + ".xlsx";
             try
             {
 

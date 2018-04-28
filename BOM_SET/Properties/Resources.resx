@@ -118,49 +118,52 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="箭头" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\箭头.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="退出" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\退出.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Log%20Out" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\Log%20Out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NetByte Design Studio - 0056" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\NetByte Design Studio - 0056.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NetByte Design Studio - 0063" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\NetByte Design Studio - 0063.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NetByte Design Studio - 0073" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\NetByte Design Studio - 0073.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="箭头1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\箭头.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="浏览" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\浏览.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="设置" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\设置.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="退出" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\退出.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="修改密码" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\修改密码.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="用户" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\用户.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="选项" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\选项.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="用户" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\用户.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="浏览" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\浏览.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="修改密码" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\修改密码.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NetByte Design Studio - 0073" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\NetByte Design Studio - 0073.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="中机儒拉玛特LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\中机儒拉玛特LOGO.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="邮件" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\邮件.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="箭头1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\箭头.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NetByte Design Studio - 0056" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\NetByte Design Studio - 0056.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="设置" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\设置.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="增加用户" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\增加用户.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="中机儒拉玛特LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\中机儒拉玛特LOGO.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="箭头" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\箭头.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NetByte Design Studio - 0063" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\NetByte Design Studio - 0063.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="用户1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\用户.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -43,7 +43,11 @@ namespace BOM_SET
         {
 
         }
-
+        /// <summary>
+        /// 生成BOM表
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void skinButton1_Click(object sender, EventArgs e)
         {
             //using (OfficeOpenXml.ExcelPackage package = new ExcelPackage(new FileInfo(@"d:\test.xlsx"))) { }
@@ -56,10 +60,10 @@ namespace BOM_SET
         }
         public  void PrintReporter()
 
-        {
-
-            var newFile = new FileInfo("d:"+skinTextBox1.Text+" - "+ skinTextBox2.Text + " - " +skinTextBox3 .Text +"E"+".xls");
-            Global.procurement_name = skinTextBox1.Text + " - " + skinTextBox2.Text + " - " + skinTextBox3.Text;
+        {//skinTextBox1.Text
+            //MessageBox.Show(skinComboBox11.Text);return;
+            var newFile = new FileInfo("d:"+ skinComboBox11.Text + " - "+ skinTextBox2.Text + " - " +skinTextBox3 .Text +"E"+".xls");
+            Global.procurement_name = skinComboBox11.Text + " - " + skinTextBox2.Text + " - " + skinTextBox3.Text;
             if (newFile.Exists)
 
             {
@@ -602,7 +606,7 @@ namespace BOM_SET
             ws.Cells[1, 1].Value = "[G]组别";
             ws.Cells[2, 1].Value = "组别代码";
             ws.Cells[2, 2].Value = "组别名称";
-            ws.Cells[3, 1].Value = skinTextBox1.Text + ".01";
+            ws.Cells[3, 1].Value = skinComboBox11.Text + ".01";
             ws.Cells[3, 2].Value = "电气";
             ws.Cells[4, 1].Value = "[P]产品";
 
@@ -625,14 +629,14 @@ namespace BOM_SET
 
 
 
-            ws.Cells[6, 1].Value = skinTextBox1.Text+"-"+ skinTextBox2.Text + "-" +skinTextBox3 .Text +"E" ;//
-            ws.Cells[6, 2].Value = "M09." + skinTextBox1.Text + "-00-00-00-00E";//
+            ws.Cells[6, 1].Value = skinComboBox11.Text+"-"+ skinTextBox2.Text + "-" +skinTextBox3 .Text +"E" ;//
+            ws.Cells[6, 2].Value = "M09." + skinComboBox11.Text + "-00-00-00-00E";//
             if (skinComboBox1 != null)
             {
 
             ws.Cells[6, 3].Value = skinComboBox1.SelectedText;
             }
-            ws.Cells[6, 4].Value = skinTextBox1.Text + "-00-00-00-00";//
+            ws.Cells[6, 4].Value = skinComboBox11.Text + "-00-00-00-00";//
             ws.Cells[6, 5].Value = "个";
             ws.Cells[6, 6].Value = "1";
             ws.Cells[6, 7].Value = "100";
@@ -696,7 +700,7 @@ namespace BOM_SET
                 ws.Cells[k, 17].Value = "1900/1/1";
                 ws.Cells[k, 18].Value = "2100/1/1";
                 ws.Cells[k, 19].Value = "*";
-                ws.Cells[k, 20].Value = "01."+skinTextBox1 .Text .Substring(1,5);
+                ws.Cells[k, 20].Value = "01."+ skinComboBox11.Text .Substring(1,5);
                 ws.Cells[k, 21].Value = "普通件";
                 ws.Cells[k, 26].Value = "否";
                 ws.Cells[k, 27].Value = "N";
@@ -736,11 +740,15 @@ namespace BOM_SET
             grid.DataSource = dataset.Tables[tablename];
 
         }
-
+        /// <summary>
+        /// 物料审核
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void skinButton2_Click(object sender, EventArgs e)
         {
 
-            set_datagridview(DataGridView_BOM_Hold, Global.dataset, "table1");
+          //  set_datagridview(DataGridView_BOM_Hold, Global.dataset, "table1");
 
         }
         DataClasses1DataContext data_bom = new DataClasses1DataContext();
@@ -766,7 +774,7 @@ namespace BOM_SET
         private void skinButton7_Click(object sender, EventArgs e)
         {
 
-            if (dataGridView1.Rows.Count > 0)
+            if (skinDataGridView1.Rows.Count > 0)
             {
                 //     dataGridView1.Rows.Clear();
             }
@@ -780,7 +788,7 @@ namespace BOM_SET
 
 
 
-            dataGridView1.DataSource = q;
+            skinDataGridView1.DataSource = q;
 
 
         }
@@ -938,11 +946,6 @@ namespace BOM_SET
                 catch { }
             }
         }
-
-        private void skinTextBox1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         bool Form2_procurement_open = false;
         public void add_list_bom()
         {
@@ -988,7 +991,7 @@ namespace BOM_SET
         }
         private void skinButton11_Click(object sender, EventArgs e)
         {
-            Global.project_name = skinTextBox1.Text;
+            Global.project_name = skinComboBox11.Text;
             Global.project_ST_name = skinTextBox2.Text;
             if (Global.project_name == null || Global.project_ST_name==null) { MessageBox.Show("请填写项目信息！"); Form2_procurement_open = true ;return; }
             if (Global.project_name.Length<4 || Global.project_ST_name.Length<2) { MessageBox.Show("请填写项目信息！"); Form2_procurement_open = true; return; }
@@ -1000,6 +1003,11 @@ namespace BOM_SET
                 form2.Show();
             }
           
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

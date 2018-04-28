@@ -51,7 +51,10 @@ namespace BOM_SET
         private void skinButton1_Click(object sender, EventArgs e)
         {
             //using (OfficeOpenXml.ExcelPackage package = new ExcelPackage(new FileInfo(@"d:\test.xlsx"))) { }
-            add_list_bom();
+            Form2_procurement_open = false;
+            if (Global.project_name == null || Global.project_ST_name == null) { MessageBox.Show("请填写项目信息！"); Form2_procurement_open = true; return; }
+            if (Global.project_name.Length < 4 || Global.project_ST_name.Length < 2) { MessageBox.Show("请填写项目信息！"); Form2_procurement_open = true; return; }
+
             if (Form2_procurement_open == false)
             {
                 PrintReporter();
@@ -989,13 +992,19 @@ namespace BOM_SET
                 n++;
             }
         }
+        /// <summary>
+        /// 生成采购单
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void skinButton11_Click(object sender, EventArgs e)
         {
             Global.project_name = skinComboBox11.Text;
             Global.project_ST_name = skinTextBox2.Text;
+            Form2_procurement_open = false;
             if (Global.project_name == null || Global.project_ST_name==null) { MessageBox.Show("请填写项目信息！"); Form2_procurement_open = true ;return; }
             if (Global.project_name.Length<4 || Global.project_ST_name.Length<2) { MessageBox.Show("请填写项目信息！"); Form2_procurement_open = true; return; }
-            Form2_procurement_open = false;
+           
             add_list_bom();
             if (Form2_procurement_open == false)
             {
@@ -1006,6 +1015,15 @@ namespace BOM_SET
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+        /// <summary>
+        /// 保存配置
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void skinButton5_Click(object sender, EventArgs e)
         {
 
         }

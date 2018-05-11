@@ -93,6 +93,19 @@
     <Compile Include="Form2_project_configuration.Designer.cs">
       <DependentUpon>Form2_project_configuration.cs</DependentUpon>
     </Compile>
+    <Compile Include="LOGIN\ID.cs" />
+    <Compile Include="LOGIN\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN\账号管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN\账号管理.Designer.cs">
+      <DependentUpon>账号管理.cs</DependentUpon>
+    </Compile>
     <Compile Include="sql\bom_hoid.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -122,9 +135,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses_Code_ABC.dbml</DependentUpon>
     </Compile>
+    <Compile Include="sql\DataClasses_Login.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses_Login.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Tools\datagridview_set.cs" />
     <Compile Include="Tools\Global1.cs" />
     <Compile Include="Tools\xmloperate.cs" />
+    <None Include="sql\DataClasses_Login.dbml.layout">
+      <DependentUpon>DataClasses_Login.dbml</DependentUpon>
+    </None>
     <None Include="excel\采购申请模板.xlsx" />
     <None Include="sql\bom_sort.dbml.layout">
       <DependentUpon>bom_sort.dbml</DependentUpon>
@@ -158,6 +179,9 @@
     <EmbeddedResource Include="Form2_project_configuration.resx">
       <DependentUpon>Form2_project_configuration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -185,6 +209,11 @@
     <None Include="sql\DataClasses_Code_ABC.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>DataClasses_Code_ABC.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sql\DataClasses_Login.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses_Login.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Text;
 
 namespace BOM_SET
 {
-    class Global
+  public   class Global
     {
+        public static string path_exe = Directory.GetCurrentDirectory();
         public static DataSet dataset=new DataSet();
         public static string procurement_name;
         public static string project_name;

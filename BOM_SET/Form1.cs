@@ -23,7 +23,7 @@ namespace BOM_SET
 
     public partial class Form1 : Skin_Metro
     {
-
+        
         DataClasses_Code_ABCDataContext Code_ABC = new DataClasses_Code_ABCDataContext();
         bom_hoidDataContext bom_hold = new bom_hoidDataContext();
         bom_sortDataContext bom_sort = new bom_sortDataContext();
@@ -41,7 +41,59 @@ namespace BOM_SET
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            tabControl1.Enabled = false;
+            LOGIN.ID.login_now_Permission = -1;
+            timer1.Enabled = true;
+            LOGIN.Login form1 = new LOGIN.Login();
+            form1.Show();
+           
 
+        }
+        public   void set_login()
+        {
+            if (LOGIN.ID.login_now_Permission == 100)
+            {
+                ToolStripMenuItem1.Enabled = false;
+                ToolStripMenuItem3.Enabled = false;
+                tabControl1.Enabled = false;
+                toolStripLabel_peoplename.Text = "未登录";
+                ToolStripMenuItem4.Text = "登录系统";
+                LOGIN.ID.login_now_Permission = -1;
+                timer1.Enabled = false;
+                return;
+            }
+            if (LOGIN.ID.login_now_Permission == 0)
+            {
+               
+                this.Close();
+                return;
+            }
+            if(LOGIN.ID.login_now_Permission > 0 && ToolStripMenuItem4.Text == "登录系统")
+            {
+                if (LOGIN.ID.login_now_Permission >= 3)
+                {
+                    ToolStripMenuItem1.Enabled = true;
+                    // ToolStripMenuItem2.Enabled = true;
+                    //  ToolStripMenuItem3.Enabled = true;
+                   
+                   
+                }
+                else
+                {
+                    ToolStripMenuItem1.Enabled = false;
+                    //ToolStripMenuItem2.Enabled = false;
+                    //ToolStripMenuItem3.Enabled = false;
+                    
+                }
+                toolStripLabel_peoplename.Text = LOGIN.ID.login_now_Nanme;
+                tabControl1.Enabled = true ;
+                timer1.Enabled = false;
+                ToolStripMenuItem4.Text = "退出登录";
+                return;
+            }
+          
+
+          
         }
         /// <summary>
         /// 生成BOM表
@@ -1024,6 +1076,57 @@ namespace BOM_SET
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void skinButton5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripComboBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            
+            if (ToolStripMenuItem4.Text == "登录系统")
+            {
+                LOGIN.Login form = new LOGIN.Login();
+                form.Show();
+            }
+            else
+            {
+                DialogResult result = MessageBox.Show("确定要退出登录吗", "警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning );
+               if (result==DialogResult.OK) {
+                LOGIN.ID.login_now_Permission = 100;
+                }
+            }
+            timer1.Enabled = true;
+
+        }
+        /// <summary>
+        /// 登陆窗口监控
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            set_login();
+        }
+        /// <summary>
+        /// 用户管理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+        /// <summary>
+        /// 修改密码
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ToolStripMenuItem3_Click(object sender, EventArgs e)
         {
 
         }

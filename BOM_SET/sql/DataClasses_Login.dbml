@@ -2,11 +2,12 @@
   <Connection Mode="AppSettings" ConnectionString="Data Source=CRQ-PC\WINCC;Initial Catalog=Database1.mdf;Integrated Security=True" SettingsObjectName="BOM_SET.Properties.Settings" SettingsPropertyName="Database1_mdfConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Login" Member="Login">
     <Type Name="Login">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="NAME" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="Permission" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="SORT" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="password" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

@@ -19,9 +19,9 @@ using System.Xml.Linq;
 
 namespace BOM_SET.LOGIN
 {
-    public partial class Login : Skin_DevExpress 
+    public partial class Login_form : Skin_DevExpress 
     {
-        public Login()
+        public Login_form()
         {
             InitializeComponent();
         }
@@ -46,7 +46,8 @@ namespace BOM_SET.LOGIN
         /// <param name="e"></param>
         private void Button1_Click(object sender, EventArgs e)
         {
-            if(String .IsNullOrEmpty (ComboBox1 .Text))
+           
+            if (String .IsNullOrEmpty (ComboBox1 .Text))
             {
                 label3.Text = "请填写用户名！";
             }
@@ -63,6 +64,7 @@ namespace BOM_SET.LOGIN
             {
                 label3.Text = "请填写密码！";
             }
+            ID convert = new ID();
             foreach (var people in q_A)
             {
                 if (people.password.Trim ()==TextBox1.Text.Trim())
@@ -72,6 +74,10 @@ namespace BOM_SET.LOGIN
                     ID.login_now_Nanme = people.NAME.Trim();
                     ID.login_now_PASSWORD = people.password.Trim();
                     ID.login_now_SORT = Convert.ToInt32(people.SORT);
+
+                    convert.ID_output_Permission(ID.login_now_Permission,out  ID.login_now_Permission_enum, out  ID.login_now_Permission_str);
+                    convert.ID_output_SORT(ID.login_now_SORT,out  ID.login_now_SORT_enum,out  ID.login_now_SORT_str);
+                   
 
 
                     if (File.Exists(Global.path_exe + "\\login.xml"))

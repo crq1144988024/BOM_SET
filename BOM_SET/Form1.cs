@@ -44,7 +44,7 @@ namespace BOM_SET
             tabControl1.Enabled = false;
             LOGIN.ID.login_now_Permission = -1;
             timer1.Enabled = true;
-            LOGIN.Login form1 = new LOGIN.Login();
+            LOGIN.Login_form form1 = new LOGIN.Login_form();
             form1.Show();
            
 
@@ -1091,7 +1091,7 @@ namespace BOM_SET
             
             if (ToolStripMenuItem4.Text == "登录系统")
             {
-                LOGIN.Login form = new LOGIN.Login();
+                LOGIN.Login_form form = new LOGIN.Login_form();
                 form.Show();
             }
             else
@@ -1120,7 +1120,8 @@ namespace BOM_SET
         /// <param name="e"></param>
         private void ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            LOGIN.账号管理 FROM = new LOGIN.账号管理();
+            FROM.Show();
         }
         /// <summary>
         /// 修改密码

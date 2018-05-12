@@ -75,15 +75,16 @@ namespace BOM_SET
                     ToolStripMenuItem1.Enabled = true;
                     // ToolStripMenuItem2.Enabled = true;
                     //  ToolStripMenuItem3.Enabled = true;
-                   
-                   
+                    ToolStripMenuItem3.Enabled = true;
+
                 }
                 else
                 {
                     ToolStripMenuItem1.Enabled = false;
                     //ToolStripMenuItem2.Enabled = false;
                     //ToolStripMenuItem3.Enabled = false;
-                    
+                    ToolStripMenuItem3.Enabled = false;
+
                 }
                 toolStripLabel_peoplename.Text = LOGIN.ID.login_now_Nanme;
                 tabControl1.Enabled = true ;
@@ -1128,7 +1129,8 @@ namespace BOM_SET
         /// <param name="e"></param>
         private void ToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-
+            LOGIN.密码修改 FORM = new LOGIN.密码修改();
+            FORM.Show ();
         }
     }
 }

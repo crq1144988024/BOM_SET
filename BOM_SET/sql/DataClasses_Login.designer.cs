@@ -22,7 +22,7 @@ namespace BOM_SET.sql
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="Database1")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="Database1.mdf")]
 	public partial class DataClasses_LoginDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -36,7 +36,7 @@ namespace BOM_SET.sql
     #endregion
 		
 		public DataClasses_LoginDataContext() : 
-				base(global::BOM_SET.Properties.Settings.Default.Database1ConnectionString, mappingSource)
+				base(global::BOM_SET.Properties.Settings.Default.Database1_mdfConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

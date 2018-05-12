@@ -43,5 +43,15 @@ namespace BOM_SET.Properties {
                 return ((string)(this["Database1ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=CRQ-PC\\WINCC;Initial Catalog=Database1.mdf;Integrated Security=True")]
+        public string Database1_mdfConnectionString {
+            get {
+                return ((string)(this["Database1_mdfConnectionString"]));
+            }
+        }
     }
 }

@@ -98,6 +98,8 @@ namespace BOM_SET.sql
 		
 		private string _是否采购;
 		
+		private string _是否已提计划;
+		
 		private string _采购状态;
 		
 		private System.Nullable<int> _已采购数量;
@@ -126,6 +128,8 @@ namespace BOM_SET.sql
     partial void On审核意见Changed();
     partial void On是否采购Changing(string value);
     partial void On是否采购Changed();
+    partial void On是否已提计划Changing(string value);
+    partial void On是否已提计划Changed();
     partial void On采购状态Changing(string value);
     partial void On采购状态Changed();
     partial void On已采购数量Changing(System.Nullable<int> value);
@@ -315,6 +319,26 @@ namespace BOM_SET.sql
 					this._是否采购 = value;
 					this.SendPropertyChanged("是否采购");
 					this.On是否采购Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_是否已提计划", DbType="NChar(10)")]
+		public string 是否已提计划
+		{
+			get
+			{
+				return this._是否已提计划;
+			}
+			set
+			{
+				if ((this._是否已提计划 != value))
+				{
+					this.On是否已提计划Changing(value);
+					this.SendPropertyChanging();
+					this._是否已提计划 = value;
+					this.SendPropertyChanged("是否已提计划");
+					this.On是否已提计划Changed();
 				}
 			}
 		}

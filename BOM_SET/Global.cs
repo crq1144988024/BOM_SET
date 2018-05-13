@@ -21,5 +21,20 @@ namespace BOM_SET
 
         public static List<int> temp_add_supplies_ID = new List<int>();
         public static List<int> temp_delete_supplies_ID = new List<int>();
+
+        public static bool open_configuration;
+        public static string project_name_open;//打开的配置值
+        public static string project_ST_name_open;
+        public static string project_BOM_SORT_name_open;
+        public static string project_ST_num_name_open;
+
+        public static string project_name_open1;//打开的配置值备份
+        public static string project_ST_name_open1;
+        public static string project_BOM_SORT_name_open1;
+        public static string project_ST_num_name_open1;
+
+
+
+        public static int bom_open = -1;
     }
 }

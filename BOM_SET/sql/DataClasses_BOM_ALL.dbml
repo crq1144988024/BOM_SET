@@ -11,6 +11,7 @@
       <Column Name="审核状态" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="审核意见" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="是否采购" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="是否已提计划" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="采购状态" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="已采购数量" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="提交审核" Type="System.String" DbType="NChar(10)" CanBeNull="true" />

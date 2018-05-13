@@ -201,7 +201,7 @@ namespace BOM_SET
         public void find_bom_usernoew_Project_name_add()
         {
             ComboBox_project_name.Items.Clear();
-            string str_0 = "";
+            
             var customer = from cust in bomstruct_classes.Table_BOM_HOLD
 
                            where Convert.ToInt32(cust.项目负责人ID) == LOGIN.ID.login_now_ID
@@ -213,8 +213,39 @@ namespace BOM_SET
 
             foreach (var item in customer)
             {
-                str_0 = item.项目代号;
-                ComboBox_project_name.Items.Add(new ComboxItem(str_0, str_0));
+                string str_0 = "";
+                string str_1 = "";
+                string str_2 = "";
+                bool find_temp = false;
+                for(int i=0;i< ComboBox_project_name.Items.Count;i++)
+                {
+                    string strDict = ((ComboxItem)ComboBox_project_name.Items[i]).Values.ToString().Trim();
+                    if(strDict== item.项目代号.ToString().Trim())
+                    {
+                        find_temp = true;
+                        break;
+                    }
+                }
+                str_0 = item.项目代号.ToString().Trim();
+                str_1 = item.设备序号.ToString().Trim();
+                str_2 = item.第几次申请.ToString().Trim();
+                if (find_temp == false)
+                {
+                    
+                    ComboBox_project_name.Items.Add(new ComboxItem(str_0, str_0));
+                }
+                string project_all = "";
+              if (ComboBox_bom_sort.Text == "电气")
+                {
+                    project_all = str_0 + "-" + str_1 + "-" + str_2 + "E";
+                }
+                else
+                {
+                    project_all = str_0 + "-" + str_1 + "-" + str_2 + "M";
+                }
+                    
+
+                listBox_project_recods.Items.Add(new ComboxItem(project_all, project_all));
             }
 
 

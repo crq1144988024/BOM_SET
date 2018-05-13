@@ -138,7 +138,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.skinButton4 = new CCWin.SkinControl.SkinButton();
             this.skinButton5 = new CCWin.SkinControl.SkinButton();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBox_project_recods = new System.Windows.Forms.ListBox();
             this.skinLabel9 = new CCWin.SkinControl.SkinLabel();
             this.skinLabel1 = new CCWin.SkinControl.SkinLabel();
             this.ComboBox_project_name = new CCWin.SkinControl.SkinComboBox();
@@ -1282,7 +1282,7 @@
             this.groupBox2.BackColor = System.Drawing.Color.SlateGray;
             this.groupBox2.Controls.Add(this.skinButton4);
             this.groupBox2.Controls.Add(this.skinButton5);
-            this.groupBox2.Controls.Add(this.listBox1);
+            this.groupBox2.Controls.Add(this.listBox_project_recods);
             this.groupBox2.Controls.Add(this.skinLabel9);
             this.groupBox2.Controls.Add(this.skinLabel1);
             this.groupBox2.Controls.Add(this.ComboBox_project_name);
@@ -1334,14 +1334,14 @@
             this.skinButton5.UseVisualStyleBackColor = false;
             this.skinButton5.Click += new System.EventHandler(this.skinButton5_Click);
             // 
-            // listBox1
+            // listBox_project_recods
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 12;
-            this.listBox1.Location = new System.Drawing.Point(82, 299);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(185, 148);
-            this.listBox1.TabIndex = 4;
+            this.listBox_project_recods.FormattingEnabled = true;
+            this.listBox_project_recods.ItemHeight = 12;
+            this.listBox_project_recods.Location = new System.Drawing.Point(82, 299);
+            this.listBox_project_recods.Name = "listBox_project_recods";
+            this.listBox_project_recods.Size = new System.Drawing.Size(185, 148);
+            this.listBox_project_recods.TabIndex = 4;
             // 
             // skinLabel9
             // 
@@ -3085,7 +3085,7 @@
         private CCWin.SkinControl.SkinLabel skinLabel1;
         private CCWin.SkinControl.SkinButton skinButton4;
         private CCWin.SkinControl.SkinButton skinButton5;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBox_project_recods;
         private CCWin.SkinControl.SkinComboBox comboxcode_B;
         private CCWin.SkinControl.SkinComboBox comboxcode_A;
         private CCWin.SkinControl.SkinComboBox comboxcode_C;

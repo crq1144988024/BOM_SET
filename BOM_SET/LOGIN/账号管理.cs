@@ -229,7 +229,7 @@ namespace BOM_SET.LOGIN
 
 
                     int sor = 1;
-                    convert_1.ID_output_SORT(combox2.Value.ToString().Trim(), out sor);
+                    convert_1.ID_output_SORT(combox3.Value.ToString().Trim(), out sor);
                     people.SORT = sor;
                     row++;
                 }
@@ -251,7 +251,7 @@ namespace BOM_SET.LOGIN
 
 
                     int sor = 1;
-                    convert_1.ID_output_SORT(combox2.Value.ToString().Trim(), out sor);
+                    convert_1.ID_output_SORT(combox3.Value.ToString().Trim(), out sor);
                   
                    
 

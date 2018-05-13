@@ -98,6 +98,8 @@ namespace BOM_SET.sql
 		
 		private string _备注;
 		
+		private System.Nullable<int> _项目负责人ID;
+		
     #region 可扩展性方法定义
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -120,6 +122,8 @@ namespace BOM_SET.sql
     partial void On密钥Changed();
     partial void On备注Changing(string value);
     partial void On备注Changed();
+    partial void On项目负责人IDChanging(System.Nullable<int> value);
+    partial void On项目负责人IDChanged();
     #endregion
 		
 		public Table_BOM_HOLD()
@@ -303,6 +307,26 @@ namespace BOM_SET.sql
 					this._备注 = value;
 					this.SendPropertyChanged("备注");
 					this.On备注Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_项目负责人ID", DbType="Int")]
+		public System.Nullable<int> 项目负责人ID
+		{
+			get
+			{
+				return this._项目负责人ID;
+			}
+			set
+			{
+				if ((this._项目负责人ID != value))
+				{
+					this.On项目负责人IDChanging(value);
+					this.SendPropertyChanging();
+					this._项目负责人ID = value;
+					this.SendPropertyChanged("项目负责人ID");
+					this.On项目负责人IDChanged();
 				}
 			}
 		}

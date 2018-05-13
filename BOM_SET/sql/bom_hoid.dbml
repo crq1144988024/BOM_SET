@@ -11,6 +11,7 @@
       <Column Name="第几次申请" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="密钥" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="备注" Type="System.String" DbType="NChar(255)" CanBeNull="true" />
+      <Column Name="项目负责人ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

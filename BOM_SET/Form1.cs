@@ -49,14 +49,20 @@ namespace BOM_SET
            
 
         }
+       
+
         public   void set_login()
         {
+           
+
             if (LOGIN.ID.login_now_Permission == 100)
             {
                 ToolStripMenuItem1.Enabled = false;
                 ToolStripMenuItem3.Enabled = false;
                 tabControl1.Enabled = false;
                 toolStripLabel_peoplename.Text = "未登录";
+                toolStripStatusLabel_permission.Text = "未知";
+                toolStripStatusLabel_sort.Text = "未知";
                 ToolStripMenuItem4.Text = "登录系统";
                 LOGIN.ID.login_now_Permission = -1;
                 timer1.Enabled = false;
@@ -70,12 +76,15 @@ namespace BOM_SET
             }
             if(LOGIN.ID.login_now_Permission > 0 && ToolStripMenuItem4.Text == "登录系统")
             {
-                if (LOGIN.ID.login_now_Permission >= 3)
+                if (LOGIN.ID.login_now_Permission >= 2)
                 {
                     ToolStripMenuItem1.Enabled = true;
                     // ToolStripMenuItem2.Enabled = true;
                     //  ToolStripMenuItem3.Enabled = true;
                     ToolStripMenuItem3.Enabled = true;
+
+
+
 
                 }
                 else
@@ -87,7 +96,98 @@ namespace BOM_SET
 
                 }
                 toolStripLabel_peoplename.Text = LOGIN.ID.login_now_Nanme;
+                toolStripStatusLabel_permission.Text = LOGIN.ID.login_now_Permission_str;
+                toolStripStatusLabel_sort.Text = LOGIN.ID.login_now_SORT_str;
                 tabControl1.Enabled = true ;
+
+                //for(int i=0;i<tabControl1.TabPages.Count;i++)
+                //{
+                //    tabControl1.TabPages[i].Parent = this.tabControl1;
+                //}
+                TabPage tp0 = tabControl1.TabPages[0];//BOM   
+                TabPage tp1 = tabControl1.TabPages[1];//物料新增  
+                TabPage tp2 = tabControl1.TabPages[2];//报价
+                TabPage tp3 = tabControl1.TabPages[3];//采购
+                TabPage tp4 = tabControl1.TabPages[4];//图纸管理
+                TabPage tp5 = tabControl1.TabPages[5];//物料管理
+                TabPage tp6 = tabControl1.TabPages[6];//物料审核
+
+                tabControl1.TabPages.Remove(tp0);//隐藏（删除）
+                tabControl1.TabPages.Remove(tp1);//隐藏（删除）
+                tabControl1.TabPages.Remove(tp2);//隐藏（删除）
+                tabControl1.TabPages.Remove(tp3);//隐藏（删除）
+                tabControl1.TabPages.Remove(tp4);//隐藏（删除）
+                tabControl1.TabPages.Remove(tp5);//隐藏（删除）
+                tabControl1.TabPages.Remove(tp6);//隐藏（删除）
+                if (LOGIN.ID.login_now_Permission >= 3)
+                {
+                    tabControl1.TabPages.Insert(0, tp0);///BOM
+                    tabControl1.TabPages.Insert(1, tp1);//物料新增  
+                    tabControl1.TabPages.Insert(2, tp2);//报价
+                    tabControl1.TabPages.Insert(3, tp3);//采购
+                    tabControl1.TabPages.Insert(4, tp4);//图纸管理）
+                    tabControl1.TabPages.Insert(5, tp5);//物料管理
+                    tabControl1.TabPages.Insert(6, tp6);//物料审核
+                }
+                else
+                {
+                    if (LOGIN.ID.login_now_SORT == 1)//电气设计
+                    {//采购 和 数据库管理员
+                        tabControl1.TabPages.Insert(0, tp0);///BOM
+                        tabControl1.TabPages.Insert(1, tp1);//物料新增  
+                        tabControl1.TabPages.Insert(2, tp2);//报价
+                        ComboBox_bom_sort.Text = "电气";
+                        ComboBox_bom_sort.Enabled = false;
+
+
+
+                    }
+                    if (LOGIN.ID.login_now_SORT == 2)//机械设计
+                    {
+                        tabControl1.TabPages.Insert(0, tp0);///BOM
+                        tabControl1.TabPages.Insert(1, tp1);//物料新增  
+                        tabControl1.TabPages.Insert(2, tp2);//报价
+                        ComboBox_bom_sort.Text = "机械";
+                        ComboBox_bom_sort.Enabled = false;
+
+                    }
+                    if (LOGIN.ID.login_now_SORT == 3)//物料管理员
+                    {
+                        tabControl1.TabPages.Insert(1, tp1);//物料新增  
+                       
+                       tabControl1.TabPages.Insert(4, tp4);//图纸管理
+                        tabControl1.TabPages.Insert(5, tp5);//物料管理
+                    }
+                    if (LOGIN.ID.login_now_SORT == 4)//采购
+                    {
+                        tabControl1.TabPages.Insert(3, tp3);//采购
+                    }
+                    if (LOGIN.ID.login_now_SORT == 5)//电气审核
+                    {
+                        tabControl1.TabPages.Insert(0, tp0);///BOM
+                        tabControl1.TabPages.Insert(1, tp1);//物料新增  
+                        tabControl1.TabPages.Insert(2, tp2);//报价
+                      //  tabControl1.TabPages.Insert(3, tp3);//采购
+                        tabControl1.TabPages.Insert(4, tp4);//图纸管理
+                        tabControl1.TabPages.Insert(5, tp5);//物料管理
+                        tabControl1.TabPages.Insert(6, tp6);//物料审核
+                        ComboBox_bom_sort.Text = "电气";
+                        ComboBox_bom_sort.Enabled = false;
+                    }
+                    if (LOGIN.ID.login_now_SORT == 6)//机械审核
+                    {
+                        tabControl1.TabPages.Insert(0, tp0);///BOM
+                        tabControl1.TabPages.Insert(1, tp1);//物料新增  
+                        tabControl1.TabPages.Insert(2, tp2);//报价
+                      //  tabControl1.TabPages.Insert(3, tp3);//采购
+                        tabControl1.TabPages.Insert(4, tp4);//图纸管理
+                        tabControl1.TabPages.Insert(5, tp5);//物料管理
+                        tabControl1.TabPages.Insert(6, tp6);//物料审核
+                        ComboBox_bom_sort.Text = "机械";
+                        ComboBox_bom_sort.Enabled = false;
+                    }
+                }
+                   
                 timer1.Enabled = false;
                 ToolStripMenuItem4.Text = "退出登录";
                 return;
@@ -96,6 +196,34 @@ namespace BOM_SET
 
           
         }
+        /// <summary>
+        /// 登陆之后读取用户的BOM
+        /// </summary>
+        /// <param name="user_ID"></param>
+        public void find_bom_usernoew(int user_ID)
+        {
+            var customer = from cust in bomstruct_classes.Table_BOM_HOLD
+
+                           where Convert.ToInt32( cust.项目负责人ID) ==LOGIN.ID.login_now_ID 
+                           //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                           //where c.代码.Contains(sort_keywords)
+                           //  where A.分类代码A
+                           select cust;
+            if (customer.Count() == 0)
+            {
+                //没有该表格则新增
+                };
+
+
+            ComboBox_project_name.Text = "";//项目代号
+
+            ComboBox_mechine_number.Text = "";//工站号
+            ComboBox_num_request.Text = "";//第几次申请
+
+
+
+
+            }
         /// <summary>
         /// 生成BOM表
         /// </summary>
@@ -1314,10 +1442,11 @@ namespace BOM_SET
                     var newCustomer_sort = new Table_BOM_HOLD
                     {
                         项目代号 = ComboBox_project_name.Text.Trim(),
-                         类别= ComboBox_bom_sort.Text.Trim(),
-                          设备序号= ComboBox_mechine_number.Text.Trim(),
-                           第几次申请= ComboBox_num_request.Text.Trim()
-
+                        类别 = ComboBox_bom_sort.Text.Trim(),
+                        设备序号 = ComboBox_mechine_number.Text.Trim(),
+                        第几次申请 = ComboBox_num_request.Text.Trim(),
+                        项目负责人ID = LOGIN.ID.login_now_ID
+                            
                         //  备注 = remarks,
 
 
@@ -1724,6 +1853,12 @@ namespace BOM_SET
             }
             return check;
         }
+        /// <summary>
+        /// 以下是检查是否可以更改物料的权限函数
+        /// </summary>
+        /// <param name="datagridview_1"></param>
+        /// <param name="row_num"></param>
+        /// <param name="INT_enable"></param>
         public void CHECK_DeleTE_Or_YES(DataGridView datagridview_1, int row_num, out int  INT_enable)
         {
             int  _temp = 0;

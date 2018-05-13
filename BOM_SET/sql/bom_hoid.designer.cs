@@ -88,15 +88,13 @@ namespace BOM_SET.sql
 		
 		private string _项目名称;
 		
-		private int _inside_BOMID;
+		private string _类别;
 		
-		private string _一级菜单;
+		private string _设备序号;
 		
-		private string _二级菜单;
+		private string _第几次申请;
 		
-		private string _三级菜单;
-		
-		private System.Nullable<int> _main_BOMID;
+		private string _密钥;
 		
 		private string _备注;
 		
@@ -112,16 +110,14 @@ namespace BOM_SET.sql
     partial void On项目代号Changed();
     partial void On项目名称Changing(string value);
     partial void On项目名称Changed();
-    partial void Oninside_BOMIDChanging(int value);
-    partial void Oninside_BOMIDChanged();
-    partial void On一级菜单Changing(string value);
-    partial void On一级菜单Changed();
-    partial void On二级菜单Changing(string value);
-    partial void On二级菜单Changed();
-    partial void On三级菜单Changing(string value);
-    partial void On三级菜单Changed();
-    partial void Onmain_BOMIDChanging(System.Nullable<int> value);
-    partial void Onmain_BOMIDChanged();
+    partial void On类别Changing(string value);
+    partial void On类别Changed();
+    partial void On设备序号Changing(string value);
+    partial void On设备序号Changed();
+    partial void On第几次申请Changing(string value);
+    partial void On第几次申请Changed();
+    partial void On密钥Changing(string value);
+    partial void On密钥Changed();
     partial void On备注Changing(string value);
     partial void On备注Changed();
     #endregion
@@ -211,102 +207,82 @@ namespace BOM_SET.sql
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_inside_BOMID", DbType="Int NOT NULL")]
-		public int inside_BOMID
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_类别", DbType="NChar(10)")]
+		public string 类别
 		{
 			get
 			{
-				return this._inside_BOMID;
+				return this._类别;
 			}
 			set
 			{
-				if ((this._inside_BOMID != value))
+				if ((this._类别 != value))
 				{
-					this.Oninside_BOMIDChanging(value);
+					this.On类别Changing(value);
 					this.SendPropertyChanging();
-					this._inside_BOMID = value;
-					this.SendPropertyChanged("inside_BOMID");
-					this.Oninside_BOMIDChanged();
+					this._类别 = value;
+					this.SendPropertyChanged("类别");
+					this.On类别Changed();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_一级菜单", DbType="NChar(10)")]
-		public string 一级菜单
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_设备序号", DbType="NChar(10)")]
+		public string 设备序号
 		{
 			get
 			{
-				return this._一级菜单;
+				return this._设备序号;
 			}
 			set
 			{
-				if ((this._一级菜单 != value))
+				if ((this._设备序号 != value))
 				{
-					this.On一级菜单Changing(value);
+					this.On设备序号Changing(value);
 					this.SendPropertyChanging();
-					this._一级菜单 = value;
-					this.SendPropertyChanged("一级菜单");
-					this.On一级菜单Changed();
+					this._设备序号 = value;
+					this.SendPropertyChanged("设备序号");
+					this.On设备序号Changed();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_二级菜单", DbType="NChar(10)")]
-		public string 二级菜单
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_第几次申请", DbType="NChar(10)")]
+		public string 第几次申请
 		{
 			get
 			{
-				return this._二级菜单;
+				return this._第几次申请;
 			}
 			set
 			{
-				if ((this._二级菜单 != value))
+				if ((this._第几次申请 != value))
 				{
-					this.On二级菜单Changing(value);
+					this.On第几次申请Changing(value);
 					this.SendPropertyChanging();
-					this._二级菜单 = value;
-					this.SendPropertyChanged("二级菜单");
-					this.On二级菜单Changed();
+					this._第几次申请 = value;
+					this.SendPropertyChanged("第几次申请");
+					this.On第几次申请Changed();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_三级菜单", DbType="NChar(10)")]
-		public string 三级菜单
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_密钥", DbType="NChar(10)")]
+		public string 密钥
 		{
 			get
 			{
-				return this._三级菜单;
+				return this._密钥;
 			}
 			set
 			{
-				if ((this._三级菜单 != value))
+				if ((this._密钥 != value))
 				{
-					this.On三级菜单Changing(value);
+					this.On密钥Changing(value);
 					this.SendPropertyChanging();
-					this._三级菜单 = value;
-					this.SendPropertyChanged("三级菜单");
-					this.On三级菜单Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_main_BOMID", DbType="Int")]
-		public System.Nullable<int> main_BOMID
-		{
-			get
-			{
-				return this._main_BOMID;
-			}
-			set
-			{
-				if ((this._main_BOMID != value))
-				{
-					this.Onmain_BOMIDChanging(value);
-					this.SendPropertyChanging();
-					this._main_BOMID = value;
-					this.SendPropertyChanged("main_BOMID");
-					this.Onmain_BOMIDChanged();
+					this._密钥 = value;
+					this.SendPropertyChanged("密钥");
+					this.On密钥Changed();
 				}
 			}
 		}

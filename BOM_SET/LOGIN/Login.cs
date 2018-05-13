@@ -52,6 +52,7 @@ namespace BOM_SET.LOGIN
                 label3.Text = "请填写用户名！";
             }
 
+
             var q_A = from A in DATACALSSES.Login 
 
                           where A .NAME.Trim() == ComboBox1 .Text .Trim ()

@@ -136,6 +136,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sql\DataClasses_BOM_ALL.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses_BOM_ALL.dbml</DependentUpon>
+    </Compile>
     <Compile Include="sql\DataClasses_Code_ABC.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -149,6 +154,14 @@
     <Compile Include="Tools\datagridview_set.cs" />
     <Compile Include="Tools\Global1.cs" />
     <Compile Include="Tools\xmloperate.cs" />
+    <None Include="sql\DataClasses_BOM_ALL.dbml.layout">
+      <DependentUpon>DataClasses_BOM_ALL.dbml</DependentUpon>
+    </None>
+    <None Include="sql\DataClasses_BOM_ALL.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses_BOM_ALL.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
     <None Include="sql\DataClasses_Login.dbml.layout">
       <DependentUpon>DataClasses_Login.dbml</DependentUpon>
     </None>

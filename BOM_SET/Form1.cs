@@ -103,10 +103,23 @@ namespace BOM_SET
         /// <param name="e"></param>
         private void skinButton1_Click(object sender, EventArgs e)
         {
-            //using (OfficeOpenXml.ExcelPackage package = new ExcelPackage(new FileInfo(@"d:\test.xlsx"))) { }
+
+            Global.project_name = ComboBox_project_name.Text;
+            Global.project_ST_name = ComboBox_mechine_number.Text;
+            Global.project_ST_num_name = ComboBox_num_request.Text;
+            Global.project_BOM_SORT_name = ComboBox_bom_sort.Text;
             Form2_procurement_open = false;
-            if (Global.project_name == null || Global.project_ST_name == null) { MessageBox.Show("请填写项目信息！"); Form2_procurement_open = true; return; }
-            if (Global.project_name.Length < 4 || Global.project_ST_name.Length < 2) { MessageBox.Show("请填写项目信息！"); Form2_procurement_open = true; return; }
+            if (Global.project_name == null || Global.project_ST_name == null || Global.project_ST_num_name == null || Global.project_BOM_SORT_name == null)
+            { MessageBox.Show("请填写完整的项目信息！"); Form2_procurement_open = true; return; }
+            if (Global.project_name.Length < 4 || Global.project_ST_name.Length < 2 || Global.project_ST_num_name.Length < 1 || Global.project_BOM_SORT_name.Length < 1)
+            { MessageBox.Show("请填写完整的项目信息！"); Form2_procurement_open = true; return; }
+
+
+
+            //using (OfficeOpenXml.ExcelPackage package = new ExcelPackage(new FileInfo(@"d:\test.xlsx"))) { }
+            //Form2_procurement_open = false;
+            //if (Global.project_name == null || Global.project_ST_name == null) { MessageBox.Show("请填写项目信息！"); Form2_procurement_open = true; return; }
+            //if (Global.project_name.Length < 4 || Global.project_ST_name.Length < 2) { MessageBox.Show("请填写项目信息！"); Form2_procurement_open = true; return; }
 
             if (Form2_procurement_open == false)
             {
@@ -118,8 +131,8 @@ namespace BOM_SET
 
         {//skinTextBox1.Text
             //MessageBox.Show(skinComboBox11.Text);return;
-            var newFile = new FileInfo("d:"+ skinComboBox11.Text + " - "+ skinTextBox2.Text + " - " +skinTextBox3 .Text +"E"+".xls");
-            Global.procurement_name = skinComboBox11.Text + " - " + skinTextBox2.Text + " - " + skinTextBox3.Text;
+            var newFile = new FileInfo("d:"+ ComboBox_project_name.Text + " - "+ ComboBox_mechine_number.Text + " - " + ComboBox_num_request.Text +"E"+".xls");
+            Global.procurement_name = ComboBox_project_name.Text + " - " + ComboBox_mechine_number.Text + " - " + ComboBox_num_request.Text;
             if (newFile.Exists)
 
             {
@@ -547,6 +560,7 @@ namespace BOM_SET
                     if (strs[3] != "") { datagridview1.Rows[i].Cells[3].Value = strs[3]; }
                     if (strs[4] != "") { datagridview1.Rows[i].Cells[4].Value = strs[4]; }
                     if (strs[5] != "") { datagridview1.Rows[i].Cells[4].Value = strs[5]; }
+                  
                     datagridview1.Rows[i].Cells[6].Value = "添加";
                     i++;
                 }
@@ -618,7 +632,17 @@ namespace BOM_SET
                     //totalprices
                     datagridview_1.Rows[i].Cells["价格"].Value = strs[6];
                 }
+                datagridview_1.Rows[i].Cells[10].Value = "是";
+                datagridview_1.Rows[i].Cells[11].Value = "未审核";
+                datagridview_1.Rows[i].Cells[11].Style.BackColor = Color.Gray;
+                datagridview_1.Rows[i].Cells[13].Value = "未提";
+                datagridview_1.Rows[i].Cells[13].Style.BackColor = Color.Gray;
+                datagridview_1.Rows[i].Cells[14].Value = "未采购";
+                datagridview_1.Rows[i].Cells[14].Style.BackColor = Color.Red;
+                datagridview_1.Rows[i].Cells[15].Value = "0";
+               
                 datagridview_1.Rows[i].Cells["删除"].Value = "删除";
+                Global.temp_add_supplies_ID.Add(Convert.ToInt32(datagridview_1.Rows[i].Cells["ID"].Value));
                 i++;
             }
 
@@ -662,7 +686,7 @@ namespace BOM_SET
             ws.Cells[1, 1].Value = "[G]组别";
             ws.Cells[2, 1].Value = "组别代码";
             ws.Cells[2, 2].Value = "组别名称";
-            ws.Cells[3, 1].Value = skinComboBox11.Text + ".01";
+            ws.Cells[3, 1].Value = ComboBox_project_name.Text + ".01";
             ws.Cells[3, 2].Value = "电气";
             ws.Cells[4, 1].Value = "[P]产品";
 
@@ -685,14 +709,14 @@ namespace BOM_SET
 
 
 
-            ws.Cells[6, 1].Value = skinComboBox11.Text+"-"+ skinTextBox2.Text + "-" +skinTextBox3 .Text +"E" ;//
-            ws.Cells[6, 2].Value = "M09." + skinComboBox11.Text + "-00-00-00-00E";//
-            if (skinComboBox1 != null)
+            ws.Cells[6, 1].Value = ComboBox_project_name.Text+"-"+ ComboBox_mechine_number.Text + "-" + ComboBox_num_request.Text +"E" ;//
+            ws.Cells[6, 2].Value = "M09." + ComboBox_project_name.Text + "-00-00-00-00E";//
+            if (ComboBox_bom_sort != null)
             {
 
-            ws.Cells[6, 3].Value = skinComboBox1.SelectedText;
+            ws.Cells[6, 3].Value = ComboBox_bom_sort.SelectedText;
             }
-            ws.Cells[6, 4].Value = skinComboBox11.Text + "-00-00-00-00";//
+            ws.Cells[6, 4].Value = ComboBox_project_name.Text + "-00-00-00-00";//
             ws.Cells[6, 5].Value = "个";
             ws.Cells[6, 6].Value = "1";
             ws.Cells[6, 7].Value = "100";
@@ -756,7 +780,7 @@ namespace BOM_SET
                 ws.Cells[k, 17].Value = "1900/1/1";
                 ws.Cells[k, 18].Value = "2100/1/1";
                 ws.Cells[k, 19].Value = "*";
-                ws.Cells[k, 20].Value = "01."+ skinComboBox11.Text .Substring(1,5);
+                ws.Cells[k, 20].Value = "01."+ ComboBox_project_name.Text .Substring(1,5);
                 ws.Cells[k, 21].Value = "普通件";
                 ws.Cells[k, 26].Value = "否";
                 ws.Cells[k, 27].Value = "N";
@@ -937,6 +961,7 @@ namespace BOM_SET
                         {
                             DataGridViewRow row = DataGridView_BOM_Hold.Rows[e.RowIndex];
                             DataGridView_BOM_Hold.Rows.Remove(row);
+                                Global.temp_delete_supplies_ID.Add(Convert.ToInt32(DataGridView_BOM_Hold.Rows[i_d_find].Cells["ID"].Value));
                             MessageBox.Show("删除成功！");
                             return;
 
@@ -1052,12 +1077,18 @@ namespace BOM_SET
         /// <param name="e"></param>
         private void skinButton11_Click(object sender, EventArgs e)
         {
-            Global.project_name = skinComboBox11.Text;
-            Global.project_ST_name = skinTextBox2.Text;
+            Global.project_name = ComboBox_project_name.Text;
+            Global.project_ST_name = ComboBox_mechine_number.Text;
+            Global.project_ST_num_name = ComboBox_num_request.Text;
+            Global.project_BOM_SORT_name = ComboBox_bom_sort.Text;
             Form2_procurement_open = false;
-            if (Global.project_name == null || Global.project_ST_name==null) { MessageBox.Show("请填写项目信息！"); Form2_procurement_open = true ;return; }
-            if (Global.project_name.Length<4 || Global.project_ST_name.Length<2) { MessageBox.Show("请填写项目信息！"); Form2_procurement_open = true; return; }
+            if (Global.project_name == null || Global.project_ST_name==null|| Global.project_ST_num_name == null || Global.project_BOM_SORT_name == null)
+            { MessageBox.Show("请填写完整的项目信息！"); Form2_procurement_open = true ;return; }
+            if (Global.project_name.Length<4 || Global.project_ST_name.Length<2|| Global.project_ST_num_name.Length < 1 || Global.project_BOM_SORT_name.Length < 1)
+            { MessageBox.Show("请填写完整的项目信息！"); Form2_procurement_open = true; return; }
            
+
+
             add_list_bom();
             if (Form2_procurement_open == false)
             {
@@ -1071,6 +1102,8 @@ namespace BOM_SET
         {
 
         }
+        DataClasses_BOM_ALLDataContext bomall_classes = new DataClasses_BOM_ALLDataContext();
+        bom_hoidDataContext bomstruct_classes = new bom_hoidDataContext();
         /// <summary>
         /// 保存配置
         /// </summary>
@@ -1078,8 +1111,220 @@ namespace BOM_SET
         /// <param name="e"></param>
         private void skinButton5_Click(object sender, EventArgs e)
         {
+            Global.project_name = ComboBox_project_name.Text;
+            Global.project_ST_name = ComboBox_mechine_number.Text;
+            Global.project_ST_num_name = ComboBox_num_request.Text;
+            Global.project_BOM_SORT_name = ComboBox_bom_sort.Text;
+            Form2_procurement_open = false;
+            if (Global.project_name == null || Global.project_ST_name == null || Global.project_ST_num_name == null || Global.project_BOM_SORT_name == null)
+            { MessageBox.Show("请填写完整的项目信息！"); Form2_procurement_open = true; return; }
+            if (Global.project_name.Length < 4 || Global.project_ST_name.Length < 2 || Global.project_ST_num_name.Length < 1 || Global.project_BOM_SORT_name.Length < 1)
+            { MessageBox.Show("请填写完整的项目信息！"); Form2_procurement_open = true; return; }
 
+
+
+            //0类别 1 ID  2 物料代码 3规格型号 4物料名称 5品牌 6数量  7技术参数 8备注 9价格 10审核状态 11审核意见 12是否采购 13采购状态 14已采购数量 15删除
+            //1 ID   6数量   8备注 12是否采购
+            if (ComboBox_project_name.Text == null) { MessageBox.Show("请填写项目代号!"); return; }
+            if (string.IsNullOrEmpty(ComboBox_project_name.Text )) { MessageBox.Show("请填写项目代号!"); return; }
+            if (ComboBox_project_name.Text.ToString().Count() == 0) { MessageBox.Show("请填写项目代号!"); return; }
+            for (int i=0;i < DataGridView_BOM_Hold.Rows.Count; i++)
+            {
+                if (DataGridView_BOM_Hold.Rows[i].Cells[6].Value == null) { MessageBox.Show("请填写数量!"); return; }
+                if (string.IsNullOrEmpty(DataGridView_BOM_Hold.Rows[i].Cells[6].Value.ToString())) { MessageBox.Show("请填写数量!"); return; }
+                if (DataGridView_BOM_Hold.Rows[i].Cells[6].Value.ToString().Count() == 0) { MessageBox.Show("请填写数量!"); return; }
+                if (DataGridView_BOM_Hold.Rows[i].Cells[10].Value == null) { MessageBox.Show("请选择是否采购!"); return; }
+                if (string.IsNullOrEmpty(DataGridView_BOM_Hold.Rows[i].Cells[10].Value.ToString())) { MessageBox.Show("请选择是否采购!"); return; }
+                if (DataGridView_BOM_Hold.Rows[i].Cells[10].Value.ToString().Count() == 0) { MessageBox.Show("请选择是否采购!"); return; }
+              
+            }
+            int  project_ID = 0;
+            if (Form2_procurement_open == false)//信息不为空
+            {
+                //保存项目结构
+
+                //先查询
+                var customer = from cust in bomstruct_classes.Table_BOM_HOLD
+
+                               where cust.类别.Trim() == ComboBox_bom_sort.Text.Trim() && cust.项目代号.Trim() == ComboBox_project_name.Text.Trim()
+                               && cust.设备序号.Trim() == ComboBox_mechine_number.Text.Trim() && cust.第几次申请.Trim() == ComboBox_num_request.Text.Trim()
+                               //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                               //where c.代码.Contains(sort_keywords)
+                               //  where A.分类代码A
+                               select cust;
+                if (customer.Count() == 0)
+                {
+                    //没有该表格则新增
+
+                    var newCustomer_sort = new Table_BOM_HOLD
+                    {
+                        项目代号 = ComboBox_project_name.Text.Trim(),
+                         类别= ComboBox_bom_sort.Text.Trim(),
+                          设备序号= ComboBox_mechine_number.Text.Trim(),
+                           第几次申请= ComboBox_num_request.Text.Trim()
+
+                        //  备注 = remarks,
+
+
+
+                    };
+                    bomstruct_classes.Table_BOM_HOLD.InsertOnSubmit(newCustomer_sort);
+
+
+                    bomstruct_classes.SubmitChanges();
+
+
+
+
+                }
+                else
+                {
+                    MessageBox.Show("数据库已有该BOM配置,为了防止数据不统一请先读取BOM数据");
+                }
+                //表格新增完后查询分配到的ID
+
+
+                var customer_new = from cust in bomstruct_classes.Table_BOM_HOLD
+
+                                   where cust.类别.Trim() == ComboBox_bom_sort.Text.Trim() && cust.项目代号.Trim() == ComboBox_project_name.Text.Trim()
+                                   && cust.设备序号.Trim() == ComboBox_mechine_number.Text.Trim() && cust.第几次申请.Trim() == ComboBox_num_request.Text.Trim()
+                                   //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                                   //where c.代码.Contains(sort_keywords)
+                                   //  where A.分类代码A
+                                   select cust;
+
+                foreach (var item in customer_new)
+                {
+                    project_ID = item.ID;
+                }
+                //foreach (var item in customer)
+                //{
+                //    if ()
+                //}
+            }
+
+            //先查询
+            var q_find_supplies = from A in bomall_classes.BOM_ALL
+
+                         where A.项目ID == project_ID
+                         //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                         //where c.代码.Contains(sort_keywords)
+                         //  where A.分类代码A
+                         select A;
+            if (q_find_supplies.Count() == 0)//新增 一个都没有的情况下
+            {
+                string remarks = "";
+                foreach (DataGridViewRow rowone in DataGridView_BOM_Hold.Rows)
+                {
+                    if (rowone.Cells[8].Value != null)
+                    {
+
+                        remarks = rowone.Cells[8].Value.ToString();
+                    }
+                    DataGridViewComboBoxCell combox10 = (DataGridViewComboBoxCell)rowone.Cells[10];
+                    var newCustomer = new BOM_ALL
+                    {
+                        项目ID = project_ID,
+                        项目代号 = ComboBox_project_name.Text,
+                        备注 = remarks,
+                        物料ID = Convert.ToInt32(rowone.Cells[1].Value.ToString()),
+                        数量 = Convert.ToInt32(rowone.Cells[6].Value.ToString()),
+                        是否采购 = combox10.Value.ToString()
+
+
+                    };
+
+                        bomall_classes.BOM_ALL.InsertOnSubmit(newCustomer);
+                }
+            }
+            else
+            {
+                 bool find_supplies_bool = false;//以数据库为基准在表格找到物料标识符
+                foreach (DataGridViewRow rowone in DataGridView_BOM_Hold.Rows)
+                {
+                    DataGridViewComboBoxCell combox10 = (DataGridViewComboBoxCell)rowone.Cells[10];
+                    find_supplies_bool = false;
+                    foreach (var q_find_one in q_find_supplies)
+                    {
+                       
+                        if (q_find_one.物料ID == Convert.ToInt32(rowone.Cells[1].Value.ToString()))//在表格中找到该物料则更新;
+                        {
+
+                            find_supplies_bool = true; //找到该物料  更新既可
+                            q_find_one.数量 = Convert.ToInt32(rowone.Cells[6].Value.ToString());
+                            q_find_one.是否采购 = combox10.Value.ToString();
+                            continue;
+
+                        }
+
+
+                    }//当前物料表格查找完毕
+
+                    if (find_supplies_bool == false)//没找到的情况下才新增
+                    { 
+                                    string remarks = "";
+                                    if (rowone.Cells[8].Value != null)
+                                    {
+                                        remarks = rowone.Cells[8].Value.ToString();
+                                    }
+
+                                    var newCustomer = new BOM_ALL
+                                    {
+                                        项目ID = project_ID,
+                                        项目代号 = ComboBox_project_name.Text,
+                                        备注 = remarks,
+                                        物料ID = Convert.ToInt32(rowone.Cells[1].Value.ToString()),
+                                        数量 = Convert.ToInt32(rowone.Cells[6].Value.ToString()),
+                                        是否采购 = combox10.Value.ToString()
+                                    };
+                                    bomall_classes.BOM_ALL.InsertOnSubmit(newCustomer);
+                             
+                    }
+
+
+                }
+                foreach (var q_find_one in q_find_supplies)
+                { 
+                 // foreach (int  q_find_one in Global.temp_delete_supplies_ID)
+                        // {
+                        find_supplies_bool = false;
+                        foreach (DataGridViewRow rowone in DataGridView_BOM_Hold.Rows)
+                        {
+                           
+                            if (q_find_one.物料ID == Convert.ToInt32(rowone.Cells[1].Value.ToString()))//在表格中找到该物料则置位
+                            {
+                                find_supplies_bool = true;
+                               continue;
+
+                            }
+                   // }
+                         }
+                        if (find_supplies_bool == false)//数据库有物料，但是表格没有   ?????/
+                        {
+
+                            var q_delete = (from A in bomall_classes.BOM_ALL
+
+                                            where A.项目ID == project_ID && A.物料ID == q_find_one.物料ID
+                                            //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                                            //where c.代码.Contains(sort_keywords)
+                                            //  where A.分类代码A
+                                            select A).First();
+
+                            bomall_classes.BOM_ALL.DeleteOnSubmit(q_delete);//删除该物料
+                        }
+                }
+             
+
+
+
+                
+            }
+          
+
+            bomall_classes.SubmitChanges();
+            MessageBox.Show("保存成功！");
         }
+
 
         private void toolStripComboBox1_Click(object sender, EventArgs e)
         {
@@ -1132,6 +1377,11 @@ namespace BOM_SET
         {
             LOGIN.密码修改 FORM = new LOGIN.密码修改();
             FORM.Show ();
+        }
+
+        private void skinButton4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

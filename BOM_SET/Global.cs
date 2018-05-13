@@ -14,6 +14,12 @@ namespace BOM_SET
         public static string procurement_name;
         public static string project_name;
         public static string project_ST_name;
+        public static string project_BOM_SORT_name;
+        public static string project_ST_num_name;
         public static List<String[]> BOM_LIST=new List<string[]>();
+
+
+        public static List<int> temp_add_supplies_ID = new List<int>();
+        public static List<int> temp_delete_supplies_ID = new List<int>();
     }
 }

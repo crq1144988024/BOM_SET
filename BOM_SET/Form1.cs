@@ -138,7 +138,7 @@ namespace BOM_SET
                         tabControl1.TabPages.Insert(2, tp2);//报价
                         ComboBox_bom_sort.Text = "电气";
                         ComboBox_bom_sort.Enabled = false;
-
+                        find_bom_usernoew_Project_name_add();
 
 
                     }
@@ -149,7 +149,7 @@ namespace BOM_SET
                         tabControl1.TabPages.Insert(2, tp2);//报价
                         ComboBox_bom_sort.Text = "机械";
                         ComboBox_bom_sort.Enabled = false;
-
+                        find_bom_usernoew_Project_name_add();
                     }
                     if (LOGIN.ID.login_now_SORT == 3)//物料管理员
                     {
@@ -173,6 +173,7 @@ namespace BOM_SET
                         tabControl1.TabPages.Insert(6, tp6);//物料审核
                         ComboBox_bom_sort.Text = "电气";
                         ComboBox_bom_sort.Enabled = false;
+                        find_bom_usernoew_Project_name_add();
                     }
                     if (LOGIN.ID.login_now_SORT == 6)//机械审核
                     {
@@ -185,6 +186,7 @@ namespace BOM_SET
                         tabControl1.TabPages.Insert(6, tp6);//物料审核
                         ComboBox_bom_sort.Text = "机械";
                         ComboBox_bom_sort.Enabled = false;
+                        find_bom_usernoew_Project_name_add();
                     }
                 }
                    
@@ -196,15 +198,40 @@ namespace BOM_SET
 
           
         }
+        public void find_bom_usernoew_Project_name_add()
+        {
+            ComboBox_project_name.Items.Clear();
+            string str_0 = "";
+            var customer = from cust in bomstruct_classes.Table_BOM_HOLD
+
+                           where Convert.ToInt32(cust.项目负责人ID) == LOGIN.ID.login_now_ID
+                        
+                           //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                           //where c.代码.Contains(sort_keywords)
+                           //  where A.分类代码A
+                           select cust;
+
+            foreach (var item in customer)
+            {
+                str_0 = item.项目代号;
+                ComboBox_project_name.Items.Add(new ComboxItem(str_0, str_0));
+            }
+
+
+            
+        }
         /// <summary>
         /// 登陆之后读取用户的BOM
         /// </summary>
         /// <param name="user_ID"></param>
-        public void find_bom_usernoew(int user_ID)
+        public void find_bom_usernoew(string PROJECT_NAME)
         {
+            ComboBox_mechine_number.Items.Clear();
+            ComboBox_num_request.Items.Clear();
             var customer = from cust in bomstruct_classes.Table_BOM_HOLD
 
-                           where Convert.ToInt32( cust.项目负责人ID) ==LOGIN.ID.login_now_ID 
+                           where Convert.ToInt32(cust.项目负责人ID) == LOGIN.ID.login_now_ID
+                           && cust.项目代号.Trim() == PROJECT_NAME.Trim()
                            //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
                            //where c.代码.Contains(sort_keywords)
                            //  where A.分类代码A
@@ -212,18 +239,138 @@ namespace BOM_SET
             if (customer.Count() == 0)
             {
                 //没有该表格则新增
-                };
+            };
+            int g = 0;
+            for (int i = 0; i < 60; i++)
+            {
+                string str_0 = "";
+                string str_projectname = "";
 
 
-            ComboBox_project_name.Text = "";//项目代号
+                if (g < 10)
+                {
+                    str_0 = "0" + g.ToString();
+                }
+                else
+                {
+                    str_0 = g.ToString();
+                }
 
-            ComboBox_mechine_number.Text = "";//工站号
-            ComboBox_num_request.Text = "";//第几次申请
+
+                foreach (var item in customer)
+                {
+                    if (Convert.ToInt32(item.设备序号) == g)
+                    {
+                        str_0 = str_0 + "  已提";
+
+                        break;
+                    }
+
+                }
 
 
 
 
+                if (g == 52)
+                {
+                    ComboBox_mechine_number.SelectedIndex = 0;
+                    find_bom_usernoew_num("00");
+                    ComboBox_num_request.SelectedIndex = 0;
+                    return;
+                }
+
+                if (g == 52)
+                {
+                    return;
+                }
+                //  string str_projectname = str_0;
+
+                // str_projectname =
+
+
+
+                ComboBox_mechine_number.Items.Add(new ComboxItem(str_0, str_0));
+                
+                g++;
+                // ComboBox_num_request.Items.Add(str_1);
             }
+           
+        }
+
+            /// <summary>
+            /// 提的次数更新
+            /// </summary>
+        public void find_bom_usernoew_num(string  NUM)
+        {
+            ComboBox_num_request.Items.Clear();
+            var customer = from cust in bomstruct_classes.Table_BOM_HOLD
+
+                           where Convert.ToInt32(cust.项目负责人ID) == LOGIN.ID.login_now_ID
+                           && Convert.ToInt32(cust.设备序号) == Convert.ToInt32(NUM)
+                           //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                           //where c.代码.Contains(sort_keywords)
+                           //  where A.分类代码A
+                           select cust;
+            if (customer.Count() == 0)
+            {
+                //没有该表格则新增
+            };
+            int g = 0;
+            for (int i = 0; i < 60; i++)
+            {
+                string str_0 = "";
+                string str_projectname = "";
+
+
+                if (g < 10)
+                {
+                    str_0 = "0" + g.ToString();
+                }
+                else
+                {
+                    str_0 = g.ToString();
+                }
+               
+              
+                  foreach(var  item in customer) 
+                    {
+                        if ( Convert.ToInt32( item.第几次申请)== g)
+                        {
+                            str_0 = str_0 + "  已提";
+
+                           break;
+                        }
+
+                    }
+
+
+              
+
+                if (g == 52)
+                {
+                    ComboBox_num_request.SelectedIndex = 0;
+                    return;
+                }
+                //  string str_projectname = str_0;
+
+                // str_projectname =
+
+
+
+                //ComboBox_mechine_number.Items.Add(str_0);
+                ComboBox_num_request.Items.Add(new ComboxItem(str_0, str_0));
+                g++;
+            }
+          
+            //ComboBox_project_name.Text = "";//项目代号
+
+            //ComboBox_mechine_number.Text = "";//工站号
+            //ComboBox_num_request.Text = "";//第几次申请
+
+
+
+
+        }
         /// <summary>
         /// 生成BOM表
         /// </summary>
@@ -233,8 +380,10 @@ namespace BOM_SET
         {
 
             Global.project_name = ComboBox_project_name.Text;
-            Global.project_ST_name = ComboBox_mechine_number.Text;
-            Global.project_ST_num_name = ComboBox_num_request.Text;
+            string str_0 = ""; if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.Substring(0, 2); }
+            Global.project_ST_name = str_0;
+            string str_1 = ""; if (((ComboxItem)ComboBox_num_request.SelectedItem).Values != null) { str_1 = ((ComboxItem)ComboBox_num_request.SelectedItem).Values.Substring(0, 2); }
+            Global.project_ST_num_name =str_1;
             Global.project_BOM_SORT_name = ComboBox_bom_sort.Text;
             Form2_procurement_open = false;
             if (Global.project_name == null || Global.project_ST_name == null || Global.project_ST_num_name == null || Global.project_BOM_SORT_name == null)
@@ -259,9 +408,11 @@ namespace BOM_SET
         public  void PrintReporter()
 
         {//skinTextBox1.Text
-            //MessageBox.Show(skinComboBox11.Text);return;
-            var newFile = new FileInfo("d:"+ ComboBox_project_name.Text + " - "+ ComboBox_mechine_number.Text + " - " + ComboBox_num_request.Text +"E"+".xls");
-            Global.procurement_name = ComboBox_project_name.Text + " - " + ComboBox_mechine_number.Text + " - " + ComboBox_num_request.Text;
+         //MessageBox.Show(skinComboBox11.Text);return;
+            string str_0 = "";  if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.Substring(0, 2); }
+            string str_1 = ""; if (((ComboxItem)ComboBox_num_request.SelectedItem).Values != null) { str_1 = ((ComboxItem)ComboBox_num_request.SelectedItem).Values.Substring(0, 2); }
+            var newFile = new FileInfo("d:"+ ComboBox_project_name.Text + " - "+ str_0 + " - " +str_1 +"E"+".xls");
+            Global.procurement_name = ComboBox_project_name.Text + " - " + str_0 + " - " + str_1;
             if (newFile.Exists)
 
             {
@@ -914,8 +1065,9 @@ namespace BOM_SET
             ws.Cells[5, 16].Value = "跳层";
 
 
-
-            ws.Cells[6, 1].Value = ComboBox_project_name.Text+"-"+ ComboBox_mechine_number.Text + "-" + ComboBox_num_request.Text +"E" ;//
+            string str_0 = "";  if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.Substring(0, 2); }
+            string str_1 = ""; if (((ComboxItem)ComboBox_num_request.SelectedItem).Values != null) { str_1 = ((ComboxItem)ComboBox_num_request.SelectedItem).Values.Substring(0, 2); }
+            ws.Cells[6, 1].Value = ComboBox_project_name.Text+"-"+ str_0 + "-" + str_1 +"E" ;//
             ws.Cells[6, 2].Value = "M09." + ComboBox_project_name.Text + "-00-00-00-00E";//
             if (ComboBox_bom_sort != null)
             {
@@ -1096,12 +1248,14 @@ namespace BOM_SET
         }
         public bool inspect()
         {
+            string str_0 = ""; if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.Substring(0, 2); }
+            string str_1 = ""; if (((ComboxItem)ComboBox_num_request.SelectedItem).Values != null) { str_1 = ((ComboxItem)ComboBox_num_request.SelectedItem).Values.Substring(0, 2); }
             Global.open_configuration = checkout();
             bool inspect_bool = false;
             var customer = from cust in bomstruct_classes.Table_BOM_HOLD
 
                            where cust.类别.Trim() == ComboBox_bom_sort.Text.Trim() && cust.项目代号.Trim() == ComboBox_project_name.Text.Trim()
-                           && cust.设备序号.Trim() == ComboBox_mechine_number.Text.Trim() && cust.第几次申请.Trim() == ComboBox_num_request.Text.Trim()
+                           && cust.设备序号.Trim() ==str_0.Trim() && cust.第几次申请.Trim() == str_1.Trim()
                            //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
                            //where c.代码.Contains(sort_keywords)
                            //  where A.分类代码A
@@ -1133,10 +1287,11 @@ namespace BOM_SET
        
         private void datagridview_matter_CellContentClick(object sender, DataGridViewCellEventArgs  e)
         {
-           
+            string str_0 = "";if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.Substring(0, 2); }
+            string str_1 = ""; if (((ComboxItem)ComboBox_num_request.SelectedItem).Values != null) { str_1 = ((ComboxItem)ComboBox_num_request.SelectedItem).Values.Substring(0, 2); }
             Global.project_name = ComboBox_project_name.Text;
-            Global.project_ST_name = ComboBox_mechine_number.Text;
-            Global.project_ST_num_name = ComboBox_num_request.Text;
+            Global.project_ST_name = str_0;
+            Global.project_ST_num_name = str_1;
             Global.project_BOM_SORT_name = ComboBox_bom_sort.Text;
             Form2_procurement_open = false;
             if (Global.project_name == null || Global.project_ST_name == null || Global.project_ST_num_name == null || Global.project_BOM_SORT_name == null)
@@ -1272,10 +1427,11 @@ namespace BOM_SET
         }
         private void DataGridView2_parts_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+            string str_0 = "";if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.Substring(0, 2); }
+            string str_1 = ""; if (((ComboxItem)ComboBox_num_request.SelectedItem).Values != null) { str_1 = ((ComboxItem)ComboBox_num_request.SelectedItem).Values.Substring(0, 2); }
             Global.project_name = ComboBox_project_name.Text;
-            Global.project_ST_name = ComboBox_mechine_number.Text;
-            Global.project_ST_num_name = ComboBox_num_request.Text;
+            Global.project_ST_name = str_0;
+            Global.project_ST_num_name = str_1;
             Global.project_BOM_SORT_name = ComboBox_bom_sort.Text;
             Form2_procurement_open = false;
             if (Global.project_name == null || Global.project_ST_name == null || Global.project_ST_num_name == null || Global.project_BOM_SORT_name == null)
@@ -1359,9 +1515,11 @@ namespace BOM_SET
         /// <param name="e"></param>
         private void skinButton11_Click(object sender, EventArgs e)
         {
+            string str_0 = "";if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.Substring(0, 2); }
+            string str_1 = ""; if (((ComboxItem)ComboBox_num_request.SelectedItem).Values != null) { str_1 = ((ComboxItem)ComboBox_num_request.SelectedItem).Values.Substring(0, 2); }
             Global.project_name = ComboBox_project_name.Text;
-            Global.project_ST_name = ComboBox_mechine_number.Text;
-            Global.project_ST_num_name = ComboBox_num_request.Text;
+            Global.project_ST_name = str_0;
+            Global.project_ST_num_name = str_1;
             Global.project_BOM_SORT_name = ComboBox_bom_sort.Text;
             Form2_procurement_open = false;
             if (Global.project_name == null || Global.project_ST_name==null|| Global.project_ST_num_name == null || Global.project_BOM_SORT_name == null)
@@ -1393,9 +1551,12 @@ namespace BOM_SET
         /// <param name="e"></param>
         private void skinButton5_Click(object sender, EventArgs e)
         {
+            
+            string str_0 = "";  if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.Substring(0, 2); }
+            string str_1 = ""; if (((ComboxItem)ComboBox_num_request.SelectedItem).Values != null) { str_1 = ((ComboxItem)ComboBox_num_request.SelectedItem).Values.Substring(0, 2); }
             Global.project_name = ComboBox_project_name.Text;
-            Global.project_ST_name = ComboBox_mechine_number.Text;
-            Global.project_ST_num_name = ComboBox_num_request.Text;
+            Global.project_ST_name =str_0;
+            Global.project_ST_num_name = str_1;
             Global.project_BOM_SORT_name = ComboBox_bom_sort.Text;
             Form2_procurement_open = false;
             if (Global.project_name == null || Global.project_ST_name == null || Global.project_ST_num_name == null || Global.project_BOM_SORT_name == null)
@@ -1427,10 +1588,11 @@ namespace BOM_SET
                 //保存项目结构
 
                 //先查询
+               // string str_0 = ""; if (ComboBox_mechine_number.Text != null) { str_0 = ComboBox_mechine_number.Text.Substring(0, 2); }
                 var customer = from cust in bomstruct_classes.Table_BOM_HOLD
 
                                where cust.类别.Trim() == ComboBox_bom_sort.Text.Trim() && cust.项目代号.Trim() == ComboBox_project_name.Text.Trim()
-                               && cust.设备序号.Trim() == ComboBox_mechine_number.Text.Trim() && cust.第几次申请.Trim() == ComboBox_num_request.Text.Trim()
+                               && cust.设备序号.Trim() == str_0.Trim() && cust.第几次申请.Trim() == str_1.Trim()
                                //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
                                //where c.代码.Contains(sort_keywords)
                                //  where A.分类代码A
@@ -1443,8 +1605,8 @@ namespace BOM_SET
                     {
                         项目代号 = ComboBox_project_name.Text.Trim(),
                         类别 = ComboBox_bom_sort.Text.Trim(),
-                        设备序号 = ComboBox_mechine_number.Text.Trim(),
-                        第几次申请 = ComboBox_num_request.Text.Trim(),
+                        设备序号 = str_0.Trim(),
+                        第几次申请 = str_1.Trim(),
                         项目负责人ID = LOGIN.ID.login_now_ID
                             
                         //  备注 = remarks,
@@ -1471,7 +1633,7 @@ namespace BOM_SET
                 var customer_new = from cust in bomstruct_classes.Table_BOM_HOLD
 
                                    where cust.类别.Trim() == ComboBox_bom_sort.Text.Trim() && cust.项目代号.Trim() == ComboBox_project_name.Text.Trim()
-                                   && cust.设备序号.Trim() == ComboBox_mechine_number.Text.Trim() && cust.第几次申请.Trim() == ComboBox_num_request.Text.Trim()
+                                   && cust.设备序号.Trim() == str_0.Trim() && cust.第几次申请.Trim() == str_1.Trim()
                                    //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
                                    //where c.代码.Contains(sort_keywords)
                                    //  where A.分类代码A
@@ -1696,9 +1858,14 @@ namespace BOM_SET
         /// <param name="e"></param>
         private void skinButton4_Click(object sender, EventArgs e)
         {
+         
+            string str_0 = ""; if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.Substring(0, 2); }
+            string str_1 = ""; if (((ComboxItem)ComboBox_num_request.SelectedItem).Values != null) { str_1 = ((ComboxItem)ComboBox_num_request.SelectedItem).Values.Substring(0, 2); }
+          
+
             Global.project_name_open1  = ComboBox_project_name.Text;
-            Global.project_ST_name_open1 = ComboBox_mechine_number.Text;
-            Global.project_ST_num_name_open1 = ComboBox_num_request.Text;
+            Global.project_ST_name_open1 =str_0;
+            Global.project_ST_num_name_open1 = str_1;
             Global.project_BOM_SORT_name_open1 = ComboBox_bom_sort.Text;
             Form2_procurement_open = false;
             if (Global.project_name_open1 == null || Global.project_ST_name_open1 == null || Global.project_ST_num_name_open1 == null || Global.project_BOM_SORT_name_open1 == null)
@@ -1736,7 +1903,7 @@ namespace BOM_SET
                 var customer_new = from cust in bomstruct_classes.Table_BOM_HOLD
 
                                    where cust.类别.Trim() == ComboBox_bom_sort.Text.Trim() && cust.项目代号.Trim() == ComboBox_project_name.Text.Trim()
-                                   && cust.设备序号.Trim() == ComboBox_mechine_number.Text.Trim() && cust.第几次申请.Trim() == ComboBox_num_request.Text.Trim()
+                                   && cust.设备序号.Trim() == str_0.Trim() && cust.第几次申请.Trim() == str_1.Trim()
                                    //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
                                    //where c.代码.Contains(sort_keywords)
                                    //  where A.分类代码A
@@ -1829,8 +1996,8 @@ namespace BOM_SET
 
                 }
                 Global.project_name_open = ComboBox_project_name.Text;
-                Global.project_ST_name_open = ComboBox_mechine_number.Text;
-                Global.project_ST_num_name_open = ComboBox_num_request.Text;
+                Global.project_ST_name_open = str_0;
+                Global.project_ST_num_name_open = str_1;
                 Global.project_BOM_SORT_name_open = ComboBox_bom_sort.Text;
 
             }
@@ -1894,5 +2061,123 @@ namespace BOM_SET
 
             INT_enable = _temp;
         }
+        /// <summary>
+        /// 实验combox改变颜色
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ComboBox_mechine_number_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            ////初始化字体和背景色
+            //Pen fColor = new Pen(Color.Black);
+            //Pen bColor = new Pen(Color.White);
+
+            //switch (e.Index)
+            //{
+
+            //    case 0:
+            //        {
+            //            fColor = new Pen(Color.Green);
+            //            break;
+            //        }
+            //    case 1:
+            //        {
+            //            fColor = new Pen(Color.Red);
+            //            break;
+            //        }
+            //    case 2:
+            //        {
+            //            fColor = new Pen(Color.Blue);
+            //            break;
+            //        }
+            //}
+
+
+            //e.Graphics.FillRectangle(bColor.Brush, e.Bounds);
+            //e.Graphics.DrawString((string)ComboBox_mechine_number.Items[e.Index], this.Font, fColor.Brush, e.Bounds);
+
+        }
+
+        private void ComboBox_project_name_SelectedIndexChanged(object sender, EventArgs e)
+        {
+         
+          
+            string PROJECT_NAME = "";
+            PROJECT_NAME = ComboBox_project_name.Text;
+           
+            
+        }
+        private void ComboBox_project_name_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            string PROJECT_NAME = ""; if (((ComboxItem)ComboBox_project_name.SelectedItem).Values != null) { PROJECT_NAME = ((ComboxItem)ComboBox_project_name.SelectedItem).Values.ToString().Trim(); }
+
+            //string str_1 = ""; if (ComboBox_num_request.Text != null) { str_0 = ComboBox_num_request.Text.Substring(0, 2); }
+
+            if (PROJECT_NAME != null)
+            {
+                find_bom_usernoew(PROJECT_NAME);
+            }
+        }
+        private void ComboBox_project_name_TextUpdate(object sender, EventArgs e)
+        {//(ComboxItem)ComboBox_project_name.SelectedItem).Values
+            string PROJECT_NAME = ""; if (ComboBox_project_name.Text != null) { PROJECT_NAME = ComboBox_project_name.Text.ToString().Trim(); }
+
+            //string str_1 = ""; if (ComboBox_num_request.Text != null) { str_0 = ComboBox_num_request.Text.Substring(0, 2); }
+
+            if (PROJECT_NAME != null)
+            {
+                find_bom_usernoew(PROJECT_NAME);
+            }
+        }
+
+        private void ComboBox_mechine_number_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void ComboBox_mechine_number_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            string str_0 = ""; if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.ToString().Trim().Substring(0,2); }
+
+            //string str_1 = ""; if (ComboBox_num_request.Text != null) { str_0 = ComboBox_num_request.Text.Substring(0, 2); }
+
+            if (str_0 != null)
+            {
+                find_bom_usernoew_num(str_0);
+            }
+        }
     }
+
+
+    public class ComboxItem
+        {
+            private string text;
+            private string values;
+
+            public string Text
+            {
+                get { return this.text; }
+                set { this.text = value; }
+            }
+
+            public string Values
+            {
+                get { return this.values; }
+                set { this.values = value; }
+            }
+
+            public ComboxItem(string _Text, string _Values)
+            {
+                Text = _Text;
+                Values = _Values;
+            }
+
+
+            public override string ToString()
+            {
+                return Text;
+            }
+        }
+    
 }

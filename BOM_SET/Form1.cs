@@ -718,7 +718,6 @@ namespace BOM_SET
                 }
                 //BOM_ALL0 
                
-                datagridview_1.Rows[i].Cells["删除"].Value = "删除";
                 Global.temp_add_supplies_ID.Add(Convert.ToInt32(datagridview_1.Rows[i].Cells["ID"].Value));
                 erow_num_temp = i;
                 i++;
@@ -727,6 +726,7 @@ namespace BOM_SET
             erow_num = erow_num_temp;
 
         }
+      
         private static void CreateWorksheetAbAssets(ExcelWorksheet ws)
 
         {
@@ -1087,7 +1087,19 @@ namespace BOM_SET
 
                         if (DataGridView_BOM_Hold.Rows[i_d_find].Cells["ID"].Value.ToString().Trim() == ID.ToString().Trim())
                         {
-                            DataGridViewRow row = DataGridView_BOM_Hold.Rows[e.RowIndex];
+                                int SET_ENABLE = 0;
+                                CHECK_DeleTE_Or_YES(DataGridView_BOM_Hold, i_d_find, out SET_ENABLE);
+                                if (SET_ENABLE == 2)
+                                {
+                                    MessageBox.Show("无法删除！该物料已提申请！请联系管理员！");
+                                    return;
+                                }
+                                else if(SET_ENABLE == 3)
+                                {
+                                    MessageBox.Show("无法删除！该物料已采购！请联系管理员！");
+                                    return;
+                                }
+                                    DataGridViewRow row = DataGridView_BOM_Hold.Rows[e.RowIndex];
                             DataGridView_BOM_Hold.Rows.Remove(row);
                                 Global.temp_delete_supplies_ID.Add(Convert.ToInt32(DataGridView_BOM_Hold.Rows[i_d_find].Cells["ID"].Value));
                             MessageBox.Show("删除成功！");
@@ -1658,6 +1670,29 @@ namespace BOM_SET
                     string shop_paied_count = ""; if (q_find_one.已采购数量 != null) { shop_paied_count = q_find_one.已采购数量.ToString().Trim(); }
                     DataGridView_BOM_Hold.Rows[row_now].Cells[15].Value = shop_paied_count;//15已采购数量
 
+                    DataGridView_BOM_Hold.Rows[row_now].Cells["删除"].Value = "删除";
+
+                    int SET_ENABLE = 0;
+                    CHECK_DeleTE_Or_YES(DataGridView_BOM_Hold, row_now,out SET_ENABLE) ;
+
+                    DataGridViewComboBoxCell combox10 = (DataGridViewComboBoxCell)DataGridView_BOM_Hold.Rows[row_now].Cells[10];
+                    DataGridViewButtonCell button_delete = (DataGridViewButtonCell)DataGridView_BOM_Hold.Rows[row_now].Cells["删除"];
+
+                    if (SET_ENABLE >= 2)
+                    {
+                        combox10.ReadOnly = true;
+                        // DataGridView_BOM_Hold.Rows[row_now].Cells[10].ReadOnly = true;
+                        combox10.Style.BackColor = Color.DarkOrange;
+
+                       button_delete.ReadOnly = true;
+                        button_delete.Style.BackColor = Color.Red;
+                     //   button_delete.Style.ForeColor = Color.DarkOrange;
+                        // DataGridView_BOM_Hold.Rows[row_now].Cells["删除"].ReadOnly = true;
+                    }
+
+                  
+                   
+
                 }
                 if(Global.bom_open == -1)
                 {
@@ -1688,6 +1723,41 @@ namespace BOM_SET
                 check = true;
             }
             return check;
+        }
+        public void CHECK_DeleTE_Or_YES(DataGridView datagridview_1, int row_num, out int  INT_enable)
+        {
+            int  _temp = 0;
+
+            //datagridview_1.Rows[row_num].Cells[10].Value = "是";
+
+            //datagridview_1.Rows[row_num].Cells[11].Value = "未审核";
+
+
+            //datagridview_1.Rows[row_num].Cells[13].Value = "未提";
+
+            //datagridview_1.Rows[row_num].Cells[14].Value = "未采购";
+
+            //datagridview_1.Rows[row_num].Cells[15].Value = "0";
+            string audit_status = ""; if (datagridview_1.Rows[row_num].Cells[11].Value != null) { audit_status = datagridview_1.Rows[row_num].Cells[11].Value.ToString().Trim(); }
+           
+            if (audit_status == "已审核") { _temp = 1; }
+            else { }
+
+
+
+            string Is_request_shop = ""; if (datagridview_1.Rows[row_num].Cells[13].Value != null) { Is_request_shop = datagridview_1.Rows[row_num].Cells[13].Value.ToString().Trim(); }
+          
+            if (Is_request_shop == "已提") { _temp = 2; }
+            else {  }
+
+            string shop_status = ""; if (datagridview_1.Rows[row_num].Cells[14].Value != null) { shop_status = datagridview_1.Rows[row_num].Cells[14].Value.ToString().Trim(); }
+          
+            if (shop_status == "已采购") { _temp = 3; }
+            else {  }
+
+
+
+            INT_enable = _temp;
         }
     }
 }

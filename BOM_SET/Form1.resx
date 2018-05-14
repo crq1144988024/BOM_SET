@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="chatListSubItem2.HeadImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="chatListSubItem7.HeadImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlhZABkAIcAAP///00SE5pVVkk5OuLMzp14fa6dn/fw8VJFSDYzNGBdXiwbJyIfIvj3+CUhJ4F/
         glFOUyYeLBoXHSIfJe3s7hQQGRwZIFhWWxEOFh8bJiAcJxkUIiAcKB0aIyEfJSIgJiEdKh8cJiIfKSQh
@@ -241,7 +241,7 @@
         2N2ApA0++ADEEEIEh8Pp0H8vegw45thDjT/6aEPylrkKCAA7
 </value>
   </data>
-  <data name="chatListSubItem3.HeadImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="chatListSubItem8.HeadImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlhZABkAIcAAP///00SE5pVVkk5OuLMzp14fa6dn/fw8VJFSDYzNGBdXiwbJyIfIvj3+CUhJ4F/
         glFOUyYeLBoXHSIfJe3s7hQQGRwZIFhWWxEOFh8bJiAcJxkUIiAcKB0aIyEfJSIgJiEdKh8cJiIfKSQh
@@ -364,7 +364,7 @@
         2N2ApA0++ADEEEIEh8Pp0H8vegw45thDjT/6aEPylrkKCAA7
 </value>
   </data>
-  <data name="chatListSubItem4.HeadImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="chatListSubItem9.HeadImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlhZABkAIcAAP///00SE5pVVkk5OuLMzp14fa6dn/fw8VJFSDYzNGBdXiwbJyIfIvj3+CUhJ4F/
         glFOUyYeLBoXHSIfJe3s7hQQGRwZIFhWWxEOFh8bJiAcJxkUIiAcKB0aIyEfJSIgJiEdKh8cJiIfKSQh
@@ -487,7 +487,7 @@
         2N2ApA0++ADEEEIEh8Pp0H8vegw45thDjT/6aEPylrkKCAA7
 </value>
   </data>
-  <data name="chatListSubItem5.HeadImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="chatListSubItem10.HeadImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlhZABkAIcAAP///00SE5pVVkk5OuLMzp14fa6dn/fw8VJFSDYzNGBdXiwbJyIfIvj3+CUhJ4F/
         glFOUyYeLBoXHSIfJe3s7hQQGRwZIFhWWxEOFh8bJiAcJxkUIiAcKB0aIyEfJSIgJiEdKh8cJiIfKSQh
@@ -730,6 +730,9 @@
   <metadata name="dataGridViewTextBoxColumn33.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="Column21.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="Column18.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -766,7 +769,19 @@
   <metadata name="dataGridViewTextBoxColumn42.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="Column22.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewTextBoxColumn43.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column20.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="Column16.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column19.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="dataGridViewTextBoxColumn5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -837,7 +852,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAW
-        CQAAAk1TRnQBSQFMAgEBBAEAAVABAQFQAQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CQAAAk1TRnQBSQFMAgEBBAEAAXgBAQF4AQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA

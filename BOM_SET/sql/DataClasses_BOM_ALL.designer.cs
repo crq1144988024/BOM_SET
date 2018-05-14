@@ -30,9 +30,9 @@ namespace BOM_SET.sql
 		
     #region 可扩展性方法定义
     partial void OnCreated();
-    partial void InsertTable_bom_all(Table_bom_all instance);
-    partial void UpdateTable_bom_all(Table_bom_all instance);
-    partial void DeleteTable_bom_all(Table_bom_all instance);
+    partial void InsertBOM_ALL(BOM_ALL instance);
+    partial void UpdateBOM_ALL(BOM_ALL instance);
+    partial void DeleteBOM_ALL(BOM_ALL instance);
     #endregion
 		
 		public DataClasses_BOM_ALLDataContext() : 
@@ -65,304 +65,180 @@ namespace BOM_SET.sql
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<Table_bom_all> Table_bom_all
+		public System.Data.Linq.Table<BOM_ALL> BOM_ALL
 		{
 			get
 			{
-				return this.GetTable<Table_bom_all>();
+				return this.GetTable<BOM_ALL>();
 			}
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Table_bom_all")]
-	public partial class Table_bom_all : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.BOM_ALL")]
+	public partial class BOM_ALL : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private int _ID;
+		private int _Id;
 		
-		private string _代码;
+		private System.Nullable<int> _项目ID;
 		
-		private string _名称;
+		private string _项目代号;
 		
-		private string _全名;
+		private System.Nullable<int> _物料ID;
 		
-		private string _规格型号;
-		
-		private string _审核人;
-		
-		private string _附件;
-		
-		private string _图片;
-		
-		private System.Nullable<int> _价格;
-		
-		private string _技术参数;
-		
-		private string _品牌;
+		private System.Nullable<int> _数量;
 		
 		private string _备注;
 		
-		private string _类别;
+		private string _审核状态;
 		
-		private string _资料路径;
+		private string _审核意见;
+		
+		private string _是否采购;
+		
+		private string _是否已提计划;
+		
+		private string _采购状态;
+		
+		private System.Nullable<int> _已采购数量;
+		
+		private string _提交审核;
 		
     #region 可扩展性方法定义
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnIDChanging(int value);
-    partial void OnIDChanged();
-    partial void On代码Changing(string value);
-    partial void On代码Changed();
-    partial void On名称Changing(string value);
-    partial void On名称Changed();
-    partial void On全名Changing(string value);
-    partial void On全名Changed();
-    partial void On规格型号Changing(string value);
-    partial void On规格型号Changed();
-    partial void On审核人Changing(string value);
-    partial void On审核人Changed();
-    partial void On附件Changing(string value);
-    partial void On附件Changed();
-    partial void On图片Changing(string value);
-    partial void On图片Changed();
-    partial void On价格Changing(System.Nullable<int> value);
-    partial void On价格Changed();
-    partial void On技术参数Changing(string value);
-    partial void On技术参数Changed();
-    partial void On品牌Changing(string value);
-    partial void On品牌Changed();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void On项目IDChanging(System.Nullable<int> value);
+    partial void On项目IDChanged();
+    partial void On项目代号Changing(string value);
+    partial void On项目代号Changed();
+    partial void On物料IDChanging(System.Nullable<int> value);
+    partial void On物料IDChanged();
+    partial void On数量Changing(System.Nullable<int> value);
+    partial void On数量Changed();
     partial void On备注Changing(string value);
     partial void On备注Changed();
-    partial void On类别Changing(string value);
-    partial void On类别Changed();
-    partial void On资料路径Changing(string value);
-    partial void On资料路径Changed();
+    partial void On审核状态Changing(string value);
+    partial void On审核状态Changed();
+    partial void On审核意见Changing(string value);
+    partial void On审核意见Changed();
+    partial void On是否采购Changing(string value);
+    partial void On是否采购Changed();
+    partial void On是否已提计划Changing(string value);
+    partial void On是否已提计划Changed();
+    partial void On采购状态Changing(string value);
+    partial void On采购状态Changed();
+    partial void On已采购数量Changing(System.Nullable<int> value);
+    partial void On已采购数量Changed();
+    partial void On提交审核Changing(string value);
+    partial void On提交审核Changed();
     #endregion
 		
-		public Table_bom_all()
+		public BOM_ALL()
 		{
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int ID
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
 		{
 			get
 			{
-				return this._ID;
+				return this._Id;
 			}
 			set
 			{
-				if ((this._ID != value))
+				if ((this._Id != value))
 				{
-					this.OnIDChanging(value);
+					this.OnIdChanging(value);
 					this.SendPropertyChanging();
-					this._ID = value;
-					this.SendPropertyChanged("ID");
-					this.OnIDChanged();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_代码", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
-		public string 代码
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_项目ID", DbType="Int")]
+		public System.Nullable<int> 项目ID
 		{
 			get
 			{
-				return this._代码;
+				return this._项目ID;
 			}
 			set
 			{
-				if ((this._代码 != value))
+				if ((this._项目ID != value))
 				{
-					this.On代码Changing(value);
+					this.On项目IDChanging(value);
 					this.SendPropertyChanging();
-					this._代码 = value;
-					this.SendPropertyChanged("代码");
-					this.On代码Changed();
+					this._项目ID = value;
+					this.SendPropertyChanged("项目ID");
+					this.On项目IDChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_名称", DbType="NVarChar(255)")]
-		public string 名称
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_项目代号", DbType="NChar(10)")]
+		public string 项目代号
 		{
 			get
 			{
-				return this._名称;
+				return this._项目代号;
 			}
 			set
 			{
-				if ((this._名称 != value))
+				if ((this._项目代号 != value))
 				{
-					this.On名称Changing(value);
+					this.On项目代号Changing(value);
 					this.SendPropertyChanging();
-					this._名称 = value;
-					this.SendPropertyChanged("名称");
-					this.On名称Changed();
+					this._项目代号 = value;
+					this.SendPropertyChanged("项目代号");
+					this.On项目代号Changed();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_全名", DbType="NVarChar(255)")]
-		public string 全名
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_物料ID", DbType="Int")]
+		public System.Nullable<int> 物料ID
 		{
 			get
 			{
-				return this._全名;
+				return this._物料ID;
 			}
 			set
 			{
-				if ((this._全名 != value))
+				if ((this._物料ID != value))
 				{
-					this.On全名Changing(value);
+					this.On物料IDChanging(value);
 					this.SendPropertyChanging();
-					this._全名 = value;
-					this.SendPropertyChanged("全名");
-					this.On全名Changed();
+					this._物料ID = value;
+					this.SendPropertyChanged("物料ID");
+					this.On物料IDChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_规格型号", DbType="NVarChar(255)")]
-		public string 规格型号
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_数量", DbType="Int")]
+		public System.Nullable<int> 数量
 		{
 			get
 			{
-				return this._规格型号;
+				return this._数量;
 			}
 			set
 			{
-				if ((this._规格型号 != value))
+				if ((this._数量 != value))
 				{
-					this.On规格型号Changing(value);
+					this.On数量Changing(value);
 					this.SendPropertyChanging();
-					this._规格型号 = value;
-					this.SendPropertyChanged("规格型号");
-					this.On规格型号Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_审核人", DbType="NVarChar(255)")]
-		public string 审核人
-		{
-			get
-			{
-				return this._审核人;
-			}
-			set
-			{
-				if ((this._审核人 != value))
-				{
-					this.On审核人Changing(value);
-					this.SendPropertyChanging();
-					this._审核人 = value;
-					this.SendPropertyChanged("审核人");
-					this.On审核人Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_附件", DbType="NVarChar(255)")]
-		public string 附件
-		{
-			get
-			{
-				return this._附件;
-			}
-			set
-			{
-				if ((this._附件 != value))
-				{
-					this.On附件Changing(value);
-					this.SendPropertyChanging();
-					this._附件 = value;
-					this.SendPropertyChanged("附件");
-					this.On附件Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_图片", DbType="NVarChar(255)")]
-		public string 图片
-		{
-			get
-			{
-				return this._图片;
-			}
-			set
-			{
-				if ((this._图片 != value))
-				{
-					this.On图片Changing(value);
-					this.SendPropertyChanging();
-					this._图片 = value;
-					this.SendPropertyChanged("图片");
-					this.On图片Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_价格", DbType="Int")]
-		public System.Nullable<int> 价格
-		{
-			get
-			{
-				return this._价格;
-			}
-			set
-			{
-				if ((this._价格 != value))
-				{
-					this.On价格Changing(value);
-					this.SendPropertyChanging();
-					this._价格 = value;
-					this.SendPropertyChanged("价格");
-					this.On价格Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_技术参数", DbType="NVarChar(255)")]
-		public string 技术参数
-		{
-			get
-			{
-				return this._技术参数;
-			}
-			set
-			{
-				if ((this._技术参数 != value))
-				{
-					this.On技术参数Changing(value);
-					this.SendPropertyChanging();
-					this._技术参数 = value;
-					this.SendPropertyChanged("技术参数");
-					this.On技术参数Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_品牌", DbType="NVarChar(255)")]
-		public string 品牌
-		{
-			get
-			{
-				return this._品牌;
-			}
-			set
-			{
-				if ((this._品牌 != value))
-				{
-					this.On品牌Changing(value);
-					this.SendPropertyChanging();
-					this._品牌 = value;
-					this.SendPropertyChanged("品牌");
-					this.On品牌Changed();
+					this._数量 = value;
+					this.SendPropertyChanged("数量");
+					this.On数量Changed();
 				}
 			}
 		}
@@ -387,42 +263,142 @@ namespace BOM_SET.sql
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_类别", DbType="NVarChar(255)")]
-		public string 类别
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_审核状态", DbType="NChar(10)")]
+		public string 审核状态
 		{
 			get
 			{
-				return this._类别;
+				return this._审核状态;
 			}
 			set
 			{
-				if ((this._类别 != value))
+				if ((this._审核状态 != value))
 				{
-					this.On类别Changing(value);
+					this.On审核状态Changing(value);
 					this.SendPropertyChanging();
-					this._类别 = value;
-					this.SendPropertyChanged("类别");
-					this.On类别Changed();
+					this._审核状态 = value;
+					this.SendPropertyChanged("审核状态");
+					this.On审核状态Changed();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_资料路径", DbType="NVarChar(255)")]
-		public string 资料路径
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_审核意见", DbType="NVarChar(255)")]
+		public string 审核意见
 		{
 			get
 			{
-				return this._资料路径;
+				return this._审核意见;
 			}
 			set
 			{
-				if ((this._资料路径 != value))
+				if ((this._审核意见 != value))
 				{
-					this.On资料路径Changing(value);
+					this.On审核意见Changing(value);
 					this.SendPropertyChanging();
-					this._资料路径 = value;
-					this.SendPropertyChanged("资料路径");
-					this.On资料路径Changed();
+					this._审核意见 = value;
+					this.SendPropertyChanged("审核意见");
+					this.On审核意见Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_是否采购", DbType="NChar(10)")]
+		public string 是否采购
+		{
+			get
+			{
+				return this._是否采购;
+			}
+			set
+			{
+				if ((this._是否采购 != value))
+				{
+					this.On是否采购Changing(value);
+					this.SendPropertyChanging();
+					this._是否采购 = value;
+					this.SendPropertyChanged("是否采购");
+					this.On是否采购Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_是否已提计划", DbType="NChar(10)")]
+		public string 是否已提计划
+		{
+			get
+			{
+				return this._是否已提计划;
+			}
+			set
+			{
+				if ((this._是否已提计划 != value))
+				{
+					this.On是否已提计划Changing(value);
+					this.SendPropertyChanging();
+					this._是否已提计划 = value;
+					this.SendPropertyChanged("是否已提计划");
+					this.On是否已提计划Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_采购状态", DbType="NChar(10)")]
+		public string 采购状态
+		{
+			get
+			{
+				return this._采购状态;
+			}
+			set
+			{
+				if ((this._采购状态 != value))
+				{
+					this.On采购状态Changing(value);
+					this.SendPropertyChanging();
+					this._采购状态 = value;
+					this.SendPropertyChanged("采购状态");
+					this.On采购状态Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_已采购数量", DbType="Int")]
+		public System.Nullable<int> 已采购数量
+		{
+			get
+			{
+				return this._已采购数量;
+			}
+			set
+			{
+				if ((this._已采购数量 != value))
+				{
+					this.On已采购数量Changing(value);
+					this.SendPropertyChanging();
+					this._已采购数量 = value;
+					this.SendPropertyChanged("已采购数量");
+					this.On已采购数量Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_提交审核", DbType="NChar(10)")]
+		public string 提交审核
+		{
+			get
+			{
+				return this._提交审核;
+			}
+			set
+			{
+				if ((this._提交审核 != value))
+				{
+					this.On提交审核Changing(value);
+					this.SendPropertyChanging();
+					this._提交审核 = value;
+					this.SendPropertyChanged("提交审核");
+					this.On提交审核Changed();
 				}
 			}
 		}

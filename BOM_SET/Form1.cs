@@ -549,7 +549,7 @@ namespace BOM_SET
 
             foreach (var li in q_B)
             {
-                list.Add(li.分类代码B);
+                list.Add(li.分类代码B.ToString().Trim().Substring(1));
             }
             var newlist = list.Distinct();
 
@@ -574,7 +574,7 @@ namespace BOM_SET
             comboxcode_C.Items.Clear();
             comboxcode_C.Text = "";
             string codeA = comboxcode_A.SelectedItem.ToString();
-            string codeB = comboxcode_B.SelectedItem.ToString();
+            string codeB ="."+ comboxcode_B.SelectedItem.ToString();
 
             var q_C = from C in Code_ABC.Table_structure_bom
 
@@ -686,7 +686,7 @@ namespace BOM_SET
             string codeC = "";
 
             if (comboxcode_A.SelectedItem != null) { codeA = comboxcode_A.SelectedItem.ToString().Substring(0, 3); }
-            if (comboxcode_B.SelectedItem != null) { codeB = comboxcode_B.SelectedItem.ToString().Substring(0, 3); }
+            if (comboxcode_B.SelectedItem != null) { codeB = "."+comboxcode_B.SelectedItem.ToString().Substring(0, 2); }
             if (comboxcode_C.SelectedItem != null) { codeC = comboxcode_C.SelectedItem.ToString().Substring(0, 1); }
 
 
@@ -1418,11 +1418,20 @@ namespace BOM_SET
                                     MessageBox.Show("无法删除！该物料已采购！请联系管理员！");
                                     return;
                                 }
+                                DialogResult result = MessageBox.Show("确定要删除？", "警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                                if (result == DialogResult.OK)
+                                {
                                     DataGridViewRow row = DataGridView_BOM_Hold.Rows[e.RowIndex];
-                            DataGridView_BOM_Hold.Rows.Remove(row);
-                                Global.temp_delete_supplies_ID.Add(Convert.ToInt32(DataGridView_BOM_Hold.Rows[i_d_find].Cells["ID"].Value));
-                            MessageBox.Show("删除成功！");
-                            return;
+                                    DataGridView_BOM_Hold.Rows.Remove(row);
+                                    Global.temp_delete_supplies_ID.Add(Convert.ToInt32(DataGridView_BOM_Hold.Rows[i_d_find].Cells["ID"].Value));
+                                    MessageBox.Show("删除成功！");
+                                    return;
+                                }
+                                else
+                                {
+
+                                }
+                              
 
                         }
                     }
@@ -2227,6 +2236,48 @@ namespace BOM_SET
             //fdialog. file_path_save("EXCEL表格文件(*.xls)|*.xls", out file_path);
             fdialog.file_path_open("图片(*.png)|*.png|所有文件(*.*)|*.*", out file_path);
             skinTextBox_pixturebox_path1 .Text= file_path;
+        }
+        /// <summary>
+        /// 物料新增按钮
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void skinButton3_Click_1(object sender, EventArgs e)
+        {
+            Globle_add_supplies add = new Globle_add_supplies();
+            bool reaslut = false;
+            
+                add.ADD_supplies(out reaslut, skinComboBox_A2, skinComboBox_B2, skinComboBox_C2, Textbox_SUPPLIES_model1.Text, skinComboBox_SUPPLIES_NAME1.Text, Textbox_brank1.Text,
+               Textbox_supples_sort1.Text, Textbox_supples_technical_parameters1.Text, Textbox_supples_spare1.Text, skinTextBox_pixturebox_path1.Text, skinTextBox_datapath1.Text, skinCheckBox_price1, skinTextBox_price1.Text);
+
+            if (reaslut == true)
+            {
+                
+                
+                MessageBox.Show("新增成功！");
+                add.find_unchecked(skinDataGridView_unchecked);
+            }
+        }
+        /// <summary>
+        /// 选项卡切换动作
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (tabControl1.SelectedIndex == 1)//物料新增页面
+            {
+                Globle_add_supplies add = new Globle_add_supplies();
+                add.find_unchecked(skinDataGridView_unchecked);
+            }
+        }
+
+        private void skinDataGridView_unchecked_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Globle_add_supplies add = new Globle_add_supplies();
+            add.chech_audit(skinDataGridView_unchecked, e.RowIndex, e.ColumnIndex);
+            add.delete(skinDataGridView_unchecked, e.RowIndex,e.ColumnIndex);
+            add.find_unchecked(skinDataGridView_unchecked);
         }
     }
 

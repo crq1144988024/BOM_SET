@@ -88,7 +88,7 @@ namespace BOM_SET
             string codeC = "";
 
             if (comboxcode_A.SelectedItem != null) { codeA = comboxcode_A.SelectedItem.ToString().Substring(0, 3); }
-            if (comboxcode_B.SelectedItem != null) { codeB = comboxcode_B.SelectedItem.ToString().Substring(0, 3); }
+            if (comboxcode_B.SelectedItem != null) { codeB = "." + comboxcode_B.SelectedItem.ToString().Substring(0, 2); }
             if (comboxcode_C.SelectedItem != null) { codeC = comboxcode_C.SelectedItem.ToString().Substring(0, 1); }
 
 

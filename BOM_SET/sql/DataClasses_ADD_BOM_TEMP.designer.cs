@@ -94,6 +94,8 @@ namespace BOM_SET.sql
 		
 		private string _规格型号;
 		
+		private string _新增人;
+		
 		private string _审核人;
 		
 		private string _附件;
@@ -110,7 +112,11 @@ namespace BOM_SET.sql
 		
 		private string _资料路径;
 		
+		private string _是否提交;
+		
 		private string _是否审核;
+		
+		private string _审核意见;
 		
     #region 可扩展性方法定义
     partial void OnLoaded();
@@ -130,6 +136,8 @@ namespace BOM_SET.sql
     partial void On全名Changed();
     partial void On规格型号Changing(string value);
     partial void On规格型号Changed();
+    partial void On新增人Changing(string value);
+    partial void On新增人Changed();
     partial void On审核人Changing(string value);
     partial void On审核人Changed();
     partial void On附件Changing(string value);
@@ -146,8 +154,12 @@ namespace BOM_SET.sql
     partial void On备注Changed();
     partial void On资料路径Changing(string value);
     partial void On资料路径Changed();
+    partial void On是否提交Changing(string value);
+    partial void On是否提交Changed();
     partial void On是否审核Changing(string value);
     partial void On是否审核Changed();
+    partial void On审核意见Changing(string value);
+    partial void On审核意见Changed();
     #endregion
 		
 		public Table_bom_all_add_temp()
@@ -291,6 +303,26 @@ namespace BOM_SET.sql
 					this._规格型号 = value;
 					this.SendPropertyChanged("规格型号");
 					this.On规格型号Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_新增人", DbType="NChar(10)")]
+		public string 新增人
+		{
+			get
+			{
+				return this._新增人;
+			}
+			set
+			{
+				if ((this._新增人 != value))
+				{
+					this.On新增人Changing(value);
+					this.SendPropertyChanging();
+					this._新增人 = value;
+					this.SendPropertyChanged("新增人");
+					this.On新增人Changed();
 				}
 			}
 		}
@@ -455,6 +487,26 @@ namespace BOM_SET.sql
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_是否提交", DbType="NChar(10)")]
+		public string 是否提交
+		{
+			get
+			{
+				return this._是否提交;
+			}
+			set
+			{
+				if ((this._是否提交 != value))
+				{
+					this.On是否提交Changing(value);
+					this.SendPropertyChanging();
+					this._是否提交 = value;
+					this.SendPropertyChanged("是否提交");
+					this.On是否提交Changed();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_是否审核", DbType="NVarChar(10)")]
 		public string 是否审核
 		{
@@ -471,6 +523,26 @@ namespace BOM_SET.sql
 					this._是否审核 = value;
 					this.SendPropertyChanged("是否审核");
 					this.On是否审核Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_审核意见", DbType="NVarChar(255)")]
+		public string 审核意见
+		{
+			get
+			{
+				return this._审核意见;
+			}
+			set
+			{
+				if ((this._审核意见 != value))
+				{
+					this.On审核意见Changing(value);
+					this.SendPropertyChanging();
+					this._审核意见 = value;
+					this.SendPropertyChanged("审核意见");
+					this.On审核意见Changed();
 				}
 			}
 		}

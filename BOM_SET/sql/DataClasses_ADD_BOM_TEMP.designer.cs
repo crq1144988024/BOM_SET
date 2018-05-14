@@ -23,64 +23,68 @@ namespace BOM_SET.sql
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="Database1.mdf")]
-	public partial class DataClasses_BOM_ALLDataContext : System.Data.Linq.DataContext
+	public partial class DataClasses_ADD_BOM_TEMPDataContext : System.Data.Linq.DataContext
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
 		
     #region 可扩展性方法定义
     partial void OnCreated();
-    partial void InsertTable_bom_all(Table_bom_all instance);
-    partial void UpdateTable_bom_all(Table_bom_all instance);
-    partial void DeleteTable_bom_all(Table_bom_all instance);
+    partial void InsertTable_bom_all_add_temp(Table_bom_all_add_temp instance);
+    partial void UpdateTable_bom_all_add_temp(Table_bom_all_add_temp instance);
+    partial void DeleteTable_bom_all_add_temp(Table_bom_all_add_temp instance);
     #endregion
 		
-		public DataClasses_BOM_ALLDataContext() : 
+		public DataClasses_ADD_BOM_TEMPDataContext() : 
 				base(global::BOM_SET.Properties.Settings.Default.Database1_mdfConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses_BOM_ALLDataContext(string connection) : 
+		public DataClasses_ADD_BOM_TEMPDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses_BOM_ALLDataContext(System.Data.IDbConnection connection) : 
+		public DataClasses_ADD_BOM_TEMPDataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses_BOM_ALLDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public DataClasses_ADD_BOM_TEMPDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses_BOM_ALLDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public DataClasses_ADD_BOM_TEMPDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<Table_bom_all> Table_bom_all
+		public System.Data.Linq.Table<Table_bom_all_add_temp> Table_bom_all_add_temp
 		{
 			get
 			{
-				return this.GetTable<Table_bom_all>();
+				return this.GetTable<Table_bom_all_add_temp>();
 			}
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Table_bom_all")]
-	public partial class Table_bom_all : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Table_bom_all_add_temp")]
+	public partial class Table_bom_all_add_temp : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private int _ID;
+		
+		private string _类别;
+		
+		private string _物料ID;
 		
 		private string _代码;
 		
@@ -104,9 +108,9 @@ namespace BOM_SET.sql
 		
 		private string _备注;
 		
-		private string _类别;
-		
 		private string _资料路径;
+		
+		private string _是否审核;
 		
     #region 可扩展性方法定义
     partial void OnLoaded();
@@ -114,6 +118,10 @@ namespace BOM_SET.sql
     partial void OnCreated();
     partial void OnIDChanging(int value);
     partial void OnIDChanged();
+    partial void On类别Changing(string value);
+    partial void On类别Changed();
+    partial void On物料IDChanging(string value);
+    partial void On物料IDChanged();
     partial void On代码Changing(string value);
     partial void On代码Changed();
     partial void On名称Changing(string value);
@@ -136,13 +144,13 @@ namespace BOM_SET.sql
     partial void On品牌Changed();
     partial void On备注Changing(string value);
     partial void On备注Changed();
-    partial void On类别Changing(string value);
-    partial void On类别Changed();
     partial void On资料路径Changing(string value);
     partial void On资料路径Changed();
+    partial void On是否审核Changing(string value);
+    partial void On是否审核Changed();
     #endregion
 		
-		public Table_bom_all()
+		public Table_bom_all_add_temp()
 		{
 			OnCreated();
 		}
@@ -163,6 +171,46 @@ namespace BOM_SET.sql
 					this._ID = value;
 					this.SendPropertyChanged("ID");
 					this.OnIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_类别", DbType="NVarChar(255)")]
+		public string 类别
+		{
+			get
+			{
+				return this._类别;
+			}
+			set
+			{
+				if ((this._类别 != value))
+				{
+					this.On类别Changing(value);
+					this.SendPropertyChanging();
+					this._类别 = value;
+					this.SendPropertyChanged("类别");
+					this.On类别Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_物料ID", DbType="NVarChar(255)")]
+		public string 物料ID
+		{
+			get
+			{
+				return this._物料ID;
+			}
+			set
+			{
+				if ((this._物料ID != value))
+				{
+					this.On物料IDChanging(value);
+					this.SendPropertyChanging();
+					this._物料ID = value;
+					this.SendPropertyChanged("物料ID");
+					this.On物料IDChanged();
 				}
 			}
 		}
@@ -387,26 +435,6 @@ namespace BOM_SET.sql
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_类别", DbType="NVarChar(255)")]
-		public string 类别
-		{
-			get
-			{
-				return this._类别;
-			}
-			set
-			{
-				if ((this._类别 != value))
-				{
-					this.On类别Changing(value);
-					this.SendPropertyChanging();
-					this._类别 = value;
-					this.SendPropertyChanged("类别");
-					this.On类别Changed();
-				}
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_资料路径", DbType="NVarChar(255)")]
 		public string 资料路径
 		{
@@ -423,6 +451,26 @@ namespace BOM_SET.sql
 					this._资料路径 = value;
 					this.SendPropertyChanged("资料路径");
 					this.On资料路径Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_是否审核", DbType="NVarChar(10)")]
+		public string 是否审核
+		{
+			get
+			{
+				return this._是否审核;
+			}
+			set
+			{
+				if ((this._是否审核 != value))
+				{
+					this.On是否审核Changing(value);
+					this.SendPropertyChanging();
+					this._是否审核 = value;
+					this.SendPropertyChanged("是否审核");
+					this.On是否审核Changed();
 				}
 			}
 		}

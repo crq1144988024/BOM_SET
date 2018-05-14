@@ -93,6 +93,7 @@
     <Compile Include="Form2_project_configuration.Designer.cs">
       <DependentUpon>Form2_project_configuration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Globle_TOOLS_SET_Datagridview.cs" />
     <Compile Include="LOGIN\ID.cs" />
     <Compile Include="LOGIN\Login.cs">
       <SubType>Form</SubType>
@@ -121,6 +122,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>bom_sort.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="sql\DataClasses_ADD_BOM_TEMP.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses_ADD_BOM_TEMP.dbml</DependentUpon>
     </Compile>
     <Compile Include="sql\DataClasses_bomall.designer.cs">
       <AutoGen>True</AutoGen>
@@ -152,8 +158,18 @@
       <DependentUpon>DataClasses_Login.dbml</DependentUpon>
     </Compile>
     <Compile Include="Tools\datagridview_set.cs" />
+    <Compile Include="Tools\FolderDialog_OPEN.cs" />
     <Compile Include="Tools\Global1.cs" />
+    <Compile Include="Tools\Globle_add_supplies.cs" />
     <Compile Include="Tools\xmloperate.cs" />
+    <None Include="sql\DataClasses_ADD_BOM_TEMP.dbml.layout">
+      <DependentUpon>DataClasses_ADD_BOM_TEMP.dbml</DependentUpon>
+    </None>
+    <None Include="sql\DataClasses_ADD_BOM_TEMP.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses_ADD_BOM_TEMP.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
     <None Include="sql\DataClasses_BOM_ALL.dbml.layout">
       <DependentUpon>DataClasses_BOM_ALL.dbml</DependentUpon>
     </None>

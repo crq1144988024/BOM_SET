@@ -34,9 +34,16 @@ namespace BOM_SET
         {
             InitializeComponent();
             Global.dataset.Tables.Add("table1");
-            codeA();
+            codeA(comboxcode_A, comboxcode_B, comboxcode_C);
             find_add_datagridview(datagridview_matter);
             datagridview_matter.Rows.Clear();
+
+
+            //以下是物料新增页面
+
+            codeA(skinComboBox_A1, skinComboBox_B1, skinComboBox_C1);
+            codeA(skinComboBox_A2, skinComboBox_B2, skinComboBox_C2);
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -432,17 +439,21 @@ namespace BOM_SET
 
             if (Form2_procurement_open == false)
             {
-                PrintReporter();
+                FolderDialog_file fdialog = new FolderDialog_file();
+                string file_path = "";//tbFilePath = dialog.FileName;EXCEL表格文件(*.txt)|*.txt|所有文件(*.*)|*.*”c
+                                      //fdialog. file_path_save("EXCEL表格文件(*.xls)|*.xls", out file_path);
+                fdialog.file_path_save("EXCEL表格文件(*.xls)|*.xls", ComboBox_project_name.Text + " - " + str_0 + " - " + str_1 + "E", out file_path);
+                PrintReporter(file_path); //"d:" + ComboBox_project_name.Text + " - " + str_0 + " - " + str_1 + "E" + ".xls");
                 MessageBox.Show("生成成功！");
             }
         }
-        public  void PrintReporter()
+        public  void PrintReporter(string path)
 
         {//skinTextBox1.Text
          //MessageBox.Show(skinComboBox11.Text);return;
             string str_0 = "";  if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.Substring(0, 2); }
             string str_1 = ""; if (((ComboxItem)ComboBox_num_request.SelectedItem).Values != null) { str_1 = ((ComboxItem)ComboBox_num_request.SelectedItem).Values.Substring(0, 2); }
-            var newFile = new FileInfo("d:"+ ComboBox_project_name.Text + " - "+ str_0 + " - " +str_1 +"E"+".xls");
+            var newFile = new FileInfo(path);
             Global.procurement_name = ComboBox_project_name.Text + " - " + str_0 + " - " + str_1;
             if (newFile.Exists)
 
@@ -469,7 +480,7 @@ namespace BOM_SET
         /// <summary>
         /// 有关第一级菜单加载
         /// </summary>
-        public void codeA()
+        public void codeA(ComboBox comboxcode_A, ComboBox comboxcode_B, ComboBox comboxcode_C)
         {
             comboxcode_A.Items.Clear();
 
@@ -515,7 +526,7 @@ namespace BOM_SET
         /// <summary>
         /// 根据A来读取B
         /// </summary>
-        public void codeB()
+        public void codeB(ComboBox comboxcode_A, ComboBox comboxcode_B, ComboBox comboxcode_C)
         {
             if (comboxcode_A.SelectedText == null) return;
             comboxcode_B.Items.Clear();
@@ -557,7 +568,7 @@ namespace BOM_SET
         /// 根据A  B来读取C
         /// </summary>
         /// <param name="ws"></param>
-        public void codeC()
+        public void codeC(ComboBox comboxcode_A, ComboBox comboxcode_B, ComboBox comboxcode_C)
         {
             if (comboxcode_A.SelectedText == null | comboxcode_B.SelectedText == null) return;
             comboxcode_C.Items.Clear();
@@ -1239,26 +1250,20 @@ namespace BOM_SET
             datagridview_matter.Rows.Clear();
             search_datagridview(datagridview_matter);
         }
-
+        /// <summary>
+        /// 物料新增里的模糊搜索
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void skinButton7_Click(object sender, EventArgs e)
         {
 
-            if (skinDataGridView1.Rows.Count > 0)
-            {
-                //     dataGridView1.Rows.Clear();
-            }
+            Globle_TOOLS_SET_Datagridview TOOL = new Globle_TOOLS_SET_Datagridview();
+            skinDataGridView1.Rows.Clear();
+            TOOL.search_datagridview (skinDataGridView1, CheckBox2_find_condition, textbox_sort.Text,skinComboBox_A1, skinComboBox_B1, skinComboBox_C1);
 
-            string sort_keywords = textbox_sort.Text;
-            var q = from c in data_bom.Table_bom_all
-
-                    where SqlMethods.Like(c.代码, '%' + sort_keywords + '%')
-                    //  where c.代码.Contains(sort_keywords)
-                    select c;
-
-
-
-            skinDataGridView1.DataSource = q;
-
+            return;
+          
 
         }
 
@@ -1270,12 +1275,12 @@ namespace BOM_SET
 
         private void comboxcode_A_SelectedIndexChanged(object sender, EventArgs e)
         {
-            codeB();
+            codeB( comboxcode_A,  comboxcode_B,  comboxcode_C);
         }
 
         private void comboxcode_B_SelectedIndexChanged(object sender, EventArgs e)
         {
-            codeC();
+            codeC(comboxcode_A, comboxcode_B, comboxcode_C);
         }
         public bool inspect()
         {
@@ -2177,6 +2182,51 @@ namespace BOM_SET
             {
                 find_bom_usernoew_num(str_0);
             }
+        }
+
+      
+        private void skinComboBox4_B2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            codeC(skinComboBox_A2, skinComboBox_B2, skinComboBox_C2);
+        }
+
+        private void skinComboBox3_A2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            codeB(skinComboBox_A2, skinComboBox_B2, skinComboBox_C2);
+        }
+
+        private void skinComboBox7_A1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            codeB(skinComboBox_A1, skinComboBox_B1, skinComboBox_C1);
+        }
+
+        private void skinComboBox6_B1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            codeC(skinComboBox_A1, skinComboBox_B1, skinComboBox_C1);
+        }
+        /// <summary>
+        /// 资料浏览
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void skinButton16_Click(object sender, EventArgs e)
+        {
+            FolderDialog fDialog = new FolderDialog();
+            fDialog.DisplayDialog();
+            skinTextBox_datapath1.Text = fDialog.Path;
+        }
+        /// <summary>
+        /// 图片上传
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void skinButton15_Click(object sender, EventArgs e)
+        {
+            FolderDialog_file fdialog = new FolderDialog_file();
+            string file_path = "";//tbFilePath = dialog.FileName;EXCEL表格文件(*.txt)|*.txt|所有文件(*.*)|*.*”c
+            //fdialog. file_path_save("EXCEL表格文件(*.xls)|*.xls", out file_path);
+            fdialog.file_path_open("图片(*.png)|*.png|所有文件(*.*)|*.*", out file_path);
+            skinTextBox_pixturebox_path1 .Text= file_path;
         }
     }
 

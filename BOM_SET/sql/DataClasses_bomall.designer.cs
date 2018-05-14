@@ -102,6 +102,10 @@ namespace BOM_SET.sql
 		
 		private string _品牌;
 		
+		private string _备注;
+		
+		private string _资料路径;
+		
     #region 可扩展性方法定义
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -128,6 +132,10 @@ namespace BOM_SET.sql
     partial void On技术参数Changed();
     partial void On品牌Changing(string value);
     partial void On品牌Changed();
+    partial void On备注Changing(string value);
+    partial void On备注Changed();
+    partial void On资料路径Changing(string value);
+    partial void On资料路径Changed();
     #endregion
 		
 		public Table_bom_all()
@@ -351,6 +359,46 @@ namespace BOM_SET.sql
 					this._品牌 = value;
 					this.SendPropertyChanged("品牌");
 					this.On品牌Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_备注", DbType="NVarChar(255)")]
+		public string 备注
+		{
+			get
+			{
+				return this._备注;
+			}
+			set
+			{
+				if ((this._备注 != value))
+				{
+					this.On备注Changing(value);
+					this.SendPropertyChanging();
+					this._备注 = value;
+					this.SendPropertyChanged("备注");
+					this.On备注Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_资料路径", DbType="NVarChar(255)")]
+		public string 资料路径
+		{
+			get
+			{
+				return this._资料路径;
+			}
+			set
+			{
+				if ((this._资料路径 != value))
+				{
+					this.On资料路径Changing(value);
+					this.SendPropertyChanging();
+					this._资料路径 = value;
+					this.SendPropertyChanged("资料路径");
+					this.On资料路径Changed();
 				}
 			}
 		}

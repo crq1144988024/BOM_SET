@@ -1,8 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Database1.mdf" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Database1.mdf" Class="DataClasses_ADD_BOM_TEMPDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=CRQ-PC\WINCC;Initial Catalog=Database1.mdf;Integrated Security=True" SettingsObjectName="BOM_SET.Properties.Settings" SettingsPropertyName="Database1_mdfConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.Table_bom_all" Member="Table_bom_all">
-    <Type Name="Table_bom_all">
+  <Table Name="dbo.Table_bom_all_add_temp" Member="Table_bom_all_add_temp">
+    <Type Name="Table_bom_all_add_temp">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="类别" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="物料ID" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="代码" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
       <Column Name="名称" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="全名" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
@@ -15,6 +17,7 @@
       <Column Name="品牌" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="备注" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="资料路径" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="是否审核" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

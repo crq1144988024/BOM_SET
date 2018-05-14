@@ -34,8 +34,9 @@ namespace BOM_SET
             skinTextBox2.Text = Global.project_name + "-" + Global.project_ST_name;//
             dateTimePicker1.Value= DateTime.Now.ToLocalTime();
 
+            skinTextBox1.Text = LOGIN.ID.login_now_Nanme.Trim();
 
-          
+
                 datagridview_matter.Rows.Clear();
             for(int i=0;i< Global.BOM_LIST.Count; i++)
             {
@@ -74,9 +75,14 @@ namespace BOM_SET
         /// <param name="e"></param>
         private void skinButton2_Click(object sender, EventArgs e)
         {
-            string sourceFile = System.AppDomain.CurrentDomain.BaseDirectory + "excel\\采购申请模板.xlsx";
+            FolderDialog_file fdialog = new FolderDialog_file();
+            string file_path = "";//tbFilePath = dialog.FileName;EXCEL表格文件(*.txt)|*.txt|所有文件(*.*)|*.*”c
+                                  //fdialog. file_path_save("EXCEL表格文件(*.xls)|*.xls", out file_path);
+            fdialog.file_path_save("EXCEL表格文件(*.xlsx)|*.xlsx", Global.project_name, out file_path);
 
-            string destinationFile = @"d:\" + Global.project_name + ".xlsx";
+            string sourceFile =System.AppDomain.CurrentDomain.BaseDirectory + "excel\\采购申请模板.xlsx";
+
+            string destinationFile = file_path;// @"d:\" + Global.project_name + ".xlsx";
             try
             {
 

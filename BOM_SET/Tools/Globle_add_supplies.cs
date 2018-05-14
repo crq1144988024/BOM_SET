@@ -10,6 +10,7 @@ namespace BOM_SET.Tools
     {
 
         sql.DataClasses_ADD_BOM_TEMPDataContext ADD_TEMP = new sql.DataClasses_ADD_BOM_TEMPDataContext();
+        sql.DataClasses1DataContext bom_all = new sql.DataClasses1DataContext();
         /// <summary>
         ///物料新增到未审核区
         /// List<string> list_supplies,
@@ -480,13 +481,131 @@ namespace BOM_SET.Tools
         }
 
 
-
-        public bool duplicate_checking()
+        
+        public bool duplicate_checking(ComboBox comboxcode_A, ComboBox comboxcode_B, ComboBox comboxcode_C, TextBox Textbox_SUPPLIES_model1, string skinComboBox_SUPPLIES_NAME1)
         {
-            bool bool_temp = false;
+           
+            bool BOOL_TEMP = false;
+            string codeA = "";
+            string codeB = "";
+            string codeC = "";
+            string codeD = "";
+            string code_ALL = "";
+            string SUPPLIES_model1 = "";
+
+            string SUPPLIES_NAME1 = "";
+            if (comboxcode_A.SelectedItem != null) { codeA = comboxcode_A.SelectedItem.ToString().Substring(0, 3); } else { MessageBox.Show("请选择物料分类A"); BOOL_TEMP = false; return BOOL_TEMP; }
+            if (comboxcode_B.SelectedItem != null) { codeB = comboxcode_B.SelectedItem.ToString().Substring(0, 2); } else { MessageBox.Show("请选择物料分类B"); BOOL_TEMP = false; return BOOL_TEMP; }
+            if (comboxcode_C.SelectedItem != null) { codeC = comboxcode_C.SelectedItem.ToString().Substring(0, 1); } else { MessageBox.Show("请选择物料分类C"); BOOL_TEMP = false; return BOOL_TEMP; }
+
+            if (Textbox_SUPPLIES_model1 != null) { } else { MessageBox.Show("请填写物料型号"); BOOL_TEMP = false; return BOOL_TEMP; }
+            if (Textbox_SUPPLIES_model1.Text.Length > 1) { SUPPLIES_model1 = Textbox_SUPPLIES_model1.ToString().Trim(); } else { MessageBox.Show("请填写物料型号"); BOOL_TEMP = false; return BOOL_TEMP; }
+
+            if (skinComboBox_SUPPLIES_NAME1 != null) { } else { MessageBox.Show("请填写物料名称"); BOOL_TEMP = false; return BOOL_TEMP; }
+            if (skinComboBox_SUPPLIES_NAME1.Length > 1) { SUPPLIES_NAME1 = skinComboBox_SUPPLIES_NAME1.ToString().Trim(); } else { MessageBox.Show("请填写物料名称"); BOOL_TEMP = false; return BOOL_TEMP; }
+
+            //if (comboxcode_A.SelectedItem != null) { codeA = comboxcode_A.SelectedItem.ToString().Substring(0, 3); } else { BOOL_TEMP = false; return BOOL_TEMP; }
+            //if (comboxcode_B.SelectedItem != null) { codeB = comboxcode_B.SelectedItem.ToString().Substring(0, 2); } else { BOOL_TEMP = false; return BOOL_TEMP; }
+            //if (comboxcode_C.SelectedItem != null) { codeC = comboxcode_C.SelectedItem.ToString().Substring(0, 1); } else { BOOL_TEMP = false; return BOOL_TEMP; }
+
+            //if (Textbox_SUPPLIES_model1 != null) { } else { BOOL_TEMP = false; return BOOL_TEMP; }
+            //if (Textbox_SUPPLIES_model1.Text.Length > 1) { SUPPLIES_model1 = Textbox_SUPPLIES_model1.Text.ToString().Trim(); } else { BOOL_TEMP = false; return BOOL_TEMP; }
+
+            //if (skinComboBox_SUPPLIES_NAME1 != null) { } else { BOOL_TEMP = false; return BOOL_TEMP; }
+            //if (skinComboBox_SUPPLIES_NAME1.Length > 1) { SUPPLIES_NAME1 = skinComboBox_SUPPLIES_NAME1.ToString().Trim(); } else {  BOOL_TEMP = false; return BOOL_TEMP; }
+            codeD = codeA + "." + codeB + "." + codeC;
+            code_ALL = codeD + SUPPLIES_model1;
+            var find_all_temp1 = from t in ADD_TEMP.Table_bom_all_add_temp
+
+                                     // where t.代码.ToString().Trim() == code_ALL.Trim() 
+                                 where t.代码 == code_ALL.Trim()
+                                 select t;
+            string str1 = "";
+            foreach (var item in find_all_temp1)
+            {
+                str1 = item.代码.ToString().Trim();
+            }
+            if (find_all_temp1 != null) { if (find_all_temp1.Count() > 0) { MessageBox.Show("在新增数据库中查找到相同的物料代码，" + str1 + "，无法添加该物料"); BOOL_TEMP = false; return BOOL_TEMP; } }
+
+            var find_all_temp2 = from t in ADD_TEMP.Table_bom_all_add_temp
+                                 where t.名称.ToString().Trim() == SUPPLIES_NAME1.Trim()
+                                 select t;
+
+            string str2 = "";
+            foreach (var item in find_all_temp2)
+            {
+                str2 = item.名称.ToString().Trim();
+            }
+            if (find_all_temp2 != null) { if (find_all_temp2.Count() > 0) { MessageBox.Show("在新增数据库中查找到相同的物料名称，" + str2 + "，无法添加该物料"); BOOL_TEMP = false; return BOOL_TEMP; } }
+
+            var find_all_temp3 = from t in ADD_TEMP.Table_bom_all_add_temp
+
+                                 //where t.规格型号.ToString().Trim() == SUPPLIES_model1.Trim()
+                                 where t.规格型号 == SUPPLIES_model1.Trim()
+                                 select t;
+
+            string str3 = "";
+            foreach (var item in find_all_temp3)
+            {
+                str3 = item.规格型号.ToString().Trim();
+            }
+            if (find_all_temp3 != null) { if (find_all_temp3.Count() > 0) { MessageBox.Show("在新增数据库中查找到相同的物料规格型号：" + str3 + "，无法添加该物料"); BOOL_TEMP = false; return BOOL_TEMP; } }
 
 
-            return bool_temp = true;
+
+
+            var find_all1 = from t in bom_all.Table_bom_all
+
+                           where t.代码.ToString().Trim() == code_ALL.Trim() 
+                         
+                           select t;
+            string str11 = "";
+            foreach (var item in find_all1)
+            {
+                str11 = item.代码.ToString().Trim();
+            }
+            if (find_all1 != null) { if (find_all1.Count() > 0) { MessageBox.Show("在总数据库中查找到相同的物料代码，" + str11 + "，无法添加该物料"); BOOL_TEMP = false; return BOOL_TEMP; } }
+
+
+
+            var find_all2 = from t in bom_all.Table_bom_all
+
+                           where  t.名称.ToString().Trim() == SUPPLIES_NAME1.Trim()
+                          
+
+                           select t;
+            string str22 = "";
+            foreach (var item in find_all2)
+            {
+                str22 = item.名称.ToString().Trim();
+            }
+            if (find_all2 != null) { if (find_all2.Count() > 0) { MessageBox.Show("在总数据库中查找到相同的物料名称，" + str22 + "，无法添加该物料"); BOOL_TEMP = false; return BOOL_TEMP; } }
+
+
+
+
+
+
+
+            var find_all3 = from t in bom_all.Table_bom_all
+
+                            where 
+                             t.规格型号.ToString().Trim() == SUPPLIES_model1.Trim()
+
+                            select t;
+
+            string str33 = "";
+            foreach (var item in find_all3)
+            {
+                str33 = item.规格型号.ToString().Trim();
+            }
+            if (find_all3 != null) { if (find_all3.Count() > 0) { MessageBox.Show("在总数据库中查找到相同的物料规格型号：" + str33 + "，无法添加该物料"); BOOL_TEMP = false; return BOOL_TEMP; } }
+
+
+
+            BOOL_TEMP = true;
+
+            return BOOL_TEMP;
         }
         public string get_code_all(ComboBox comboxcode_A, ComboBox comboxcode_B, ComboBox comboxcode_C, TextBox Textbox_SUPPLIES_model1)
         {
@@ -497,12 +616,17 @@ namespace BOM_SET.Tools
             string codeD = "";
             string code_ALL = "";
             string SUPPLIES_model1 = "";
+          
+
             if (comboxcode_A.SelectedItem != null) { codeA = comboxcode_A.SelectedItem.ToString().Substring(0, 3); } else {  BOOL_TEMP = false; return code_ALL; }
             if (comboxcode_B.SelectedItem != null) { codeB = comboxcode_B.SelectedItem.ToString().Substring(0, 2); } else { BOOL_TEMP = false; return code_ALL; }
             if (comboxcode_C.SelectedItem != null) { codeC = comboxcode_C.SelectedItem.ToString().Substring(0, 1); } else { BOOL_TEMP = false; return code_ALL; }
 
             if (Textbox_SUPPLIES_model1 != null) { } else {  BOOL_TEMP = false; return code_ALL; }
             if (Textbox_SUPPLIES_model1.Text.Length > 1) { SUPPLIES_model1 = Textbox_SUPPLIES_model1.Text.ToString().Trim(); } else { BOOL_TEMP = false; return code_ALL; }
+
+          
+
             codeD = codeA + "." + codeB + "." + codeC;
             code_ALL = codeD + SUPPLIES_model1;
             return code_ALL;

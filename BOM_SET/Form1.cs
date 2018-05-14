@@ -2248,7 +2248,10 @@ namespace BOM_SET
         /// <param name="e"></param>
         private void skinButton3_Click_1(object sender, EventArgs e)
         {
-           
+            if (add.duplicate_checking(skinComboBox_A2, skinComboBox_B2, skinComboBox_C2, Textbox_SUPPLIES_model1, skinComboBox_SUPPLIES_NAME1.Text))
+            { 
+
+
             bool reaslut = false;
             
                 add.ADD_supplies(out reaslut, skinComboBox_A2, skinComboBox_B2, skinComboBox_C2, Textbox_SUPPLIES_model1.Text, skinComboBox_SUPPLIES_NAME1.Text, Textbox_brank1.Text,
@@ -2262,6 +2265,7 @@ namespace BOM_SET
                 add.find_unchecked(skinDataGridView_unchecked);
                 add.find_checked(skinDataGridView_checked);
             }
+            };
         }
         /// <summary>
         /// 选项卡切换动作
@@ -2296,6 +2300,7 @@ namespace BOM_SET
         {
             // Globle_add_supplies add = new Globle_add_supplies();
             skinTextBox4_code_ALL.Text= add. get_code_all(skinComboBox_A2, skinComboBox_B2, skinComboBox_C2, Textbox_SUPPLIES_model1);
+           
         }
 
         private void skinComboBox_C2_SelectedIndexChanged(object sender, EventArgs e)

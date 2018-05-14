@@ -2197,16 +2197,19 @@ namespace BOM_SET
         private void skinComboBox4_B2_SelectedIndexChanged(object sender, EventArgs e)
         {
             codeC(skinComboBox_A2, skinComboBox_B2, skinComboBox_C2);
+           
         }
 
         private void skinComboBox3_A2_SelectedIndexChanged(object sender, EventArgs e)
         {
             codeB(skinComboBox_A2, skinComboBox_B2, skinComboBox_C2);
+          
         }
 
         private void skinComboBox7_A1_SelectedIndexChanged(object sender, EventArgs e)
         {
             codeB(skinComboBox_A1, skinComboBox_B1, skinComboBox_C1);
+
         }
 
         private void skinComboBox6_B1_SelectedIndexChanged(object sender, EventArgs e)
@@ -2237,6 +2240,7 @@ namespace BOM_SET
             fdialog.file_path_open("图片(*.png)|*.png|所有文件(*.*)|*.*", out file_path);
             skinTextBox_pixturebox_path1 .Text= file_path;
         }
+        Globle_add_supplies add = new Globle_add_supplies();
         /// <summary>
         /// 物料新增按钮
         /// </summary>
@@ -2244,7 +2248,7 @@ namespace BOM_SET
         /// <param name="e"></param>
         private void skinButton3_Click_1(object sender, EventArgs e)
         {
-            Globle_add_supplies add = new Globle_add_supplies();
+           
             bool reaslut = false;
             
                 add.ADD_supplies(out reaslut, skinComboBox_A2, skinComboBox_B2, skinComboBox_C2, Textbox_SUPPLIES_model1.Text, skinComboBox_SUPPLIES_NAME1.Text, Textbox_brank1.Text,
@@ -2256,6 +2260,7 @@ namespace BOM_SET
                 
                 MessageBox.Show("新增成功！");
                 add.find_unchecked(skinDataGridView_unchecked);
+                add.find_checked(skinDataGridView_checked);
             }
         }
         /// <summary>
@@ -2267,17 +2272,35 @@ namespace BOM_SET
         {
             if (tabControl1.SelectedIndex == 1)//物料新增页面
             {
-                Globle_add_supplies add = new Globle_add_supplies();
+               // Globle_add_supplies add = new Globle_add_supplies();
                 add.find_unchecked(skinDataGridView_unchecked);
+                add.find_checked(skinDataGridView_checked);
             }
         }
 
         private void skinDataGridView_unchecked_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            Globle_add_supplies add = new Globle_add_supplies();
+           // Globle_add_supplies add = new Globle_add_supplies();
             add.chech_audit(skinDataGridView_unchecked, e.RowIndex, e.ColumnIndex);
             add.delete(skinDataGridView_unchecked, e.RowIndex,e.ColumnIndex);
             add.find_unchecked(skinDataGridView_unchecked);
+            add.find_checked(skinDataGridView_checked);
+        }
+
+        private void Textbox_SUPPLIES_model1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            // Globle_add_supplies add = new Globle_add_supplies();
+            skinTextBox4_code_ALL.Text= add. get_code_all(skinComboBox_A2, skinComboBox_B2, skinComboBox_C2, Textbox_SUPPLIES_model1);
+        }
+
+        private void skinComboBox_C2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 

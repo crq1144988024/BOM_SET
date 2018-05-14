@@ -198,6 +198,66 @@ namespace BOM_SET.Tools
         /// <param name="datagridview1"></param>
         public void find_checked(DataGridView datagridview1)
         {
+            datagridview1.Rows.Clear();
+            var q_abc_text = from t in ADD_TEMP.Table_bom_all_add_temp
+
+                             where t.新增人 == LOGIN.ID.login_now_Nanme.Trim() && t.是否审核.ToString().Trim() == "是"
+                             //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                             //where t.代码.Contains(find_condition_text) || t.价格.ToString().Contains(find_condition_text) || t.全名.Contains(find_condition_text)
+                             //|| t.名称.Contains(find_condition_text) || t.品牌.Contains(find_condition_text) || t.图片.Contains(find_condition_text)
+                             //|| t.审核人.Contains(find_condition_text) || t.技术参数.Contains(find_condition_text) || t.规格型号.Contains(find_condition_text)
+                             //|| t.附件.Contains(find_condition_text)
+                             select t;
+            //类别 = supples_sort1,
+            //    //ID
+            //    代码 = code_ALL,
+            //    规格型号 = SUPPLIES_model1,
+            //    名称 = SUPPLIES_NAME1,
+            //    品牌 = brank1,
+
+            //    技术参数 = supples_technical_parameters1,
+            //    备注 = supples_spare1,
+            //    价格 = TextBox_price1,
+            //    图片 = pixturebox_path1,
+            //    资料路径 = datapath,
+            int i = 0;
+            foreach (var item in q_abc_text)
+            {
+                datagridview1.Rows.Add();
+
+                datagridview1.Rows[i].Cells[0].Value = check_value(item.类别);
+                datagridview1.Rows[i].Cells[1].Value = check_value(item.ID);
+                datagridview1.Rows[i].Cells[2].Value = check_value(item.代码);
+                datagridview1.Rows[i].Cells[3].Value = check_value(item.规格型号);
+                datagridview1.Rows[i].Cells[4].Value = check_value(item.名称);
+
+                datagridview1.Rows[i].Cells[5].Value = check_value(item.品牌);
+                datagridview1.Rows[i].Cells[6].Value = check_value(item.技术参数);
+                datagridview1.Rows[i].Cells[7].Value = check_value(item.备注);
+
+                datagridview1.Rows[i].Cells[8].Value = check_value(item.价格);
+                datagridview1.Rows[i].Cells[9].Value = check_value(item.图片);
+                datagridview1.Rows[i].Cells[10].Value = check_value(item.资料路径);
+
+                datagridview1.Rows[i].Cells[9].Value = check_value(item.图片);
+                datagridview1.Rows[i].Cells[10].Value = check_value(item.资料路径);
+
+                datagridview1.Rows[i].Cells[11].Value = check_value(item.物料ID);
+                string str0 = "";
+                if (check_value(item.是否审核)=="是")
+                {
+                    str0 = "已审核";
+                }
+                else
+                {
+                    str0 = "未审核";
+                }
+                datagridview1.Rows[i].Cells[12].Value = str0;
+                datagridview1.Rows[i].Cells[13].Value = check_value(item.审核意见);
+
+                i++;
+
+            }
 
         }
 
@@ -417,6 +477,35 @@ namespace BOM_SET.Tools
 
             }
             return bool_temp;
+        }
+
+
+
+        public bool duplicate_checking()
+        {
+            bool bool_temp = false;
+
+
+            return bool_temp = true;
+        }
+        public string get_code_all(ComboBox comboxcode_A, ComboBox comboxcode_B, ComboBox comboxcode_C, TextBox Textbox_SUPPLIES_model1)
+        {
+            bool BOOL_TEMP = false;
+            string codeA = "";
+            string codeB = "";
+            string codeC = "";
+            string codeD = "";
+            string code_ALL = "";
+            string SUPPLIES_model1 = "";
+            if (comboxcode_A.SelectedItem != null) { codeA = comboxcode_A.SelectedItem.ToString().Substring(0, 3); } else {  BOOL_TEMP = false; return code_ALL; }
+            if (comboxcode_B.SelectedItem != null) { codeB = comboxcode_B.SelectedItem.ToString().Substring(0, 2); } else { BOOL_TEMP = false; return code_ALL; }
+            if (comboxcode_C.SelectedItem != null) { codeC = comboxcode_C.SelectedItem.ToString().Substring(0, 1); } else { BOOL_TEMP = false; return code_ALL; }
+
+            if (Textbox_SUPPLIES_model1 != null) { } else {  BOOL_TEMP = false; return code_ALL; }
+            if (Textbox_SUPPLIES_model1.Text.Length > 1) { SUPPLIES_model1 = Textbox_SUPPLIES_model1.Text.ToString().Trim(); } else { BOOL_TEMP = false; return code_ALL; }
+            codeD = codeA + "." + codeB + "." + codeC;
+            code_ALL = codeD + SUPPLIES_model1;
+            return code_ALL;
         }
     }
 }

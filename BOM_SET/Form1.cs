@@ -2371,7 +2371,18 @@ namespace BOM_SET
         /// <param name="e"></param>
         private void skinButton8_Click(object sender, EventArgs e)
         {
-
+            management.BOM_output_plan form = new management.BOM_output_plan();
+            form.Show();
+        }
+        /// <summary>
+        /// 打开审核窗口
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void skinButton17_Click(object sender, EventArgs e)
+        {
+            review.Review_MIAN form = new review.Review_MIAN();
+            form.Show();
         }
     }
 

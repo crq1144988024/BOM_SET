@@ -16,20 +16,18 @@ using BOM_SET.sql;
 using System.Data.Linq.SqlClient;
 using BOM_SET.Tools;
 using static BOM_SET.Tools.Global1;
-
-namespace BOM_SET.management
+namespace BOM_SET.review
 {
-    public partial class BOM_output_plan : Skin_Metro
+    public partial class Review_MIAN : Skin_Metro
     {
-        public BOM_output_plan()
+        public Review_MIAN()
         {
             InitializeComponent();
         }
-        BOM_Out_put_tools tool = new BOM_Out_put_tools();
-        private void BOM_output_plan_Load(object sender, EventArgs e)
+
+        private void Review_MIAN_Load(object sender, EventArgs e)
         {
-           
-            tool.find_bom_project(skinDataGridView_BOM_project);
+
         }
     }
 }

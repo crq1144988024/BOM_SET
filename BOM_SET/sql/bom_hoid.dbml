@@ -12,6 +12,20 @@
       <Column Name="密钥" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="备注" Type="System.String" DbType="NChar(255)" CanBeNull="true" />
       <Column Name="项目负责人ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="最后修改人ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="是否提交申请" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="是否已获审批" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="是否已提计划" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="是否已提采购" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="项目经理" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="项目开始时间" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="项目开始采购时间" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="项目截止采购时间" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="项目调试开始时间" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="项目调试结束时间" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="项目预验收时间" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="项目是否已验收" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="项目终验收时间" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

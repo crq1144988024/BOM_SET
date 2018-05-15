@@ -106,6 +106,8 @@ namespace BOM_SET.sql
 		
 		private string _提交审核;
 		
+		private System.Nullable<int> _本次提交数量;
+		
     #region 可扩展性方法定义
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -136,6 +138,8 @@ namespace BOM_SET.sql
     partial void On已采购数量Changed();
     partial void On提交审核Changing(string value);
     partial void On提交审核Changed();
+    partial void On本次提交数量Changing(System.Nullable<int> value);
+    partial void On本次提交数量Changed();
     #endregion
 		
 		public BOM_ALL()
@@ -399,6 +403,26 @@ namespace BOM_SET.sql
 					this._提交审核 = value;
 					this.SendPropertyChanged("提交审核");
 					this.On提交审核Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_本次提交数量", DbType="Int")]
+		public System.Nullable<int> 本次提交数量
+		{
+			get
+			{
+				return this._本次提交数量;
+			}
+			set
+			{
+				if ((this._本次提交数量 != value))
+				{
+					this.On本次提交数量Changing(value);
+					this.SendPropertyChanging();
+					this._本次提交数量 = value;
+					this.SendPropertyChanged("本次提交数量");
+					this.On本次提交数量Changed();
 				}
 			}
 		}

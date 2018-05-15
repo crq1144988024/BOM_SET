@@ -34,7 +34,7 @@ namespace BOM_SET
 
                 foreach (var li in q_abc_text)
                 {
-                    string[] strs = new string[] { "", li.代码, li.名称, li.品牌, li.技术参数, li.价格.ToString(), li.图片, li.规格型号, li.附件, li.全名, li.审核人 };
+                    string[] strs = new string[] { "", li.代码, li.名称, li.品牌, li.技术参数, li.价格.ToString(), li.图片, li.规格型号, li.附件, li.全名, li.添加者 };
                     if ((int)strs[1][0] > 127) { continue; }
 
                     for (int k = 1; k < 10; k++)
@@ -105,7 +105,7 @@ namespace BOM_SET
 
             foreach (var li in q_abc)
             {
-                string[] strs = new string[] { li.代码, li.名称, li.品牌, li.技术参数, li.价格.ToString(), li.图片, li.规格型号, li.附件, li.全名, li.审核人, li.ID.ToString(),li.备注 };
+                string[] strs = new string[] { li.代码, li.名称, li.品牌, li.技术参数, li.价格.ToString(), li.图片, li.规格型号, li.附件, li.全名, li.添加者, li.ID.ToString(),li.备注 };
                 if ((int)strs[0][0] > 127) { continue; }
 
                 if (codeA != "")

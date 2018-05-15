@@ -21,6 +21,8 @@
       <Column Name="是否提交" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="是否审核" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
       <Column Name="审核意见" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="审核日期" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="新增日期" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

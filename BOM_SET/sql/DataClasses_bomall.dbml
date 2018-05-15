@@ -7,14 +7,16 @@
       <Column Name="名称" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="全名" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="规格型号" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-      <Column Name="审核人" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="附件" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="图片" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="价格" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="技术参数" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="品牌" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="备注" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="类别" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="资料路径" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="添加者" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="添加日期" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

@@ -80,7 +80,7 @@ namespace BOM_SET
                                   //fdialog. file_path_save("EXCEL表格文件(*.xls)|*.xls", out file_path);
             fdialog.file_path_save("EXCEL表格文件(*.xlsx)|*.xlsx", Global.project_name, out file_path);
 
-            string sourceFile =System.AppDomain.CurrentDomain.BaseDirectory + "excel\\采购申请模板.xlsx";
+           
 
             string destinationFile = file_path;// @"d:\" + Global.project_name + ".xlsx";
             try
@@ -92,8 +92,8 @@ namespace BOM_SET
             {
 
             }
-           
 
+            string sourceFile = System.AppDomain.CurrentDomain.BaseDirectory + "excel\\采购申请模板.xlsx";
             FileInfo file = new FileInfo(sourceFile);
             if (file.Exists)
             {

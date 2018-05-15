@@ -118,6 +118,10 @@ namespace BOM_SET.sql
 		
 		private string _审核意见;
 		
+		private string _审核日期;
+		
+		private string _新增日期;
+		
     #region 可扩展性方法定义
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -160,6 +164,10 @@ namespace BOM_SET.sql
     partial void On是否审核Changed();
     partial void On审核意见Changing(string value);
     partial void On审核意见Changed();
+    partial void On审核日期Changing(string value);
+    partial void On审核日期Changed();
+    partial void On新增日期Changing(string value);
+    partial void On新增日期Changed();
     #endregion
 		
 		public Table_bom_all_add_temp()
@@ -543,6 +551,46 @@ namespace BOM_SET.sql
 					this._审核意见 = value;
 					this.SendPropertyChanged("审核意见");
 					this.On审核意见Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_审核日期", DbType="NVarChar(20)")]
+		public string 审核日期
+		{
+			get
+			{
+				return this._审核日期;
+			}
+			set
+			{
+				if ((this._审核日期 != value))
+				{
+					this.On审核日期Changing(value);
+					this.SendPropertyChanging();
+					this._审核日期 = value;
+					this.SendPropertyChanged("审核日期");
+					this.On审核日期Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_新增日期", DbType="NVarChar(20)")]
+		public string 新增日期
+		{
+			get
+			{
+				return this._新增日期;
+			}
+			set
+			{
+				if ((this._新增日期 != value))
+				{
+					this.On新增日期Changing(value);
+					this.SendPropertyChanging();
+					this._新增日期 = value;
+					this.SendPropertyChanged("新增日期");
+					this.On新增日期Changed();
 				}
 			}
 		}

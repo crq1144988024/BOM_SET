@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace BOM_SET.Tools
 {
-    public class Globle_add_supplies
+    public class Globle_add_supplies_manegement
     {
 
         sql.DataClasses_ADD_BOM_TEMPDataContext ADD_TEMP = new sql.DataClasses_ADD_BOM_TEMPDataContext();
@@ -134,7 +134,7 @@ namespace BOM_SET.Tools
             datagridview1.Rows.Clear();
             var q_abc_text = from t in ADD_TEMP.Table_bom_all_add_temp
 
-                             where t.新增人 == LOGIN.ID.login_now_Nanme.Trim() && t.是否审核.ToString().Trim() == "否"
+                             where  t.是否审核.ToString().Trim() == "否"
                              //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
                              //where t.代码.Contains(find_condition_text) || t.价格.ToString().Contains(find_condition_text) || t.全名.Contains(find_condition_text)
                              //|| t.名称.Contains(find_condition_text) || t.品牌.Contains(find_condition_text) || t.图片.Contains(find_condition_text)
@@ -172,22 +172,27 @@ namespace BOM_SET.Tools
                 datagridview1.Rows[i].Cells[9].Value = check_value(item.图片);
                 datagridview1.Rows[i].Cells[10].Value = check_value(item.资料路径);
 
-                DataGridViewButtonCell button_checked = (DataGridViewButtonCell)datagridview1.Rows[i].Cells[11];
-                DataGridViewButtonCell button_delete = (DataGridViewButtonCell)datagridview1.Rows[i].Cells[12];
-                if (check_value(item.是否提交) == "是")
-                {
+                datagridview1.Rows[i].Cells[11].Value = check_value(item.新增人);
+                datagridview1.Rows[i].Cells[12].Value = check_value(item.新增日期);
+
+                DataGridViewCheckBoxCell check_checked = (DataGridViewCheckBoxCell)datagridview1.Rows[i].Cells[13];
+
+                datagridview1.Rows[i].Cells[14].Value = check_value(item.审核意见);
+                // DataGridViewButtonCell button_delete = (DataGridViewButtonCell)datagridview1.Rows[i].Cells[12];
+                //if (check_value(item.是否审核) == "是")
+                //{
 
 
-                    button_checked.Value = "撤回";
+                    check_checked.Value = false;
 
 
-                }
-                else
-                {
-                    button_checked.Value = "提交";
-                }
+                //}
+                //else
+                //{
+                //    check_checked.Value =false ;
+                //}
 
-                button_delete.Value = "删除";
+
 
 
                 i++;
@@ -247,17 +252,27 @@ namespace BOM_SET.Tools
 
                 datagridview1.Rows[i].Cells[11].Value = check_value(item.物料ID);
                 string str0 = "";
-                if (check_value(item.是否审核)=="是")
-                {
-                    str0 = "已审核";
-                }
-                else
-                {
-                    str0 = "未审核";
-                }
-                datagridview1.Rows[i].Cells[12].Value = str0;
+                //if (check_value(item.是否审核)=="是")
+                //{
+                //    str0 = "已审核";
+                //}
+                //else
+                //{
+                //    str0 = "未审核";
+                //}
+                datagridview1.Rows[i].Cells[12].Value = check_value(item.审核日期);
                 datagridview1.Rows[i].Cells[13].Value = check_value(item.审核意见);
+                
 
+
+                DataGridViewCheckBoxCell check_checked = (DataGridViewCheckBoxCell)datagridview1.Rows[i].Cells[14];
+
+             
+                check_checked.Value = false;
+
+                //DataGridViewButtonCell button_delete = (DataGridViewButtonCell)datagridview1.Rows[i].Cells[15];
+
+                //button_delete.Value = "撤回";
                 i++;
 
             }
@@ -369,14 +384,14 @@ namespace BOM_SET.Tools
             }
             return bool_temp;
         }
-        public bool updata_database(int ID,int SET_ENABLE)
+        public bool updata_database(int ID, int BOMAL_ID ,string check_opinion)
         {
             bool bool_temp = false;
             try
             {
                 var q_abc_text = from t in ADD_TEMP.Table_bom_all_add_temp
 
-                                 where t.新增人 == LOGIN.ID.login_now_Nanme.Trim() && t.是否审核.ToString().Trim() == "否"
+                                 where  t.是否审核.ToString().Trim() == "否"
                                  && t.ID == Convert.ToInt32(ID.ToString().Trim())
                                  //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
                                  //where t.代码.Contains(find_condition_text) || t.价格.ToString().Contains(find_condition_text) || t.全名.Contains(find_condition_text)
@@ -392,20 +407,18 @@ namespace BOM_SET.Tools
 
                     //DataGridViewButtonCell button_checked = (DataGridViewButtonCell)datagridview1.Rows[i].Cells[11];
                     //DataGridViewButtonCell button_delete = (DataGridViewButtonCell)datagridview1.Rows[i].Cells[12];
-                    if (SET_ENABLE == 1)
+                    item.审核日期 = DateTime.Now.ToString();
+                    item.是否审核 = "是";
+                    item.物料ID = BOMAL_ID.ToString().Trim();
+                    if (check_opinion != null)
                     {
+                       
+                        item.审核意见 = check_opinion;
 
-                        item.是否提交 = "否";
 
-
-
+                       
                     }
-                    else if (SET_ENABLE == 2)
-                    {
-                        item.是否提交 = "是";
-
-                    }
-
+                   
                 }
                 ADD_TEMP.SubmitChanges();
                 bool_temp = true;
@@ -465,7 +478,7 @@ namespace BOM_SET.Tools
 
                                 }
 
-                                updata_database(Convert.ToInt32(ID.ToString().Trim()),  SET_ENABLE);
+                               // updata_database(Convert.ToInt32(ID.ToString().Trim()),  SET_ENABLE);
 
 
 
@@ -482,8 +495,95 @@ namespace BOM_SET.Tools
             return bool_temp;
         }
 
+    
+        public bool add_bom_all(DataGridView DataGridView_BOM_Hold)
+        {
+            foreach (DataGridViewRow rowone in DataGridView_BOM_Hold.Rows)
+            {
+                //DataGridViewComboBoxCell combox10 = (DataGridViewComboBoxCell)rowone.Cells[10];\
+                
+                DataGridViewCheckBoxCell chkBoxCell = (DataGridViewCheckBoxCell)rowone.Cells[13];
 
-        
+
+
+                if (chkBoxCell != null && ((bool)chkBoxCell.EditingCellFormattedValue == true || (bool)chkBoxCell.FormattedValue == true))
+                {
+                    int price = 0;
+                    int BOMAL_ID = 0;
+                    string code_all = "";
+                    string supplies_name = "";
+                    try { price = Convert.ToInt32(check_value(rowone.Cells[8].Value)); } catch { price = 0; }
+                    var table0 = new sql.Table_bom_all
+                    {
+                        类别 = check_value(rowone.Cells[0].Value),
+                        //ID
+                        代码 = check_value(rowone.Cells[2].Value),
+                        规格型号 = check_value(rowone.Cells[3].Value),
+                        名称 = check_value(rowone.Cells[4].Value),
+                        品牌 = check_value(rowone.Cells[5].Value),
+
+                        技术参数 = check_value(rowone.Cells[6].Value),
+                        备注 = check_value(rowone.Cells[7].Value),
+                       
+                        价格 = price,
+                        图片 = check_value(rowone.Cells[9].Value),
+                        资料路径 = check_value(rowone.Cells[10].Value),
+
+
+                         
+
+                         添加者 = check_value(rowone.Cells[11].Value),
+                         添加日期  = check_value(rowone.Cells[12].Value),
+
+
+
+                    };
+                    code_all = check_value(rowone.Cells[2].Value);
+                    supplies_name = check_value(rowone.Cells[4].Value);
+
+                    bom_all.Table_bom_all.InsertOnSubmit(table0);
+                    bom_all.SubmitChanges();
+
+                    BOMAL_ID= Find_bom_all_ID( code_all, supplies_name);
+
+                    updata_database(Convert.ToInt32(check_value(rowone.Cells[1].Value.ToString().Trim())), BOMAL_ID, check_value(rowone.Cells[14].Value));
+                }
+                
+
+
+            }
+
+           
+        return true;
+        }
+
+        public int Find_bom_all_ID(string code_all,string supplies_name)
+        {
+            int BOMAL_ID = 0;
+
+
+
+            var find_all1 = from t in bom_all.Table_bom_all
+
+                            where t.代码 == code_all.Trim()&& t.名称 == supplies_name.Trim()
+
+                            select t;
+            
+
+            foreach (var item in find_all1)
+            {
+                BOMAL_ID = Convert.ToInt32( item.ID.ToString());
+            }
+    
+
+
+         
+
+
+
+
+            return BOMAL_ID;
+        }
         public bool duplicate_checking(ComboBox comboxcode_A, ComboBox comboxcode_B, ComboBox comboxcode_C, TextBox Textbox_SUPPLIES_model1, string skinComboBox_SUPPLIES_NAME1)
         {
            

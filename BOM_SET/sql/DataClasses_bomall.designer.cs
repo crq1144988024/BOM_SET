@@ -90,8 +90,6 @@ namespace BOM_SET.sql
 		
 		private string _规格型号;
 		
-		private string _审核人;
-		
 		private string _附件;
 		
 		private string _图片;
@@ -104,7 +102,13 @@ namespace BOM_SET.sql
 		
 		private string _备注;
 		
+		private string _类别;
+		
 		private string _资料路径;
+		
+		private string _添加者;
+		
+		private string _添加日期;
 		
     #region 可扩展性方法定义
     partial void OnLoaded();
@@ -120,8 +124,6 @@ namespace BOM_SET.sql
     partial void On全名Changed();
     partial void On规格型号Changing(string value);
     partial void On规格型号Changed();
-    partial void On审核人Changing(string value);
-    partial void On审核人Changed();
     partial void On附件Changing(string value);
     partial void On附件Changed();
     partial void On图片Changing(string value);
@@ -134,8 +136,14 @@ namespace BOM_SET.sql
     partial void On品牌Changed();
     partial void On备注Changing(string value);
     partial void On备注Changed();
+    partial void On类别Changing(string value);
+    partial void On类别Changed();
     partial void On资料路径Changing(string value);
     partial void On资料路径Changed();
+    partial void On添加者Changing(string value);
+    partial void On添加者Changed();
+    partial void On添加日期Changing(string value);
+    partial void On添加日期Changed();
     #endregion
 		
 		public Table_bom_all()
@@ -239,26 +247,6 @@ namespace BOM_SET.sql
 					this._规格型号 = value;
 					this.SendPropertyChanged("规格型号");
 					this.On规格型号Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_审核人", DbType="NVarChar(255)")]
-		public string 审核人
-		{
-			get
-			{
-				return this._审核人;
-			}
-			set
-			{
-				if ((this._审核人 != value))
-				{
-					this.On审核人Changing(value);
-					this.SendPropertyChanging();
-					this._审核人 = value;
-					this.SendPropertyChanged("审核人");
-					this.On审核人Changed();
 				}
 			}
 		}
@@ -383,6 +371,26 @@ namespace BOM_SET.sql
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_类别", DbType="NVarChar(255)")]
+		public string 类别
+		{
+			get
+			{
+				return this._类别;
+			}
+			set
+			{
+				if ((this._类别 != value))
+				{
+					this.On类别Changing(value);
+					this.SendPropertyChanging();
+					this._类别 = value;
+					this.SendPropertyChanged("类别");
+					this.On类别Changed();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_资料路径", DbType="NVarChar(255)")]
 		public string 资料路径
 		{
@@ -399,6 +407,46 @@ namespace BOM_SET.sql
 					this._资料路径 = value;
 					this.SendPropertyChanged("资料路径");
 					this.On资料路径Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_添加者", DbType="NVarChar(10)")]
+		public string 添加者
+		{
+			get
+			{
+				return this._添加者;
+			}
+			set
+			{
+				if ((this._添加者 != value))
+				{
+					this.On添加者Changing(value);
+					this.SendPropertyChanging();
+					this._添加者 = value;
+					this.SendPropertyChanged("添加者");
+					this.On添加者Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_添加日期", DbType="NVarChar(20)")]
+		public string 添加日期
+		{
+			get
+			{
+				return this._添加日期;
+			}
+			set
+			{
+				if ((this._添加日期 != value))
+				{
+					this.On添加日期Changing(value);
+					this.SendPropertyChanging();
+					this._添加日期 = value;
+					this.SendPropertyChanged("添加日期");
+					this.On添加日期Changed();
 				}
 			}
 		}

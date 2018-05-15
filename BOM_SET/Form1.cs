@@ -23,7 +23,13 @@ namespace BOM_SET
 
     public partial class Form1 : Skin_Metro
     {
-        
+        TabPage tp0 = new  TabPage();//BOM   
+        TabPage tp1 = new TabPage();//物料新增  
+        TabPage tp2 = new TabPage();//报价
+        TabPage tp3 = new TabPage();//采购
+        TabPage tp4 = new TabPage();//图纸管理
+        TabPage tp5 = new TabPage();//物料管理
+        TabPage tp6 = new TabPage();//物料审核
         DataClasses_Code_ABCDataContext Code_ABC = new DataClasses_Code_ABCDataContext();
         bom_hoidDataContext bom_hold = new bom_hoidDataContext();
         bom_sortDataContext bom_sort = new bom_sortDataContext();
@@ -32,7 +38,38 @@ namespace BOM_SET
         private const string kSheetNameAbDetail = "Sheet2";
         public Form1()
         {
+            
             InitializeComponent();
+            //Global.dataset.Tables.Add("table1");
+            //codeA(comboxcode_A, comboxcode_B, comboxcode_C);
+            //find_add_datagridview(datagridview_matter);
+            //datagridview_matter.Rows.Clear();
+
+
+            ////以下是物料新增页面
+
+            //codeA(skinComboBox_A1, skinComboBox_B1, skinComboBox_C1);
+            //codeA(skinComboBox_A2, skinComboBox_B2, skinComboBox_C2);
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            tabControl1.Enabled = false;
+            LOGIN.ID.login_now_Permission = -1;
+            timer1.Enabled = true;
+            LOGIN.Login_form form1 = new LOGIN.Login_form();
+            form1.Show();
+
+            tp0 = tabControl1.TabPages[0];//BOM   
+            tp1 = tabControl1.TabPages[1];//物料新增  
+            tp2 = tabControl1.TabPages[2];//报价
+            tp3 = tabControl1.TabPages[3];//采购
+            tp4 = tabControl1.TabPages[4];//图纸管理
+            tp5 = tabControl1.TabPages[5];//物料管理
+            tp6 = tabControl1.TabPages[6];//物料审核
+
+
             Global.dataset.Tables.Add("table1");
             codeA(comboxcode_A, comboxcode_B, comboxcode_C);
             find_add_datagridview(datagridview_matter);
@@ -46,17 +83,6 @@ namespace BOM_SET
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            tabControl1.Enabled = false;
-            LOGIN.ID.login_now_Permission = -1;
-            timer1.Enabled = true;
-            LOGIN.Login_form form1 = new LOGIN.Login_form();
-            form1.Show();
-           
-
-        }
-       
 
         public   void set_login()
         {
@@ -111,13 +137,7 @@ namespace BOM_SET
                 //{
                 //    tabControl1.TabPages[i].Parent = this.tabControl1;
                 //}
-                TabPage tp0 = tabControl1.TabPages[0];//BOM   
-                TabPage tp1 = tabControl1.TabPages[1];//物料新增  
-                TabPage tp2 = tabControl1.TabPages[2];//报价
-                TabPage tp3 = tabControl1.TabPages[3];//采购
-                TabPage tp4 = tabControl1.TabPages[4];//图纸管理
-                TabPage tp5 = tabControl1.TabPages[5];//物料管理
-                TabPage tp6 = tabControl1.TabPages[6];//物料审核
+               
 
                 tabControl1.TabPages.Remove(tp0);//隐藏（删除）
                 tabControl1.TabPages.Remove(tp1);//隐藏（删除）
@@ -135,6 +155,7 @@ namespace BOM_SET
                     tabControl1.TabPages.Insert(4, tp4);//图纸管理）
                     tabControl1.TabPages.Insert(5, tp5);//物料管理
                     tabControl1.TabPages.Insert(6, tp6);//物料审核
+                    find_bom_usernoew_Project_name_add();
                 }
                 else
                 {
@@ -633,7 +654,7 @@ namespace BOM_SET
 
                 foreach (var li in q_abc_text)
                 {
-                    string[] strs = new string[] { "", li.代码, li.名称, li.品牌, li.技术参数, li.价格.ToString(), li.图片, li.规格型号, li.附件, li.全名, li.审核人 };
+                    string[] strs = new string[] { "", li.代码, li.名称, li.品牌, li.技术参数, li.价格.ToString(), li.图片, li.规格型号, li.附件, li.全名, li.添加者 };
                     if ((int)strs[1][0] > 127) { continue; }
 
                     for (int k = 1; k < 10; k++)
@@ -703,7 +724,7 @@ namespace BOM_SET
 
             foreach (var li in q_abc)
             {
-                string[] strs = new string[] { li.代码, li.名称, li.品牌, li.技术参数, li.价格.ToString(), li.图片, li.规格型号, li.附件, li.全名, li.审核人, li.ID.ToString() };
+                string[] strs = new string[] { li.代码, li.名称, li.品牌, li.技术参数, li.价格.ToString(), li.图片, li.规格型号, li.附件, li.全名, li.添加者, li.ID.ToString() };
                 if ((int)strs[0][0] > 127) { continue; }
 
                 if (codeA != "")
@@ -1323,6 +1344,9 @@ namespace BOM_SET
        
         private void datagridview_matter_CellContentClick(object sender, DataGridViewCellEventArgs  e)
         {
+            try
+            {
+           
             string str_0 = "";if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.Substring(0, 2); }
             string str_1 = ""; if (((ComboxItem)ComboBox_num_request.SelectedItem).Values != null) { str_1 = ((ComboxItem)ComboBox_num_request.SelectedItem).Values.Substring(0, 2); }
             Global.project_name = ComboBox_project_name.Text;
@@ -1368,6 +1392,11 @@ namespace BOM_SET
 
             }
             catch { }
+            }
+            }
+            catch
+            {
+
             }
 
         }
@@ -2154,7 +2183,15 @@ namespace BOM_SET
         }
         private void ComboBox_project_name_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            string PROJECT_NAME = ""; if (((ComboxItem)ComboBox_project_name.SelectedItem).Values != null) { PROJECT_NAME = ((ComboxItem)ComboBox_project_name.SelectedItem).Values.ToString().Trim(); }
+            string PROJECT_NAME = "";
+            try
+            {
+                if (((ComboxItem)ComboBox_project_name.SelectedItem).Values != null) { PROJECT_NAME = ((ComboxItem)ComboBox_project_name.SelectedItem).Values.ToString().Trim(); }
+            }
+            catch
+            {
+                PROJECT_NAME = "";
+            }
 
             //string str_1 = ""; if (ComboBox_num_request.Text != null) { str_0 = ComboBox_num_request.Text.Substring(0, 2); }
 
@@ -2306,6 +2343,35 @@ namespace BOM_SET
         private void skinComboBox_C2_SelectedIndexChanged(object sender, EventArgs e)
         {
            
+        }
+        /// <summary>
+        /// 新增物料申请
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void skinButton13_Click(object sender, EventArgs e)
+        {
+            management.Form_supplies_managemengt form = new management.Form_supplies_managemengt();
+            form.Show();
+        }
+        /// <summary>
+        /// 管理全部物料
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void skinButton14_Click(object sender, EventArgs e)
+        {
+            management.Form_supplies_bom_all_management form = new management.Form_supplies_bom_all_management();
+            form.Show();
+        }
+        /// <summary>
+        /// bom计划录入
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void skinButton8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

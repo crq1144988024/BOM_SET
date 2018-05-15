@@ -113,6 +113,27 @@
     <Compile Include="LOGIN\账号管理.Designer.cs">
       <DependentUpon>账号管理.cs</DependentUpon>
     </Compile>
+    <Compile Include="management\BOM_ALL_managemengt.cs" />
+    <Compile Include="management\BOM_output_plan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="management\BOM_output_plan.Designer.cs">
+      <DependentUpon>BOM_output_plan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="management\Excel_output.cs" />
+    <Compile Include="management\Form_supplies_bom_all_management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="management\Form_supplies_bom_all_management.Designer.cs">
+      <DependentUpon>Form_supplies_bom_all_management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="management\Form_supplies_managemengt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="management\Form_supplies_managemengt.Designer.cs">
+      <DependentUpon>Form_supplies_managemengt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="management\Globle_add_supplies_manegement.cs" />
     <Compile Include="sql\bom_hoid.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -162,6 +183,7 @@
     <Compile Include="Tools\Global1.cs" />
     <Compile Include="Tools\Globle_add_supplies.cs" />
     <Compile Include="Tools\xmloperate.cs" />
+    <None Include="excel\新增物料模板.xlsx" />
     <None Include="sql\DataClasses_ADD_BOM_TEMP.dbml.layout">
       <DependentUpon>DataClasses_ADD_BOM_TEMP.dbml</DependentUpon>
     </None>
@@ -222,6 +244,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LOGIN\账号管理.resx">
       <DependentUpon>账号管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="management\BOM_output_plan.resx">
+      <DependentUpon>BOM_output_plan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="management\Form_supplies_bom_all_management.resx">
+      <DependentUpon>Form_supplies_bom_all_management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="management\Form_supplies_managemengt.resx">
+      <DependentUpon>Form_supplies_managemengt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

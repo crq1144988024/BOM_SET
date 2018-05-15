@@ -247,8 +247,7 @@
             this.skinTextBox2.IconMouseState = CCWin.SkinClass.ControlState.Normal;
             this.skinTextBox2.IsPasswordChat = '\0';
             this.skinTextBox2.IsSystemPasswordChar = false;
-            this.skinTextBox2.Lines = new string[] {
-        "单号"};
+            this.skinTextBox2.Lines = new string[0];
             this.skinTextBox2.Location = new System.Drawing.Point(506, 34);
             this.skinTextBox2.Margin = new System.Windows.Forms.Padding(0);
             this.skinTextBox2.MaxLength = 32767;
@@ -272,14 +271,12 @@
             this.skinTextBox2.SkinTxt.Name = "BaseText";
             this.skinTextBox2.SkinTxt.Size = new System.Drawing.Size(175, 18);
             this.skinTextBox2.SkinTxt.TabIndex = 0;
-            this.skinTextBox2.SkinTxt.Text = "单号";
             this.skinTextBox2.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox2.SkinTxt.WaterText = "";
+            this.skinTextBox2.SkinTxt.WaterText = "单号";
             this.skinTextBox2.TabIndex = 9;
-            this.skinTextBox2.Text = "单号";
             this.skinTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.skinTextBox2.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox2.WaterText = "";
+            this.skinTextBox2.WaterText = "单号";
             this.skinTextBox2.WordWrap = true;
             // 
             // skinLabel3

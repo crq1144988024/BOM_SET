@@ -36,6 +36,8 @@ namespace BOM_SET
         private const string kSheetNameAbAssets = "Sheet1";
 
         private const string kSheetNameAbDetail = "Sheet2";
+        //1.声明自适应类实例  
+        AutoSizeFormClass asc = new AutoSizeFormClass();
         public Form1()
         {
             
@@ -52,9 +54,19 @@ namespace BOM_SET
             //codeA(skinComboBox_A2, skinComboBox_B2, skinComboBox_C2);
 
         }
-
+        int X =0;
+        int Y = 0;
+        //2. 为窗体添加Load事件，并在其方法Form1_Load中，调用类的初始化方法，记录窗体和其控件的初始位置和大小  
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.Resize += new EventHandler(Form1_Resize);//窗体调整大小时引发事件
+
+            X = this.Width;//获取窗体的宽度
+
+            Y = this.Height;//获取窗体的高度
+
+            setTag(this);//调用方法
+
             tabControl1.Enabled = false;
             LOGIN.ID.login_now_Permission = -1;
             timer1.Enabled = true;
@@ -82,8 +94,86 @@ namespace BOM_SET
             codeA(skinComboBox_A2, skinComboBox_B2, skinComboBox_C2);
 
         }
+        //3.为窗体添加SizeChanged事件，并在其方法Form1_SizeChanged中，调用类的自适应方法，完成自适应  
+        private void Form1_SizeChanged(object sender, EventArgs e)
+        {
+            asc.controlAutoSize(this);
+        }
+        void Form1_Resize(object sender, EventArgs e)
 
+        {
 
+            float newx = (this.Width) / X; //窗体宽度缩放比例
+
+            float newy = this.Height / Y;//窗体高度缩放比例
+
+            setControls(newx, newy, this);//随窗体改变控件大小
+
+            this.Text = this.Width.ToString() + " " + this.Height.ToString();//窗体标题栏文本
+
+        }
+        private void setTag(Control cons)
+
+        {
+
+            //遍历窗体中的控件
+
+            foreach (Control con in cons.Controls)
+
+            {
+
+                con.Tag = con.Width + ":" + con.Height + ":" + con.Left + ":" + con.Top + ":" + con.Font.Size;
+
+                if (con.Controls.Count > 0)
+
+                    setTag(con);
+
+            }
+
+        }
+        private void setControls(float newx, float newy, Control cons)
+
+        {
+
+            //遍历窗体中的控件，重新设置控件的值
+
+            foreach (Control con in cons.Controls)
+
+            {
+
+                string[] mytag = con.Tag.ToString().Split(new char[] { ':' });//获取控件的Tag属性值，并分割后存储字符串数组
+
+                float a = Convert.ToSingle(mytag[0]) * newx;//根据窗体缩放比例确定控件的值，宽度
+
+                con.Width = (int)a;//宽度
+
+                a = Convert.ToSingle(mytag[1]) * newy;//高度
+
+                con.Height = (int)(a);
+
+                a = Convert.ToSingle(mytag[2]) * newx;//左边距离
+
+                con.Left = (int)(a);
+
+                a = Convert.ToSingle(mytag[3]) * newy;//上边缘距离
+
+                con.Top = (int)(a);
+
+                Single currentSize = Convert.ToSingle(mytag[4]) * newy;//字体大小
+
+                con.Font = new Font(con.Font.Name, currentSize, con.Font.Style, con.Font.Unit);
+
+                if (con.Controls.Count > 0)
+
+                {
+
+                    setControls(newx, newy, con);
+
+                }
+
+            }
+
+        }
         public   void set_login()
         {
            
@@ -2386,6 +2476,26 @@ namespace BOM_SET
             review.Review_MIAN form = new review.Review_MIAN();
             form.Show();
         }
+
+        private void ToolStripButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ToolStripMenuItem4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ToolStripMenuItem3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void skinButton4_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 
 
@@ -2418,5 +2528,70 @@ namespace BOM_SET
                 return Text;
             }
         }
-    
+
+    ////////自适应类
+    class AutoSizeFormClass
+    {
+        //(1).声明结构,只记录窗体和其控件的初始位置和大小。  
+        public struct controlRect
+        {
+            public int Left;
+            public int Top;
+            public int Width;
+            public int Height;
+        }
+        //(2).声明 1个对象  
+        //注意这里不能使用控件列表记录 List<Control> nCtrl;，因为控件的关联性，记录的始终是当前的大小。  
+        public List<controlRect> oldCtrl;
+        //int ctrl_first = 0;  
+        //(3). 创建两个函数  
+        //(3.1)记录窗体和其控件的初始位置和大小,  
+        public void controllInitializeSize(Form mForm)
+        {
+            // if (ctrl_first == 0)  
+            {
+                //  ctrl_first = 1;  
+                oldCtrl = new List<controlRect>();
+                controlRect cR;
+                cR.Left = mForm.Left; cR.Top = mForm.Top; cR.Width = mForm.Width; cR.Height = mForm.Height;
+                oldCtrl.Add(cR);
+                foreach (Control c in mForm.Controls)
+                {
+                    controlRect objCtrl;
+                    objCtrl.Left = c.Left; objCtrl.Top = c.Top; objCtrl.Width = c.Width; objCtrl.Height = c.Height;
+                    oldCtrl.Add(objCtrl);
+                }
+            }
+            // this.WindowState = (System.Windows.Forms.FormWindowState)(2);//记录完控件的初始位置和大小后，再最大化  
+            //0 - Normalize , 1 - Minimize,2- Maximize  
+        }
+        //(3.2)控件自适应大小,  
+        public void controlAutoSize(Form mForm)
+        {
+            //int wLeft0 = oldCtrl[0].Left; ;//窗体最初的位置  
+            //int wTop0 = oldCtrl[0].Top;  
+            ////int wLeft1 = this.Left;//窗体当前的位置  
+            //int wTop1 = this.Top;  
+            float wScale = (float)mForm.Width / (float)oldCtrl[0].Width;//新旧窗体之间的比例，与最早的旧窗体  
+            float hScale = (float)mForm.Height / (float)oldCtrl[0].Height;//.Height;  
+            int ctrLeft0, ctrTop0, ctrWidth0, ctrHeight0;
+            int ctrlNo = 1;//第1个是窗体自身的 Left,Top,Width,Height，所以窗体控件从ctrlNo=1开始  
+            foreach (Control c in mForm.Controls)
+            {
+                ctrLeft0 = oldCtrl[ctrlNo].Left;
+                ctrTop0 = oldCtrl[ctrlNo].Top;
+                ctrWidth0 = oldCtrl[ctrlNo].Width;
+                ctrHeight0 = oldCtrl[ctrlNo].Height;
+                //c.Left = (int)((ctrLeft0 - wLeft0) * wScale) + wLeft1;//新旧控件之间的线性比例  
+                //c.Top = (int)((ctrTop0 - wTop0) * h) + wTop1;  
+                c.Left = (int)((ctrLeft0) * wScale);//新旧控件之间的线性比例。控件位置只相对于窗体，所以不能加 + wLeft1  
+                c.Top = (int)((ctrTop0) * hScale);//  
+                c.Width = (int)(ctrWidth0 * wScale);//只与最初的大小相关，所以不能与现在的宽度相乘 (int)(c.Width * w);  
+                c.Height = (int)(ctrHeight0 * hScale);//  
+                ctrlNo += 1;
+            }
+        }
+
+    }
+
 }

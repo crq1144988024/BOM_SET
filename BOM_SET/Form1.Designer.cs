@@ -29,152 +29,37 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle296 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle297 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle298 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle299 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle300 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle301 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle302 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle303 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle304 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle305 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle306 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle307 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle308 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle309 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle310 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle311 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle312 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle313 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle314 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle315 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle316 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle317 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle318 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle319 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle291 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle292 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle294 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle295 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle293 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.Textbox_SUPPLIES_model1 = new System.Windows.Forms.TextBox();
-            this.skinCheckBox_price1 = new CCWin.SkinControl.SkinCheckBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Textbox_supples_technical_parameters1 = new CCWin.SkinControl.SkinTextBox();
-            this.skinTextBox4_code_ALL = new CCWin.SkinControl.SkinTextBox();
-            this.skinLabel34 = new CCWin.SkinControl.SkinLabel();
-            this.skinLabel17 = new CCWin.SkinControl.SkinLabel();
-            this.skinLabel32 = new CCWin.SkinControl.SkinLabel();
-            this.skinLabel31 = new CCWin.SkinControl.SkinLabel();
-            this.skinLabel33 = new CCWin.SkinControl.SkinLabel();
-            this.skinLabel16 = new CCWin.SkinControl.SkinLabel();
-            this.skinLabel30 = new CCWin.SkinControl.SkinLabel();
-            this.skinLabel29 = new CCWin.SkinControl.SkinLabel();
-            this.skinLabel18 = new CCWin.SkinControl.SkinLabel();
-            this.skinTextBox_price1 = new CCWin.SkinControl.SkinTextBox();
-            this.skinTextBox_datapath1 = new CCWin.SkinControl.SkinTextBox();
-            this.skinTextBox_pixturebox_path1 = new CCWin.SkinControl.SkinTextBox();
-            this.Textbox_supples_spare1 = new CCWin.SkinControl.SkinTextBox();
-            this.skinLabel19 = new CCWin.SkinControl.SkinLabel();
-            this.skinButton16 = new CCWin.SkinControl.SkinButton();
-            this.skinButton15 = new CCWin.SkinControl.SkinButton();
-            this.skinButton3 = new CCWin.SkinControl.SkinButton();
-            this.skinLabel20 = new CCWin.SkinControl.SkinLabel();
-            this.skinLabel21 = new CCWin.SkinControl.SkinLabel();
-            this.skinLabel22 = new CCWin.SkinControl.SkinLabel();
-            this.Textbox_supples_sort1 = new CCWin.SkinControl.SkinComboBox();
-            this.skinComboBox_C2 = new CCWin.SkinControl.SkinComboBox();
-            this.Textbox_brank1 = new CCWin.SkinControl.SkinComboBox();
-            this.skinComboBox_SUPPLIES_NAME1 = new CCWin.SkinControl.SkinComboBox();
-            this.skinComboBox_A2 = new CCWin.SkinControl.SkinComboBox();
-            this.skinComboBox_B2 = new CCWin.SkinControl.SkinComboBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.skinDataGridView_unchecked = new CCWin.SkinControl.SkinDataGridView();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column15 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column17 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.skinDataGridView_checked = new CCWin.SkinControl.SkinDataGridView();
-            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.CheckBox2_find_condition = new CCWin.SkinControl.SkinCheckBox();
-            this.skinDataGridView1 = new CCWin.SkinControl.SkinDataGridView();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.skinLabel13 = new CCWin.SkinControl.SkinLabel();
-            this.skinLabel12 = new CCWin.SkinControl.SkinLabel();
-            this.skinLabel14 = new CCWin.SkinControl.SkinLabel();
-            this.skinButton7 = new CCWin.SkinControl.SkinButton();
-            this.skinLabel15 = new CCWin.SkinControl.SkinLabel();
-            this.textbox_sort = new CCWin.SkinControl.SkinTextBox();
-            this.skinComboBox_C1 = new CCWin.SkinControl.SkinComboBox();
-            this.skinComboBox_A1 = new CCWin.SkinControl.SkinComboBox();
-            this.skinComboBox_B1 = new CCWin.SkinControl.SkinComboBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.skinButton8 = new CCWin.SkinControl.SkinButton();
-            this.skinButton14 = new CCWin.SkinControl.SkinButton();
-            this.skinButton13 = new CCWin.SkinControl.SkinButton();
-            this.skinButton9 = new CCWin.SkinControl.SkinButton();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.skinButton18 = new CCWin.SkinControl.SkinButton();
-            this.skinDataGridView_BOM_ALL = new CCWin.SkinControl.SkinDataGridView();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.dataGridViewButtonColumn3 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.skinButton17 = new CCWin.SkinControl.SkinButton();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
@@ -251,6 +136,121 @@
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.删除 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.skinDataGridView_unchecked = new CCWin.SkinControl.SkinDataGridView();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Column17 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.skinDataGridView_checked = new CCWin.SkinControl.SkinDataGridView();
+            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.CheckBox2_find_condition = new CCWin.SkinControl.SkinCheckBox();
+            this.skinDataGridView1 = new CCWin.SkinControl.SkinDataGridView();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.skinLabel13 = new CCWin.SkinControl.SkinLabel();
+            this.skinLabel12 = new CCWin.SkinControl.SkinLabel();
+            this.skinLabel14 = new CCWin.SkinControl.SkinLabel();
+            this.skinButton7 = new CCWin.SkinControl.SkinButton();
+            this.skinLabel15 = new CCWin.SkinControl.SkinLabel();
+            this.textbox_sort = new CCWin.SkinControl.SkinTextBox();
+            this.skinComboBox_C1 = new CCWin.SkinControl.SkinComboBox();
+            this.skinComboBox_A1 = new CCWin.SkinControl.SkinComboBox();
+            this.skinComboBox_B1 = new CCWin.SkinControl.SkinComboBox();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.Textbox_SUPPLIES_model1 = new System.Windows.Forms.TextBox();
+            this.skinCheckBox_price1 = new CCWin.SkinControl.SkinCheckBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Textbox_supples_technical_parameters1 = new CCWin.SkinControl.SkinTextBox();
+            this.skinTextBox4_code_ALL = new CCWin.SkinControl.SkinTextBox();
+            this.skinLabel34 = new CCWin.SkinControl.SkinLabel();
+            this.skinLabel17 = new CCWin.SkinControl.SkinLabel();
+            this.skinLabel32 = new CCWin.SkinControl.SkinLabel();
+            this.skinLabel31 = new CCWin.SkinControl.SkinLabel();
+            this.skinLabel33 = new CCWin.SkinControl.SkinLabel();
+            this.skinLabel16 = new CCWin.SkinControl.SkinLabel();
+            this.skinLabel30 = new CCWin.SkinControl.SkinLabel();
+            this.skinLabel29 = new CCWin.SkinControl.SkinLabel();
+            this.skinLabel18 = new CCWin.SkinControl.SkinLabel();
+            this.skinTextBox_price1 = new CCWin.SkinControl.SkinTextBox();
+            this.skinTextBox_datapath1 = new CCWin.SkinControl.SkinTextBox();
+            this.skinTextBox_pixturebox_path1 = new CCWin.SkinControl.SkinTextBox();
+            this.Textbox_supples_spare1 = new CCWin.SkinControl.SkinTextBox();
+            this.skinLabel19 = new CCWin.SkinControl.SkinLabel();
+            this.skinButton16 = new CCWin.SkinControl.SkinButton();
+            this.skinButton15 = new CCWin.SkinControl.SkinButton();
+            this.skinButton3 = new CCWin.SkinControl.SkinButton();
+            this.skinLabel20 = new CCWin.SkinControl.SkinLabel();
+            this.skinLabel21 = new CCWin.SkinControl.SkinLabel();
+            this.skinLabel22 = new CCWin.SkinControl.SkinLabel();
+            this.Textbox_supples_sort1 = new CCWin.SkinControl.SkinComboBox();
+            this.skinComboBox_C2 = new CCWin.SkinControl.SkinComboBox();
+            this.Textbox_brank1 = new CCWin.SkinControl.SkinComboBox();
+            this.skinComboBox_SUPPLIES_NAME1 = new CCWin.SkinControl.SkinComboBox();
+            this.skinComboBox_A2 = new CCWin.SkinControl.SkinComboBox();
+            this.skinComboBox_B2 = new CCWin.SkinControl.SkinComboBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.skinButton8 = new CCWin.SkinControl.SkinButton();
+            this.skinButton14 = new CCWin.SkinControl.SkinButton();
+            this.skinButton13 = new CCWin.SkinControl.SkinButton();
+            this.skinButton9 = new CCWin.SkinControl.SkinButton();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.skinButton18 = new CCWin.SkinControl.SkinButton();
+            this.skinDataGridView_BOM_ALL = new CCWin.SkinControl.SkinDataGridView();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn3 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.skinButton17 = new CCWin.SkinControl.SkinButton();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.ToolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
@@ -273,21 +273,6 @@
             this.ToolStripStatusLabel10 = new System.Windows.Forms.ToolStripStatusLabel();
             this.ToolStripStatusLabel11 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tabControl1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.groupBox9.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_unchecked)).BeginInit();
-            this.groupBox11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_checked)).BeginInit();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView1)).BeginInit();
-            this.tabPage6.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.tabPage7.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_BOM_ALL)).BeginInit();
-            this.groupBox17.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -304,6 +289,21 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_BOM_Hold)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_unchecked)).BeginInit();
+            this.groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_checked)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView1)).BeginInit();
+            this.groupBox9.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.tabPage7.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_BOM_ALL)).BeginInit();
+            this.groupBox17.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             this.StatusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -321,1569 +321,9 @@
             this.tabControl1.Location = new System.Drawing.Point(8, 87);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1350, 673);
+            this.tabControl1.Size = new System.Drawing.Size(1350, 632);
             this.tabControl1.TabIndex = 2;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.Gainsboro;
-            this.tabPage2.Controls.Add(this.groupBox9);
-            this.tabPage2.Controls.Add(this.groupBox5);
-            this.tabPage2.Controls.Add(this.groupBox4);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1342, 647);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "物料新增";
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.Textbox_SUPPLIES_model1);
-            this.groupBox9.Controls.Add(this.skinCheckBox_price1);
-            this.groupBox9.Controls.Add(this.label7);
-            this.groupBox9.Controls.Add(this.label6);
-            this.groupBox9.Controls.Add(this.label5);
-            this.groupBox9.Controls.Add(this.label4);
-            this.groupBox9.Controls.Add(this.label3);
-            this.groupBox9.Controls.Add(this.label2);
-            this.groupBox9.Controls.Add(this.label1);
-            this.groupBox9.Controls.Add(this.Textbox_supples_technical_parameters1);
-            this.groupBox9.Controls.Add(this.skinTextBox4_code_ALL);
-            this.groupBox9.Controls.Add(this.skinLabel34);
-            this.groupBox9.Controls.Add(this.skinLabel17);
-            this.groupBox9.Controls.Add(this.skinLabel32);
-            this.groupBox9.Controls.Add(this.skinLabel31);
-            this.groupBox9.Controls.Add(this.skinLabel33);
-            this.groupBox9.Controls.Add(this.skinLabel16);
-            this.groupBox9.Controls.Add(this.skinLabel30);
-            this.groupBox9.Controls.Add(this.skinLabel29);
-            this.groupBox9.Controls.Add(this.skinLabel18);
-            this.groupBox9.Controls.Add(this.skinTextBox_price1);
-            this.groupBox9.Controls.Add(this.skinTextBox_datapath1);
-            this.groupBox9.Controls.Add(this.skinTextBox_pixturebox_path1);
-            this.groupBox9.Controls.Add(this.Textbox_supples_spare1);
-            this.groupBox9.Controls.Add(this.skinLabel19);
-            this.groupBox9.Controls.Add(this.skinButton16);
-            this.groupBox9.Controls.Add(this.skinButton15);
-            this.groupBox9.Controls.Add(this.skinButton3);
-            this.groupBox9.Controls.Add(this.skinLabel20);
-            this.groupBox9.Controls.Add(this.skinLabel21);
-            this.groupBox9.Controls.Add(this.skinLabel22);
-            this.groupBox9.Controls.Add(this.Textbox_supples_sort1);
-            this.groupBox9.Controls.Add(this.skinComboBox_C2);
-            this.groupBox9.Controls.Add(this.Textbox_brank1);
-            this.groupBox9.Controls.Add(this.skinComboBox_SUPPLIES_NAME1);
-            this.groupBox9.Controls.Add(this.skinComboBox_A2);
-            this.groupBox9.Controls.Add(this.skinComboBox_B2);
-            this.groupBox9.Location = new System.Drawing.Point(6, 285);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(1815, 166);
-            this.groupBox9.TabIndex = 15;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "物料添加";
-            // 
-            // Textbox_SUPPLIES_model1
-            // 
-            this.Textbox_SUPPLIES_model1.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.Textbox_SUPPLIES_model1.Location = new System.Drawing.Point(604, 44);
-            this.Textbox_SUPPLIES_model1.Name = "Textbox_SUPPLIES_model1";
-            this.Textbox_SUPPLIES_model1.Size = new System.Drawing.Size(166, 25);
-            this.Textbox_SUPPLIES_model1.TabIndex = 17;
-            this.Textbox_SUPPLIES_model1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // skinCheckBox_price1
-            // 
-            this.skinCheckBox_price1.AutoSize = true;
-            this.skinCheckBox_price1.BackColor = System.Drawing.Color.Transparent;
-            this.skinCheckBox_price1.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinCheckBox_price1.DownBack = null;
-            this.skinCheckBox_price1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinCheckBox_price1.Location = new System.Drawing.Point(1562, 104);
-            this.skinCheckBox_price1.MouseBack = null;
-            this.skinCheckBox_price1.Name = "skinCheckBox_price1";
-            this.skinCheckBox_price1.NormlBack = null;
-            this.skinCheckBox_price1.SelectedDownBack = null;
-            this.skinCheckBox_price1.SelectedMouseBack = null;
-            this.skinCheckBox_price1.SelectedNormlBack = null;
-            this.skinCheckBox_price1.Size = new System.Drawing.Size(95, 21);
-            this.skinCheckBox_price1.TabIndex = 16;
-            this.skinCheckBox_price1.Text = "价格(不含税)";
-            this.skinCheckBox_price1.UseVisualStyleBackColor = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(1405, 52);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 12);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "非必填";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(1239, 52);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(29, 12);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "必填";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(1059, 52);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 12);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "必填";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(557, 49);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 12);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "必填";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(381, 52);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 12);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "必填";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(219, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 12);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "必填";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "必填";
-            // 
-            // Textbox_supples_technical_parameters1
-            // 
-            this.Textbox_supples_technical_parameters1.BackColor = System.Drawing.Color.Transparent;
-            this.Textbox_supples_technical_parameters1.DownBack = null;
-            this.Textbox_supples_technical_parameters1.Icon = null;
-            this.Textbox_supples_technical_parameters1.IconIsButton = false;
-            this.Textbox_supples_technical_parameters1.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.Textbox_supples_technical_parameters1.IsPasswordChat = '\0';
-            this.Textbox_supples_technical_parameters1.IsSystemPasswordChar = false;
-            this.Textbox_supples_technical_parameters1.Lines = new string[0];
-            this.Textbox_supples_technical_parameters1.Location = new System.Drawing.Point(150, 100);
-            this.Textbox_supples_technical_parameters1.Margin = new System.Windows.Forms.Padding(0);
-            this.Textbox_supples_technical_parameters1.MaxLength = 32767;
-            this.Textbox_supples_technical_parameters1.MinimumSize = new System.Drawing.Size(28, 28);
-            this.Textbox_supples_technical_parameters1.MouseBack = null;
-            this.Textbox_supples_technical_parameters1.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.Textbox_supples_technical_parameters1.Multiline = false;
-            this.Textbox_supples_technical_parameters1.Name = "Textbox_supples_technical_parameters1";
-            this.Textbox_supples_technical_parameters1.NormlBack = null;
-            this.Textbox_supples_technical_parameters1.Padding = new System.Windows.Forms.Padding(5);
-            this.Textbox_supples_technical_parameters1.ReadOnly = false;
-            this.Textbox_supples_technical_parameters1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.Textbox_supples_technical_parameters1.Size = new System.Drawing.Size(330, 28);
-            // 
-            // 
-            // 
-            this.Textbox_supples_technical_parameters1.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Textbox_supples_technical_parameters1.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Textbox_supples_technical_parameters1.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.Textbox_supples_technical_parameters1.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.Textbox_supples_technical_parameters1.SkinTxt.Name = "BaseText";
-            this.Textbox_supples_technical_parameters1.SkinTxt.Size = new System.Drawing.Size(320, 18);
-            this.Textbox_supples_technical_parameters1.SkinTxt.TabIndex = 0;
-            this.Textbox_supples_technical_parameters1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.Textbox_supples_technical_parameters1.SkinTxt.WaterText = "非必填";
-            this.Textbox_supples_technical_parameters1.TabIndex = 14;
-            this.Textbox_supples_technical_parameters1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Textbox_supples_technical_parameters1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.Textbox_supples_technical_parameters1.WaterText = "非必填";
-            this.Textbox_supples_technical_parameters1.WordWrap = true;
-            // 
-            // skinTextBox4_code_ALL
-            // 
-            this.skinTextBox4_code_ALL.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox4_code_ALL.DownBack = null;
-            this.skinTextBox4_code_ALL.Icon = null;
-            this.skinTextBox4_code_ALL.IconIsButton = false;
-            this.skinTextBox4_code_ALL.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox4_code_ALL.IsPasswordChat = '\0';
-            this.skinTextBox4_code_ALL.IsSystemPasswordChar = false;
-            this.skinTextBox4_code_ALL.Lines = new string[0];
-            this.skinTextBox4_code_ALL.Location = new System.Drawing.Point(831, 43);
-            this.skinTextBox4_code_ALL.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox4_code_ALL.MaxLength = 32767;
-            this.skinTextBox4_code_ALL.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox4_code_ALL.MouseBack = null;
-            this.skinTextBox4_code_ALL.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox4_code_ALL.Multiline = false;
-            this.skinTextBox4_code_ALL.Name = "skinTextBox4_code_ALL";
-            this.skinTextBox4_code_ALL.NormlBack = null;
-            this.skinTextBox4_code_ALL.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox4_code_ALL.ReadOnly = true;
-            this.skinTextBox4_code_ALL.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox4_code_ALL.Size = new System.Drawing.Size(185, 28);
-            // 
-            // 
-            // 
-            this.skinTextBox4_code_ALL.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox4_code_ALL.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox4_code_ALL.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox4_code_ALL.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox4_code_ALL.SkinTxt.Name = "BaseText";
-            this.skinTextBox4_code_ALL.SkinTxt.ReadOnly = true;
-            this.skinTextBox4_code_ALL.SkinTxt.Size = new System.Drawing.Size(175, 18);
-            this.skinTextBox4_code_ALL.SkinTxt.TabIndex = 0;
-            this.skinTextBox4_code_ALL.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox4_code_ALL.SkinTxt.WaterText = "不可编辑，自动生成";
-            this.skinTextBox4_code_ALL.TabIndex = 13;
-            this.skinTextBox4_code_ALL.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox4_code_ALL.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox4_code_ALL.WaterText = "不可编辑，自动生成";
-            this.skinTextBox4_code_ALL.WordWrap = true;
-            // 
-            // skinLabel34
-            // 
-            this.skinLabel34.AutoSize = true;
-            this.skinLabel34.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel34.BorderColor = System.Drawing.Color.White;
-            this.skinLabel34.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel34.Location = new System.Drawing.Point(1058, 105);
-            this.skinLabel34.Name = "skinLabel34";
-            this.skinLabel34.Size = new System.Drawing.Size(56, 17);
-            this.skinLabel34.TabIndex = 6;
-            this.skinLabel34.Text = "资料路径";
-            // 
-            // skinLabel17
-            // 
-            this.skinLabel17.AutoSize = true;
-            this.skinLabel17.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel17.BorderColor = System.Drawing.Color.White;
-            this.skinLabel17.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel17.Location = new System.Drawing.Point(738, 106);
-            this.skinLabel17.Name = "skinLabel17";
-            this.skinLabel17.Size = new System.Drawing.Size(32, 17);
-            this.skinLabel17.TabIndex = 6;
-            this.skinLabel17.Text = "图片";
-            // 
-            // skinLabel32
-            // 
-            this.skinLabel32.AutoSize = true;
-            this.skinLabel32.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel32.BorderColor = System.Drawing.Color.White;
-            this.skinLabel32.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel32.Location = new System.Drawing.Point(506, 104);
-            this.skinLabel32.Name = "skinLabel32";
-            this.skinLabel32.Size = new System.Drawing.Size(32, 17);
-            this.skinLabel32.TabIndex = 6;
-            this.skinLabel32.Text = "备注";
-            // 
-            // skinLabel31
-            // 
-            this.skinLabel31.AutoSize = true;
-            this.skinLabel31.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel31.BorderColor = System.Drawing.Color.White;
-            this.skinLabel31.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel31.Location = new System.Drawing.Point(91, 105);
-            this.skinLabel31.Name = "skinLabel31";
-            this.skinLabel31.Size = new System.Drawing.Size(56, 17);
-            this.skinLabel31.TabIndex = 6;
-            this.skinLabel31.Text = "技术参数";
-            // 
-            // skinLabel33
-            // 
-            this.skinLabel33.AutoSize = true;
-            this.skinLabel33.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel33.BorderColor = System.Drawing.Color.White;
-            this.skinLabel33.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel33.Location = new System.Drawing.Point(1492, 17);
-            this.skinLabel33.Name = "skinLabel33";
-            this.skinLabel33.Size = new System.Drawing.Size(32, 17);
-            this.skinLabel33.TabIndex = 6;
-            this.skinLabel33.Text = "类别";
-            // 
-            // skinLabel16
-            // 
-            this.skinLabel16.AutoSize = true;
-            this.skinLabel16.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel16.BorderColor = System.Drawing.Color.White;
-            this.skinLabel16.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel16.Location = new System.Drawing.Point(1771, 104);
-            this.skinLabel16.Name = "skinLabel16";
-            this.skinLabel16.Size = new System.Drawing.Size(44, 17);
-            this.skinLabel16.TabIndex = 6;
-            this.skinLabel16.Text = "人民币";
-            // 
-            // skinLabel30
-            // 
-            this.skinLabel30.AutoSize = true;
-            this.skinLabel30.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel30.BorderColor = System.Drawing.Color.White;
-            this.skinLabel30.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel30.Location = new System.Drawing.Point(1314, 17);
-            this.skinLabel30.Name = "skinLabel30";
-            this.skinLabel30.Size = new System.Drawing.Size(32, 17);
-            this.skinLabel30.TabIndex = 6;
-            this.skinLabel30.Text = "品牌";
-            // 
-            // skinLabel29
-            // 
-            this.skinLabel29.AutoSize = true;
-            this.skinLabel29.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel29.BorderColor = System.Drawing.Color.White;
-            this.skinLabel29.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel29.Location = new System.Drawing.Point(1109, 17);
-            this.skinLabel29.Name = "skinLabel29";
-            this.skinLabel29.Size = new System.Drawing.Size(56, 17);
-            this.skinLabel29.TabIndex = 6;
-            this.skinLabel29.Text = "物料名称";
-            // 
-            // skinLabel18
-            // 
-            this.skinLabel18.AutoSize = true;
-            this.skinLabel18.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel18.BorderColor = System.Drawing.Color.White;
-            this.skinLabel18.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel18.Location = new System.Drawing.Point(113, 17);
-            this.skinLabel18.Name = "skinLabel18";
-            this.skinLabel18.Size = new System.Drawing.Size(64, 17);
-            this.skinLabel18.TabIndex = 6;
-            this.skinLabel18.Text = "分类代码A";
-            // 
-            // skinTextBox_price1
-            // 
-            this.skinTextBox_price1.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox_price1.DownBack = null;
-            this.skinTextBox_price1.Icon = null;
-            this.skinTextBox_price1.IconIsButton = false;
-            this.skinTextBox_price1.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox_price1.IsPasswordChat = '\0';
-            this.skinTextBox_price1.IsSystemPasswordChar = false;
-            this.skinTextBox_price1.Lines = new string[0];
-            this.skinTextBox_price1.Location = new System.Drawing.Point(1660, 100);
-            this.skinTextBox_price1.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox_price1.MaxLength = 32767;
-            this.skinTextBox_price1.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox_price1.MouseBack = null;
-            this.skinTextBox_price1.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox_price1.Multiline = false;
-            this.skinTextBox_price1.Name = "skinTextBox_price1";
-            this.skinTextBox_price1.NormlBack = null;
-            this.skinTextBox_price1.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox_price1.ReadOnly = false;
-            this.skinTextBox_price1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox_price1.Size = new System.Drawing.Size(108, 28);
-            // 
-            // 
-            // 
-            this.skinTextBox_price1.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox_price1.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox_price1.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox_price1.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox_price1.SkinTxt.Name = "BaseText";
-            this.skinTextBox_price1.SkinTxt.Size = new System.Drawing.Size(98, 18);
-            this.skinTextBox_price1.SkinTxt.TabIndex = 0;
-            this.skinTextBox_price1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox_price1.SkinTxt.WaterText = "非必填";
-            this.skinTextBox_price1.TabIndex = 13;
-            this.skinTextBox_price1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox_price1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox_price1.WaterText = "非必填";
-            this.skinTextBox_price1.WordWrap = true;
-            // 
-            // skinTextBox_datapath1
-            // 
-            this.skinTextBox_datapath1.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox_datapath1.DownBack = null;
-            this.skinTextBox_datapath1.Icon = null;
-            this.skinTextBox_datapath1.IconIsButton = false;
-            this.skinTextBox_datapath1.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox_datapath1.IsPasswordChat = '\0';
-            this.skinTextBox_datapath1.IsSystemPasswordChar = false;
-            this.skinTextBox_datapath1.Lines = new string[0];
-            this.skinTextBox_datapath1.Location = new System.Drawing.Point(1127, 100);
-            this.skinTextBox_datapath1.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox_datapath1.MaxLength = 32767;
-            this.skinTextBox_datapath1.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox_datapath1.MouseBack = null;
-            this.skinTextBox_datapath1.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox_datapath1.Multiline = false;
-            this.skinTextBox_datapath1.Name = "skinTextBox_datapath1";
-            this.skinTextBox_datapath1.NormlBack = null;
-            this.skinTextBox_datapath1.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox_datapath1.ReadOnly = false;
-            this.skinTextBox_datapath1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox_datapath1.Size = new System.Drawing.Size(353, 28);
-            // 
-            // 
-            // 
-            this.skinTextBox_datapath1.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox_datapath1.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox_datapath1.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox_datapath1.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox_datapath1.SkinTxt.Name = "BaseText";
-            this.skinTextBox_datapath1.SkinTxt.Size = new System.Drawing.Size(343, 18);
-            this.skinTextBox_datapath1.SkinTxt.TabIndex = 0;
-            this.skinTextBox_datapath1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox_datapath1.SkinTxt.WaterText = "非必填";
-            this.skinTextBox_datapath1.TabIndex = 13;
-            this.skinTextBox_datapath1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox_datapath1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox_datapath1.WaterText = "非必填";
-            this.skinTextBox_datapath1.WordWrap = true;
-            // 
-            // skinTextBox_pixturebox_path1
-            // 
-            this.skinTextBox_pixturebox_path1.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox_pixturebox_path1.DownBack = null;
-            this.skinTextBox_pixturebox_path1.Icon = null;
-            this.skinTextBox_pixturebox_path1.IconIsButton = false;
-            this.skinTextBox_pixturebox_path1.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox_pixturebox_path1.IsPasswordChat = '\0';
-            this.skinTextBox_pixturebox_path1.IsSystemPasswordChar = false;
-            this.skinTextBox_pixturebox_path1.Lines = new string[0];
-            this.skinTextBox_pixturebox_path1.Location = new System.Drawing.Point(773, 100);
-            this.skinTextBox_pixturebox_path1.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox_pixturebox_path1.MaxLength = 32767;
-            this.skinTextBox_pixturebox_path1.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox_pixturebox_path1.MouseBack = null;
-            this.skinTextBox_pixturebox_path1.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox_pixturebox_path1.Multiline = false;
-            this.skinTextBox_pixturebox_path1.Name = "skinTextBox_pixturebox_path1";
-            this.skinTextBox_pixturebox_path1.NormlBack = null;
-            this.skinTextBox_pixturebox_path1.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox_pixturebox_path1.ReadOnly = false;
-            this.skinTextBox_pixturebox_path1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox_pixturebox_path1.Size = new System.Drawing.Size(194, 28);
-            // 
-            // 
-            // 
-            this.skinTextBox_pixturebox_path1.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox_pixturebox_path1.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox_pixturebox_path1.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox_pixturebox_path1.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox_pixturebox_path1.SkinTxt.Name = "BaseText";
-            this.skinTextBox_pixturebox_path1.SkinTxt.Size = new System.Drawing.Size(184, 18);
-            this.skinTextBox_pixturebox_path1.SkinTxt.TabIndex = 0;
-            this.skinTextBox_pixturebox_path1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox_pixturebox_path1.SkinTxt.WaterText = "非必填";
-            this.skinTextBox_pixturebox_path1.TabIndex = 13;
-            this.skinTextBox_pixturebox_path1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox_pixturebox_path1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox_pixturebox_path1.WaterText = "非必填";
-            this.skinTextBox_pixturebox_path1.WordWrap = true;
-            // 
-            // Textbox_supples_spare1
-            // 
-            this.Textbox_supples_spare1.BackColor = System.Drawing.Color.Transparent;
-            this.Textbox_supples_spare1.DownBack = null;
-            this.Textbox_supples_spare1.Icon = null;
-            this.Textbox_supples_spare1.IconIsButton = false;
-            this.Textbox_supples_spare1.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.Textbox_supples_spare1.IsPasswordChat = '\0';
-            this.Textbox_supples_spare1.IsSystemPasswordChar = false;
-            this.Textbox_supples_spare1.Lines = new string[0];
-            this.Textbox_supples_spare1.Location = new System.Drawing.Point(541, 100);
-            this.Textbox_supples_spare1.Margin = new System.Windows.Forms.Padding(0);
-            this.Textbox_supples_spare1.MaxLength = 32767;
-            this.Textbox_supples_spare1.MinimumSize = new System.Drawing.Size(28, 28);
-            this.Textbox_supples_spare1.MouseBack = null;
-            this.Textbox_supples_spare1.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.Textbox_supples_spare1.Multiline = false;
-            this.Textbox_supples_spare1.Name = "Textbox_supples_spare1";
-            this.Textbox_supples_spare1.NormlBack = null;
-            this.Textbox_supples_spare1.Padding = new System.Windows.Forms.Padding(5);
-            this.Textbox_supples_spare1.ReadOnly = false;
-            this.Textbox_supples_spare1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.Textbox_supples_spare1.Size = new System.Drawing.Size(194, 28);
-            // 
-            // 
-            // 
-            this.Textbox_supples_spare1.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Textbox_supples_spare1.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Textbox_supples_spare1.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.Textbox_supples_spare1.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.Textbox_supples_spare1.SkinTxt.Name = "BaseText";
-            this.Textbox_supples_spare1.SkinTxt.Size = new System.Drawing.Size(184, 18);
-            this.Textbox_supples_spare1.SkinTxt.TabIndex = 0;
-            this.Textbox_supples_spare1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.Textbox_supples_spare1.SkinTxt.WaterText = "非必填";
-            this.Textbox_supples_spare1.TabIndex = 13;
-            this.Textbox_supples_spare1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Textbox_supples_spare1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.Textbox_supples_spare1.WaterText = "非必填";
-            this.Textbox_supples_spare1.WordWrap = true;
-            // 
-            // skinLabel19
-            // 
-            this.skinLabel19.AutoSize = true;
-            this.skinLabel19.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel19.BorderColor = System.Drawing.Color.White;
-            this.skinLabel19.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel19.Location = new System.Drawing.Point(274, 17);
-            this.skinLabel19.Name = "skinLabel19";
-            this.skinLabel19.Size = new System.Drawing.Size(64, 17);
-            this.skinLabel19.TabIndex = 6;
-            this.skinLabel19.Text = "分类代码B";
-            // 
-            // skinButton16
-            // 
-            this.skinButton16.BackColor = System.Drawing.Color.Transparent;
-            this.skinButton16.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButton16.DownBack = null;
-            this.skinButton16.Location = new System.Drawing.Point(1483, 99);
-            this.skinButton16.MouseBack = null;
-            this.skinButton16.Name = "skinButton16";
-            this.skinButton16.NormlBack = null;
-            this.skinButton16.Size = new System.Drawing.Size(51, 29);
-            this.skinButton16.TabIndex = 12;
-            this.skinButton16.Text = "浏览";
-            this.skinButton16.UseVisualStyleBackColor = false;
-            this.skinButton16.Click += new System.EventHandler(this.skinButton16_Click);
-            // 
-            // skinButton15
-            // 
-            this.skinButton15.BackColor = System.Drawing.Color.Transparent;
-            this.skinButton15.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButton15.DownBack = null;
-            this.skinButton15.Location = new System.Drawing.Point(970, 101);
-            this.skinButton15.MouseBack = null;
-            this.skinButton15.Name = "skinButton15";
-            this.skinButton15.NormlBack = null;
-            this.skinButton15.Size = new System.Drawing.Size(51, 29);
-            this.skinButton15.TabIndex = 12;
-            this.skinButton15.Text = "上传";
-            this.skinButton15.UseVisualStyleBackColor = false;
-            this.skinButton15.Click += new System.EventHandler(this.skinButton15_Click);
-            // 
-            // skinButton3
-            // 
-            this.skinButton3.BackColor = System.Drawing.Color.Transparent;
-            this.skinButton3.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButton3.DownBack = null;
-            this.skinButton3.Location = new System.Drawing.Point(1680, 42);
-            this.skinButton3.MouseBack = null;
-            this.skinButton3.Name = "skinButton3";
-            this.skinButton3.NormlBack = null;
-            this.skinButton3.Size = new System.Drawing.Size(99, 29);
-            this.skinButton3.TabIndex = 12;
-            this.skinButton3.Text = "添加";
-            this.skinButton3.UseVisualStyleBackColor = false;
-            this.skinButton3.Click += new System.EventHandler(this.skinButton3_Click_1);
-            // 
-            // skinLabel20
-            // 
-            this.skinLabel20.AutoSize = true;
-            this.skinLabel20.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel20.BorderColor = System.Drawing.Color.White;
-            this.skinLabel20.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel20.Location = new System.Drawing.Point(439, 17);
-            this.skinLabel20.Name = "skinLabel20";
-            this.skinLabel20.Size = new System.Drawing.Size(64, 17);
-            this.skinLabel20.TabIndex = 6;
-            this.skinLabel20.Text = "分类代码C";
-            // 
-            // skinLabel21
-            // 
-            this.skinLabel21.AutoSize = true;
-            this.skinLabel21.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel21.BorderColor = System.Drawing.Color.White;
-            this.skinLabel21.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel21.Location = new System.Drawing.Point(632, 17);
-            this.skinLabel21.Name = "skinLabel21";
-            this.skinLabel21.Size = new System.Drawing.Size(56, 17);
-            this.skinLabel21.TabIndex = 6;
-            this.skinLabel21.Text = "物料型号";
-            // 
-            // skinLabel22
-            // 
-            this.skinLabel22.AutoSize = true;
-            this.skinLabel22.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel22.BorderColor = System.Drawing.Color.White;
-            this.skinLabel22.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel22.Location = new System.Drawing.Point(887, 17);
-            this.skinLabel22.Name = "skinLabel22";
-            this.skinLabel22.Size = new System.Drawing.Size(56, 17);
-            this.skinLabel22.TabIndex = 6;
-            this.skinLabel22.Text = "物料代码";
-            // 
-            // Textbox_supples_sort1
-            // 
-            this.Textbox_supples_sort1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.Textbox_supples_sort1.FormattingEnabled = true;
-            this.Textbox_supples_sort1.Location = new System.Drawing.Point(1452, 49);
-            this.Textbox_supples_sort1.Name = "Textbox_supples_sort1";
-            this.Textbox_supples_sort1.Size = new System.Drawing.Size(121, 22);
-            this.Textbox_supples_sort1.TabIndex = 9;
-            this.Textbox_supples_sort1.WaterText = "";
-            // 
-            // skinComboBox_C2
-            // 
-            this.skinComboBox_C2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.skinComboBox_C2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.skinComboBox_C2.FormattingEnabled = true;
-            this.skinComboBox_C2.Location = new System.Drawing.Point(416, 49);
-            this.skinComboBox_C2.Name = "skinComboBox_C2";
-            this.skinComboBox_C2.Size = new System.Drawing.Size(121, 22);
-            this.skinComboBox_C2.TabIndex = 7;
-            this.skinComboBox_C2.WaterText = "";
-            this.skinComboBox_C2.SelectedIndexChanged += new System.EventHandler(this.skinComboBox_C2_SelectedIndexChanged);
-            // 
-            // Textbox_brank1
-            // 
-            this.Textbox_brank1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.Textbox_brank1.FormattingEnabled = true;
-            this.Textbox_brank1.Location = new System.Drawing.Point(1274, 49);
-            this.Textbox_brank1.Name = "Textbox_brank1";
-            this.Textbox_brank1.Size = new System.Drawing.Size(121, 22);
-            this.Textbox_brank1.TabIndex = 9;
-            this.Textbox_brank1.WaterText = "";
-            // 
-            // skinComboBox_SUPPLIES_NAME1
-            // 
-            this.skinComboBox_SUPPLIES_NAME1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.skinComboBox_SUPPLIES_NAME1.FormattingEnabled = true;
-            this.skinComboBox_SUPPLIES_NAME1.Location = new System.Drawing.Point(1094, 49);
-            this.skinComboBox_SUPPLIES_NAME1.Name = "skinComboBox_SUPPLIES_NAME1";
-            this.skinComboBox_SUPPLIES_NAME1.Size = new System.Drawing.Size(121, 22);
-            this.skinComboBox_SUPPLIES_NAME1.TabIndex = 9;
-            this.skinComboBox_SUPPLIES_NAME1.WaterText = "";
-            // 
-            // skinComboBox_A2
-            // 
-            this.skinComboBox_A2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.skinComboBox_A2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.skinComboBox_A2.FormattingEnabled = true;
-            this.skinComboBox_A2.Location = new System.Drawing.Point(94, 49);
-            this.skinComboBox_A2.Name = "skinComboBox_A2";
-            this.skinComboBox_A2.Size = new System.Drawing.Size(121, 22);
-            this.skinComboBox_A2.TabIndex = 9;
-            this.skinComboBox_A2.WaterText = "";
-            this.skinComboBox_A2.SelectedIndexChanged += new System.EventHandler(this.skinComboBox3_A2_SelectedIndexChanged);
-            // 
-            // skinComboBox_B2
-            // 
-            this.skinComboBox_B2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.skinComboBox_B2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.skinComboBox_B2.FormattingEnabled = true;
-            this.skinComboBox_B2.Location = new System.Drawing.Point(254, 49);
-            this.skinComboBox_B2.Name = "skinComboBox_B2";
-            this.skinComboBox_B2.Size = new System.Drawing.Size(121, 22);
-            this.skinComboBox_B2.TabIndex = 8;
-            this.skinComboBox_B2.WaterText = "";
-            this.skinComboBox_B2.SelectedIndexChanged += new System.EventHandler(this.skinComboBox4_B2_SelectedIndexChanged);
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.groupBox12);
-            this.groupBox5.Controls.Add(this.groupBox11);
-            this.groupBox5.Location = new System.Drawing.Point(6, 457);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(1815, 437);
-            this.groupBox5.TabIndex = 15;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "已增物料";
-            // 
-            // groupBox12
-            // 
-            this.groupBox12.Controls.Add(this.skinDataGridView_unchecked);
-            this.groupBox12.Location = new System.Drawing.Point(18, 232);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(1779, 199);
-            this.groupBox12.TabIndex = 17;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "未审核物料";
-            // 
-            // skinDataGridView_unchecked
-            // 
-            this.skinDataGridView_unchecked.AllowUserToAddRows = false;
-            this.skinDataGridView_unchecked.AllowUserToResizeColumns = false;
-            dataGridViewCellStyle296.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
-            this.skinDataGridView_unchecked.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle296;
-            this.skinDataGridView_unchecked.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.skinDataGridView_unchecked.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.skinDataGridView_unchecked.ColumnFont = null;
-            this.skinDataGridView_unchecked.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle297.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle297.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle297.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle297.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle297.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle297.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle297.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.skinDataGridView_unchecked.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle297;
-            this.skinDataGridView_unchecked.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.skinDataGridView_unchecked.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn25,
-            this.dataGridViewTextBoxColumn26,
-            this.dataGridViewTextBoxColumn27,
-            this.dataGridViewTextBoxColumn28,
-            this.dataGridViewTextBoxColumn29,
-            this.dataGridViewTextBoxColumn30,
-            this.dataGridViewTextBoxColumn31,
-            this.dataGridViewTextBoxColumn32,
-            this.dataGridViewTextBoxColumn33,
-            this.Column21,
-            this.Column18,
-            this.Column15,
-            this.Column17});
-            this.skinDataGridView_unchecked.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle298.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle298.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle298.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle298.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle298.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle298.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle298.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.skinDataGridView_unchecked.DefaultCellStyle = dataGridViewCellStyle298;
-            this.skinDataGridView_unchecked.EnableHeadersVisualStyles = false;
-            this.skinDataGridView_unchecked.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.skinDataGridView_unchecked.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinDataGridView_unchecked.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            this.skinDataGridView_unchecked.Location = new System.Drawing.Point(18, 31);
-            this.skinDataGridView_unchecked.MultiSelect = false;
-            this.skinDataGridView_unchecked.Name = "skinDataGridView_unchecked";
-            this.skinDataGridView_unchecked.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.skinDataGridView_unchecked.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle299.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle299.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle299.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle299.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.skinDataGridView_unchecked.RowsDefaultCellStyle = dataGridViewCellStyle299;
-            this.skinDataGridView_unchecked.RowTemplate.Height = 23;
-            this.skinDataGridView_unchecked.Size = new System.Drawing.Size(1743, 155);
-            this.skinDataGridView_unchecked.TabIndex = 15;
-            this.skinDataGridView_unchecked.TitleBack = null;
-            this.skinDataGridView_unchecked.TitleBackColorBegin = System.Drawing.Color.White;
-            this.skinDataGridView_unchecked.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
-            this.skinDataGridView_unchecked.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.skinDataGridView_unchecked_CellContentClick);
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.HeaderText = "类别";
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            this.dataGridViewTextBoxColumn25.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            this.dataGridViewTextBoxColumn26.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.HeaderText = "物料代码";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            this.dataGridViewTextBoxColumn27.ReadOnly = true;
-            this.dataGridViewTextBoxColumn27.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.HeaderText = "规格型号";
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn29
-            // 
-            this.dataGridViewTextBoxColumn29.HeaderText = "物料名称";
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            this.dataGridViewTextBoxColumn29.ReadOnly = true;
-            this.dataGridViewTextBoxColumn29.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn30
-            // 
-            this.dataGridViewTextBoxColumn30.HeaderText = "品牌";
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            this.dataGridViewTextBoxColumn30.ReadOnly = true;
-            this.dataGridViewTextBoxColumn30.Width = 90;
-            // 
-            // dataGridViewTextBoxColumn31
-            // 
-            this.dataGridViewTextBoxColumn31.HeaderText = "技术参数";
-            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            this.dataGridViewTextBoxColumn31.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn32
-            // 
-            this.dataGridViewTextBoxColumn32.HeaderText = "备注";
-            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
-            // 
-            // dataGridViewTextBoxColumn33
-            // 
-            this.dataGridViewTextBoxColumn33.HeaderText = "价格";
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            // 
-            // Column21
-            // 
-            this.Column21.HeaderText = "图片路径";
-            this.Column21.Name = "Column21";
-            // 
-            // Column18
-            // 
-            this.Column18.HeaderText = "资料路径";
-            this.Column18.Name = "Column18";
-            this.Column18.Width = 300;
-            // 
-            // Column15
-            // 
-            this.Column15.HeaderText = "提交审核";
-            this.Column15.Name = "Column15";
-            this.Column15.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column15.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // Column17
-            // 
-            this.Column17.HeaderText = "删除";
-            this.Column17.Name = "Column17";
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.Controls.Add(this.skinDataGridView_checked);
-            this.groupBox11.Location = new System.Drawing.Point(18, 20);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(1779, 206);
-            this.groupBox11.TabIndex = 16;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "已审核物料";
-            // 
-            // skinDataGridView_checked
-            // 
-            this.skinDataGridView_checked.AllowUserToAddRows = false;
-            this.skinDataGridView_checked.AllowUserToResizeColumns = false;
-            dataGridViewCellStyle300.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
-            this.skinDataGridView_checked.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle300;
-            this.skinDataGridView_checked.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.skinDataGridView_checked.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.skinDataGridView_checked.ColumnFont = null;
-            this.skinDataGridView_checked.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle301.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle301.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle301.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle301.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle301.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle301.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle301.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.skinDataGridView_checked.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle301;
-            this.skinDataGridView_checked.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.skinDataGridView_checked.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn34,
-            this.dataGridViewTextBoxColumn35,
-            this.dataGridViewTextBoxColumn36,
-            this.dataGridViewTextBoxColumn37,
-            this.dataGridViewTextBoxColumn38,
-            this.dataGridViewTextBoxColumn39,
-            this.dataGridViewTextBoxColumn40,
-            this.dataGridViewTextBoxColumn41,
-            this.dataGridViewTextBoxColumn42,
-            this.Column22,
-            this.dataGridViewTextBoxColumn43,
-            this.Column20,
-            this.Column16,
-            this.Column19});
-            this.skinDataGridView_checked.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle302.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle302.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle302.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle302.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle302.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle302.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle302.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.skinDataGridView_checked.DefaultCellStyle = dataGridViewCellStyle302;
-            this.skinDataGridView_checked.EnableHeadersVisualStyles = false;
-            this.skinDataGridView_checked.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.skinDataGridView_checked.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinDataGridView_checked.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            this.skinDataGridView_checked.Location = new System.Drawing.Point(18, 20);
-            this.skinDataGridView_checked.MultiSelect = false;
-            this.skinDataGridView_checked.Name = "skinDataGridView_checked";
-            this.skinDataGridView_checked.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.skinDataGridView_checked.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle303.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle303.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle303.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle303.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.skinDataGridView_checked.RowsDefaultCellStyle = dataGridViewCellStyle303;
-            this.skinDataGridView_checked.RowTemplate.Height = 23;
-            this.skinDataGridView_checked.Size = new System.Drawing.Size(1743, 155);
-            this.skinDataGridView_checked.TabIndex = 16;
-            this.skinDataGridView_checked.TitleBack = null;
-            this.skinDataGridView_checked.TitleBackColorBegin = System.Drawing.Color.White;
-            this.skinDataGridView_checked.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
-            // 
-            // dataGridViewTextBoxColumn34
-            // 
-            this.dataGridViewTextBoxColumn34.HeaderText = "类别";
-            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
-            this.dataGridViewTextBoxColumn34.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn35
-            // 
-            this.dataGridViewTextBoxColumn35.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
-            this.dataGridViewTextBoxColumn35.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn36
-            // 
-            this.dataGridViewTextBoxColumn36.HeaderText = "物料代码";
-            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
-            this.dataGridViewTextBoxColumn36.ReadOnly = true;
-            this.dataGridViewTextBoxColumn36.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn37
-            // 
-            this.dataGridViewTextBoxColumn37.HeaderText = "规格型号";
-            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
-            this.dataGridViewTextBoxColumn37.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn38
-            // 
-            this.dataGridViewTextBoxColumn38.HeaderText = "物料名称";
-            this.dataGridViewTextBoxColumn38.Name = "dataGridViewTextBoxColumn38";
-            this.dataGridViewTextBoxColumn38.ReadOnly = true;
-            this.dataGridViewTextBoxColumn38.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn39
-            // 
-            this.dataGridViewTextBoxColumn39.HeaderText = "品牌";
-            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
-            this.dataGridViewTextBoxColumn39.ReadOnly = true;
-            this.dataGridViewTextBoxColumn39.Width = 90;
-            // 
-            // dataGridViewTextBoxColumn40
-            // 
-            this.dataGridViewTextBoxColumn40.HeaderText = "技术参数";
-            this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
-            this.dataGridViewTextBoxColumn40.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn41
-            // 
-            this.dataGridViewTextBoxColumn41.HeaderText = "备注";
-            this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
-            // 
-            // dataGridViewTextBoxColumn42
-            // 
-            this.dataGridViewTextBoxColumn42.HeaderText = "价格";
-            this.dataGridViewTextBoxColumn42.Name = "dataGridViewTextBoxColumn42";
-            // 
-            // Column22
-            // 
-            this.Column22.HeaderText = "图片路径";
-            this.Column22.Name = "Column22";
-            // 
-            // dataGridViewTextBoxColumn43
-            // 
-            this.dataGridViewTextBoxColumn43.HeaderText = "资料路径";
-            this.dataGridViewTextBoxColumn43.Name = "dataGridViewTextBoxColumn43";
-            this.dataGridViewTextBoxColumn43.Width = 250;
-            // 
-            // Column20
-            // 
-            this.Column20.HeaderText = "物料ID";
-            this.Column20.Name = "Column20";
-            // 
-            // Column16
-            // 
-            this.Column16.HeaderText = "审核状态";
-            this.Column16.Name = "Column16";
-            // 
-            // Column19
-            // 
-            this.Column19.HeaderText = "审核意见";
-            this.Column19.Name = "Column19";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.CheckBox2_find_condition);
-            this.groupBox4.Controls.Add(this.skinDataGridView1);
-            this.groupBox4.Controls.Add(this.skinLabel13);
-            this.groupBox4.Controls.Add(this.skinLabel12);
-            this.groupBox4.Controls.Add(this.skinLabel14);
-            this.groupBox4.Controls.Add(this.skinButton7);
-            this.groupBox4.Controls.Add(this.skinLabel15);
-            this.groupBox4.Controls.Add(this.textbox_sort);
-            this.groupBox4.Controls.Add(this.skinComboBox_C1);
-            this.groupBox4.Controls.Add(this.skinComboBox_A1);
-            this.groupBox4.Controls.Add(this.skinComboBox_B1);
-            this.groupBox4.Location = new System.Drawing.Point(9, 6);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1815, 273);
-            this.groupBox4.TabIndex = 14;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "已有物料搜索";
-            // 
-            // CheckBox2_find_condition
-            // 
-            this.CheckBox2_find_condition.AutoSize = true;
-            this.CheckBox2_find_condition.BackColor = System.Drawing.Color.Transparent;
-            this.CheckBox2_find_condition.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.CheckBox2_find_condition.DownBack = null;
-            this.CheckBox2_find_condition.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.CheckBox2_find_condition.Location = new System.Drawing.Point(932, 78);
-            this.CheckBox2_find_condition.MouseBack = null;
-            this.CheckBox2_find_condition.Name = "CheckBox2_find_condition";
-            this.CheckBox2_find_condition.NormlBack = null;
-            this.CheckBox2_find_condition.SelectedDownBack = null;
-            this.CheckBox2_find_condition.SelectedMouseBack = null;
-            this.CheckBox2_find_condition.SelectedNormlBack = null;
-            this.CheckBox2_find_condition.Size = new System.Drawing.Size(123, 21);
-            this.CheckBox2_find_condition.TabIndex = 15;
-            this.CheckBox2_find_condition.Text = "在以上范围内搜索";
-            this.CheckBox2_find_condition.UseVisualStyleBackColor = false;
-            // 
-            // skinDataGridView1
-            // 
-            this.skinDataGridView1.AllowUserToAddRows = false;
-            this.skinDataGridView1.AllowUserToResizeColumns = false;
-            dataGridViewCellStyle304.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
-            this.skinDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle304;
-            this.skinDataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.skinDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.skinDataGridView1.ColumnFont = null;
-            this.skinDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle305.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle305.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle305.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle305.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle305.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle305.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle305.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.skinDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle305;
-            this.skinDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.skinDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn15});
-            this.skinDataGridView1.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle306.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle306.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle306.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle306.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle306.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle306.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle306.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.skinDataGridView1.DefaultCellStyle = dataGridViewCellStyle306;
-            this.skinDataGridView1.EnableHeadersVisualStyles = false;
-            this.skinDataGridView1.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.skinDataGridView1.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinDataGridView1.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            this.skinDataGridView1.Location = new System.Drawing.Point(49, 112);
-            this.skinDataGridView1.MultiSelect = false;
-            this.skinDataGridView1.Name = "skinDataGridView1";
-            this.skinDataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.skinDataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle307.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle307.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle307.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle307.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.skinDataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle307;
-            this.skinDataGridView1.RowTemplate.Height = 23;
-            this.skinDataGridView1.Size = new System.Drawing.Size(1381, 155);
-            this.skinDataGridView1.TabIndex = 14;
-            this.skinDataGridView1.TitleBack = null;
-            this.skinDataGridView1.TitleBackColorBegin = System.Drawing.Color.White;
-            this.skinDataGridView1.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "类别";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 120;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "物料代码";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "规格型号";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.HeaderText = "物料名称";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            this.dataGridViewTextBoxColumn10.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.HeaderText = "品牌";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.HeaderText = "技术参数";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.HeaderText = "备注";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.HeaderText = "价格";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            // 
-            // skinLabel13
-            // 
-            this.skinLabel13.AutoSize = true;
-            this.skinLabel13.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel13.BorderColor = System.Drawing.Color.White;
-            this.skinLabel13.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel13.Location = new System.Drawing.Point(231, 78);
-            this.skinLabel13.Name = "skinLabel13";
-            this.skinLabel13.Size = new System.Drawing.Size(144, 16);
-            this.skinLabel13.TabIndex = 11;
-            this.skinLabel13.Text = "物料类别模糊查找";
-            // 
-            // skinLabel12
-            // 
-            this.skinLabel12.AutoSize = true;
-            this.skinLabel12.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel12.BorderColor = System.Drawing.Color.White;
-            this.skinLabel12.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel12.Location = new System.Drawing.Point(151, 28);
-            this.skinLabel12.Name = "skinLabel12";
-            this.skinLabel12.Size = new System.Drawing.Size(64, 17);
-            this.skinLabel12.TabIndex = 6;
-            this.skinLabel12.Text = "分类代码A";
-            // 
-            // skinLabel14
-            // 
-            this.skinLabel14.AutoSize = true;
-            this.skinLabel14.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel14.BorderColor = System.Drawing.Color.White;
-            this.skinLabel14.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel14.Location = new System.Drawing.Point(439, 28);
-            this.skinLabel14.Name = "skinLabel14";
-            this.skinLabel14.Size = new System.Drawing.Size(64, 17);
-            this.skinLabel14.TabIndex = 6;
-            this.skinLabel14.Text = "分类代码B";
-            // 
-            // skinButton7
-            // 
-            this.skinButton7.BackColor = System.Drawing.Color.Transparent;
-            this.skinButton7.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButton7.DownBack = null;
-            this.skinButton7.Location = new System.Drawing.Point(758, 74);
-            this.skinButton7.MouseBack = null;
-            this.skinButton7.Name = "skinButton7";
-            this.skinButton7.NormlBack = null;
-            this.skinButton7.Size = new System.Drawing.Size(99, 29);
-            this.skinButton7.TabIndex = 12;
-            this.skinButton7.Text = "查找";
-            this.skinButton7.UseVisualStyleBackColor = false;
-            this.skinButton7.Click += new System.EventHandler(this.skinButton7_Click);
-            // 
-            // skinLabel15
-            // 
-            this.skinLabel15.AutoSize = true;
-            this.skinLabel15.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel15.BorderColor = System.Drawing.Color.White;
-            this.skinLabel15.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel15.Location = new System.Drawing.Point(710, 28);
-            this.skinLabel15.Name = "skinLabel15";
-            this.skinLabel15.Size = new System.Drawing.Size(64, 17);
-            this.skinLabel15.TabIndex = 6;
-            this.skinLabel15.Text = "分类代码C";
-            // 
-            // textbox_sort
-            // 
-            this.textbox_sort.BackColor = System.Drawing.Color.Transparent;
-            this.textbox_sort.DownBack = null;
-            this.textbox_sort.Icon = null;
-            this.textbox_sort.IconIsButton = false;
-            this.textbox_sort.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.textbox_sort.IsPasswordChat = '\0';
-            this.textbox_sort.IsSystemPasswordChar = false;
-            this.textbox_sort.Lines = new string[0];
-            this.textbox_sort.Location = new System.Drawing.Point(383, 69);
-            this.textbox_sort.Margin = new System.Windows.Forms.Padding(0);
-            this.textbox_sort.MaxLength = 32767;
-            this.textbox_sort.MinimumSize = new System.Drawing.Size(28, 28);
-            this.textbox_sort.MouseBack = null;
-            this.textbox_sort.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.textbox_sort.Multiline = true;
-            this.textbox_sort.Name = "textbox_sort";
-            this.textbox_sort.NormlBack = null;
-            this.textbox_sort.Padding = new System.Windows.Forms.Padding(5);
-            this.textbox_sort.ReadOnly = false;
-            this.textbox_sort.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textbox_sort.Size = new System.Drawing.Size(326, 30);
-            // 
-            // 
-            // 
-            this.textbox_sort.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textbox_sort.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textbox_sort.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.textbox_sort.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.textbox_sort.SkinTxt.Multiline = true;
-            this.textbox_sort.SkinTxt.Name = "BaseText";
-            this.textbox_sort.SkinTxt.Size = new System.Drawing.Size(316, 20);
-            this.textbox_sort.SkinTxt.TabIndex = 0;
-            this.textbox_sort.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.textbox_sort.SkinTxt.WaterText = "请输入物料名称";
-            this.textbox_sort.TabIndex = 10;
-            this.textbox_sort.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.textbox_sort.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.textbox_sort.WaterText = "请输入物料名称";
-            this.textbox_sort.WordWrap = true;
-            // 
-            // skinComboBox_C1
-            // 
-            this.skinComboBox_C1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.skinComboBox_C1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.skinComboBox_C1.FormattingEnabled = true;
-            this.skinComboBox_C1.Location = new System.Drawing.Point(780, 28);
-            this.skinComboBox_C1.Name = "skinComboBox_C1";
-            this.skinComboBox_C1.Size = new System.Drawing.Size(121, 22);
-            this.skinComboBox_C1.TabIndex = 7;
-            this.skinComboBox_C1.WaterText = "";
-            // 
-            // skinComboBox_A1
-            // 
-            this.skinComboBox_A1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.skinComboBox_A1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.skinComboBox_A1.FormattingEnabled = true;
-            this.skinComboBox_A1.Location = new System.Drawing.Point(234, 28);
-            this.skinComboBox_A1.Name = "skinComboBox_A1";
-            this.skinComboBox_A1.Size = new System.Drawing.Size(121, 22);
-            this.skinComboBox_A1.TabIndex = 9;
-            this.skinComboBox_A1.WaterText = "";
-            this.skinComboBox_A1.SelectedIndexChanged += new System.EventHandler(this.skinComboBox7_A1_SelectedIndexChanged);
-            // 
-            // skinComboBox_B1
-            // 
-            this.skinComboBox_B1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.skinComboBox_B1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.skinComboBox_B1.FormattingEnabled = true;
-            this.skinComboBox_B1.Location = new System.Drawing.Point(509, 28);
-            this.skinComboBox_B1.Name = "skinComboBox_B1";
-            this.skinComboBox_B1.Size = new System.Drawing.Size(121, 22);
-            this.skinComboBox_B1.TabIndex = 8;
-            this.skinComboBox_B1.WaterText = "";
-            this.skinComboBox_B1.SelectedIndexChanged += new System.EventHandler(this.skinComboBox6_B1_SelectedIndexChanged);
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.Silver;
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1342, 647);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "库存物料管理";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.Silver;
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1342, 647);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "采购";
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1342, 647);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "图纸管理";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.BackColor = System.Drawing.Color.Silver;
-            this.tabPage6.Controls.Add(this.groupBox3);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1342, 647);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "物料管理";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox3.Controls.Add(this.skinButton8);
-            this.groupBox3.Controls.Add(this.skinButton14);
-            this.groupBox3.Controls.Add(this.skinButton13);
-            this.groupBox3.Controls.Add(this.skinButton9);
-            this.groupBox3.Location = new System.Drawing.Point(50, 73);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(567, 658);
-            this.groupBox3.TabIndex = 16;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "操作";
-            // 
-            // skinButton8
-            // 
-            this.skinButton8.BackColor = System.Drawing.Color.Transparent;
-            this.skinButton8.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButton8.DownBack = null;
-            this.skinButton8.Location = new System.Drawing.Point(389, 41);
-            this.skinButton8.MouseBack = null;
-            this.skinButton8.Name = "skinButton8";
-            this.skinButton8.NormlBack = null;
-            this.skinButton8.Size = new System.Drawing.Size(133, 67);
-            this.skinButton8.TabIndex = 17;
-            this.skinButton8.Text = "BOM计划录入";
-            this.skinButton8.UseVisualStyleBackColor = false;
-            this.skinButton8.Click += new System.EventHandler(this.skinButton8_Click);
-            // 
-            // skinButton14
-            // 
-            this.skinButton14.BackColor = System.Drawing.Color.Transparent;
-            this.skinButton14.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButton14.DownBack = null;
-            this.skinButton14.Location = new System.Drawing.Point(377, 260);
-            this.skinButton14.MouseBack = null;
-            this.skinButton14.Name = "skinButton14";
-            this.skinButton14.NormlBack = null;
-            this.skinButton14.Size = new System.Drawing.Size(133, 67);
-            this.skinButton14.TabIndex = 17;
-            this.skinButton14.Text = "管理全部物料";
-            this.skinButton14.UseVisualStyleBackColor = false;
-            this.skinButton14.Click += new System.EventHandler(this.skinButton14_Click);
-            // 
-            // skinButton13
-            // 
-            this.skinButton13.BackColor = System.Drawing.Color.Transparent;
-            this.skinButton13.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButton13.DownBack = null;
-            this.skinButton13.Location = new System.Drawing.Point(27, 41);
-            this.skinButton13.MouseBack = null;
-            this.skinButton13.Name = "skinButton13";
-            this.skinButton13.NormlBack = null;
-            this.skinButton13.Size = new System.Drawing.Size(133, 67);
-            this.skinButton13.TabIndex = 17;
-            this.skinButton13.Text = "新增物料审批";
-            this.skinButton13.UseVisualStyleBackColor = false;
-            this.skinButton13.Click += new System.EventHandler(this.skinButton13_Click);
-            // 
-            // skinButton9
-            // 
-            this.skinButton9.BackColor = System.Drawing.Color.Transparent;
-            this.skinButton9.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButton9.DownBack = null;
-            this.skinButton9.Location = new System.Drawing.Point(27, 260);
-            this.skinButton9.MouseBack = null;
-            this.skinButton9.Name = "skinButton9";
-            this.skinButton9.NormlBack = null;
-            this.skinButton9.Size = new System.Drawing.Size(133, 67);
-            this.skinButton9.TabIndex = 17;
-            this.skinButton9.Text = "物料规则配置";
-            this.skinButton9.UseVisualStyleBackColor = false;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.BackColor = System.Drawing.Color.Silver;
-            this.tabPage7.Controls.Add(this.groupBox10);
-            this.tabPage7.Controls.Add(this.groupBox17);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1342, 647);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "物料审核";
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.BackColor = System.Drawing.Color.Silver;
-            this.groupBox10.Controls.Add(this.skinButton18);
-            this.groupBox10.Controls.Add(this.skinDataGridView_BOM_ALL);
-            this.groupBox10.Location = new System.Drawing.Point(0, 359);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(1884, 530);
-            this.groupBox10.TabIndex = 0;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "项目配置";
-            // 
-            // skinButton18
-            // 
-            this.skinButton18.BackColor = System.Drawing.Color.Transparent;
-            this.skinButton18.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButton18.DownBack = null;
-            this.skinButton18.Location = new System.Drawing.Point(70, 298);
-            this.skinButton18.MouseBack = null;
-            this.skinButton18.Name = "skinButton18";
-            this.skinButton18.NormlBack = null;
-            this.skinButton18.Size = new System.Drawing.Size(86, 38);
-            this.skinButton18.TabIndex = 19;
-            this.skinButton18.Text = "新增项目";
-            this.skinButton18.UseVisualStyleBackColor = false;
-            // 
-            // skinDataGridView_BOM_ALL
-            // 
-            this.skinDataGridView_BOM_ALL.AllowUserToAddRows = false;
-            this.skinDataGridView_BOM_ALL.AllowUserToResizeColumns = false;
-            dataGridViewCellStyle308.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
-            this.skinDataGridView_BOM_ALL.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle308;
-            this.skinDataGridView_BOM_ALL.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.skinDataGridView_BOM_ALL.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.skinDataGridView_BOM_ALL.ColumnFont = null;
-            this.skinDataGridView_BOM_ALL.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle309.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle309.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle309.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle309.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle309.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle309.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle309.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.skinDataGridView_BOM_ALL.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle309;
-            this.skinDataGridView_BOM_ALL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.skinDataGridView_BOM_ALL.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn16,
-            this.dataGridViewTextBoxColumn17,
-            this.dataGridViewTextBoxColumn18,
-            this.dataGridViewTextBoxColumn19,
-            this.dataGridViewCheckBoxColumn1,
-            this.dataGridViewButtonColumn2,
-            this.dataGridViewButtonColumn3});
-            this.skinDataGridView_BOM_ALL.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle310.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle310.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle310.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle310.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle310.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle310.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle310.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.skinDataGridView_BOM_ALL.DefaultCellStyle = dataGridViewCellStyle310;
-            this.skinDataGridView_BOM_ALL.EnableHeadersVisualStyles = false;
-            this.skinDataGridView_BOM_ALL.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.skinDataGridView_BOM_ALL.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinDataGridView_BOM_ALL.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            this.skinDataGridView_BOM_ALL.Location = new System.Drawing.Point(31, 40);
-            this.skinDataGridView_BOM_ALL.MultiSelect = false;
-            this.skinDataGridView_BOM_ALL.Name = "skinDataGridView_BOM_ALL";
-            this.skinDataGridView_BOM_ALL.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.skinDataGridView_BOM_ALL.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle311.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle311.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle311.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle311.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.skinDataGridView_BOM_ALL.RowsDefaultCellStyle = dataGridViewCellStyle311;
-            this.skinDataGridView_BOM_ALL.RowTemplate.Height = 23;
-            this.skinDataGridView_BOM_ALL.Size = new System.Drawing.Size(812, 223);
-            this.skinDataGridView_BOM_ALL.TabIndex = 18;
-            this.skinDataGridView_BOM_ALL.TitleBack = null;
-            this.skinDataGridView_BOM_ALL.TitleBackColorBegin = System.Drawing.Color.White;
-            this.skinDataGridView_BOM_ALL.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            this.dataGridViewTextBoxColumn12.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.HeaderText = "项目代号";
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.HeaderText = "项目名称";
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.HeaderText = "项目负责人";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn18.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewTextBoxColumn18.Width = 90;
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.HeaderText = "备注";
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.HeaderText = "选中";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.Width = 80;
-            // 
-            // dataGridViewButtonColumn2
-            // 
-            this.dataGridViewButtonColumn2.HeaderText = "修改";
-            this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
-            this.dataGridViewButtonColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewButtonColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewButtonColumn2.Width = 80;
-            // 
-            // dataGridViewButtonColumn3
-            // 
-            this.dataGridViewButtonColumn3.HeaderText = "删除";
-            this.dataGridViewButtonColumn3.Name = "dataGridViewButtonColumn3";
-            this.dataGridViewButtonColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewButtonColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewButtonColumn3.Width = 80;
-            // 
-            // groupBox17
-            // 
-            this.groupBox17.BackColor = System.Drawing.Color.LightGray;
-            this.groupBox17.Controls.Add(this.skinButton17);
-            this.groupBox17.Location = new System.Drawing.Point(-4, 3);
-            this.groupBox17.Name = "groupBox17";
-            this.groupBox17.Size = new System.Drawing.Size(1888, 350);
-            this.groupBox17.TabIndex = 0;
-            this.groupBox17.TabStop = false;
-            this.groupBox17.Text = "审核";
-            // 
-            // skinButton17
-            // 
-            this.skinButton17.BackColor = System.Drawing.Color.Transparent;
-            this.skinButton17.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButton17.DownBack = null;
-            this.skinButton17.Location = new System.Drawing.Point(35, 45);
-            this.skinButton17.MouseBack = null;
-            this.skinButton17.Name = "skinButton17";
-            this.skinButton17.NormlBack = null;
-            this.skinButton17.Size = new System.Drawing.Size(125, 49);
-            this.skinButton17.TabIndex = 0;
-            this.skinButton17.Text = "打开审核窗口";
-            this.skinButton17.UseVisualStyleBackColor = false;
-            this.skinButton17.Click += new System.EventHandler(this.skinButton17_Click);
             // 
             // tabPage1
             // 
@@ -1895,7 +335,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1342, 647);
+            this.tabPage1.Size = new System.Drawing.Size(1342, 606);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "BOM制作";
             // 
@@ -1910,7 +350,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(318, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(941, 441);
+            this.groupBox1.Size = new System.Drawing.Size(926, 379);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "物料查找";
@@ -1920,9 +360,9 @@
             // 
             this.groupBox8.Controls.Add(this.DataGridView2_parts);
             this.groupBox8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox8.Location = new System.Drawing.Point(3, 339);
+            this.groupBox8.Location = new System.Drawing.Point(3, 235);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(682, 99);
+            this.groupBox8.Size = new System.Drawing.Size(667, 141);
             this.groupBox8.TabIndex = 9;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "配套或其附件区";
@@ -1931,21 +371,21 @@
             // 
             this.DataGridView2_parts.AllowUserToAddRows = false;
             this.DataGridView2_parts.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle312.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
-            this.DataGridView2_parts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle312;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
+            this.DataGridView2_parts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle35;
             this.DataGridView2_parts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridView2_parts.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DataGridView2_parts.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.DataGridView2_parts.ColumnFont = null;
             this.DataGridView2_parts.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle313.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle313.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle313.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle313.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle313.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle313.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle313.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView2_parts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle313;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView2_parts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle36;
             this.DataGridView2_parts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridView2_parts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -1956,14 +396,14 @@
             this.Column7,
             this.dataGridViewButtonColumn1});
             this.DataGridView2_parts.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle314.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle314.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle314.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle314.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle314.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle314.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle314.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView2_parts.DefaultCellStyle = dataGridViewCellStyle314;
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle37.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle37.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle37.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView2_parts.DefaultCellStyle = dataGridViewCellStyle37;
             this.DataGridView2_parts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGridView2_parts.EnableHeadersVisualStyles = false;
             this.DataGridView2_parts.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -1974,13 +414,13 @@
             this.DataGridView2_parts.Name = "DataGridView2_parts";
             this.DataGridView2_parts.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridView2_parts.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle315.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle315.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle315.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle315.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.DataGridView2_parts.RowsDefaultCellStyle = dataGridViewCellStyle315;
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.DataGridView2_parts.RowsDefaultCellStyle = dataGridViewCellStyle38;
             this.DataGridView2_parts.RowTemplate.Height = 23;
-            this.DataGridView2_parts.Size = new System.Drawing.Size(676, 79);
+            this.DataGridView2_parts.Size = new System.Drawing.Size(661, 121);
             this.DataGridView2_parts.TabIndex = 9;
             this.DataGridView2_parts.TitleBack = null;
             this.DataGridView2_parts.TitleBackColorBegin = System.Drawing.Color.White;
@@ -2033,7 +473,7 @@
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox7.Location = new System.Drawing.Point(3, 118);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(682, 320);
+            this.groupBox7.Size = new System.Drawing.Size(667, 258);
             this.groupBox7.TabIndex = 8;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "备选数据区";
@@ -2042,21 +482,21 @@
             // 
             this.datagridview_matter.AllowUserToAddRows = false;
             this.datagridview_matter.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle316.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
-            this.datagridview_matter.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle316;
+            dataGridViewCellStyle39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
+            this.datagridview_matter.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle39;
             this.datagridview_matter.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.datagridview_matter.BackgroundColor = System.Drawing.SystemColors.Window;
             this.datagridview_matter.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.datagridview_matter.ColumnFont = null;
             this.datagridview_matter.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle317.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle317.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle317.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle317.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle317.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle317.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle317.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagridview_matter.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle317;
+            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle40.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle40.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagridview_matter.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle40;
             this.datagridview_matter.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagridview_matter.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column9,
@@ -2067,14 +507,14 @@
             this.Column6,
             this.Column4});
             this.datagridview_matter.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle318.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle318.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle318.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle318.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle318.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle318.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle318.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagridview_matter.DefaultCellStyle = dataGridViewCellStyle318;
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle41.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle41.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagridview_matter.DefaultCellStyle = dataGridViewCellStyle41;
             this.datagridview_matter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.datagridview_matter.EnableHeadersVisualStyles = false;
             this.datagridview_matter.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -2085,13 +525,13 @@
             this.datagridview_matter.Name = "datagridview_matter";
             this.datagridview_matter.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.datagridview_matter.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle319.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle319.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle319.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle319.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.datagridview_matter.RowsDefaultCellStyle = dataGridViewCellStyle319;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.datagridview_matter.RowsDefaultCellStyle = dataGridViewCellStyle42;
             this.datagridview_matter.RowTemplate.Height = 23;
-            this.datagridview_matter.Size = new System.Drawing.Size(676, 300);
+            this.datagridview_matter.Size = new System.Drawing.Size(661, 238);
             this.datagridview_matter.TabIndex = 7;
             this.datagridview_matter.TitleBack = null;
             this.datagridview_matter.TitleBackColorBegin = System.Drawing.Color.White;
@@ -2152,7 +592,7 @@
             this.groupBox21.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox21.Location = new System.Drawing.Point(3, 17);
             this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Size = new System.Drawing.Size(682, 101);
+            this.groupBox21.Size = new System.Drawing.Size(667, 101);
             this.groupBox21.TabIndex = 10;
             this.groupBox21.TabStop = false;
             // 
@@ -2266,9 +706,9 @@
             this.groupBox13.Controls.Add(this.groupBox16);
             this.groupBox13.Controls.Add(this.groupBox14);
             this.groupBox13.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox13.Location = new System.Drawing.Point(685, 17);
+            this.groupBox13.Location = new System.Drawing.Point(670, 17);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(253, 421);
+            this.groupBox13.Size = new System.Drawing.Size(253, 359);
             this.groupBox13.TabIndex = 9;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "资料读取";
@@ -2279,7 +719,7 @@
             this.groupBox16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox16.Location = new System.Drawing.Point(3, 245);
             this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(247, 173);
+            this.groupBox16.Size = new System.Drawing.Size(247, 111);
             this.groupBox16.TabIndex = 10;
             this.groupBox16.TabStop = false;
             this.groupBox16.Text = "物料资料路径";
@@ -2289,7 +729,7 @@
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.Location = new System.Drawing.Point(3, 17);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(241, 153);
+            this.listView1.Size = new System.Drawing.Size(241, 91);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -2324,7 +764,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox2.Location = new System.Drawing.Point(3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(315, 441);
+            this.groupBox2.Size = new System.Drawing.Size(315, 379);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "项目设置";
@@ -2344,10 +784,10 @@
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 319);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(309, 119);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.29825F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.64912F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.29825F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(309, 57);
             this.tableLayoutPanel2.TabIndex = 5;
             // 
             // skinButton5
@@ -2355,11 +795,11 @@
             this.skinButton5.BackColor = System.Drawing.Color.Transparent;
             this.skinButton5.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinButton5.DownBack = null;
-            this.skinButton5.Location = new System.Drawing.Point(167, 42);
+            this.skinButton5.Location = new System.Drawing.Point(167, 14);
             this.skinButton5.MouseBack = null;
             this.skinButton5.Name = "skinButton5";
             this.skinButton5.NormlBack = null;
-            this.skinButton5.Size = new System.Drawing.Size(79, 33);
+            this.skinButton5.Size = new System.Drawing.Size(79, 26);
             this.skinButton5.TabIndex = 0;
             this.skinButton5.Text = "保存配置";
             this.skinButton5.UseVisualStyleBackColor = false;
@@ -2370,11 +810,11 @@
             this.skinButton4.BackColor = System.Drawing.Color.Transparent;
             this.skinButton4.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinButton4.DownBack = null;
-            this.skinButton4.Location = new System.Drawing.Point(45, 42);
+            this.skinButton4.Location = new System.Drawing.Point(45, 14);
             this.skinButton4.MouseBack = null;
             this.skinButton4.Name = "skinButton4";
             this.skinButton4.NormlBack = null;
-            this.skinButton4.Size = new System.Drawing.Size(86, 33);
+            this.skinButton4.Size = new System.Drawing.Size(86, 26);
             this.skinButton4.TabIndex = 0;
             this.skinButton4.Text = "打开配置";
             this.skinButton4.UseVisualStyleBackColor = false;
@@ -2599,9 +1039,9 @@
             this.groupBox18.Controls.Add(this.skinButton1);
             this.groupBox18.Controls.Add(this.skinButton2);
             this.groupBox18.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox18.Location = new System.Drawing.Point(1259, 3);
+            this.groupBox18.Location = new System.Drawing.Point(1244, 3);
             this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(80, 441);
+            this.groupBox18.Size = new System.Drawing.Size(95, 379);
             this.groupBox18.TabIndex = 13;
             this.groupBox18.TabStop = false;
             this.groupBox18.Text = "BOM操作";
@@ -2615,7 +1055,7 @@
             this.skinButton_request_offer.MouseBack = null;
             this.skinButton_request_offer.Name = "skinButton_request_offer";
             this.skinButton_request_offer.NormlBack = null;
-            this.skinButton_request_offer.Size = new System.Drawing.Size(71, 38);
+            this.skinButton_request_offer.Size = new System.Drawing.Size(83, 38);
             this.skinButton_request_offer.TabIndex = 1;
             this.skinButton_request_offer.Text = "报价核算";
             this.skinButton_request_offer.UseVisualStyleBackColor = false;
@@ -2630,7 +1070,7 @@
             this.skinButton11.MouseBack = null;
             this.skinButton11.Name = "skinButton11";
             this.skinButton11.NormlBack = null;
-            this.skinButton11.Size = new System.Drawing.Size(71, 38);
+            this.skinButton11.Size = new System.Drawing.Size(83, 38);
             this.skinButton11.TabIndex = 12;
             this.skinButton11.Text = "生成采购单";
             this.skinButton11.UseVisualStyleBackColor = false;
@@ -2646,7 +1086,7 @@
             this.skinButton1.MouseBack = null;
             this.skinButton1.Name = "skinButton1";
             this.skinButton1.NormlBack = null;
-            this.skinButton1.Size = new System.Drawing.Size(71, 38);
+            this.skinButton1.Size = new System.Drawing.Size(83, 38);
             this.skinButton1.TabIndex = 11;
             this.skinButton1.Text = "BOM表格生成";
             this.skinButton1.UseVisualStyleBackColor = false;
@@ -2661,7 +1101,7 @@
             this.skinButton2.MouseBack = null;
             this.skinButton2.Name = "skinButton2";
             this.skinButton2.NormlBack = null;
-            this.skinButton2.Size = new System.Drawing.Size(71, 38);
+            this.skinButton2.Size = new System.Drawing.Size(83, 38);
             this.skinButton2.TabIndex = 1;
             this.skinButton2.Text = "提交审核";
             this.skinButton2.UseVisualStyleBackColor = false;
@@ -2670,21 +1110,21 @@
             // DataGridView_BOM_Hold
             // 
             this.DataGridView_BOM_Hold.AllowUserToAddRows = false;
-            dataGridViewCellStyle291.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
-            this.DataGridView_BOM_Hold.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle291;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
+            this.DataGridView_BOM_Hold.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle30;
             this.DataGridView_BOM_Hold.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridView_BOM_Hold.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DataGridView_BOM_Hold.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.DataGridView_BOM_Hold.ColumnFont = null;
             this.DataGridView_BOM_Hold.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle292.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle292.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle292.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle292.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle292.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle292.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle292.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView_BOM_Hold.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle292;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView_BOM_Hold.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
             this.DataGridView_BOM_Hold.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridView_BOM_Hold.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.类别,
@@ -2705,31 +1145,31 @@
             this.Column13,
             this.删除});
             this.DataGridView_BOM_Hold.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle294.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle294.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle294.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle294.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle294.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle294.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle294.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView_BOM_Hold.DefaultCellStyle = dataGridViewCellStyle294;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView_BOM_Hold.DefaultCellStyle = dataGridViewCellStyle33;
             this.DataGridView_BOM_Hold.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.DataGridView_BOM_Hold.EnableHeadersVisualStyles = false;
             this.DataGridView_BOM_Hold.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.DataGridView_BOM_Hold.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.DataGridView_BOM_Hold.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            this.DataGridView_BOM_Hold.Location = new System.Drawing.Point(3, 444);
+            this.DataGridView_BOM_Hold.Location = new System.Drawing.Point(3, 382);
             this.DataGridView_BOM_Hold.MultiSelect = false;
             this.DataGridView_BOM_Hold.Name = "DataGridView_BOM_Hold";
             this.DataGridView_BOM_Hold.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridView_BOM_Hold.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle295.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle295.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle295.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle295.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.DataGridView_BOM_Hold.RowsDefaultCellStyle = dataGridViewCellStyle295;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.DataGridView_BOM_Hold.RowsDefaultCellStyle = dataGridViewCellStyle34;
             this.DataGridView_BOM_Hold.RowTemplate.Height = 23;
-            this.DataGridView_BOM_Hold.Size = new System.Drawing.Size(1336, 200);
+            this.DataGridView_BOM_Hold.Size = new System.Drawing.Size(1336, 221);
             this.DataGridView_BOM_Hold.TabIndex = 8;
             this.DataGridView_BOM_Hold.TitleBack = null;
             this.DataGridView_BOM_Hold.TitleBackColorBegin = System.Drawing.Color.White;
@@ -2774,10 +1214,10 @@
             // 
             // 数量
             // 
-            dataGridViewCellStyle293.Format = "N0";
-            dataGridViewCellStyle293.NullValue = null;
-            dataGridViewCellStyle293.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.数量.DefaultCellStyle = dataGridViewCellStyle293;
+            dataGridViewCellStyle32.Format = "N0";
+            dataGridViewCellStyle32.NullValue = null;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.数量.DefaultCellStyle = dataGridViewCellStyle32;
             this.数量.HeaderText = "本次数量";
             this.数量.Name = "数量";
             this.数量.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -2841,6 +1281,1566 @@
             this.删除.HeaderText = "删除";
             this.删除.Name = "删除";
             this.删除.Text = "删除";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabPage2.Controls.Add(this.groupBox5);
+            this.tabPage2.Controls.Add(this.groupBox4);
+            this.tabPage2.Controls.Add(this.groupBox9);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1342, 647);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "物料新增";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.groupBox12);
+            this.groupBox5.Controls.Add(this.groupBox11);
+            this.groupBox5.Location = new System.Drawing.Point(6, 457);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(1815, 437);
+            this.groupBox5.TabIndex = 15;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "已增物料";
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.skinDataGridView_unchecked);
+            this.groupBox12.Location = new System.Drawing.Point(18, 232);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(1779, 199);
+            this.groupBox12.TabIndex = 17;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "未审核物料";
+            // 
+            // skinDataGridView_unchecked
+            // 
+            this.skinDataGridView_unchecked.AllowUserToAddRows = false;
+            this.skinDataGridView_unchecked.AllowUserToResizeColumns = false;
+            dataGridViewCellStyle43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
+            this.skinDataGridView_unchecked.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle43;
+            this.skinDataGridView_unchecked.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.skinDataGridView_unchecked.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.skinDataGridView_unchecked.ColumnFont = null;
+            this.skinDataGridView_unchecked.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle44.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.skinDataGridView_unchecked.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle44;
+            this.skinDataGridView_unchecked.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.skinDataGridView_unchecked.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn25,
+            this.dataGridViewTextBoxColumn26,
+            this.dataGridViewTextBoxColumn27,
+            this.dataGridViewTextBoxColumn28,
+            this.dataGridViewTextBoxColumn29,
+            this.dataGridViewTextBoxColumn30,
+            this.dataGridViewTextBoxColumn31,
+            this.dataGridViewTextBoxColumn32,
+            this.dataGridViewTextBoxColumn33,
+            this.Column21,
+            this.Column18,
+            this.Column15,
+            this.Column17});
+            this.skinDataGridView_unchecked.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle45.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle45.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle45.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.skinDataGridView_unchecked.DefaultCellStyle = dataGridViewCellStyle45;
+            this.skinDataGridView_unchecked.EnableHeadersVisualStyles = false;
+            this.skinDataGridView_unchecked.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.skinDataGridView_unchecked.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinDataGridView_unchecked.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            this.skinDataGridView_unchecked.Location = new System.Drawing.Point(18, 31);
+            this.skinDataGridView_unchecked.MultiSelect = false;
+            this.skinDataGridView_unchecked.Name = "skinDataGridView_unchecked";
+            this.skinDataGridView_unchecked.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.skinDataGridView_unchecked.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle46.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.skinDataGridView_unchecked.RowsDefaultCellStyle = dataGridViewCellStyle46;
+            this.skinDataGridView_unchecked.RowTemplate.Height = 23;
+            this.skinDataGridView_unchecked.Size = new System.Drawing.Size(1743, 155);
+            this.skinDataGridView_unchecked.TabIndex = 15;
+            this.skinDataGridView_unchecked.TitleBack = null;
+            this.skinDataGridView_unchecked.TitleBackColorBegin = System.Drawing.Color.White;
+            this.skinDataGridView_unchecked.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
+            this.skinDataGridView_unchecked.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.skinDataGridView_unchecked_CellContentClick);
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.HeaderText = "类别";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            this.dataGridViewTextBoxColumn25.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            this.dataGridViewTextBoxColumn26.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.HeaderText = "物料代码";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            this.dataGridViewTextBoxColumn27.ReadOnly = true;
+            this.dataGridViewTextBoxColumn27.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.HeaderText = "规格型号";
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            this.dataGridViewTextBoxColumn28.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn29
+            // 
+            this.dataGridViewTextBoxColumn29.HeaderText = "物料名称";
+            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            this.dataGridViewTextBoxColumn29.ReadOnly = true;
+            this.dataGridViewTextBoxColumn29.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.HeaderText = "品牌";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.ReadOnly = true;
+            this.dataGridViewTextBoxColumn30.Width = 90;
+            // 
+            // dataGridViewTextBoxColumn31
+            // 
+            this.dataGridViewTextBoxColumn31.HeaderText = "技术参数";
+            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            this.dataGridViewTextBoxColumn31.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn32
+            // 
+            this.dataGridViewTextBoxColumn32.HeaderText = "备注";
+            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
+            // 
+            // dataGridViewTextBoxColumn33
+            // 
+            this.dataGridViewTextBoxColumn33.HeaderText = "价格";
+            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            // 
+            // Column21
+            // 
+            this.Column21.HeaderText = "图片路径";
+            this.Column21.Name = "Column21";
+            // 
+            // Column18
+            // 
+            this.Column18.HeaderText = "资料路径";
+            this.Column18.Name = "Column18";
+            this.Column18.Width = 300;
+            // 
+            // Column15
+            // 
+            this.Column15.HeaderText = "提交审核";
+            this.Column15.Name = "Column15";
+            this.Column15.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column15.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Column17
+            // 
+            this.Column17.HeaderText = "删除";
+            this.Column17.Name = "Column17";
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.skinDataGridView_checked);
+            this.groupBox11.Location = new System.Drawing.Point(18, 20);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(1779, 206);
+            this.groupBox11.TabIndex = 16;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "已审核物料";
+            // 
+            // skinDataGridView_checked
+            // 
+            this.skinDataGridView_checked.AllowUserToAddRows = false;
+            this.skinDataGridView_checked.AllowUserToResizeColumns = false;
+            dataGridViewCellStyle47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
+            this.skinDataGridView_checked.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle47;
+            this.skinDataGridView_checked.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.skinDataGridView_checked.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.skinDataGridView_checked.ColumnFont = null;
+            this.skinDataGridView_checked.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle48.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.skinDataGridView_checked.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle48;
+            this.skinDataGridView_checked.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.skinDataGridView_checked.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn34,
+            this.dataGridViewTextBoxColumn35,
+            this.dataGridViewTextBoxColumn36,
+            this.dataGridViewTextBoxColumn37,
+            this.dataGridViewTextBoxColumn38,
+            this.dataGridViewTextBoxColumn39,
+            this.dataGridViewTextBoxColumn40,
+            this.dataGridViewTextBoxColumn41,
+            this.dataGridViewTextBoxColumn42,
+            this.Column22,
+            this.dataGridViewTextBoxColumn43,
+            this.Column20,
+            this.Column16,
+            this.Column19});
+            this.skinDataGridView_checked.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle49.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle49.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle49.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle49.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle49.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle49.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.skinDataGridView_checked.DefaultCellStyle = dataGridViewCellStyle49;
+            this.skinDataGridView_checked.EnableHeadersVisualStyles = false;
+            this.skinDataGridView_checked.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.skinDataGridView_checked.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinDataGridView_checked.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            this.skinDataGridView_checked.Location = new System.Drawing.Point(18, 20);
+            this.skinDataGridView_checked.MultiSelect = false;
+            this.skinDataGridView_checked.Name = "skinDataGridView_checked";
+            this.skinDataGridView_checked.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.skinDataGridView_checked.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle50.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.skinDataGridView_checked.RowsDefaultCellStyle = dataGridViewCellStyle50;
+            this.skinDataGridView_checked.RowTemplate.Height = 23;
+            this.skinDataGridView_checked.Size = new System.Drawing.Size(1743, 155);
+            this.skinDataGridView_checked.TabIndex = 16;
+            this.skinDataGridView_checked.TitleBack = null;
+            this.skinDataGridView_checked.TitleBackColorBegin = System.Drawing.Color.White;
+            this.skinDataGridView_checked.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
+            // 
+            // dataGridViewTextBoxColumn34
+            // 
+            this.dataGridViewTextBoxColumn34.HeaderText = "类别";
+            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
+            this.dataGridViewTextBoxColumn34.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn35
+            // 
+            this.dataGridViewTextBoxColumn35.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
+            this.dataGridViewTextBoxColumn35.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn36
+            // 
+            this.dataGridViewTextBoxColumn36.HeaderText = "物料代码";
+            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
+            this.dataGridViewTextBoxColumn36.ReadOnly = true;
+            this.dataGridViewTextBoxColumn36.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn37
+            // 
+            this.dataGridViewTextBoxColumn37.HeaderText = "规格型号";
+            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
+            this.dataGridViewTextBoxColumn37.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn38
+            // 
+            this.dataGridViewTextBoxColumn38.HeaderText = "物料名称";
+            this.dataGridViewTextBoxColumn38.Name = "dataGridViewTextBoxColumn38";
+            this.dataGridViewTextBoxColumn38.ReadOnly = true;
+            this.dataGridViewTextBoxColumn38.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn39
+            // 
+            this.dataGridViewTextBoxColumn39.HeaderText = "品牌";
+            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
+            this.dataGridViewTextBoxColumn39.ReadOnly = true;
+            this.dataGridViewTextBoxColumn39.Width = 90;
+            // 
+            // dataGridViewTextBoxColumn40
+            // 
+            this.dataGridViewTextBoxColumn40.HeaderText = "技术参数";
+            this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
+            this.dataGridViewTextBoxColumn40.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn41
+            // 
+            this.dataGridViewTextBoxColumn41.HeaderText = "备注";
+            this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
+            // 
+            // dataGridViewTextBoxColumn42
+            // 
+            this.dataGridViewTextBoxColumn42.HeaderText = "价格";
+            this.dataGridViewTextBoxColumn42.Name = "dataGridViewTextBoxColumn42";
+            // 
+            // Column22
+            // 
+            this.Column22.HeaderText = "图片路径";
+            this.Column22.Name = "Column22";
+            // 
+            // dataGridViewTextBoxColumn43
+            // 
+            this.dataGridViewTextBoxColumn43.HeaderText = "资料路径";
+            this.dataGridViewTextBoxColumn43.Name = "dataGridViewTextBoxColumn43";
+            this.dataGridViewTextBoxColumn43.Width = 250;
+            // 
+            // Column20
+            // 
+            this.Column20.HeaderText = "物料ID";
+            this.Column20.Name = "Column20";
+            // 
+            // Column16
+            // 
+            this.Column16.HeaderText = "审核状态";
+            this.Column16.Name = "Column16";
+            // 
+            // Column19
+            // 
+            this.Column19.HeaderText = "审核意见";
+            this.Column19.Name = "Column19";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.CheckBox2_find_condition);
+            this.groupBox4.Controls.Add(this.skinDataGridView1);
+            this.groupBox4.Controls.Add(this.skinLabel13);
+            this.groupBox4.Controls.Add(this.skinLabel12);
+            this.groupBox4.Controls.Add(this.skinLabel14);
+            this.groupBox4.Controls.Add(this.skinButton7);
+            this.groupBox4.Controls.Add(this.skinLabel15);
+            this.groupBox4.Controls.Add(this.textbox_sort);
+            this.groupBox4.Controls.Add(this.skinComboBox_C1);
+            this.groupBox4.Controls.Add(this.skinComboBox_A1);
+            this.groupBox4.Controls.Add(this.skinComboBox_B1);
+            this.groupBox4.Location = new System.Drawing.Point(9, 6);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(1815, 273);
+            this.groupBox4.TabIndex = 14;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "已有物料搜索";
+            // 
+            // CheckBox2_find_condition
+            // 
+            this.CheckBox2_find_condition.AutoSize = true;
+            this.CheckBox2_find_condition.BackColor = System.Drawing.Color.Transparent;
+            this.CheckBox2_find_condition.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.CheckBox2_find_condition.DownBack = null;
+            this.CheckBox2_find_condition.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.CheckBox2_find_condition.Location = new System.Drawing.Point(932, 78);
+            this.CheckBox2_find_condition.MouseBack = null;
+            this.CheckBox2_find_condition.Name = "CheckBox2_find_condition";
+            this.CheckBox2_find_condition.NormlBack = null;
+            this.CheckBox2_find_condition.SelectedDownBack = null;
+            this.CheckBox2_find_condition.SelectedMouseBack = null;
+            this.CheckBox2_find_condition.SelectedNormlBack = null;
+            this.CheckBox2_find_condition.Size = new System.Drawing.Size(123, 21);
+            this.CheckBox2_find_condition.TabIndex = 15;
+            this.CheckBox2_find_condition.Text = "在以上范围内搜索";
+            this.CheckBox2_find_condition.UseVisualStyleBackColor = false;
+            // 
+            // skinDataGridView1
+            // 
+            this.skinDataGridView1.AllowUserToAddRows = false;
+            this.skinDataGridView1.AllowUserToResizeColumns = false;
+            dataGridViewCellStyle51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
+            this.skinDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle51;
+            this.skinDataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.skinDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.skinDataGridView1.ColumnFont = null;
+            this.skinDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle52.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle52.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle52.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle52.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle52.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.skinDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle52;
+            this.skinDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.skinDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15});
+            this.skinDataGridView1.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle53.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle53.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle53.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle53.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle53.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.skinDataGridView1.DefaultCellStyle = dataGridViewCellStyle53;
+            this.skinDataGridView1.EnableHeadersVisualStyles = false;
+            this.skinDataGridView1.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.skinDataGridView1.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinDataGridView1.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            this.skinDataGridView1.Location = new System.Drawing.Point(49, 112);
+            this.skinDataGridView1.MultiSelect = false;
+            this.skinDataGridView1.Name = "skinDataGridView1";
+            this.skinDataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.skinDataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle54.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.skinDataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle54;
+            this.skinDataGridView1.RowTemplate.Height = 23;
+            this.skinDataGridView1.Size = new System.Drawing.Size(1239, 155);
+            this.skinDataGridView1.TabIndex = 14;
+            this.skinDataGridView1.TitleBack = null;
+            this.skinDataGridView1.TitleBackColorBegin = System.Drawing.Color.White;
+            this.skinDataGridView1.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "类别";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.HeaderText = "物料代码";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "规格型号";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.HeaderText = "物料名称";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.HeaderText = "品牌";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.HeaderText = "技术参数";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.HeaderText = "备注";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.HeaderText = "价格";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
+            // skinLabel13
+            // 
+            this.skinLabel13.AutoSize = true;
+            this.skinLabel13.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel13.BorderColor = System.Drawing.Color.White;
+            this.skinLabel13.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel13.Location = new System.Drawing.Point(231, 78);
+            this.skinLabel13.Name = "skinLabel13";
+            this.skinLabel13.Size = new System.Drawing.Size(144, 16);
+            this.skinLabel13.TabIndex = 11;
+            this.skinLabel13.Text = "物料类别模糊查找";
+            // 
+            // skinLabel12
+            // 
+            this.skinLabel12.AutoSize = true;
+            this.skinLabel12.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel12.BorderColor = System.Drawing.Color.White;
+            this.skinLabel12.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel12.Location = new System.Drawing.Point(151, 28);
+            this.skinLabel12.Name = "skinLabel12";
+            this.skinLabel12.Size = new System.Drawing.Size(64, 17);
+            this.skinLabel12.TabIndex = 6;
+            this.skinLabel12.Text = "分类代码A";
+            // 
+            // skinLabel14
+            // 
+            this.skinLabel14.AutoSize = true;
+            this.skinLabel14.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel14.BorderColor = System.Drawing.Color.White;
+            this.skinLabel14.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel14.Location = new System.Drawing.Point(439, 28);
+            this.skinLabel14.Name = "skinLabel14";
+            this.skinLabel14.Size = new System.Drawing.Size(64, 17);
+            this.skinLabel14.TabIndex = 6;
+            this.skinLabel14.Text = "分类代码B";
+            // 
+            // skinButton7
+            // 
+            this.skinButton7.BackColor = System.Drawing.Color.Transparent;
+            this.skinButton7.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skinButton7.DownBack = null;
+            this.skinButton7.Location = new System.Drawing.Point(758, 74);
+            this.skinButton7.MouseBack = null;
+            this.skinButton7.Name = "skinButton7";
+            this.skinButton7.NormlBack = null;
+            this.skinButton7.Size = new System.Drawing.Size(99, 29);
+            this.skinButton7.TabIndex = 12;
+            this.skinButton7.Text = "查找";
+            this.skinButton7.UseVisualStyleBackColor = false;
+            this.skinButton7.Click += new System.EventHandler(this.skinButton7_Click);
+            // 
+            // skinLabel15
+            // 
+            this.skinLabel15.AutoSize = true;
+            this.skinLabel15.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel15.BorderColor = System.Drawing.Color.White;
+            this.skinLabel15.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel15.Location = new System.Drawing.Point(710, 28);
+            this.skinLabel15.Name = "skinLabel15";
+            this.skinLabel15.Size = new System.Drawing.Size(64, 17);
+            this.skinLabel15.TabIndex = 6;
+            this.skinLabel15.Text = "分类代码C";
+            // 
+            // textbox_sort
+            // 
+            this.textbox_sort.BackColor = System.Drawing.Color.Transparent;
+            this.textbox_sort.DownBack = null;
+            this.textbox_sort.Icon = null;
+            this.textbox_sort.IconIsButton = false;
+            this.textbox_sort.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.textbox_sort.IsPasswordChat = '\0';
+            this.textbox_sort.IsSystemPasswordChar = false;
+            this.textbox_sort.Lines = new string[0];
+            this.textbox_sort.Location = new System.Drawing.Point(383, 69);
+            this.textbox_sort.Margin = new System.Windows.Forms.Padding(0);
+            this.textbox_sort.MaxLength = 32767;
+            this.textbox_sort.MinimumSize = new System.Drawing.Size(28, 28);
+            this.textbox_sort.MouseBack = null;
+            this.textbox_sort.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.textbox_sort.Multiline = true;
+            this.textbox_sort.Name = "textbox_sort";
+            this.textbox_sort.NormlBack = null;
+            this.textbox_sort.Padding = new System.Windows.Forms.Padding(5);
+            this.textbox_sort.ReadOnly = false;
+            this.textbox_sort.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textbox_sort.Size = new System.Drawing.Size(326, 30);
+            // 
+            // 
+            // 
+            this.textbox_sort.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_sort.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textbox_sort.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.textbox_sort.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.textbox_sort.SkinTxt.Multiline = true;
+            this.textbox_sort.SkinTxt.Name = "BaseText";
+            this.textbox_sort.SkinTxt.Size = new System.Drawing.Size(316, 20);
+            this.textbox_sort.SkinTxt.TabIndex = 0;
+            this.textbox_sort.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.textbox_sort.SkinTxt.WaterText = "请输入物料名称";
+            this.textbox_sort.TabIndex = 10;
+            this.textbox_sort.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.textbox_sort.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.textbox_sort.WaterText = "请输入物料名称";
+            this.textbox_sort.WordWrap = true;
+            // 
+            // skinComboBox_C1
+            // 
+            this.skinComboBox_C1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.skinComboBox_C1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.skinComboBox_C1.FormattingEnabled = true;
+            this.skinComboBox_C1.Location = new System.Drawing.Point(780, 28);
+            this.skinComboBox_C1.Name = "skinComboBox_C1";
+            this.skinComboBox_C1.Size = new System.Drawing.Size(121, 22);
+            this.skinComboBox_C1.TabIndex = 7;
+            this.skinComboBox_C1.WaterText = "";
+            // 
+            // skinComboBox_A1
+            // 
+            this.skinComboBox_A1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.skinComboBox_A1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.skinComboBox_A1.FormattingEnabled = true;
+            this.skinComboBox_A1.Location = new System.Drawing.Point(234, 28);
+            this.skinComboBox_A1.Name = "skinComboBox_A1";
+            this.skinComboBox_A1.Size = new System.Drawing.Size(121, 22);
+            this.skinComboBox_A1.TabIndex = 9;
+            this.skinComboBox_A1.WaterText = "";
+            this.skinComboBox_A1.SelectedIndexChanged += new System.EventHandler(this.skinComboBox7_A1_SelectedIndexChanged);
+            // 
+            // skinComboBox_B1
+            // 
+            this.skinComboBox_B1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.skinComboBox_B1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.skinComboBox_B1.FormattingEnabled = true;
+            this.skinComboBox_B1.Location = new System.Drawing.Point(509, 28);
+            this.skinComboBox_B1.Name = "skinComboBox_B1";
+            this.skinComboBox_B1.Size = new System.Drawing.Size(121, 22);
+            this.skinComboBox_B1.TabIndex = 8;
+            this.skinComboBox_B1.WaterText = "";
+            this.skinComboBox_B1.SelectedIndexChanged += new System.EventHandler(this.skinComboBox6_B1_SelectedIndexChanged);
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.Textbox_SUPPLIES_model1);
+            this.groupBox9.Controls.Add(this.skinCheckBox_price1);
+            this.groupBox9.Controls.Add(this.label7);
+            this.groupBox9.Controls.Add(this.label6);
+            this.groupBox9.Controls.Add(this.label5);
+            this.groupBox9.Controls.Add(this.label4);
+            this.groupBox9.Controls.Add(this.label3);
+            this.groupBox9.Controls.Add(this.label2);
+            this.groupBox9.Controls.Add(this.label1);
+            this.groupBox9.Controls.Add(this.Textbox_supples_technical_parameters1);
+            this.groupBox9.Controls.Add(this.skinTextBox4_code_ALL);
+            this.groupBox9.Controls.Add(this.skinLabel34);
+            this.groupBox9.Controls.Add(this.skinLabel17);
+            this.groupBox9.Controls.Add(this.skinLabel32);
+            this.groupBox9.Controls.Add(this.skinLabel31);
+            this.groupBox9.Controls.Add(this.skinLabel33);
+            this.groupBox9.Controls.Add(this.skinLabel16);
+            this.groupBox9.Controls.Add(this.skinLabel30);
+            this.groupBox9.Controls.Add(this.skinLabel29);
+            this.groupBox9.Controls.Add(this.skinLabel18);
+            this.groupBox9.Controls.Add(this.skinTextBox_price1);
+            this.groupBox9.Controls.Add(this.skinTextBox_datapath1);
+            this.groupBox9.Controls.Add(this.skinTextBox_pixturebox_path1);
+            this.groupBox9.Controls.Add(this.Textbox_supples_spare1);
+            this.groupBox9.Controls.Add(this.skinLabel19);
+            this.groupBox9.Controls.Add(this.skinButton16);
+            this.groupBox9.Controls.Add(this.skinButton15);
+            this.groupBox9.Controls.Add(this.skinButton3);
+            this.groupBox9.Controls.Add(this.skinLabel20);
+            this.groupBox9.Controls.Add(this.skinLabel21);
+            this.groupBox9.Controls.Add(this.skinLabel22);
+            this.groupBox9.Controls.Add(this.Textbox_supples_sort1);
+            this.groupBox9.Controls.Add(this.skinComboBox_C2);
+            this.groupBox9.Controls.Add(this.Textbox_brank1);
+            this.groupBox9.Controls.Add(this.skinComboBox_SUPPLIES_NAME1);
+            this.groupBox9.Controls.Add(this.skinComboBox_A2);
+            this.groupBox9.Controls.Add(this.skinComboBox_B2);
+            this.groupBox9.Location = new System.Drawing.Point(3, 279);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(1815, 166);
+            this.groupBox9.TabIndex = 15;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "物料添加";
+            // 
+            // Textbox_SUPPLIES_model1
+            // 
+            this.Textbox_SUPPLIES_model1.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Textbox_SUPPLIES_model1.Location = new System.Drawing.Point(567, 44);
+            this.Textbox_SUPPLIES_model1.Name = "Textbox_SUPPLIES_model1";
+            this.Textbox_SUPPLIES_model1.Size = new System.Drawing.Size(166, 25);
+            this.Textbox_SUPPLIES_model1.TabIndex = 17;
+            this.Textbox_SUPPLIES_model1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // skinCheckBox_price1
+            // 
+            this.skinCheckBox_price1.AutoSize = true;
+            this.skinCheckBox_price1.BackColor = System.Drawing.Color.Transparent;
+            this.skinCheckBox_price1.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skinCheckBox_price1.DownBack = null;
+            this.skinCheckBox_price1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinCheckBox_price1.Location = new System.Drawing.Point(1562, 104);
+            this.skinCheckBox_price1.MouseBack = null;
+            this.skinCheckBox_price1.Name = "skinCheckBox_price1";
+            this.skinCheckBox_price1.NormlBack = null;
+            this.skinCheckBox_price1.SelectedDownBack = null;
+            this.skinCheckBox_price1.SelectedMouseBack = null;
+            this.skinCheckBox_price1.SelectedNormlBack = null;
+            this.skinCheckBox_price1.Size = new System.Drawing.Size(95, 21);
+            this.skinCheckBox_price1.TabIndex = 16;
+            this.skinCheckBox_price1.Text = "价格(不含税)";
+            this.skinCheckBox_price1.UseVisualStyleBackColor = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(1405, 52);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(41, 12);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "非必填";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(1239, 52);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(29, 12);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "必填";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(992, 52);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(29, 12);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "必填";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(520, 49);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 12);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "必填";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(344, 52);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 12);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "必填";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(182, 52);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(29, 12);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "必填";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 12);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "必填";
+            // 
+            // Textbox_supples_technical_parameters1
+            // 
+            this.Textbox_supples_technical_parameters1.BackColor = System.Drawing.Color.Transparent;
+            this.Textbox_supples_technical_parameters1.DownBack = null;
+            this.Textbox_supples_technical_parameters1.Icon = null;
+            this.Textbox_supples_technical_parameters1.IconIsButton = false;
+            this.Textbox_supples_technical_parameters1.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.Textbox_supples_technical_parameters1.IsPasswordChat = '\0';
+            this.Textbox_supples_technical_parameters1.IsSystemPasswordChar = false;
+            this.Textbox_supples_technical_parameters1.Lines = new string[0];
+            this.Textbox_supples_technical_parameters1.Location = new System.Drawing.Point(79, 100);
+            this.Textbox_supples_technical_parameters1.Margin = new System.Windows.Forms.Padding(0);
+            this.Textbox_supples_technical_parameters1.MaxLength = 32767;
+            this.Textbox_supples_technical_parameters1.MinimumSize = new System.Drawing.Size(28, 28);
+            this.Textbox_supples_technical_parameters1.MouseBack = null;
+            this.Textbox_supples_technical_parameters1.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.Textbox_supples_technical_parameters1.Multiline = false;
+            this.Textbox_supples_technical_parameters1.Name = "Textbox_supples_technical_parameters1";
+            this.Textbox_supples_technical_parameters1.NormlBack = null;
+            this.Textbox_supples_technical_parameters1.Padding = new System.Windows.Forms.Padding(5);
+            this.Textbox_supples_technical_parameters1.ReadOnly = false;
+            this.Textbox_supples_technical_parameters1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.Textbox_supples_technical_parameters1.Size = new System.Drawing.Size(330, 28);
+            // 
+            // 
+            // 
+            this.Textbox_supples_technical_parameters1.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Textbox_supples_technical_parameters1.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Textbox_supples_technical_parameters1.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Textbox_supples_technical_parameters1.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.Textbox_supples_technical_parameters1.SkinTxt.Name = "BaseText";
+            this.Textbox_supples_technical_parameters1.SkinTxt.Size = new System.Drawing.Size(320, 18);
+            this.Textbox_supples_technical_parameters1.SkinTxt.TabIndex = 0;
+            this.Textbox_supples_technical_parameters1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.Textbox_supples_technical_parameters1.SkinTxt.WaterText = "非必填";
+            this.Textbox_supples_technical_parameters1.TabIndex = 14;
+            this.Textbox_supples_technical_parameters1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Textbox_supples_technical_parameters1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.Textbox_supples_technical_parameters1.WaterText = "非必填";
+            this.Textbox_supples_technical_parameters1.WordWrap = true;
+            // 
+            // skinTextBox4_code_ALL
+            // 
+            this.skinTextBox4_code_ALL.BackColor = System.Drawing.Color.Transparent;
+            this.skinTextBox4_code_ALL.DownBack = null;
+            this.skinTextBox4_code_ALL.Icon = null;
+            this.skinTextBox4_code_ALL.IconIsButton = false;
+            this.skinTextBox4_code_ALL.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.skinTextBox4_code_ALL.IsPasswordChat = '\0';
+            this.skinTextBox4_code_ALL.IsSystemPasswordChar = false;
+            this.skinTextBox4_code_ALL.Lines = new string[0];
+            this.skinTextBox4_code_ALL.Location = new System.Drawing.Point(741, 41);
+            this.skinTextBox4_code_ALL.Margin = new System.Windows.Forms.Padding(0);
+            this.skinTextBox4_code_ALL.MaxLength = 32767;
+            this.skinTextBox4_code_ALL.MinimumSize = new System.Drawing.Size(28, 28);
+            this.skinTextBox4_code_ALL.MouseBack = null;
+            this.skinTextBox4_code_ALL.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.skinTextBox4_code_ALL.Multiline = false;
+            this.skinTextBox4_code_ALL.Name = "skinTextBox4_code_ALL";
+            this.skinTextBox4_code_ALL.NormlBack = null;
+            this.skinTextBox4_code_ALL.Padding = new System.Windows.Forms.Padding(5);
+            this.skinTextBox4_code_ALL.ReadOnly = true;
+            this.skinTextBox4_code_ALL.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.skinTextBox4_code_ALL.Size = new System.Drawing.Size(185, 28);
+            // 
+            // 
+            // 
+            this.skinTextBox4_code_ALL.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.skinTextBox4_code_ALL.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.skinTextBox4_code_ALL.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.skinTextBox4_code_ALL.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.skinTextBox4_code_ALL.SkinTxt.Name = "BaseText";
+            this.skinTextBox4_code_ALL.SkinTxt.ReadOnly = true;
+            this.skinTextBox4_code_ALL.SkinTxt.Size = new System.Drawing.Size(175, 18);
+            this.skinTextBox4_code_ALL.SkinTxt.TabIndex = 0;
+            this.skinTextBox4_code_ALL.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.skinTextBox4_code_ALL.SkinTxt.WaterText = "不可编辑，自动生成";
+            this.skinTextBox4_code_ALL.TabIndex = 13;
+            this.skinTextBox4_code_ALL.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.skinTextBox4_code_ALL.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.skinTextBox4_code_ALL.WaterText = "不可编辑，自动生成";
+            this.skinTextBox4_code_ALL.WordWrap = true;
+            // 
+            // skinLabel34
+            // 
+            this.skinLabel34.AutoSize = true;
+            this.skinLabel34.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel34.BorderColor = System.Drawing.Color.White;
+            this.skinLabel34.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel34.Location = new System.Drawing.Point(1028, 105);
+            this.skinLabel34.Name = "skinLabel34";
+            this.skinLabel34.Size = new System.Drawing.Size(56, 17);
+            this.skinLabel34.TabIndex = 6;
+            this.skinLabel34.Text = "资料路径";
+            // 
+            // skinLabel17
+            // 
+            this.skinLabel17.AutoSize = true;
+            this.skinLabel17.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel17.BorderColor = System.Drawing.Color.White;
+            this.skinLabel17.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel17.Location = new System.Drawing.Point(680, 105);
+            this.skinLabel17.Name = "skinLabel17";
+            this.skinLabel17.Size = new System.Drawing.Size(32, 17);
+            this.skinLabel17.TabIndex = 6;
+            this.skinLabel17.Text = "图片";
+            // 
+            // skinLabel32
+            // 
+            this.skinLabel32.AutoSize = true;
+            this.skinLabel32.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel32.BorderColor = System.Drawing.Color.White;
+            this.skinLabel32.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel32.Location = new System.Drawing.Point(425, 100);
+            this.skinLabel32.Name = "skinLabel32";
+            this.skinLabel32.Size = new System.Drawing.Size(32, 17);
+            this.skinLabel32.TabIndex = 6;
+            this.skinLabel32.Text = "备注";
+            // 
+            // skinLabel31
+            // 
+            this.skinLabel31.AutoSize = true;
+            this.skinLabel31.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel31.BorderColor = System.Drawing.Color.White;
+            this.skinLabel31.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel31.Location = new System.Drawing.Point(20, 105);
+            this.skinLabel31.Name = "skinLabel31";
+            this.skinLabel31.Size = new System.Drawing.Size(56, 17);
+            this.skinLabel31.TabIndex = 6;
+            this.skinLabel31.Text = "技术参数";
+            // 
+            // skinLabel33
+            // 
+            this.skinLabel33.AutoSize = true;
+            this.skinLabel33.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel33.BorderColor = System.Drawing.Color.White;
+            this.skinLabel33.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel33.Location = new System.Drawing.Point(1492, 17);
+            this.skinLabel33.Name = "skinLabel33";
+            this.skinLabel33.Size = new System.Drawing.Size(32, 17);
+            this.skinLabel33.TabIndex = 6;
+            this.skinLabel33.Text = "类别";
+            // 
+            // skinLabel16
+            // 
+            this.skinLabel16.AutoSize = true;
+            this.skinLabel16.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel16.BorderColor = System.Drawing.Color.White;
+            this.skinLabel16.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel16.Location = new System.Drawing.Point(1771, 104);
+            this.skinLabel16.Name = "skinLabel16";
+            this.skinLabel16.Size = new System.Drawing.Size(44, 17);
+            this.skinLabel16.TabIndex = 6;
+            this.skinLabel16.Text = "人民币";
+            // 
+            // skinLabel30
+            // 
+            this.skinLabel30.AutoSize = true;
+            this.skinLabel30.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel30.BorderColor = System.Drawing.Color.White;
+            this.skinLabel30.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel30.Location = new System.Drawing.Point(1314, 17);
+            this.skinLabel30.Name = "skinLabel30";
+            this.skinLabel30.Size = new System.Drawing.Size(32, 17);
+            this.skinLabel30.TabIndex = 6;
+            this.skinLabel30.Text = "品牌";
+            // 
+            // skinLabel29
+            // 
+            this.skinLabel29.AutoSize = true;
+            this.skinLabel29.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel29.BorderColor = System.Drawing.Color.White;
+            this.skinLabel29.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel29.Location = new System.Drawing.Point(1109, 17);
+            this.skinLabel29.Name = "skinLabel29";
+            this.skinLabel29.Size = new System.Drawing.Size(56, 17);
+            this.skinLabel29.TabIndex = 6;
+            this.skinLabel29.Text = "物料名称";
+            // 
+            // skinLabel18
+            // 
+            this.skinLabel18.AutoSize = true;
+            this.skinLabel18.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel18.BorderColor = System.Drawing.Color.White;
+            this.skinLabel18.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel18.Location = new System.Drawing.Point(76, 17);
+            this.skinLabel18.Name = "skinLabel18";
+            this.skinLabel18.Size = new System.Drawing.Size(64, 17);
+            this.skinLabel18.TabIndex = 6;
+            this.skinLabel18.Text = "分类代码A";
+            // 
+            // skinTextBox_price1
+            // 
+            this.skinTextBox_price1.BackColor = System.Drawing.Color.Transparent;
+            this.skinTextBox_price1.DownBack = null;
+            this.skinTextBox_price1.Icon = null;
+            this.skinTextBox_price1.IconIsButton = false;
+            this.skinTextBox_price1.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.skinTextBox_price1.IsPasswordChat = '\0';
+            this.skinTextBox_price1.IsSystemPasswordChar = false;
+            this.skinTextBox_price1.Lines = new string[0];
+            this.skinTextBox_price1.Location = new System.Drawing.Point(1660, 100);
+            this.skinTextBox_price1.Margin = new System.Windows.Forms.Padding(0);
+            this.skinTextBox_price1.MaxLength = 32767;
+            this.skinTextBox_price1.MinimumSize = new System.Drawing.Size(28, 28);
+            this.skinTextBox_price1.MouseBack = null;
+            this.skinTextBox_price1.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.skinTextBox_price1.Multiline = false;
+            this.skinTextBox_price1.Name = "skinTextBox_price1";
+            this.skinTextBox_price1.NormlBack = null;
+            this.skinTextBox_price1.Padding = new System.Windows.Forms.Padding(5);
+            this.skinTextBox_price1.ReadOnly = false;
+            this.skinTextBox_price1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.skinTextBox_price1.Size = new System.Drawing.Size(108, 28);
+            // 
+            // 
+            // 
+            this.skinTextBox_price1.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.skinTextBox_price1.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.skinTextBox_price1.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.skinTextBox_price1.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.skinTextBox_price1.SkinTxt.Name = "BaseText";
+            this.skinTextBox_price1.SkinTxt.Size = new System.Drawing.Size(98, 18);
+            this.skinTextBox_price1.SkinTxt.TabIndex = 0;
+            this.skinTextBox_price1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.skinTextBox_price1.SkinTxt.WaterText = "非必填";
+            this.skinTextBox_price1.TabIndex = 13;
+            this.skinTextBox_price1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.skinTextBox_price1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.skinTextBox_price1.WaterText = "非必填";
+            this.skinTextBox_price1.WordWrap = true;
+            // 
+            // skinTextBox_datapath1
+            // 
+            this.skinTextBox_datapath1.BackColor = System.Drawing.Color.Transparent;
+            this.skinTextBox_datapath1.DownBack = null;
+            this.skinTextBox_datapath1.Icon = null;
+            this.skinTextBox_datapath1.IconIsButton = false;
+            this.skinTextBox_datapath1.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.skinTextBox_datapath1.IsPasswordChat = '\0';
+            this.skinTextBox_datapath1.IsSystemPasswordChar = false;
+            this.skinTextBox_datapath1.Lines = new string[0];
+            this.skinTextBox_datapath1.Location = new System.Drawing.Point(1086, 99);
+            this.skinTextBox_datapath1.Margin = new System.Windows.Forms.Padding(0);
+            this.skinTextBox_datapath1.MaxLength = 32767;
+            this.skinTextBox_datapath1.MinimumSize = new System.Drawing.Size(28, 28);
+            this.skinTextBox_datapath1.MouseBack = null;
+            this.skinTextBox_datapath1.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.skinTextBox_datapath1.Multiline = false;
+            this.skinTextBox_datapath1.Name = "skinTextBox_datapath1";
+            this.skinTextBox_datapath1.NormlBack = null;
+            this.skinTextBox_datapath1.Padding = new System.Windows.Forms.Padding(5);
+            this.skinTextBox_datapath1.ReadOnly = false;
+            this.skinTextBox_datapath1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.skinTextBox_datapath1.Size = new System.Drawing.Size(254, 28);
+            // 
+            // 
+            // 
+            this.skinTextBox_datapath1.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.skinTextBox_datapath1.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.skinTextBox_datapath1.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.skinTextBox_datapath1.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.skinTextBox_datapath1.SkinTxt.Name = "BaseText";
+            this.skinTextBox_datapath1.SkinTxt.Size = new System.Drawing.Size(244, 18);
+            this.skinTextBox_datapath1.SkinTxt.TabIndex = 0;
+            this.skinTextBox_datapath1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.skinTextBox_datapath1.SkinTxt.WaterText = "非必填";
+            this.skinTextBox_datapath1.TabIndex = 13;
+            this.skinTextBox_datapath1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.skinTextBox_datapath1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.skinTextBox_datapath1.WaterText = "非必填";
+            this.skinTextBox_datapath1.WordWrap = true;
+            // 
+            // skinTextBox_pixturebox_path1
+            // 
+            this.skinTextBox_pixturebox_path1.BackColor = System.Drawing.Color.Transparent;
+            this.skinTextBox_pixturebox_path1.DownBack = null;
+            this.skinTextBox_pixturebox_path1.Icon = null;
+            this.skinTextBox_pixturebox_path1.IconIsButton = false;
+            this.skinTextBox_pixturebox_path1.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.skinTextBox_pixturebox_path1.IsPasswordChat = '\0';
+            this.skinTextBox_pixturebox_path1.IsSystemPasswordChar = false;
+            this.skinTextBox_pixturebox_path1.Lines = new string[0];
+            this.skinTextBox_pixturebox_path1.Location = new System.Drawing.Point(732, 100);
+            this.skinTextBox_pixturebox_path1.Margin = new System.Windows.Forms.Padding(0);
+            this.skinTextBox_pixturebox_path1.MaxLength = 32767;
+            this.skinTextBox_pixturebox_path1.MinimumSize = new System.Drawing.Size(28, 28);
+            this.skinTextBox_pixturebox_path1.MouseBack = null;
+            this.skinTextBox_pixturebox_path1.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.skinTextBox_pixturebox_path1.Multiline = false;
+            this.skinTextBox_pixturebox_path1.Name = "skinTextBox_pixturebox_path1";
+            this.skinTextBox_pixturebox_path1.NormlBack = null;
+            this.skinTextBox_pixturebox_path1.Padding = new System.Windows.Forms.Padding(5);
+            this.skinTextBox_pixturebox_path1.ReadOnly = false;
+            this.skinTextBox_pixturebox_path1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.skinTextBox_pixturebox_path1.Size = new System.Drawing.Size(194, 28);
+            // 
+            // 
+            // 
+            this.skinTextBox_pixturebox_path1.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.skinTextBox_pixturebox_path1.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.skinTextBox_pixturebox_path1.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.skinTextBox_pixturebox_path1.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.skinTextBox_pixturebox_path1.SkinTxt.Name = "BaseText";
+            this.skinTextBox_pixturebox_path1.SkinTxt.Size = new System.Drawing.Size(184, 18);
+            this.skinTextBox_pixturebox_path1.SkinTxt.TabIndex = 0;
+            this.skinTextBox_pixturebox_path1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.skinTextBox_pixturebox_path1.SkinTxt.WaterText = "非必填";
+            this.skinTextBox_pixturebox_path1.TabIndex = 13;
+            this.skinTextBox_pixturebox_path1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.skinTextBox_pixturebox_path1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.skinTextBox_pixturebox_path1.WaterText = "非必填";
+            this.skinTextBox_pixturebox_path1.WordWrap = true;
+            // 
+            // Textbox_supples_spare1
+            // 
+            this.Textbox_supples_spare1.BackColor = System.Drawing.Color.Transparent;
+            this.Textbox_supples_spare1.DownBack = null;
+            this.Textbox_supples_spare1.Icon = null;
+            this.Textbox_supples_spare1.IconIsButton = false;
+            this.Textbox_supples_spare1.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.Textbox_supples_spare1.IsPasswordChat = '\0';
+            this.Textbox_supples_spare1.IsSystemPasswordChar = false;
+            this.Textbox_supples_spare1.Lines = new string[0];
+            this.Textbox_supples_spare1.Location = new System.Drawing.Point(475, 100);
+            this.Textbox_supples_spare1.Margin = new System.Windows.Forms.Padding(0);
+            this.Textbox_supples_spare1.MaxLength = 32767;
+            this.Textbox_supples_spare1.MinimumSize = new System.Drawing.Size(28, 28);
+            this.Textbox_supples_spare1.MouseBack = null;
+            this.Textbox_supples_spare1.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.Textbox_supples_spare1.Multiline = false;
+            this.Textbox_supples_spare1.Name = "Textbox_supples_spare1";
+            this.Textbox_supples_spare1.NormlBack = null;
+            this.Textbox_supples_spare1.Padding = new System.Windows.Forms.Padding(5);
+            this.Textbox_supples_spare1.ReadOnly = false;
+            this.Textbox_supples_spare1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.Textbox_supples_spare1.Size = new System.Drawing.Size(194, 28);
+            // 
+            // 
+            // 
+            this.Textbox_supples_spare1.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Textbox_supples_spare1.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Textbox_supples_spare1.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Textbox_supples_spare1.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.Textbox_supples_spare1.SkinTxt.Name = "BaseText";
+            this.Textbox_supples_spare1.SkinTxt.Size = new System.Drawing.Size(184, 18);
+            this.Textbox_supples_spare1.SkinTxt.TabIndex = 0;
+            this.Textbox_supples_spare1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.Textbox_supples_spare1.SkinTxt.WaterText = "非必填";
+            this.Textbox_supples_spare1.TabIndex = 13;
+            this.Textbox_supples_spare1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Textbox_supples_spare1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.Textbox_supples_spare1.WaterText = "非必填";
+            this.Textbox_supples_spare1.WordWrap = true;
+            // 
+            // skinLabel19
+            // 
+            this.skinLabel19.AutoSize = true;
+            this.skinLabel19.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel19.BorderColor = System.Drawing.Color.White;
+            this.skinLabel19.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel19.Location = new System.Drawing.Point(237, 17);
+            this.skinLabel19.Name = "skinLabel19";
+            this.skinLabel19.Size = new System.Drawing.Size(64, 17);
+            this.skinLabel19.TabIndex = 6;
+            this.skinLabel19.Text = "分类代码B";
+            // 
+            // skinButton16
+            // 
+            this.skinButton16.BackColor = System.Drawing.Color.Transparent;
+            this.skinButton16.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skinButton16.DownBack = null;
+            this.skinButton16.Location = new System.Drawing.Point(1483, 99);
+            this.skinButton16.MouseBack = null;
+            this.skinButton16.Name = "skinButton16";
+            this.skinButton16.NormlBack = null;
+            this.skinButton16.Size = new System.Drawing.Size(51, 29);
+            this.skinButton16.TabIndex = 12;
+            this.skinButton16.Text = "浏览";
+            this.skinButton16.UseVisualStyleBackColor = false;
+            this.skinButton16.Click += new System.EventHandler(this.skinButton16_Click);
+            // 
+            // skinButton15
+            // 
+            this.skinButton15.BackColor = System.Drawing.Color.Transparent;
+            this.skinButton15.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skinButton15.DownBack = null;
+            this.skinButton15.Location = new System.Drawing.Point(947, 99);
+            this.skinButton15.MouseBack = null;
+            this.skinButton15.Name = "skinButton15";
+            this.skinButton15.NormlBack = null;
+            this.skinButton15.Size = new System.Drawing.Size(51, 29);
+            this.skinButton15.TabIndex = 12;
+            this.skinButton15.Text = "上传";
+            this.skinButton15.UseVisualStyleBackColor = false;
+            this.skinButton15.Click += new System.EventHandler(this.skinButton15_Click);
+            // 
+            // skinButton3
+            // 
+            this.skinButton3.BackColor = System.Drawing.Color.Transparent;
+            this.skinButton3.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skinButton3.DownBack = null;
+            this.skinButton3.Location = new System.Drawing.Point(1680, 42);
+            this.skinButton3.MouseBack = null;
+            this.skinButton3.Name = "skinButton3";
+            this.skinButton3.NormlBack = null;
+            this.skinButton3.Size = new System.Drawing.Size(99, 29);
+            this.skinButton3.TabIndex = 12;
+            this.skinButton3.Text = "添加";
+            this.skinButton3.UseVisualStyleBackColor = false;
+            this.skinButton3.Click += new System.EventHandler(this.skinButton3_Click_1);
+            // 
+            // skinLabel20
+            // 
+            this.skinLabel20.AutoSize = true;
+            this.skinLabel20.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel20.BorderColor = System.Drawing.Color.White;
+            this.skinLabel20.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel20.Location = new System.Drawing.Point(402, 17);
+            this.skinLabel20.Name = "skinLabel20";
+            this.skinLabel20.Size = new System.Drawing.Size(64, 17);
+            this.skinLabel20.TabIndex = 6;
+            this.skinLabel20.Text = "分类代码C";
+            // 
+            // skinLabel21
+            // 
+            this.skinLabel21.AutoSize = true;
+            this.skinLabel21.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel21.BorderColor = System.Drawing.Color.White;
+            this.skinLabel21.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel21.Location = new System.Drawing.Point(595, 17);
+            this.skinLabel21.Name = "skinLabel21";
+            this.skinLabel21.Size = new System.Drawing.Size(56, 17);
+            this.skinLabel21.TabIndex = 6;
+            this.skinLabel21.Text = "物料型号";
+            // 
+            // skinLabel22
+            // 
+            this.skinLabel22.AutoSize = true;
+            this.skinLabel22.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel22.BorderColor = System.Drawing.Color.White;
+            this.skinLabel22.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel22.Location = new System.Drawing.Point(780, 17);
+            this.skinLabel22.Name = "skinLabel22";
+            this.skinLabel22.Size = new System.Drawing.Size(56, 17);
+            this.skinLabel22.TabIndex = 6;
+            this.skinLabel22.Text = "物料代码";
+            // 
+            // Textbox_supples_sort1
+            // 
+            this.Textbox_supples_sort1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.Textbox_supples_sort1.FormattingEnabled = true;
+            this.Textbox_supples_sort1.Location = new System.Drawing.Point(1452, 49);
+            this.Textbox_supples_sort1.Name = "Textbox_supples_sort1";
+            this.Textbox_supples_sort1.Size = new System.Drawing.Size(121, 22);
+            this.Textbox_supples_sort1.TabIndex = 9;
+            this.Textbox_supples_sort1.WaterText = "";
+            // 
+            // skinComboBox_C2
+            // 
+            this.skinComboBox_C2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.skinComboBox_C2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.skinComboBox_C2.FormattingEnabled = true;
+            this.skinComboBox_C2.Location = new System.Drawing.Point(379, 49);
+            this.skinComboBox_C2.Name = "skinComboBox_C2";
+            this.skinComboBox_C2.Size = new System.Drawing.Size(121, 22);
+            this.skinComboBox_C2.TabIndex = 7;
+            this.skinComboBox_C2.WaterText = "";
+            this.skinComboBox_C2.SelectedIndexChanged += new System.EventHandler(this.skinComboBox_C2_SelectedIndexChanged);
+            // 
+            // Textbox_brank1
+            // 
+            this.Textbox_brank1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.Textbox_brank1.FormattingEnabled = true;
+            this.Textbox_brank1.Location = new System.Drawing.Point(1274, 49);
+            this.Textbox_brank1.Name = "Textbox_brank1";
+            this.Textbox_brank1.Size = new System.Drawing.Size(121, 22);
+            this.Textbox_brank1.TabIndex = 9;
+            this.Textbox_brank1.WaterText = "";
+            // 
+            // skinComboBox_SUPPLIES_NAME1
+            // 
+            this.skinComboBox_SUPPLIES_NAME1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.skinComboBox_SUPPLIES_NAME1.FormattingEnabled = true;
+            this.skinComboBox_SUPPLIES_NAME1.Location = new System.Drawing.Point(1094, 49);
+            this.skinComboBox_SUPPLIES_NAME1.Name = "skinComboBox_SUPPLIES_NAME1";
+            this.skinComboBox_SUPPLIES_NAME1.Size = new System.Drawing.Size(121, 22);
+            this.skinComboBox_SUPPLIES_NAME1.TabIndex = 9;
+            this.skinComboBox_SUPPLIES_NAME1.WaterText = "";
+            // 
+            // skinComboBox_A2
+            // 
+            this.skinComboBox_A2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.skinComboBox_A2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.skinComboBox_A2.FormattingEnabled = true;
+            this.skinComboBox_A2.Location = new System.Drawing.Point(57, 49);
+            this.skinComboBox_A2.Name = "skinComboBox_A2";
+            this.skinComboBox_A2.Size = new System.Drawing.Size(121, 22);
+            this.skinComboBox_A2.TabIndex = 9;
+            this.skinComboBox_A2.WaterText = "";
+            this.skinComboBox_A2.SelectedIndexChanged += new System.EventHandler(this.skinComboBox3_A2_SelectedIndexChanged);
+            // 
+            // skinComboBox_B2
+            // 
+            this.skinComboBox_B2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.skinComboBox_B2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.skinComboBox_B2.FormattingEnabled = true;
+            this.skinComboBox_B2.Location = new System.Drawing.Point(217, 49);
+            this.skinComboBox_B2.Name = "skinComboBox_B2";
+            this.skinComboBox_B2.Size = new System.Drawing.Size(121, 22);
+            this.skinComboBox_B2.TabIndex = 8;
+            this.skinComboBox_B2.WaterText = "";
+            this.skinComboBox_B2.SelectedIndexChanged += new System.EventHandler(this.skinComboBox4_B2_SelectedIndexChanged);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.Silver;
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1342, 647);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "库存物料管理";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.Silver;
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1342, 647);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "采购";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(1342, 647);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "图纸管理";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.BackColor = System.Drawing.Color.Silver;
+            this.tabPage6.Controls.Add(this.groupBox3);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1342, 647);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "物料管理";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBox3.Controls.Add(this.skinButton8);
+            this.groupBox3.Controls.Add(this.skinButton14);
+            this.groupBox3.Controls.Add(this.skinButton13);
+            this.groupBox3.Controls.Add(this.skinButton9);
+            this.groupBox3.Location = new System.Drawing.Point(50, 73);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(567, 658);
+            this.groupBox3.TabIndex = 16;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "操作";
+            // 
+            // skinButton8
+            // 
+            this.skinButton8.BackColor = System.Drawing.Color.Transparent;
+            this.skinButton8.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skinButton8.DownBack = null;
+            this.skinButton8.Location = new System.Drawing.Point(389, 41);
+            this.skinButton8.MouseBack = null;
+            this.skinButton8.Name = "skinButton8";
+            this.skinButton8.NormlBack = null;
+            this.skinButton8.Size = new System.Drawing.Size(133, 67);
+            this.skinButton8.TabIndex = 17;
+            this.skinButton8.Text = "BOM计划录入";
+            this.skinButton8.UseVisualStyleBackColor = false;
+            this.skinButton8.Click += new System.EventHandler(this.skinButton8_Click);
+            // 
+            // skinButton14
+            // 
+            this.skinButton14.BackColor = System.Drawing.Color.Transparent;
+            this.skinButton14.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skinButton14.DownBack = null;
+            this.skinButton14.Location = new System.Drawing.Point(377, 260);
+            this.skinButton14.MouseBack = null;
+            this.skinButton14.Name = "skinButton14";
+            this.skinButton14.NormlBack = null;
+            this.skinButton14.Size = new System.Drawing.Size(133, 67);
+            this.skinButton14.TabIndex = 17;
+            this.skinButton14.Text = "管理全部物料";
+            this.skinButton14.UseVisualStyleBackColor = false;
+            this.skinButton14.Click += new System.EventHandler(this.skinButton14_Click);
+            // 
+            // skinButton13
+            // 
+            this.skinButton13.BackColor = System.Drawing.Color.Transparent;
+            this.skinButton13.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skinButton13.DownBack = null;
+            this.skinButton13.Location = new System.Drawing.Point(27, 41);
+            this.skinButton13.MouseBack = null;
+            this.skinButton13.Name = "skinButton13";
+            this.skinButton13.NormlBack = null;
+            this.skinButton13.Size = new System.Drawing.Size(133, 67);
+            this.skinButton13.TabIndex = 17;
+            this.skinButton13.Text = "新增物料审批";
+            this.skinButton13.UseVisualStyleBackColor = false;
+            this.skinButton13.Click += new System.EventHandler(this.skinButton13_Click);
+            // 
+            // skinButton9
+            // 
+            this.skinButton9.BackColor = System.Drawing.Color.Transparent;
+            this.skinButton9.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skinButton9.DownBack = null;
+            this.skinButton9.Location = new System.Drawing.Point(27, 260);
+            this.skinButton9.MouseBack = null;
+            this.skinButton9.Name = "skinButton9";
+            this.skinButton9.NormlBack = null;
+            this.skinButton9.Size = new System.Drawing.Size(133, 67);
+            this.skinButton9.TabIndex = 17;
+            this.skinButton9.Text = "物料规则配置";
+            this.skinButton9.UseVisualStyleBackColor = false;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.BackColor = System.Drawing.Color.Silver;
+            this.tabPage7.Controls.Add(this.groupBox10);
+            this.tabPage7.Controls.Add(this.groupBox17);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1342, 647);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "物料审核";
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.BackColor = System.Drawing.Color.Silver;
+            this.groupBox10.Controls.Add(this.skinButton18);
+            this.groupBox10.Controls.Add(this.skinDataGridView_BOM_ALL);
+            this.groupBox10.Location = new System.Drawing.Point(0, 359);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(1884, 530);
+            this.groupBox10.TabIndex = 0;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "项目配置";
+            // 
+            // skinButton18
+            // 
+            this.skinButton18.BackColor = System.Drawing.Color.Transparent;
+            this.skinButton18.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skinButton18.DownBack = null;
+            this.skinButton18.Location = new System.Drawing.Point(70, 298);
+            this.skinButton18.MouseBack = null;
+            this.skinButton18.Name = "skinButton18";
+            this.skinButton18.NormlBack = null;
+            this.skinButton18.Size = new System.Drawing.Size(86, 38);
+            this.skinButton18.TabIndex = 19;
+            this.skinButton18.Text = "新增项目";
+            this.skinButton18.UseVisualStyleBackColor = false;
+            // 
+            // skinDataGridView_BOM_ALL
+            // 
+            this.skinDataGridView_BOM_ALL.AllowUserToAddRows = false;
+            this.skinDataGridView_BOM_ALL.AllowUserToResizeColumns = false;
+            dataGridViewCellStyle55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
+            this.skinDataGridView_BOM_ALL.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle55;
+            this.skinDataGridView_BOM_ALL.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.skinDataGridView_BOM_ALL.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.skinDataGridView_BOM_ALL.ColumnFont = null;
+            this.skinDataGridView_BOM_ALL.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle56.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle56.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle56.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle56.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.skinDataGridView_BOM_ALL.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle56;
+            this.skinDataGridView_BOM_ALL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.skinDataGridView_BOM_ALL.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn19,
+            this.dataGridViewCheckBoxColumn1,
+            this.dataGridViewButtonColumn2,
+            this.dataGridViewButtonColumn3});
+            this.skinDataGridView_BOM_ALL.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle57.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle57.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle57.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle57.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle57.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle57.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.skinDataGridView_BOM_ALL.DefaultCellStyle = dataGridViewCellStyle57;
+            this.skinDataGridView_BOM_ALL.EnableHeadersVisualStyles = false;
+            this.skinDataGridView_BOM_ALL.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.skinDataGridView_BOM_ALL.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinDataGridView_BOM_ALL.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            this.skinDataGridView_BOM_ALL.Location = new System.Drawing.Point(31, 40);
+            this.skinDataGridView_BOM_ALL.MultiSelect = false;
+            this.skinDataGridView_BOM_ALL.Name = "skinDataGridView_BOM_ALL";
+            this.skinDataGridView_BOM_ALL.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.skinDataGridView_BOM_ALL.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle58.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle58.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle58.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.skinDataGridView_BOM_ALL.RowsDefaultCellStyle = dataGridViewCellStyle58;
+            this.skinDataGridView_BOM_ALL.RowTemplate.Height = 23;
+            this.skinDataGridView_BOM_ALL.Size = new System.Drawing.Size(812, 223);
+            this.skinDataGridView_BOM_ALL.TabIndex = 18;
+            this.skinDataGridView_BOM_ALL.TitleBack = null;
+            this.skinDataGridView_BOM_ALL.TitleBackColorBegin = System.Drawing.Color.White;
+            this.skinDataGridView_BOM_ALL.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            this.dataGridViewTextBoxColumn12.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.HeaderText = "项目代号";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.HeaderText = "项目名称";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.HeaderText = "项目负责人";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn18.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn18.Width = 90;
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.HeaderText = "备注";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.HeaderText = "选中";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.Width = 80;
+            // 
+            // dataGridViewButtonColumn2
+            // 
+            this.dataGridViewButtonColumn2.HeaderText = "修改";
+            this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
+            this.dataGridViewButtonColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn2.Width = 80;
+            // 
+            // dataGridViewButtonColumn3
+            // 
+            this.dataGridViewButtonColumn3.HeaderText = "删除";
+            this.dataGridViewButtonColumn3.Name = "dataGridViewButtonColumn3";
+            this.dataGridViewButtonColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn3.Width = 80;
+            // 
+            // groupBox17
+            // 
+            this.groupBox17.BackColor = System.Drawing.Color.LightGray;
+            this.groupBox17.Controls.Add(this.skinButton17);
+            this.groupBox17.Location = new System.Drawing.Point(-4, 3);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(1888, 350);
+            this.groupBox17.TabIndex = 0;
+            this.groupBox17.TabStop = false;
+            this.groupBox17.Text = "审核";
+            // 
+            // skinButton17
+            // 
+            this.skinButton17.BackColor = System.Drawing.Color.Transparent;
+            this.skinButton17.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skinButton17.DownBack = null;
+            this.skinButton17.Location = new System.Drawing.Point(35, 45);
+            this.skinButton17.MouseBack = null;
+            this.skinButton17.Name = "skinButton17";
+            this.skinButton17.NormlBack = null;
+            this.skinButton17.Size = new System.Drawing.Size(125, 49);
+            this.skinButton17.TabIndex = 0;
+            this.skinButton17.Text = "打开审核窗口";
+            this.skinButton17.UseVisualStyleBackColor = false;
+            this.skinButton17.Click += new System.EventHandler(this.skinButton17_Click);
             // 
             // imageList1
             // 
@@ -2930,7 +2930,7 @@
             this.ToolStripStatusLabel5,
             this.ToolStripStatusLabel10,
             this.ToolStripStatusLabel11});
-            this.StatusStrip1.Location = new System.Drawing.Point(8, 738);
+            this.StatusStrip1.Location = new System.Drawing.Point(8, 697);
             this.StatusStrip1.Name = "StatusStrip1";
             this.StatusStrip1.Size = new System.Drawing.Size(1350, 22);
             this.StatusStrip1.TabIndex = 7;
@@ -3013,7 +3013,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.ClientSize = new System.Drawing.Size(1366, 727);
             this.Controls.Add(this.StatusStrip1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.toolStrip2);
@@ -3022,23 +3022,6 @@
             this.Text = "物料管理系统";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_unchecked)).EndInit();
-            this.groupBox11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_checked)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView1)).EndInit();
-            this.tabPage6.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.tabPage7.ResumeLayout(false);
-            this.groupBox10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_BOM_ALL)).EndInit();
-            this.groupBox17.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
@@ -3058,6 +3041,23 @@
             this.tableLayoutPanel1.PerformLayout();
             this.groupBox18.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_BOM_Hold)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_unchecked)).EndInit();
+            this.groupBox11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_checked)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView1)).EndInit();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.tabPage7.ResumeLayout(false);
+            this.groupBox10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_BOM_ALL)).EndInit();
+            this.groupBox17.ResumeLayout(false);
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
             this.StatusStrip1.ResumeLayout(false);

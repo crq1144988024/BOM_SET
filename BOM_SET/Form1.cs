@@ -2016,6 +2016,8 @@ namespace BOM_SET
                    
                     DataGridView_BOM_Hold.Rows[row_now].Cells[8].Value = remarks;//8备注
 
+                  
+
                     string Is_SHOP = ""; if (q_find_one.是否采购 != null) { Is_SHOP = q_find_one.是否采购.ToString().Trim(); }
                     DataGridView_BOM_Hold.Rows[row_now].Cells[10].Value = Is_SHOP;//10是否采购
 

@@ -47,7 +47,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -72,29 +71,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.chatListBox1 = new CCWin.SkinControl.ChatListBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.skinButton11 = new CCWin.SkinControl.SkinButton();
             this.skinButton1 = new CCWin.SkinControl.SkinButton();
             this.DataGridView_BOM_Hold = new CCWin.SkinControl.SkinDataGridView();
-            this.类别 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.物料代码 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.规格型号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.物料名称 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.品牌 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.数量 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.技术参数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.备注 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.价格 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.删除 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
@@ -255,6 +238,17 @@
             this.skinButton13 = new CCWin.SkinControl.SkinButton();
             this.skinButton9 = new CCWin.SkinControl.SkinButton();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.skinButton18 = new CCWin.SkinControl.SkinButton();
+            this.skinDataGridView_BOM_ALL = new CCWin.SkinControl.SkinDataGridView();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn3 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.skinButton17 = new CCWin.SkinControl.SkinButton();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -278,17 +272,23 @@
             this.ToolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
             this.ToolStripStatusLabel10 = new System.Windows.Forms.ToolStripStatusLabel();
             this.ToolStripStatusLabel11 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.skinDataGridView_BOM_ALL = new CCWin.SkinControl.SkinDataGridView();
-            this.skinButton18 = new CCWin.SkinControl.SkinButton();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.dataGridViewButtonColumn3 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.类别 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.物料代码 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.规格型号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.物料名称 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.品牌 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.数量 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.技术参数 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.备注 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.价格 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.删除 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_BOM_Hold)).BeginInit();
@@ -316,11 +316,11 @@
             this.tabPage6.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.tabPage7.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_BOM_ALL)).BeginInit();
             this.groupBox17.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             this.StatusStrip1.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_BOM_ALL)).BeginInit();
             this.SuspendLayout();
             // 
             // chatListBox1
@@ -627,127 +627,6 @@
             this.DataGridView_BOM_Hold.TitleBackColorBegin = System.Drawing.Color.White;
             this.DataGridView_BOM_Hold.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
             this.DataGridView_BOM_Hold.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_BOM_Hold_CellContentClick);
-            // 
-            // 类别
-            // 
-            this.类别.HeaderText = "类别";
-            this.类别.Name = "类别";
-            this.类别.ReadOnly = true;
-            this.类别.Width = 80;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Width = 50;
-            // 
-            // 物料代码
-            // 
-            this.物料代码.HeaderText = "物料代码";
-            this.物料代码.Name = "物料代码";
-            this.物料代码.ReadOnly = true;
-            this.物料代码.Width = 150;
-            // 
-            // 规格型号
-            // 
-            this.规格型号.HeaderText = "规格型号";
-            this.规格型号.Name = "规格型号";
-            this.规格型号.ReadOnly = true;
-            this.规格型号.Width = 150;
-            // 
-            // 物料名称
-            // 
-            this.物料名称.HeaderText = "物料名称";
-            this.物料名称.Name = "物料名称";
-            this.物料名称.ReadOnly = true;
-            this.物料名称.Width = 150;
-            // 
-            // 品牌
-            // 
-            this.品牌.HeaderText = "品牌";
-            this.品牌.Name = "品牌";
-            this.品牌.ReadOnly = true;
-            this.品牌.Width = 90;
-            // 
-            // 数量
-            // 
-            dataGridViewCellStyle3.Format = "N0";
-            dataGridViewCellStyle3.NullValue = null;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.数量.DefaultCellStyle = dataGridViewCellStyle3;
-            this.数量.HeaderText = "数量";
-            this.数量.Name = "数量";
-            this.数量.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.数量.Width = 80;
-            // 
-            // 技术参数
-            // 
-            this.技术参数.HeaderText = "技术参数";
-            this.技术参数.Name = "技术参数";
-            this.技术参数.ReadOnly = true;
-            this.技术参数.Width = 150;
-            // 
-            // 备注
-            // 
-            this.备注.HeaderText = "备注";
-            this.备注.Name = "备注";
-            this.备注.Width = 80;
-            // 
-            // 价格
-            // 
-            this.价格.HeaderText = "价格";
-            this.价格.Name = "价格";
-            this.价格.ReadOnly = true;
-            this.价格.Width = 80;
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "是否采购";
-            this.Column11.Items.AddRange(new object[] {
-            "是",
-            "否"});
-            this.Column11.Name = "Column11";
-            this.Column11.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column11.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Column11.Width = 80;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "审核状态";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Width = 80;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "审核意见";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            this.Column10.Width = 80;
-            // 
-            // Column14
-            // 
-            this.Column14.HeaderText = "采购计划";
-            this.Column14.Name = "Column14";
-            this.Column14.Width = 80;
-            // 
-            // Column12
-            // 
-            this.Column12.HeaderText = "采购状态";
-            this.Column12.Name = "Column12";
-            // 
-            // Column13
-            // 
-            this.Column13.HeaderText = "已采购数量";
-            this.Column13.Name = "Column13";
-            // 
-            // 删除
-            // 
-            this.删除.HeaderText = "删除";
-            this.删除.Name = "删除";
-            this.删除.Text = "删除";
-            this.删除.Width = 60;
             // 
             // groupBox1
             // 
@@ -2950,6 +2829,143 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "物料审核";
             // 
+            // groupBox10
+            // 
+            this.groupBox10.BackColor = System.Drawing.Color.Silver;
+            this.groupBox10.Controls.Add(this.skinButton18);
+            this.groupBox10.Controls.Add(this.skinDataGridView_BOM_ALL);
+            this.groupBox10.Location = new System.Drawing.Point(0, 359);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(1884, 530);
+            this.groupBox10.TabIndex = 0;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "项目配置";
+            // 
+            // skinButton18
+            // 
+            this.skinButton18.BackColor = System.Drawing.Color.Transparent;
+            this.skinButton18.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skinButton18.DownBack = null;
+            this.skinButton18.Location = new System.Drawing.Point(70, 298);
+            this.skinButton18.MouseBack = null;
+            this.skinButton18.Name = "skinButton18";
+            this.skinButton18.NormlBack = null;
+            this.skinButton18.Size = new System.Drawing.Size(86, 38);
+            this.skinButton18.TabIndex = 19;
+            this.skinButton18.Text = "新增项目";
+            this.skinButton18.UseVisualStyleBackColor = false;
+            // 
+            // skinDataGridView_BOM_ALL
+            // 
+            this.skinDataGridView_BOM_ALL.AllowUserToAddRows = false;
+            this.skinDataGridView_BOM_ALL.AllowUserToResizeColumns = false;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
+            this.skinDataGridView_BOM_ALL.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle26;
+            this.skinDataGridView_BOM_ALL.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.skinDataGridView_BOM_ALL.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.skinDataGridView_BOM_ALL.ColumnFont = null;
+            this.skinDataGridView_BOM_ALL.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.skinDataGridView_BOM_ALL.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
+            this.skinDataGridView_BOM_ALL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.skinDataGridView_BOM_ALL.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn19,
+            this.dataGridViewCheckBoxColumn1,
+            this.dataGridViewButtonColumn2,
+            this.dataGridViewButtonColumn3});
+            this.skinDataGridView_BOM_ALL.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.skinDataGridView_BOM_ALL.DefaultCellStyle = dataGridViewCellStyle28;
+            this.skinDataGridView_BOM_ALL.EnableHeadersVisualStyles = false;
+            this.skinDataGridView_BOM_ALL.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.skinDataGridView_BOM_ALL.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinDataGridView_BOM_ALL.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            this.skinDataGridView_BOM_ALL.Location = new System.Drawing.Point(31, 40);
+            this.skinDataGridView_BOM_ALL.MultiSelect = false;
+            this.skinDataGridView_BOM_ALL.Name = "skinDataGridView_BOM_ALL";
+            this.skinDataGridView_BOM_ALL.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.skinDataGridView_BOM_ALL.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.skinDataGridView_BOM_ALL.RowsDefaultCellStyle = dataGridViewCellStyle29;
+            this.skinDataGridView_BOM_ALL.RowTemplate.Height = 23;
+            this.skinDataGridView_BOM_ALL.Size = new System.Drawing.Size(812, 223);
+            this.skinDataGridView_BOM_ALL.TabIndex = 18;
+            this.skinDataGridView_BOM_ALL.TitleBack = null;
+            this.skinDataGridView_BOM_ALL.TitleBackColorBegin = System.Drawing.Color.White;
+            this.skinDataGridView_BOM_ALL.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            this.dataGridViewTextBoxColumn12.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.HeaderText = "项目代号";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.HeaderText = "项目名称";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.HeaderText = "项目负责人";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn18.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn18.Width = 90;
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.HeaderText = "备注";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.HeaderText = "选中";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.Width = 80;
+            // 
+            // dataGridViewButtonColumn2
+            // 
+            this.dataGridViewButtonColumn2.HeaderText = "修改";
+            this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
+            this.dataGridViewButtonColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn2.Width = 80;
+            // 
+            // dataGridViewButtonColumn3
+            // 
+            this.dataGridViewButtonColumn3.HeaderText = "删除";
+            this.dataGridViewButtonColumn3.Name = "dataGridViewButtonColumn3";
+            this.dataGridViewButtonColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewButtonColumn3.Width = 80;
+            // 
             // groupBox17
             // 
             this.groupBox17.BackColor = System.Drawing.Color.LightGray;
@@ -3143,142 +3159,126 @@
             this.ToolStripStatusLabel11.Size = new System.Drawing.Size(15, 17);
             this.ToolStripStatusLabel11.Text = "0";
             // 
-            // groupBox10
+            // 类别
             // 
-            this.groupBox10.BackColor = System.Drawing.Color.Silver;
-            this.groupBox10.Controls.Add(this.skinButton18);
-            this.groupBox10.Controls.Add(this.skinDataGridView_BOM_ALL);
-            this.groupBox10.Location = new System.Drawing.Point(0, 359);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(1884, 530);
-            this.groupBox10.TabIndex = 0;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "项目配置";
+            this.类别.HeaderText = "类别";
+            this.类别.Name = "类别";
+            this.类别.ReadOnly = true;
+            this.类别.Width = 80;
             // 
-            // skinDataGridView_BOM_ALL
+            // ID
             // 
-            this.skinDataGridView_BOM_ALL.AllowUserToAddRows = false;
-            this.skinDataGridView_BOM_ALL.AllowUserToResizeColumns = false;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
-            this.skinDataGridView_BOM_ALL.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle26;
-            this.skinDataGridView_BOM_ALL.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.skinDataGridView_BOM_ALL.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.skinDataGridView_BOM_ALL.ColumnFont = null;
-            this.skinDataGridView_BOM_ALL.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.skinDataGridView_BOM_ALL.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
-            this.skinDataGridView_BOM_ALL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.skinDataGridView_BOM_ALL.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn16,
-            this.dataGridViewTextBoxColumn17,
-            this.dataGridViewTextBoxColumn18,
-            this.dataGridViewTextBoxColumn19,
-            this.dataGridViewCheckBoxColumn1,
-            this.dataGridViewButtonColumn2,
-            this.dataGridViewButtonColumn3});
-            this.skinDataGridView_BOM_ALL.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.skinDataGridView_BOM_ALL.DefaultCellStyle = dataGridViewCellStyle28;
-            this.skinDataGridView_BOM_ALL.EnableHeadersVisualStyles = false;
-            this.skinDataGridView_BOM_ALL.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.skinDataGridView_BOM_ALL.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinDataGridView_BOM_ALL.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            this.skinDataGridView_BOM_ALL.Location = new System.Drawing.Point(31, 40);
-            this.skinDataGridView_BOM_ALL.MultiSelect = false;
-            this.skinDataGridView_BOM_ALL.Name = "skinDataGridView_BOM_ALL";
-            this.skinDataGridView_BOM_ALL.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.skinDataGridView_BOM_ALL.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.skinDataGridView_BOM_ALL.RowsDefaultCellStyle = dataGridViewCellStyle29;
-            this.skinDataGridView_BOM_ALL.RowTemplate.Height = 23;
-            this.skinDataGridView_BOM_ALL.Size = new System.Drawing.Size(812, 223);
-            this.skinDataGridView_BOM_ALL.TabIndex = 18;
-            this.skinDataGridView_BOM_ALL.TitleBack = null;
-            this.skinDataGridView_BOM_ALL.TitleBackColorBegin = System.Drawing.Color.White;
-            this.skinDataGridView_BOM_ALL.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Width = 50;
             // 
-            // skinButton18
+            // 物料代码
             // 
-            this.skinButton18.BackColor = System.Drawing.Color.Transparent;
-            this.skinButton18.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButton18.DownBack = null;
-            this.skinButton18.Location = new System.Drawing.Point(70, 298);
-            this.skinButton18.MouseBack = null;
-            this.skinButton18.Name = "skinButton18";
-            this.skinButton18.NormlBack = null;
-            this.skinButton18.Size = new System.Drawing.Size(86, 38);
-            this.skinButton18.TabIndex = 19;
-            this.skinButton18.Text = "新增项目";
-            this.skinButton18.UseVisualStyleBackColor = false;
+            this.物料代码.HeaderText = "物料代码";
+            this.物料代码.Name = "物料代码";
+            this.物料代码.ReadOnly = true;
+            this.物料代码.Width = 150;
             // 
-            // dataGridViewTextBoxColumn12
+            // 规格型号
             // 
-            this.dataGridViewTextBoxColumn12.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            this.dataGridViewTextBoxColumn12.Width = 50;
+            this.规格型号.HeaderText = "规格型号";
+            this.规格型号.Name = "规格型号";
+            this.规格型号.ReadOnly = true;
+            this.规格型号.Width = 150;
             // 
-            // dataGridViewTextBoxColumn16
+            // 物料名称
             // 
-            this.dataGridViewTextBoxColumn16.HeaderText = "项目代号";
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.物料名称.HeaderText = "物料名称";
+            this.物料名称.Name = "物料名称";
+            this.物料名称.ReadOnly = true;
+            this.物料名称.Width = 150;
             // 
-            // dataGridViewTextBoxColumn17
+            // 品牌
             // 
-            this.dataGridViewTextBoxColumn17.HeaderText = "项目名称";
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.Width = 150;
+            this.品牌.HeaderText = "品牌";
+            this.品牌.Name = "品牌";
+            this.品牌.ReadOnly = true;
+            this.品牌.Width = 90;
             // 
-            // dataGridViewTextBoxColumn18
+            // 数量
             // 
-            this.dataGridViewTextBoxColumn18.HeaderText = "项目负责人";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn18.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewTextBoxColumn18.Width = 90;
+            dataGridViewCellStyle3.Format = "N0";
+            dataGridViewCellStyle3.NullValue = null;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.数量.DefaultCellStyle = dataGridViewCellStyle3;
+            this.数量.HeaderText = "本次数量";
+            this.数量.Name = "数量";
+            this.数量.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.数量.Width = 80;
             // 
-            // dataGridViewTextBoxColumn19
+            // 技术参数
             // 
-            this.dataGridViewTextBoxColumn19.HeaderText = "备注";
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.技术参数.HeaderText = "技术参数";
+            this.技术参数.Name = "技术参数";
+            this.技术参数.ReadOnly = true;
+            this.技术参数.Width = 150;
             // 
-            // dataGridViewCheckBoxColumn1
+            // 备注
             // 
-            this.dataGridViewCheckBoxColumn1.HeaderText = "选中";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.Width = 80;
+            this.备注.HeaderText = "备注";
+            this.备注.Name = "备注";
+            this.备注.Width = 80;
             // 
-            // dataGridViewButtonColumn2
+            // 价格
             // 
-            this.dataGridViewButtonColumn2.HeaderText = "修改";
-            this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
-            this.dataGridViewButtonColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewButtonColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewButtonColumn2.Width = 80;
+            this.价格.HeaderText = "价格";
+            this.价格.Name = "价格";
+            this.价格.ReadOnly = true;
+            this.价格.Width = 80;
             // 
-            // dataGridViewButtonColumn3
+            // Column11
             // 
-            this.dataGridViewButtonColumn3.HeaderText = "删除";
-            this.dataGridViewButtonColumn3.Name = "dataGridViewButtonColumn3";
-            this.dataGridViewButtonColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewButtonColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewButtonColumn3.Width = 80;
+            this.Column11.HeaderText = "是否采购";
+            this.Column11.Items.AddRange(new object[] {
+            "是",
+            "否"});
+            this.Column11.Name = "Column11";
+            this.Column11.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column11.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column11.Width = 80;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "审核状态";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 80;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "审核意见";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            this.Column10.Width = 80;
+            // 
+            // Column14
+            // 
+            this.Column14.HeaderText = "采购计划";
+            this.Column14.Name = "Column14";
+            this.Column14.Width = 80;
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "采购状态";
+            this.Column12.Name = "Column12";
+            // 
+            // Column13
+            // 
+            this.Column13.HeaderText = "已采购数量";
+            this.Column13.Name = "Column13";
+            // 
+            // 删除
+            // 
+            this.删除.HeaderText = "删除";
+            this.删除.Name = "删除";
+            this.删除.Text = "删除";
+            this.删除.Width = 60;
             // 
             // Form1
             // 
@@ -3323,13 +3323,13 @@
             this.tabPage6.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
+            this.groupBox10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_BOM_ALL)).EndInit();
             this.groupBox17.ResumeLayout(false);
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
             this.StatusStrip1.ResumeLayout(false);
             this.StatusStrip1.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_BOM_ALL)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3448,23 +3448,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private CCWin.SkinControl.SkinComboBox ComboBox_num_request;
         private CCWin.SkinControl.SkinComboBox ComboBox_mechine_number;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 类别;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 物料代码;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 规格型号;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 物料名称;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 品牌;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 数量;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 技术参数;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 备注;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 价格;
-        private System.Windows.Forms.DataGridViewComboBoxColumn Column11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
-        private System.Windows.Forms.DataGridViewButtonColumn 删除;
         internal System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel7;
         internal System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel6;
         internal System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel_permission;
@@ -3553,6 +3536,23 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn2;
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 类别;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 物料代码;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 规格型号;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 物料名称;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 品牌;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 数量;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 技术参数;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 备注;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 价格;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
+        private System.Windows.Forms.DataGridViewButtonColumn 删除;
     }
 }
 

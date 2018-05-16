@@ -98,6 +98,8 @@ namespace BOM_SET.sql
 		
 		private string _是否采购;
 		
+		private string _是否提交申请;
+		
 		private string _是否已提计划;
 		
 		private string _采购状态;
@@ -130,6 +132,8 @@ namespace BOM_SET.sql
     partial void On审核意见Changed();
     partial void On是否采购Changing(string value);
     partial void On是否采购Changed();
+    partial void On是否提交申请Changing(string value);
+    partial void On是否提交申请Changed();
     partial void On是否已提计划Changing(string value);
     partial void On是否已提计划Changed();
     partial void On采购状态Changing(string value);
@@ -323,6 +327,26 @@ namespace BOM_SET.sql
 					this._是否采购 = value;
 					this.SendPropertyChanged("是否采购");
 					this.On是否采购Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_是否提交申请", DbType="NChar(10)")]
+		public string 是否提交申请
+		{
+			get
+			{
+				return this._是否提交申请;
+			}
+			set
+			{
+				if ((this._是否提交申请 != value))
+				{
+					this.On是否提交申请Changing(value);
+					this.SendPropertyChanging();
+					this._是否提交申请 = value;
+					this.SendPropertyChanged("是否提交申请");
+					this.On是否提交申请Changed();
 				}
 			}
 		}

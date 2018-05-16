@@ -45,8 +45,11 @@ namespace BOM_SET
             //find_add_datagridview(datagridview_matter);
             //datagridview_matter.Rows.Clear();
 
-
-            ////以下是物料新增页面
+            ////设定按字体来缩放控件  
+            //this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ////设定字体大小为12px       
+            //this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
+            //////以下是物料新增页面
 
             //codeA(skinComboBox_A1, skinComboBox_B1, skinComboBox_C1);
             //codeA(skinComboBox_A2, skinComboBox_B2, skinComboBox_C2);

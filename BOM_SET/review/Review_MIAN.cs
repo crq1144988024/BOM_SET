@@ -20,6 +20,7 @@ namespace BOM_SET.review
 {
     public partial class Review_MIAN : Skin_Metro
     {
+        Class_review_tools tool = new Class_review_tools();
         public Review_MIAN()
         {
             InitializeComponent();
@@ -28,6 +29,26 @@ namespace BOM_SET.review
         private void Review_MIAN_Load(object sender, EventArgs e)
         {
 
+            tool.find_bom_project(skinDataGridView_BOM_project, false);
+            tool.find_bom_project(skinDataGridView_BOM_project_2, true);
+        }
+        /// <summary>
+        /// 未审批项目表格
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void skinDataGridView_BOM_project_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            tool.read_bom_all(skinDataGridView_BOM_project, e.RowIndex, e.ColumnIndex, DataGridView_BOM_list);
+        }
+        /// <summary>
+        /// 审批项目表格
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void skinDataGridView_BOM_project_2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            tool.read_bom_all(skinDataGridView_BOM_project_2, e.RowIndex, e.ColumnIndex, DataGridView_BOM_list_2);
         }
     }
 }

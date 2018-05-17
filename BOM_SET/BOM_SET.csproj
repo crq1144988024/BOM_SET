@@ -135,6 +135,7 @@
       <DependentUpon>Form_supplies_managemengt.cs</DependentUpon>
     </Compile>
     <Compile Include="management\Globle_add_supplies_manegement.cs" />
+    <Compile Include="review\Class_review_tools.cs" />
     <Compile Include="review\Review_MIAN.cs">
       <SubType>Form</SubType>
     </Compile>

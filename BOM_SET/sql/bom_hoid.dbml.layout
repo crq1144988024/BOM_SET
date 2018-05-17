@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="bom_hoid">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.875" name="bom_hoid">
   <DataContextMoniker Name="/bom_hoidDataContext" />
   <nestedChildShapes>
-    <classShape Id="48f0b188-d505-45f2-96f1-9b323c64bb6b" absoluteBounds="4.375, 2.5, 2, 5.3919396972656246">
+    <classShape Id="73ab3b45-55d3-424c-b91f-5e79a1c409b7" absoluteBounds="4.25, 2.5, 2, 6.1560184733072907">
       <DataClassMoniker Name="/bom_hoidDataContext/Table_BOM_HOLD" />
       <nestedChildShapes>
-        <elementListCompartment Id="3b14880f-99ef-45a2-b22a-d042e81cb76b" absoluteBounds="4.39, 2.96, 1.9700000000000002, 4.831939697265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="08b882d5-ebba-48ea-9ef6-8dedcff2409d" absoluteBounds="4.265, 2.96, 1.9700000000000002, 5.5960184733072911" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

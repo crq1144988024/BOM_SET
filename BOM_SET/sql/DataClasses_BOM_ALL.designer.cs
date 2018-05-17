@@ -36,7 +36,7 @@ namespace BOM_SET.sql
     #endregion
 		
 		public DataClasses_BOM_ALLDataContext() : 
-				base(global::BOM_SET.Properties.Settings.Default.Database1_mdfConnectionString, mappingSource)
+				base(global::BOM_SET.Properties.Settings.Default.Database1_mdfConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -88,7 +88,7 @@ namespace BOM_SET.sql
 		
 		private System.Nullable<int> _物料ID;
 		
-		private System.Nullable<int> _数量;
+		private System.Nullable<int> _总数量;
 		
 		private string _备注;
 		
@@ -97,6 +97,8 @@ namespace BOM_SET.sql
 		private string _审核意见;
 		
 		private string _是否采购;
+		
+		private string _是否激活;
 		
 		private string _是否提交申请;
 		
@@ -110,6 +112,8 @@ namespace BOM_SET.sql
 		
 		private System.Nullable<int> _本次提交数量;
 		
+		private System.Nullable<int> _最近一次数量;
+		
     #region 可扩展性方法定义
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -122,8 +126,8 @@ namespace BOM_SET.sql
     partial void On项目代号Changed();
     partial void On物料IDChanging(System.Nullable<int> value);
     partial void On物料IDChanged();
-    partial void On数量Changing(System.Nullable<int> value);
-    partial void On数量Changed();
+    partial void On总数量Changing(System.Nullable<int> value);
+    partial void On总数量Changed();
     partial void On备注Changing(string value);
     partial void On备注Changed();
     partial void On审核状态Changing(string value);
@@ -132,6 +136,8 @@ namespace BOM_SET.sql
     partial void On审核意见Changed();
     partial void On是否采购Changing(string value);
     partial void On是否采购Changed();
+    partial void On是否激活Changing(string value);
+    partial void On是否激活Changed();
     partial void On是否提交申请Changing(string value);
     partial void On是否提交申请Changed();
     partial void On是否已提计划Changing(string value);
@@ -144,6 +150,8 @@ namespace BOM_SET.sql
     partial void On提交审核Changed();
     partial void On本次提交数量Changing(System.Nullable<int> value);
     partial void On本次提交数量Changed();
+    partial void On最近一次数量Changing(System.Nullable<int> value);
+    partial void On最近一次数量Changed();
     #endregion
 		
 		public BOM_ALL()
@@ -231,22 +239,22 @@ namespace BOM_SET.sql
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_数量", DbType="Int")]
-		public System.Nullable<int> 数量
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_总数量", DbType="Int")]
+		public System.Nullable<int> 总数量
 		{
 			get
 			{
-				return this._数量;
+				return this._总数量;
 			}
 			set
 			{
-				if ((this._数量 != value))
+				if ((this._总数量 != value))
 				{
-					this.On数量Changing(value);
+					this.On总数量Changing(value);
 					this.SendPropertyChanging();
-					this._数量 = value;
-					this.SendPropertyChanged("数量");
-					this.On数量Changed();
+					this._总数量 = value;
+					this.SendPropertyChanged("总数量");
+					this.On总数量Changed();
 				}
 			}
 		}
@@ -327,6 +335,26 @@ namespace BOM_SET.sql
 					this._是否采购 = value;
 					this.SendPropertyChanged("是否采购");
 					this.On是否采购Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_是否激活", DbType="NChar(10)")]
+		public string 是否激活
+		{
+			get
+			{
+				return this._是否激活;
+			}
+			set
+			{
+				if ((this._是否激活 != value))
+				{
+					this.On是否激活Changing(value);
+					this.SendPropertyChanging();
+					this._是否激活 = value;
+					this.SendPropertyChanged("是否激活");
+					this.On是否激活Changed();
 				}
 			}
 		}
@@ -447,6 +475,26 @@ namespace BOM_SET.sql
 					this._本次提交数量 = value;
 					this.SendPropertyChanged("本次提交数量");
 					this.On本次提交数量Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_最近一次数量", DbType="Int")]
+		public System.Nullable<int> 最近一次数量
+		{
+			get
+			{
+				return this._最近一次数量;
+			}
+			set
+			{
+				if ((this._最近一次数量 != value))
+				{
+					this.On最近一次数量Changing(value);
+					this.SendPropertyChanging();
+					this._最近一次数量 = value;
+					this.SendPropertyChanged("最近一次数量");
+					this.On最近一次数量Changed();
 				}
 			}
 		}

@@ -36,7 +36,7 @@ namespace BOM_SET.sql
     #endregion
 		
 		public bom_hoidDataContext() : 
-				base(global::BOM_SET.Properties.Settings.Default.Database1_mdfConnectionString, mappingSource)
+				base(global::BOM_SET.Properties.Settings.Default.Database1_mdfConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -102,11 +102,19 @@ namespace BOM_SET.sql
 		
 		private System.Nullable<int> _最后修改人ID;
 		
+		private string _是否激活;
+		
 		private string _是否提交申请;
 		
-		private string _是否已获审批;
+		private string _当次审批是否通过;
+		
+		private string _是否已获过审批;
+		
+		private string _当次计划是否提完;
 		
 		private string _是否已提计划;
+		
+		private string _当次采购是否完成;
 		
 		private string _是否已提采购;
 		
@@ -154,12 +162,20 @@ namespace BOM_SET.sql
     partial void On项目负责人IDChanged();
     partial void On最后修改人IDChanging(System.Nullable<int> value);
     partial void On最后修改人IDChanged();
+    partial void On是否激活Changing(string value);
+    partial void On是否激活Changed();
     partial void On是否提交申请Changing(string value);
     partial void On是否提交申请Changed();
-    partial void On是否已获审批Changing(string value);
-    partial void On是否已获审批Changed();
+    partial void On当次审批是否通过Changing(string value);
+    partial void On当次审批是否通过Changed();
+    partial void On是否已获过审批Changing(string value);
+    partial void On是否已获过审批Changed();
+    partial void On当次计划是否提完Changing(string value);
+    partial void On当次计划是否提完Changed();
     partial void On是否已提计划Changing(string value);
     partial void On是否已提计划Changed();
+    partial void On当次采购是否完成Changing(string value);
+    partial void On当次采购是否完成Changed();
     partial void On是否已提采购Changing(string value);
     partial void On是否已提采购Changed();
     partial void On项目经理Changing(string value);
@@ -407,6 +423,26 @@ namespace BOM_SET.sql
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_是否激活", DbType="NChar(10)")]
+		public string 是否激活
+		{
+			get
+			{
+				return this._是否激活;
+			}
+			set
+			{
+				if ((this._是否激活 != value))
+				{
+					this.On是否激活Changing(value);
+					this.SendPropertyChanging();
+					this._是否激活 = value;
+					this.SendPropertyChanged("是否激活");
+					this.On是否激活Changed();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_是否提交申请", DbType="NChar(10)")]
 		public string 是否提交申请
 		{
@@ -427,22 +463,62 @@ namespace BOM_SET.sql
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_是否已获审批", DbType="NChar(10)")]
-		public string 是否已获审批
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_当次审批是否通过", DbType="NChar(10)")]
+		public string 当次审批是否通过
 		{
 			get
 			{
-				return this._是否已获审批;
+				return this._当次审批是否通过;
 			}
 			set
 			{
-				if ((this._是否已获审批 != value))
+				if ((this._当次审批是否通过 != value))
 				{
-					this.On是否已获审批Changing(value);
+					this.On当次审批是否通过Changing(value);
 					this.SendPropertyChanging();
-					this._是否已获审批 = value;
-					this.SendPropertyChanged("是否已获审批");
-					this.On是否已获审批Changed();
+					this._当次审批是否通过 = value;
+					this.SendPropertyChanged("当次审批是否通过");
+					this.On当次审批是否通过Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_是否已获过审批", DbType="NChar(10)")]
+		public string 是否已获过审批
+		{
+			get
+			{
+				return this._是否已获过审批;
+			}
+			set
+			{
+				if ((this._是否已获过审批 != value))
+				{
+					this.On是否已获过审批Changing(value);
+					this.SendPropertyChanging();
+					this._是否已获过审批 = value;
+					this.SendPropertyChanged("是否已获过审批");
+					this.On是否已获过审批Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_当次计划是否提完", DbType="NChar(10)")]
+		public string 当次计划是否提完
+		{
+			get
+			{
+				return this._当次计划是否提完;
+			}
+			set
+			{
+				if ((this._当次计划是否提完 != value))
+				{
+					this.On当次计划是否提完Changing(value);
+					this.SendPropertyChanging();
+					this._当次计划是否提完 = value;
+					this.SendPropertyChanged("当次计划是否提完");
+					this.On当次计划是否提完Changed();
 				}
 			}
 		}
@@ -463,6 +539,26 @@ namespace BOM_SET.sql
 					this._是否已提计划 = value;
 					this.SendPropertyChanged("是否已提计划");
 					this.On是否已提计划Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_当次采购是否完成", DbType="NChar(10)")]
+		public string 当次采购是否完成
+		{
+			get
+			{
+				return this._当次采购是否完成;
+			}
+			set
+			{
+				if ((this._当次采购是否完成 != value))
+				{
+					this.On当次采购是否完成Changing(value);
+					this.SendPropertyChanging();
+					this._当次采购是否完成 = value;
+					this.SendPropertyChanged("当次采购是否完成");
+					this.On当次采购是否完成Changed();
 				}
 			}
 		}

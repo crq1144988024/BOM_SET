@@ -133,6 +133,7 @@ namespace BOM_SET
                 package.Save();
 
                 MessageBox.Show("导出成功！");
+               management.BOM_Out_put_tools. Form2_procurement_open = true;
             }
         }
         private static void CreateWorksheetAbAssets(ExcelWorksheet ws)

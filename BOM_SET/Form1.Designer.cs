@@ -1090,7 +1090,6 @@
             this.skinButton_request_offer.TabIndex = 1;
             this.skinButton_request_offer.Text = "报价核算";
             this.skinButton_request_offer.UseVisualStyleBackColor = false;
-            this.skinButton_request_offer.Click += new System.EventHandler(this.skinButton2_Click);
             // 
             // skinButton11
             // 
@@ -2074,7 +2073,7 @@
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(1328, 320);
+            this.tabPage9.Size = new System.Drawing.Size(1328, 321);
             this.tabPage9.TabIndex = 1;
             this.tabPage9.Text = "未审核物料";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -2085,7 +2084,7 @@
             this.groupBox12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox12.Location = new System.Drawing.Point(3, 3);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(1322, 314);
+            this.groupBox12.Size = new System.Drawing.Size(1322, 315);
             this.groupBox12.TabIndex = 17;
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "未审核物料";
@@ -2148,7 +2147,7 @@
             dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             this.skinDataGridView_unchecked.RowsDefaultCellStyle = dataGridViewCellStyle17;
             this.skinDataGridView_unchecked.RowTemplate.Height = 23;
-            this.skinDataGridView_unchecked.Size = new System.Drawing.Size(1316, 294);
+            this.skinDataGridView_unchecked.Size = new System.Drawing.Size(1316, 295);
             this.skinDataGridView_unchecked.TabIndex = 15;
             this.skinDataGridView_unchecked.TitleBack = null;
             this.skinDataGridView_unchecked.TitleBackColorBegin = System.Drawing.Color.White;
@@ -2231,7 +2230,7 @@
             this.tabPage10.Controls.Add(this.groupBox11);
             this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(1328, 320);
+            this.tabPage10.Size = new System.Drawing.Size(1328, 321);
             this.tabPage10.TabIndex = 2;
             this.tabPage10.Text = "已审核物料";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -2242,7 +2241,7 @@
             this.groupBox11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox11.Location = new System.Drawing.Point(0, 0);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(1328, 320);
+            this.groupBox11.Size = new System.Drawing.Size(1328, 321);
             this.groupBox11.TabIndex = 16;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "已审核物料";
@@ -2306,7 +2305,7 @@
             dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             this.skinDataGridView_checked.RowsDefaultCellStyle = dataGridViewCellStyle21;
             this.skinDataGridView_checked.RowTemplate.Height = 23;
-            this.skinDataGridView_checked.Size = new System.Drawing.Size(1322, 300);
+            this.skinDataGridView_checked.Size = new System.Drawing.Size(1322, 301);
             this.skinDataGridView_checked.TabIndex = 16;
             this.skinDataGridView_checked.TitleBack = null;
             this.skinDataGridView_checked.TitleBackColorBegin = System.Drawing.Color.White;
@@ -2597,10 +2596,10 @@
             this.skinLabel13.BackColor = System.Drawing.Color.Transparent;
             this.skinLabel13.BorderColor = System.Drawing.Color.White;
             this.skinLabel13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.skinLabel13.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel13.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.skinLabel13.Location = new System.Drawing.Point(3, 0);
             this.skinLabel13.Name = "skinLabel13";
-            this.skinLabel13.Size = new System.Drawing.Size(148, 16);
+            this.skinLabel13.Size = new System.Drawing.Size(148, 17);
             this.skinLabel13.TabIndex = 11;
             this.skinLabel13.Text = "物料类别模糊查找";
             // 
@@ -2776,7 +2775,7 @@
             this.tabPage3.BackColor = System.Drawing.Color.Silver;
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1342, 625);
+            this.tabPage3.Size = new System.Drawing.Size(1342, 584);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "库存物料管理";
             // 
@@ -2785,7 +2784,7 @@
             this.tabPage4.BackColor = System.Drawing.Color.Silver;
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1342, 625);
+            this.tabPage4.Size = new System.Drawing.Size(1342, 584);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "采购";
             // 
@@ -2793,7 +2792,7 @@
             // 
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1342, 625);
+            this.tabPage5.Size = new System.Drawing.Size(1342, 584);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "图纸管理";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -2805,7 +2804,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1342, 625);
+            this.tabPage6.Size = new System.Drawing.Size(1342, 584);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "物料管理";
             // 
@@ -2819,7 +2818,7 @@
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox3.Location = new System.Drawing.Point(3, 3);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(567, 619);
+            this.groupBox3.Size = new System.Drawing.Size(567, 578);
             this.groupBox3.TabIndex = 16;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "操作";
@@ -2891,7 +2890,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1342, 625);
+            this.tabPage7.Size = new System.Drawing.Size(1342, 584);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "物料审核";
             // 
@@ -2903,7 +2902,7 @@
             this.groupBox10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox10.Location = new System.Drawing.Point(3, 353);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(1336, 269);
+            this.groupBox10.Size = new System.Drawing.Size(1336, 228);
             this.groupBox10.TabIndex = 0;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "项目配置";
@@ -2919,7 +2918,7 @@
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(1330, 249);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(1330, 208);
             this.tableLayoutPanel9.TabIndex = 20;
             // 
             // skinDataGridView_BOM_ALL
@@ -2975,7 +2974,7 @@
             dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             this.skinDataGridView_BOM_ALL.RowsDefaultCellStyle = dataGridViewCellStyle29;
             this.skinDataGridView_BOM_ALL.RowTemplate.Height = 23;
-            this.skinDataGridView_BOM_ALL.Size = new System.Drawing.Size(963, 243);
+            this.skinDataGridView_BOM_ALL.Size = new System.Drawing.Size(963, 202);
             this.skinDataGridView_BOM_ALL.TabIndex = 18;
             this.skinDataGridView_BOM_ALL.TitleBack = null;
             this.skinDataGridView_BOM_ALL.TitleBackColorBegin = System.Drawing.Color.White;

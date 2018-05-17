@@ -39,10 +39,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.CheckBox1_find_condition = new CCWin.SkinControl.SkinCheckBox();
-            this.skinLabel1 = new CCWin.SkinControl.SkinLabel();
-            this.skinComboBox1 = new CCWin.SkinControl.SkinComboBox();
-            this.skinButton1 = new CCWin.SkinControl.SkinButton();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.skinDataGridView_BOM_project = new CCWin.SkinControl.SkinDataGridView();
             this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,11 +48,22 @@
             this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.选中 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.skinLabel2 = new CCWin.SkinControl.SkinLabel();
+            this.skinComboBox2 = new CCWin.SkinControl.SkinComboBox();
+            this.skinButton11 = new CCWin.SkinControl.SkinButton();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.skinLabel1 = new CCWin.SkinControl.SkinLabel();
+            this.skinComboBox1 = new CCWin.SkinControl.SkinComboBox();
+            this.skinButton3 = new CCWin.SkinControl.SkinButton();
+            this.CheckBox1_find_condition = new CCWin.SkinControl.SkinCheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.skinButton2 = new CCWin.SkinControl.SkinButton();
             this.DataGridView_BOM_list = new CCWin.SkinControl.SkinDataGridView();
             this.类别 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,22 +77,19 @@
             this.备注 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.价格 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_BOM_project)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView_BOM_list)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_BOM_project)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView_BOM_list)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -100,65 +105,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "项目列表";
             // 
-            // CheckBox1_find_condition
+            // groupBox4
             // 
-            this.CheckBox1_find_condition.AutoSize = true;
-            this.CheckBox1_find_condition.BackColor = System.Drawing.Color.Transparent;
-            this.CheckBox1_find_condition.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.CheckBox1_find_condition.DownBack = null;
-            this.CheckBox1_find_condition.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.CheckBox1_find_condition.Location = new System.Drawing.Point(135, 170);
-            this.CheckBox1_find_condition.MouseBack = null;
-            this.CheckBox1_find_condition.Name = "CheckBox1_find_condition";
-            this.CheckBox1_find_condition.NormlBack = null;
-            this.CheckBox1_find_condition.SelectedDownBack = null;
-            this.CheckBox1_find_condition.SelectedMouseBack = null;
-            this.CheckBox1_find_condition.SelectedNormlBack = null;
-            this.CheckBox1_find_condition.Size = new System.Drawing.Size(99, 21);
-            this.CheckBox1_find_condition.TabIndex = 37;
-            this.CheckBox1_find_condition.Text = "显示全部计划";
-            this.CheckBox1_find_condition.UseVisualStyleBackColor = false;
-            this.CheckBox1_find_condition.CheckedChanged += new System.EventHandler(this.CheckBox1_find_condition_CheckedChanged);
-            // 
-            // skinLabel1
-            // 
-            this.skinLabel1.AutoSize = true;
-            this.skinLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel1.BorderColor = System.Drawing.Color.White;
-            this.skinLabel1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel1.Location = new System.Drawing.Point(41, 52);
-            this.skinLabel1.Name = "skinLabel1";
-            this.skinLabel1.Size = new System.Drawing.Size(56, 17);
-            this.skinLabel1.TabIndex = 20;
-            this.skinLabel1.Text = "数量选择";
-            // 
-            // skinComboBox1
-            // 
-            this.skinComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.skinComboBox1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinComboBox1.FormattingEnabled = true;
-            this.skinComboBox1.Items.AddRange(new object[] {
-            "当次数量",
-            "全部数量"});
-            this.skinComboBox1.Location = new System.Drawing.Point(146, 46);
-            this.skinComboBox1.Name = "skinComboBox1";
-            this.skinComboBox1.Size = new System.Drawing.Size(167, 30);
-            this.skinComboBox1.TabIndex = 19;
-            this.skinComboBox1.WaterText = "";
-            // 
-            // skinButton1
-            // 
-            this.skinButton1.BackColor = System.Drawing.Color.Transparent;
-            this.skinButton1.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButton1.DownBack = null;
-            this.skinButton1.Location = new System.Drawing.Point(122, 103);
-            this.skinButton1.MouseBack = null;
-            this.skinButton1.Name = "skinButton1";
-            this.skinButton1.NormlBack = null;
-            this.skinButton1.Size = new System.Drawing.Size(167, 38);
-            this.skinButton1.TabIndex = 18;
-            this.skinButton1.Text = "导出选中项";
-            this.skinButton1.UseVisualStyleBackColor = false;
+            this.groupBox4.Controls.Add(this.skinDataGridView_BOM_project);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox4.Location = new System.Drawing.Point(3, 17);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(960, 280);
+            this.groupBox4.TabIndex = 39;
+            this.groupBox4.TabStop = false;
             // 
             // skinDataGridView_BOM_project
             // 
@@ -187,7 +142,7 @@
             this.dataGridViewTextBoxColumn38,
             this.dataGridViewTextBoxColumn39,
             this.dataGridViewTextBoxColumn41,
-            this.Column5,
+            this.选中,
             this.Column2,
             this.Column6,
             this.Column3});
@@ -259,15 +214,16 @@
             this.dataGridViewTextBoxColumn41.HeaderText = "备注";
             this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
             // 
-            // Column5
+            // 选中
             // 
-            this.Column5.HeaderText = "选中";
-            this.Column5.Name = "Column5";
+            this.选中.HeaderText = "选中";
+            this.选中.Name = "选中";
             // 
             // Column2
             // 
             this.Column2.HeaderText = "导出";
             this.Column2.Name = "Column2";
+            this.Column2.Visible = false;
             // 
             // Column6
             // 
@@ -279,6 +235,144 @@
             // 
             this.Column3.HeaderText = "读取";
             this.Column3.Name = "Column3";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.groupBox7);
+            this.groupBox2.Controls.Add(this.groupBox6);
+            this.groupBox2.Controls.Add(this.CheckBox1_find_condition);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupBox2.Location = new System.Drawing.Point(963, 17);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(384, 280);
+            this.groupBox2.TabIndex = 38;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "操作";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.skinLabel2);
+            this.groupBox7.Controls.Add(this.skinComboBox2);
+            this.groupBox7.Controls.Add(this.skinButton11);
+            this.groupBox7.Location = new System.Drawing.Point(28, 177);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(329, 100);
+            this.groupBox7.TabIndex = 40;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "采购单";
+            // 
+            // skinLabel2
+            // 
+            this.skinLabel2.AutoSize = true;
+            this.skinLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel2.BorderColor = System.Drawing.Color.White;
+            this.skinLabel2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel2.Location = new System.Drawing.Point(6, 44);
+            this.skinLabel2.Name = "skinLabel2";
+            this.skinLabel2.Size = new System.Drawing.Size(56, 17);
+            this.skinLabel2.TabIndex = 20;
+            this.skinLabel2.Text = "数量选择";
+            // 
+            // skinComboBox2
+            // 
+            this.skinComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.skinComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.skinComboBox2.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinComboBox2.FormattingEnabled = true;
+            this.skinComboBox2.Location = new System.Drawing.Point(68, 38);
+            this.skinComboBox2.Name = "skinComboBox2";
+            this.skinComboBox2.Size = new System.Drawing.Size(167, 30);
+            this.skinComboBox2.TabIndex = 19;
+            this.skinComboBox2.WaterText = "";
+            this.skinComboBox2.SelectedIndexChanged += new System.EventHandler(this.skinComboBox2_SelectedIndexChanged);
+            // 
+            // skinButton11
+            // 
+            this.skinButton11.BackColor = System.Drawing.Color.Transparent;
+            this.skinButton11.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skinButton11.DownBack = null;
+            this.skinButton11.Location = new System.Drawing.Point(240, 38);
+            this.skinButton11.MouseBack = null;
+            this.skinButton11.Name = "skinButton11";
+            this.skinButton11.NormlBack = null;
+            this.skinButton11.Size = new System.Drawing.Size(83, 38);
+            this.skinButton11.TabIndex = 39;
+            this.skinButton11.Text = "生成采购单";
+            this.skinButton11.UseVisualStyleBackColor = false;
+            this.skinButton11.Click += new System.EventHandler(this.skinButton11_Click);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.skinLabel1);
+            this.groupBox6.Controls.Add(this.skinComboBox1);
+            this.groupBox6.Controls.Add(this.skinButton3);
+            this.groupBox6.Location = new System.Drawing.Point(28, 74);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(329, 100);
+            this.groupBox6.TabIndex = 40;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "BOM";
+            // 
+            // skinLabel1
+            // 
+            this.skinLabel1.AutoSize = true;
+            this.skinLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel1.BorderColor = System.Drawing.Color.White;
+            this.skinLabel1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel1.Location = new System.Drawing.Point(6, 44);
+            this.skinLabel1.Name = "skinLabel1";
+            this.skinLabel1.Size = new System.Drawing.Size(56, 17);
+            this.skinLabel1.TabIndex = 20;
+            this.skinLabel1.Text = "数量选择";
+            // 
+            // skinComboBox1
+            // 
+            this.skinComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.skinComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.skinComboBox1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinComboBox1.FormattingEnabled = true;
+            this.skinComboBox1.Location = new System.Drawing.Point(68, 38);
+            this.skinComboBox1.Name = "skinComboBox1";
+            this.skinComboBox1.Size = new System.Drawing.Size(167, 30);
+            this.skinComboBox1.TabIndex = 19;
+            this.skinComboBox1.WaterText = "";
+            this.skinComboBox1.SelectedIndexChanged += new System.EventHandler(this.skinComboBox1_SelectedIndexChanged);
+            // 
+            // skinButton3
+            // 
+            this.skinButton3.BackColor = System.Drawing.Color.Transparent;
+            this.skinButton3.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skinButton3.DownBack = null;
+            this.skinButton3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.skinButton3.Location = new System.Drawing.Point(240, 34);
+            this.skinButton3.MouseBack = null;
+            this.skinButton3.Name = "skinButton3";
+            this.skinButton3.NormlBack = null;
+            this.skinButton3.Size = new System.Drawing.Size(83, 38);
+            this.skinButton3.TabIndex = 38;
+            this.skinButton3.Text = "BOM表格生成";
+            this.skinButton3.UseVisualStyleBackColor = false;
+            this.skinButton3.Click += new System.EventHandler(this.skinButton3_Click);
+            // 
+            // CheckBox1_find_condition
+            // 
+            this.CheckBox1_find_condition.AutoSize = true;
+            this.CheckBox1_find_condition.BackColor = System.Drawing.Color.Transparent;
+            this.CheckBox1_find_condition.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.CheckBox1_find_condition.DownBack = null;
+            this.CheckBox1_find_condition.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.CheckBox1_find_condition.Location = new System.Drawing.Point(28, 41);
+            this.CheckBox1_find_condition.MouseBack = null;
+            this.CheckBox1_find_condition.Name = "CheckBox1_find_condition";
+            this.CheckBox1_find_condition.NormlBack = null;
+            this.CheckBox1_find_condition.SelectedDownBack = null;
+            this.CheckBox1_find_condition.SelectedMouseBack = null;
+            this.CheckBox1_find_condition.SelectedNormlBack = null;
+            this.CheckBox1_find_condition.Size = new System.Drawing.Size(99, 21);
+            this.CheckBox1_find_condition.TabIndex = 37;
+            this.CheckBox1_find_condition.Text = "显示全部计划";
+            this.CheckBox1_find_condition.UseVisualStyleBackColor = false;
+            this.CheckBox1_find_condition.CheckedChanged += new System.EventHandler(this.CheckBox1_find_condition_CheckedChanged);
             // 
             // groupBox3
             // 
@@ -292,6 +386,17 @@
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "物料信息";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.skinButton2);
+            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBox5.Location = new System.Drawing.Point(3, 352);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(1344, 75);
+            this.groupBox5.TabIndex = 10;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "操作";
             // 
             // skinButton2
             // 
@@ -312,6 +417,7 @@
             this.DataGridView_BOM_list.AllowUserToAddRows = false;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
             this.DataGridView_BOM_list.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.DataGridView_BOM_list.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridView_BOM_list.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DataGridView_BOM_list.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.DataGridView_BOM_list.ColumnFont = null;
@@ -337,11 +443,8 @@
             this.备注,
             this.价格,
             this.Column8,
-            this.Column14,
-            this.Column12,
             this.Column13,
             this.Column10,
-            this.Column7,
             this.Column1});
             this.DataGridView_BOM_list.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -382,7 +485,6 @@
             this.类别.HeaderText = "类别";
             this.类别.Name = "类别";
             this.类别.ReadOnly = true;
-            this.类别.Width = 80;
             // 
             // ID
             // 
@@ -390,7 +492,6 @@
             this.ID.HeaderText = "ID";
             this.ID.Name = "ID";
             this.ID.ReadOnly = true;
-            this.ID.Width = 51;
             // 
             // 物料代码
             // 
@@ -398,7 +499,6 @@
             this.物料代码.HeaderText = "物料代码";
             this.物料代码.Name = "物料代码";
             this.物料代码.ReadOnly = true;
-            this.物料代码.Width = 157;
             // 
             // 规格型号
             // 
@@ -406,7 +506,6 @@
             this.规格型号.HeaderText = "规格型号";
             this.规格型号.Name = "规格型号";
             this.规格型号.ReadOnly = true;
-            this.规格型号.Width = 152;
             // 
             // 物料名称
             // 
@@ -414,7 +513,6 @@
             this.物料名称.HeaderText = "物料名称";
             this.物料名称.Name = "物料名称";
             this.物料名称.ReadOnly = true;
-            this.物料名称.Width = 149;
             // 
             // 品牌
             // 
@@ -422,7 +520,6 @@
             this.品牌.HeaderText = "品牌";
             this.品牌.Name = "品牌";
             this.品牌.ReadOnly = true;
-            this.品牌.Width = 87;
             // 
             // 数量
             // 
@@ -431,10 +528,9 @@
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.数量.DefaultCellStyle = dataGridViewCellStyle7;
             this.数量.FillWeight = 78.55276F;
-            this.数量.HeaderText = "本次数量";
+            this.数量.HeaderText = "数量";
             this.数量.Name = "数量";
             this.数量.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.数量.Width = 78;
             // 
             // 技术参数
             // 
@@ -442,14 +538,12 @@
             this.技术参数.HeaderText = "技术参数";
             this.技术参数.Name = "技术参数";
             this.技术参数.ReadOnly = true;
-            this.技术参数.Width = 148;
             // 
             // 备注
             // 
             this.备注.FillWeight = 77.80916F;
             this.备注.HeaderText = "备注";
             this.备注.Name = "备注";
-            this.备注.Width = 78;
             // 
             // 价格
             // 
@@ -457,7 +551,6 @@
             this.价格.HeaderText = "价格";
             this.价格.Name = "价格";
             this.价格.ReadOnly = true;
-            this.价格.Width = 78;
             // 
             // Column8
             // 
@@ -466,28 +559,12 @@
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             this.Column8.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column8.Width = 80;
-            // 
-            // Column14
-            // 
-            this.Column14.FillWeight = 81.67208F;
-            this.Column14.HeaderText = "采购计划";
-            this.Column14.Name = "Column14";
-            this.Column14.Width = 81;
-            // 
-            // Column12
-            // 
-            this.Column12.FillWeight = 82.83966F;
-            this.Column12.HeaderText = "采购状态";
-            this.Column12.Name = "Column12";
-            this.Column12.Width = 82;
             // 
             // Column13
             // 
             this.Column13.FillWeight = 94.44585F;
             this.Column13.HeaderText = "已采购数量";
             this.Column13.Name = "Column13";
-            this.Column13.Width = 94;
             // 
             // Column10
             // 
@@ -495,57 +572,17 @@
             this.Column10.HeaderText = "总数量";
             this.Column10.Name = "Column10";
             this.Column10.ReadOnly = true;
-            this.Column10.Width = 126;
-            // 
-            // Column7
-            // 
-            this.Column7.FillWeight = 83.54424F;
-            this.Column7.HeaderText = "计划";
-            this.Column7.Name = "Column7";
-            this.Column7.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column7.Width = 83;
             // 
             // Column1
             // 
             this.Column1.FillWeight = 84.62306F;
             this.Column1.HeaderText = "选择";
             this.Column1.Name = "Column1";
-            this.Column1.Width = 84;
             // 
-            // groupBox2
+            // timer1
             // 
-            this.groupBox2.Controls.Add(this.skinLabel1);
-            this.groupBox2.Controls.Add(this.CheckBox1_find_condition);
-            this.groupBox2.Controls.Add(this.skinComboBox1);
-            this.groupBox2.Controls.Add(this.skinButton1);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox2.Location = new System.Drawing.Point(963, 17);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(384, 280);
-            this.groupBox2.TabIndex = 38;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "操作";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.skinDataGridView_BOM_project);
-            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox4.Location = new System.Drawing.Point(3, 17);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(960, 280);
-            this.groupBox4.TabIndex = 39;
-            this.groupBox4.TabStop = false;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.skinButton2);
-            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox5.Location = new System.Drawing.Point(3, 352);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(1344, 75);
-            this.groupBox5.TabIndex = 10;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "操作";
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // BOM_output_plan
             // 
@@ -558,13 +595,17 @@
             this.Text = "BOM计划汇总导出";
             this.Load += new System.EventHandler(this.BOM_output_plan_Load);
             this.groupBox1.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView_BOM_project)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView_BOM_list)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView_BOM_list)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -576,10 +617,30 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private CCWin.SkinControl.SkinButton skinButton2;
         private CCWin.SkinControl.SkinDataGridView DataGridView_BOM_list;
-        private CCWin.SkinControl.SkinButton skinButton1;
         private CCWin.SkinControl.SkinLabel skinLabel1;
         private CCWin.SkinControl.SkinComboBox skinComboBox1;
         private CCWin.SkinControl.SkinCheckBox CheckBox1_find_condition;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private CCWin.SkinControl.SkinButton skinButton11;
+        private CCWin.SkinControl.SkinButton skinButton3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn34;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn36;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn38;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn39;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn41;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn 选中;
+        private System.Windows.Forms.DataGridViewButtonColumn Column2;
+        private System.Windows.Forms.DataGridViewButtonColumn Column6;
+        private System.Windows.Forms.DataGridViewButtonColumn Column3;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private CCWin.SkinControl.SkinLabel skinLabel2;
+        private CCWin.SkinControl.SkinComboBox skinComboBox2;
+        private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.DataGridViewTextBoxColumn 类别;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn 物料代码;
@@ -591,25 +652,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn 备注;
         private System.Windows.Forms.DataGridViewTextBoxColumn 价格;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewButtonColumn Column7;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn34;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn36;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn38;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn39;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn41;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewButtonColumn Column2;
-        private System.Windows.Forms.DataGridViewButtonColumn Column6;
-        private System.Windows.Forms.DataGridViewButtonColumn Column3;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox5;
     }
 }

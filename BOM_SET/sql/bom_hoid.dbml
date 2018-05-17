@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Database1.mdf" Class="bom_hoidDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=CRQ-PC\WINCC;Initial Catalog=Database1.mdf;Integrated Security=True" SettingsObjectName="BOM_SET.Properties.Settings" SettingsPropertyName="Database1_mdfConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=CRQ-PC\WINCC;Initial Catalog=Database1.mdf;Persist Security Info=True;User ID=sa" SettingsObjectName="BOM_SET.Properties.Settings" SettingsPropertyName="Database1_mdfConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Table_BOM_HOLD" Member="Table_BOM_HOLD">
     <Type Name="Table_BOM_HOLD">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -13,9 +13,13 @@
       <Column Name="备注" Type="System.String" DbType="NChar(255)" CanBeNull="true" />
       <Column Name="项目负责人ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="最后修改人ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="是否激活" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="是否提交申请" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="是否已获审批" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="当次审批是否通过" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="是否已获过审批" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="当次计划是否提完" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="是否已提计划" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="当次采购是否完成" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="是否已提采购" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="项目经理" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="项目开始时间" Type="System.String" DbType="NChar(20)" CanBeNull="true" />

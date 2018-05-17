@@ -1,22 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Database1.mdf" Class="DataClasses_BOM_ALLDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=CRQ-PC\WINCC;Initial Catalog=Database1.mdf;Integrated Security=True" SettingsObjectName="BOM_SET.Properties.Settings" SettingsPropertyName="Database1_mdfConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=CRQ-PC\WINCC;Initial Catalog=Database1.mdf;Persist Security Info=True;User ID=sa" SettingsObjectName="BOM_SET.Properties.Settings" SettingsPropertyName="Database1_mdfConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.BOM_ALL" Member="BOM_ALL">
     <Type Name="BOM_ALL">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="项目ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="项目代号" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="物料ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="数量" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="总数量" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="备注" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="审核状态" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="审核意见" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="是否采购" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="是否激活" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="是否提交申请" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="是否已提计划" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="采购状态" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="已采购数量" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="提交审核" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="本次提交数量" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="最近一次数量" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

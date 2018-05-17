@@ -1881,14 +1881,28 @@ namespace BOM_SET
                        
                         if (q_find_one.物料ID == Convert.ToInt32(rowone.Cells[1].Value.ToString()))//在表格中找到该物料则更新;
                         {
+                            int count_now = Convert.ToInt32(rowone.Cells[6].Value.ToString());
 
                             find_supplies_bool = true; //找到该物料  更新既可
-                            q_find_one.本次提交数量 = Convert.ToInt32(rowone.Cells[6].Value.ToString());
+                            q_find_one.本次提交数量 = count_now;
                             q_find_one.是否采购 = combox10.Value.ToString();
                             q_find_one.是否激活 = combox10.Value.ToString();
                             q_find_one.备注 = remarks;
                             q_find_one.是否提交申请 = combox10.Value.ToString();
-                            //q_find_one.审核状态 = audit_status;
+                            // q_find_one.审核状态 = audit_status;
+                            if (combox10.Value.ToString().Trim() == "是")
+                            {
+                                if (count_now > 0)
+                                {
+                                    q_find_one.审核状态 = "未审核";
+                                }
+                               
+                            }
+                            else
+                            {
+
+                            }
+                          
                             //q_find_one.审核意见 = audit_idea;
                             //q_find_one.是否已提计划 = Is_request_shop;
                             //q_find_one.采购状态 = shop_status;
@@ -2091,6 +2105,8 @@ namespace BOM_SET
                 }
                 DataGridView_BOM_Hold.Rows.Clear();
                 //先查询
+                DataClasses_BOM_ALLDataContext bomall_classes = new DataClasses_BOM_ALLDataContext();
+              
                 var q_find_supplies = from A in bomall_classes.BOM_ALL
 
                                       where A.项目ID == project_ID

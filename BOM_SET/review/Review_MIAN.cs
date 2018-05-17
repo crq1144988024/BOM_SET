@@ -39,7 +39,9 @@ namespace BOM_SET.review
         /// <param name="e"></param>
         private void skinDataGridView_BOM_project_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            tool.read_bom_all(skinDataGridView_BOM_project, e.RowIndex, e.ColumnIndex, DataGridView_BOM_list);
+            tool.read_bom_all(skinDataGridView_BOM_project, e.RowIndex, e.ColumnIndex, DataGridView_BOM_list,false);
+            tool.close_bom_all(skinDataGridView_BOM_project, e.RowIndex, e.ColumnIndex, DataGridView_BOM_list);
+        
         }
         /// <summary>
         /// 审批项目表格
@@ -48,7 +50,25 @@ namespace BOM_SET.review
         /// <param name="e"></param>
         private void skinDataGridView_BOM_project_2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            tool.read_bom_all(skinDataGridView_BOM_project_2, e.RowIndex, e.ColumnIndex, DataGridView_BOM_list_2);
+            tool.read_bom_all(skinDataGridView_BOM_project_2, e.RowIndex, e.ColumnIndex, DataGridView_BOM_list_2,true);
+        }
+        /// <summary>
+        /// 未审核  更改
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DataGridView_BOM_list_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            bool zero_ = false;
+            tool. update_bom_all(DataGridView_BOM_list, e.RowIndex, e.ColumnIndex,out zero_);
+            if (zero_)
+            {
+                MessageBox.Show("本BOM单审核完成！即将刷新！");
+                tool.find_bom_project(skinDataGridView_BOM_project, false);
+                DataGridView_BOM_list.Rows.Clear();
+            }
+           
+          //  tool.close_bom_all(skinDataGridView_BOM_project, e.RowIndex, e.ColumnIndex, DataGridView_BOM_list);
         }
     }
 }

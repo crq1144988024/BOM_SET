@@ -343,7 +343,7 @@ namespace BOM_SET.management
                                                 }
                                         }
 
-                                  
+                                    SET_ENABLE = -1;
 
                                     DialogResult result = MessageBox.Show("确定要修改为已提状态？", "警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
                                     if (result == DialogResult.OK)
@@ -355,8 +355,7 @@ namespace BOM_SET.management
                                         SET_ENABLE = 2;
 
 
-                                        find_bom_project(datagridview1, false);//刷新一下
-                                        DataGridView_BOM_list.Rows.Clear();
+                                       
                                     }
                                     else
                                     {
@@ -376,10 +375,15 @@ namespace BOM_SET.management
                                       //  MessageBox.Show("导出采购单成功！");
                                     }
                                     // return true;
+                                    if (SET_ENABLE == 2)
+                                    {
+                                        find_bom_project(datagridview1, false);//刷新一下
+                                        DataGridView_BOM_list.Rows.Clear();
+
+                                    }
 
 
 
-                                    
                                 }
                              
                                 // updata_database(Convert.ToInt32(ID.ToString().Trim()),  SET_ENABLE);

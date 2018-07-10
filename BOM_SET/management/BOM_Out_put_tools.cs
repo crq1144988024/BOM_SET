@@ -985,7 +985,7 @@ namespace BOM_SET.management
             {
                 int row = i + 1;
                 if (DataGridView_BOM_Hold.Rows[i].Cells[2].Value == null) { MessageBox.Show("物料信息不全，请检查物料信息"); Form2_procurement_open = true; return; }
-                if (DataGridView_BOM_Hold.Rows[i].Cells[3].Value == null) { MessageBox.Show("物料信息不全，请检查物料信息"); Form2_procurement_open = true; return; }
+              //  if (DataGridView_BOM_Hold.Rows[i].Cells[3].Value == null) { MessageBox.Show("物料信息不全，请检查物料信息"); Form2_procurement_open = true; return; }
                 if (DataGridView_BOM_Hold.Rows[i].Cells[4].Value == null) { MessageBox.Show("物料信息不全，请检查物料信息"); Form2_procurement_open = true; return; }
                 if (DataGridView_BOM_Hold.Rows[i].Cells[6].Value == null) { MessageBox.Show("第" + row.ToString() + "行物料数量未填！"); Form2_procurement_open = true; return; }
                 //if (DataGridView_BOM_Hold.Rows[i].Cells[6].Value.ToString()=="") { MessageBox.Show("第" + row.ToString() + "行物料数量未填！"); Form2_procurement_open = true; return; }
@@ -1012,13 +1012,21 @@ namespace BOM_SET.management
 
                 if (DataGridView_BOM_Hold.Rows[i].Cells[6].Value != null) { try { label = DataGridView_BOM_Hold.Rows[i].Cells[5].Value.ToString(); if (label == "") { label = " "; } } catch { } }
                 if (DataGridView_BOM_Hold.Rows[i].Cells[6].Value != null) { try { remarks = DataGridView_BOM_Hold.Rows[i].Cells[8].Value.ToString(); if (remarks == "") { remarks = " "; } } catch { } }
+                string wuliao_name = " ";
+                try
+                {
+                    wuliao_name = DataGridView_BOM_Hold.Rows[i].Cells[3].Value.ToString();
+                }
+                catch
+                {
 
-                
+                }
+
                 String[] ROW_ONE = new string[]{
                     DataGridView_BOM_Hold.Rows[i].Cells[1].Value.ToString(),//0 ID 
                     n.ToString(),//1序号
                     DataGridView_BOM_Hold.Rows[i].Cells[2].Value.ToString(),//2代码
-                    DataGridView_BOM_Hold.Rows[i].Cells[3].Value.ToString(),//3物料名称
+                    wuliao_name,//3物料名称
                     DataGridView_BOM_Hold.Rows[i].Cells[4].Value.ToString(),//4规格型号
                     "个",//5单位
                   

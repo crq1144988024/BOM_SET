@@ -442,36 +442,42 @@ namespace BOM_SET
         /// <param name="e"></param>
         private void skinButton1_Click(object sender, EventArgs e)
         {
+            try {
 
-            Global.project_name = ComboBox_project_name.Text;
-            string str_0 = ""; if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.Substring(0, 2); }
-            Global.project_ST_name = str_0;
-            string str_1 = ""; if (((ComboxItem)ComboBox_num_request.SelectedItem).Values != null) { str_1 = ((ComboxItem)ComboBox_num_request.SelectedItem).Values.Substring(0, 2); }
-            Global.project_ST_num_name =str_1;
-            Global.project_BOM_SORT_name = ComboBox_bom_sort.Text;
-            Form2_procurement_open = false;
-            if (Global.project_name == null || Global.project_ST_name == null || Global.project_ST_num_name == null || Global.project_BOM_SORT_name == null)
-            { MessageBox.Show("请填写完整的项目信息！"); Form2_procurement_open = true; return; }
-            if (Global.project_name.Length < 4 || Global.project_ST_name.Length < 2 || Global.project_ST_num_name.Length < 1 || Global.project_BOM_SORT_name.Length < 1)
-            { MessageBox.Show("请填写完整的项目信息！"); Form2_procurement_open = true; return; }
+                Global.project_name = ComboBox_project_name.Text;
+                string str_0 = ""; if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.Substring(0, 2); }
+                Global.project_ST_name = str_0;
+                string str_1 = ""; if (((ComboxItem)ComboBox_num_request.SelectedItem).Values != null) { str_1 = ((ComboxItem)ComboBox_num_request.SelectedItem).Values.Substring(0, 2); }
+                Global.project_ST_num_name = str_1;
+                Global.project_BOM_SORT_name = ComboBox_bom_sort.Text;
+                Form2_procurement_open = false;
+                if (Global.project_name == null || Global.project_ST_name == null || Global.project_ST_num_name == null || Global.project_BOM_SORT_name == null)
+                { MessageBox.Show("请填写完整的项目信息！"); Form2_procurement_open = true; return; }
+                if (Global.project_name.Length < 4 || Global.project_ST_name.Length < 2 || Global.project_ST_num_name.Length < 1 || Global.project_BOM_SORT_name.Length < 1)
+                { MessageBox.Show("请填写完整的项目信息！"); Form2_procurement_open = true; return; }
 
-            bool inspect_ = inspect();
-            if (inspect_ == true) { MessageBox.Show("数据库已有该BOM配置,为了防止数据不统一请先读取BOM数据,再操作！"); return; }
+                bool inspect_ = inspect();
+                if (inspect_ == true) { MessageBox.Show("数据库已有该BOM配置,为了防止数据不统一请先读取BOM数据,再操作！"); return; }
 
-            //using (OfficeOpenXml.ExcelPackage package = new ExcelPackage(new FileInfo(@"d:\test.xlsx"))) { }
-            //Form2_procurement_open = false;
-            //if (Global.project_name == null || Global.project_ST_name == null) { MessageBox.Show("请填写项目信息！"); Form2_procurement_open = true; return; }
-            //if (Global.project_name.Length < 4 || Global.project_ST_name.Length < 2) { MessageBox.Show("请填写项目信息！"); Form2_procurement_open = true; return; }
+                //using (OfficeOpenXml.ExcelPackage package = new ExcelPackage(new FileInfo(@"d:\test.xlsx"))) { }
+                //Form2_procurement_open = false;
+                //if (Global.project_name == null || Global.project_ST_name == null) { MessageBox.Show("请填写项目信息！"); Form2_procurement_open = true; return; }
+                //if (Global.project_name.Length < 4 || Global.project_ST_name.Length < 2) { MessageBox.Show("请填写项目信息！"); Form2_procurement_open = true; return; }
 
-            if (Form2_procurement_open == false)
+                if (Form2_procurement_open == false)
+                {
+                    FolderDialog_file fdialog = new FolderDialog_file();
+                    string file_path = "";//tbFilePath = dialog.FileName;EXCEL表格文件(*.txt)|*.txt|所有文件(*.*)|*.*”c
+                                          //fdialog. file_path_save("EXCEL表格文件(*.xls)|*.xls", out file_path);
+                    fdialog.file_path_save("EXCEL表格文件(*.xls)|*.xls", ComboBox_project_name.Text + " - " + str_0 + " - " + str_1 + "E", out file_path);
+                    PrintReporter(file_path); //"d:" + ComboBox_project_name.Text + " - " + str_0 + " - " + str_1 + "E" + ".xls");
+                  
+                }
+            } catch
             {
-                FolderDialog_file fdialog = new FolderDialog_file();
-                string file_path = "";//tbFilePath = dialog.FileName;EXCEL表格文件(*.txt)|*.txt|所有文件(*.*)|*.*”c
-                                      //fdialog. file_path_save("EXCEL表格文件(*.xls)|*.xls", out file_path);
-                fdialog.file_path_save("EXCEL表格文件(*.xls)|*.xls", ComboBox_project_name.Text + " - " + str_0 + " - " + str_1 + "E", out file_path);
-                PrintReporter(file_path); //"d:" + ComboBox_project_name.Text + " - " + str_0 + " - " + str_1 + "E" + ".xls");
-                MessageBox.Show("生成成功！");
+
             }
+          
         }
         public  void PrintReporter(string path)
 
@@ -479,7 +485,19 @@ namespace BOM_SET
          //MessageBox.Show(skinComboBox11.Text);return;
             string str_0 = "";  if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.Substring(0, 2); }
             string str_1 = ""; if (((ComboxItem)ComboBox_num_request.SelectedItem).Values != null) { str_1 = ((ComboxItem)ComboBox_num_request.SelectedItem).Values.Substring(0, 2); }
-            var newFile = new FileInfo(path);
+            var newFile=new  FileInfo("d:\\");
+            try
+            {
+                 newFile = new FileInfo(path);
+
+            } 
+            catch (Exception)
+            {
+                return;
+
+                throw;
+            }
+               
             Global.procurement_name = ComboBox_project_name.Text + " - " + str_0 + " - " + str_1;
             if (newFile.Exists)
 
@@ -500,7 +518,7 @@ namespace BOM_SET
                 package.Save();
 
             }
-
+            MessageBox.Show("生成成功！");
         }
 
         /// <summary>
@@ -1253,60 +1271,68 @@ namespace BOM_SET
         /// <param name="e"></param>
         private void skinButton2_Click(object sender, EventArgs e)
         {
-            string str_0 = ""; if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.Substring(0, 2); }
-            string str_1 = ""; if (((ComboxItem)ComboBox_num_request.SelectedItem).Values != null) { str_1 = ((ComboxItem)ComboBox_num_request.SelectedItem).Values.Substring(0, 2); }
-            Global.project_name = ComboBox_project_name.Text;
-            Global.project_ST_name = str_0;
-            Global.project_ST_num_name = str_1;
-            Global.project_BOM_SORT_name = ComboBox_bom_sort.Text;
-            Form2_procurement_open = false;
-            if (Global.project_name == null || Global.project_ST_name == null || Global.project_ST_num_name == null || Global.project_BOM_SORT_name == null)
-            { MessageBox.Show("请填写完整的项目信息！"); Form2_procurement_open = true; return; }
-            if (Global.project_name.Length < 4 || Global.project_ST_name.Length < 2 || Global.project_ST_num_name.Length < 1 || Global.project_BOM_SORT_name.Length < 1)
-            { MessageBox.Show("请填写完整的项目信息！"); Form2_procurement_open = true; return; }
-            //checkout();
-            bool inspect_ = inspect();
-            if (inspect_ == true) { MessageBox.Show("数据库已有该BOM配置,为了防止数据不统一请先读取BOM数据,再操作！"); return; }
-            if (Global.bom_open == 2)//保存成功
+            try
             {
-
-                int project_ID = 0;
-                if (Form2_procurement_open == false)//信息不为空
+                string str_0 = ""; if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.Substring(0, 2); }
+                string str_1 = ""; if (((ComboxItem)ComboBox_num_request.SelectedItem).Values != null) { str_1 = ((ComboxItem)ComboBox_num_request.SelectedItem).Values.Substring(0, 2); }
+                Global.project_name = ComboBox_project_name.Text;
+                Global.project_ST_name = str_0;
+                Global.project_ST_num_name = str_1;
+                Global.project_BOM_SORT_name = ComboBox_bom_sort.Text;
+                Form2_procurement_open = false;
+                if (Global.project_name == null || Global.project_ST_name == null || Global.project_ST_num_name == null || Global.project_BOM_SORT_name == null)
+                { MessageBox.Show("请填写完整的项目信息！"); Form2_procurement_open = true; return; }
+                if (Global.project_name.Length < 4 || Global.project_ST_name.Length < 2 || Global.project_ST_num_name.Length < 1 || Global.project_BOM_SORT_name.Length < 1)
+                { MessageBox.Show("请填写完整的项目信息！"); Form2_procurement_open = true; return; }
+                //checkout();
+                bool inspect_ = inspect();
+                if (inspect_ == true) { MessageBox.Show("数据库已有该BOM配置,为了防止数据不统一请先读取BOM数据,再操作！"); return; }
+                if (Global.bom_open == 2)//保存成功
                 {
-   
-                    //表格新增完后查询分配到的ID
-                    var customer_new = from cust in bomstruct_classes.Table_BOM_HOLD
 
-                                       where cust.类别.Trim() == ComboBox_bom_sort.Text.Trim() && cust.项目代号.Trim() == ComboBox_project_name.Text.Trim()
-                                       && cust.设备序号.Trim() == str_0.Trim() && cust.第几次申请.Trim() == str_1.Trim()
-                                       //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
-                                       //where c.代码.Contains(sort_keywords)
-                                       //  where A.分类代码A
-                                       select cust;
-
-                    foreach (var item in customer_new)
+                    int project_ID = 0;
+                    if (Form2_procurement_open == false)//信息不为空
                     {
-                        project_ID = item.ID;
+
+                        //表格新增完后查询分配到的ID
+                        var customer_new = from cust in bomstruct_classes.Table_BOM_HOLD
+
+                                           where cust.类别.Trim() == ComboBox_bom_sort.Text.Trim() && cust.项目代号.Trim() == ComboBox_project_name.Text.Trim()
+                                           && cust.设备序号.Trim() == str_0.Trim() && cust.第几次申请.Trim() == str_1.Trim()
+                                           //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
+                                           //where c.代码.Contains(sort_keywords)
+                                           //  where A.分类代码A
+                                           select cust;
+
+                        foreach (var item in customer_new)
+                        {
+                            project_ID = item.ID;
+                        }
+
                     }
-                
-                }
 
 
 
-               if(updata_database_project(project_ID, "是", "否", "否"))
-                {
-                    MessageBox.Show("申请审核成功！");
+                    if (updata_database_project(project_ID, "是", "否", "否"))
+                    {
+                        MessageBox.Show("申请审核成功！");
+                    }
+                    else
+                    {
+                        MessageBox.Show("发生未知错误！审核失败！");
+                    }
+
                 }
                 else
                 {
-                    MessageBox.Show("发生未知错误！审核失败！");
+                    MessageBox.Show("请先保存BOM按审核！");
                 }
+            }
+            catch
+            {
 
             }
-            else
-            {
-                MessageBox.Show("请先保存BOM按审核！");
-            } 
+            
             //  set_datagridview(DataGridView_BOM_Hold, Global.dataset, "table1");
 
         }
@@ -1658,7 +1684,7 @@ namespace BOM_SET
             {
                 int row = i + 1;
                 if (DataGridView_BOM_Hold.Rows[i].Cells[2].Value == null) { MessageBox.Show("物料信息不全，请检查物料信息"); Form2_procurement_open = true; return; }
-                if (DataGridView_BOM_Hold.Rows[i].Cells[3].Value == null) { MessageBox.Show("物料信息不全，请检查物料信息"); Form2_procurement_open = true; return; }
+               // if (DataGridView_BOM_Hold.Rows[i].Cells[3].Value == null) { MessageBox.Show("物料信息不全，请检查物料信息"); Form2_procurement_open = true; return; }
                 if (DataGridView_BOM_Hold.Rows[i].Cells[4].Value == null) { MessageBox.Show("物料信息不全，请检查物料信息"); Form2_procurement_open = true; return; }
                 if (DataGridView_BOM_Hold.Rows[i].Cells[6].Value == null) { MessageBox.Show("第" + row.ToString() + "行物料数量未填！"); Form2_procurement_open = true; return; }
                 //if (DataGridView_BOM_Hold.Rows[i].Cells[6].Value.ToString()=="") { MessageBox.Show("第" + row.ToString() + "行物料数量未填！"); Form2_procurement_open = true; return; }
@@ -1669,13 +1695,23 @@ namespace BOM_SET
                 if (DataGridView_BOM_Hold.Rows[i].Cells[6].Value != null) { try { count = DataGridView_BOM_Hold.Rows[i].Cells[6].Value.ToString();if (count == "") { count = " "; } } catch { } }
                 if (DataGridView_BOM_Hold.Rows[i].Cells[6].Value != null) { try { label = DataGridView_BOM_Hold.Rows[i].Cells[5].Value.ToString(); if(label == "") { label = " "; } } catch { } }
                 if (DataGridView_BOM_Hold.Rows[i].Cells[6].Value != null) { try { remarks = DataGridView_BOM_Hold.Rows[i].Cells[8].Value.ToString();if(remarks == ""){remarks = " "; } } catch { } }
+                string wuliao_name = " ";
+                try
+                {
+                    wuliao_name = DataGridView_BOM_Hold.Rows[i].Cells[3].Value.ToString();
+                }
+                catch
+                {
 
-              
+                }
+
                 String[] ROW_ONE = new string[]{
                     DataGridView_BOM_Hold.Rows[i].Cells[1].Value.ToString(),//0 ID 
                     n.ToString(),//1序号
                     DataGridView_BOM_Hold.Rows[i].Cells[2].Value.ToString(),//2代码
-                    DataGridView_BOM_Hold.Rows[i].Cells[3].Value.ToString(),//3物料名称
+                    wuliao_name,//3物料名称
+
+
                     DataGridView_BOM_Hold.Rows[i].Cells[4].Value.ToString(),//4规格型号
                     "个",//5单位
                   
@@ -1693,25 +1729,33 @@ namespace BOM_SET
         /// <param name="e"></param>
         private void skinButton11_Click(object sender, EventArgs e)
         {
-            string str_0 = "";if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.Substring(0, 2); }
-            string str_1 = ""; if (((ComboxItem)ComboBox_num_request.SelectedItem).Values != null) { str_1 = ((ComboxItem)ComboBox_num_request.SelectedItem).Values.Substring(0, 2); }
-            Global.project_name = ComboBox_project_name.Text;
-            Global.project_ST_name = str_0;
-            Global.project_ST_num_name = str_1;
-            Global.project_BOM_SORT_name = ComboBox_bom_sort.Text;
-            Form2_procurement_open = false;
-            if (Global.project_name == null || Global.project_ST_name==null|| Global.project_ST_num_name == null || Global.project_BOM_SORT_name == null)
-            { MessageBox.Show("请填写完整的项目信息！"); Form2_procurement_open = true ;return; }
-            if (Global.project_name.Length<4 || Global.project_ST_name.Length<2|| Global.project_ST_num_name.Length < 1 || Global.project_BOM_SORT_name.Length < 1)
-            { MessageBox.Show("请填写完整的项目信息！"); Form2_procurement_open = true; return; }
-
-            bool inspect_ = inspect();
-            if (inspect_ == true) { MessageBox.Show("数据库已有该BOM配置,为了防止数据不统一请先读取BOM数据,再操作！"); return; }
-            add_list_bom();
-            if (Form2_procurement_open == false)
+            try
             {
-                Form2_procurement form2 = new Form2_procurement();
-                form2.Show();
+                string str_0 = ""; if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.Substring(0, 2); }
+                string str_1 = ""; if (((ComboxItem)ComboBox_num_request.SelectedItem).Values != null) { str_1 = ((ComboxItem)ComboBox_num_request.SelectedItem).Values.Substring(0, 2); }
+                Global.project_name = ComboBox_project_name.Text;
+                Global.project_ST_name = str_0;
+                Global.project_ST_num_name = str_1;
+                Global.project_BOM_SORT_name = ComboBox_bom_sort.Text;
+                Form2_procurement_open = false;
+                if (Global.project_name == null || Global.project_ST_name == null || Global.project_ST_num_name == null || Global.project_BOM_SORT_name == null)
+                { MessageBox.Show("请填写完整的项目信息！"); Form2_procurement_open = true; return; }
+                if (Global.project_name.Length < 4 || Global.project_ST_name.Length < 2 || Global.project_ST_num_name.Length < 1 || Global.project_BOM_SORT_name.Length < 1)
+                { MessageBox.Show("请填写完整的项目信息！"); Form2_procurement_open = true; return; }
+
+                bool inspect_ = inspect();
+                if (inspect_ == true) { MessageBox.Show("数据库已有该BOM配置,为了防止数据不统一请先读取BOM数据,再操作！"); return; }
+                add_list_bom();
+                if (Form2_procurement_open == false)
+                {
+                    Form2_procurement form2 = new Form2_procurement();
+                    form2.Show();
+                }
+
+            }
+            catch
+            {
+
             }
           
         }

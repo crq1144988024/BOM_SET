@@ -243,6 +243,7 @@ namespace BOM_SET.review
                                 {
                                     close_ennable = false;
                                     finad_bom_temp(datagridview_list, Convert.ToInt32(audit_status));
+                                   
                                     close_ennable = checked_count_zero(project_ID_NOW);//检查是否为空
                                     
                                 }
@@ -315,7 +316,8 @@ namespace BOM_SET.review
                                 DialogResult result2 = MessageBox.Show("此申请单已审批完是否关闭？", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                                 if (result2 == DialogResult.OK)
                                 {
-                                    updata_database_project(project_ID_NOW, "是", "否", "未采购", "是");
+                                   updata_database_project(project_ID_NOW, "是", "否", "未采购", "是");
+                                    find_bom_project(datagridview1, false);
                                     datagridview_list.Rows.Clear();
                                 }
 
@@ -592,13 +594,13 @@ namespace BOM_SET.review
                         item.当次计划是否提完 = step2;
                         item.当次采购是否完成 = step3;
                          item.当次审批是否通过 = step4;
+                       item.是否已获过审批 = step4;
+
+                       // item.是否已提计划 = "否";
+                       //item.是否已提采购 = "未采购";
 
 
-                        item.是否已提计划 = "是";
-                        item.是否已提采购 = "已采购";
-
-
-                    }
+                }
                     BOM_project_hold.SubmitChanges();
                     bool_temp = true;
                 }
@@ -645,8 +647,8 @@ namespace BOM_SET.review
                         item.审核意见 = step3;
                    
 
-                        item.是否已提计划 = "已提";
-                        item.采购状态 = "已采购";///目前小曲修改
+                        item.是否已提计划 = "未提";
+                        item.采购状态 = "未采购";///目前小曲修改
                         //item.是否采购 = step3;
 
 
@@ -749,7 +751,7 @@ namespace BOM_SET.review
                     string shop_paied_count = ""; if (q_find_one.已采购数量 != null) { shop_paied_count = q_find_one.已采购数量.ToString().Trim(); }
 
                     int cell_num4 = 12;//总数量
-                    string shop_paied_count_all = ""; if (q_find_one.总数量 != null) { shop_paied_count_all = q_find_one.总数量.ToString().Trim(); }
+                    string shop_paied_count_all = "0"; if (q_find_one.总数量 != null) { shop_paied_count_all = q_find_one.总数量.ToString().Trim(); }
 
                     int count_all = Convert.ToInt32(shop_paied_count_all);
                     int count_temp = Convert.ToInt32(count_use);

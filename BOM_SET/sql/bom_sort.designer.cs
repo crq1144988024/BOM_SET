@@ -36,8 +36,9 @@ namespace BOM_SET.sql
     #endregion
 		
 		public bom_sortDataContext() : 
-				base(global::BOM_SET.Properties.Settings.Default.Database1_mdfConnectionString, mappingSource)
-		{
+            base(global::BOM_SET.Properties.Settings.Default.Database1_mdfConnectionString, mappingSource)
+
+        {
 			OnCreated();
 		}
 		

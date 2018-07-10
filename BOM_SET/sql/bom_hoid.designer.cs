@@ -36,7 +36,7 @@ namespace BOM_SET.sql
     #endregion
 		
 		public bom_hoidDataContext() : 
-				base(global::BOM_SET.Properties.Settings.Default.Database1_mdfConnectionString1, mappingSource)
+				base(global::BOM_SET.Properties.Settings.Default.Database1_mdfConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

@@ -1850,9 +1850,14 @@ namespace BOM_SET
                         备注 = remarks,
                         物料ID = Convert.ToInt32(rowone.Cells[1].Value.ToString()),
                         本次提交数量 = Convert.ToInt32(rowone.Cells[6].Value.ToString()),
-                        是否采购 = combox10.Value.ToString()
-
-
+                        是否采购 = combox10.Value.ToString(),
+                        审核状态 = "未审核",
+                        是否激活 = combox10.Value.ToString(),
+                        是否提交申请 = "未提",
+                        采购状态="未采购",
+                        已采购数量=0,
+                        是否已提计划="未提"
+                        
                     };
 
                         bomall_classes.BOM_ALL.InsertOnSubmit(newCustomer);
@@ -1864,6 +1869,8 @@ namespace BOM_SET
                 foreach (DataGridViewRow rowone in DataGridView_BOM_Hold.Rows)
                 {
                     DataGridViewComboBoxCell combox10 = (DataGridViewComboBoxCell)rowone.Cells[10];
+                    string combox10_str = "";
+
                     string audit_status = ""; if (rowone.Cells[11].Value != null) { audit_status = rowone.Cells[11].Value.ToString().Trim(); }
                     string audit_idea = ""; if (rowone.Cells[12].Value != null) { audit_idea = rowone.Cells[12].Value.ToString().Trim(); }
                     string Is_request_shop = ""; if (rowone.Cells[13].Value != null) { Is_request_shop = rowone.Cells[13].Value.ToString().Trim(); }
@@ -2139,7 +2146,7 @@ namespace BOM_SET
 
                     //string Is_SHOP = ""; if (q_find_one.是否采购 != null) { Is_SHOP = q_find_one.是否采购.ToString().Trim(); }
 
-                    string Is_SHOP = ""; if (q_find_one.是否激活 != null) { Is_SHOP = q_find_one.是否激活.ToString().Trim(); }
+                    string Is_SHOP = ""; if (q_find_one.是否采购 != null) { Is_SHOP = q_find_one.是否采购.ToString().Trim(); }
                     DataGridView_BOM_Hold.Rows[row_now].Cells[10].Value = Is_SHOP;//10是否采购
 
                     string audit_status = ""; if (q_find_one.审核状态 != null) { audit_status = q_find_one.审核状态.ToString().Trim(); }
@@ -2150,6 +2157,7 @@ namespace BOM_SET
                     string audit_idea = ""; if (q_find_one.审核意见 != null) { audit_idea = q_find_one.审核意见.ToString().Trim(); }
                     DataGridView_BOM_Hold.Rows[row_now].Cells[12].Value = audit_idea;//12审核意见
 
+                    // string Is_request_shop = ""; if (q_find_one.是否已提计划 != null) { Is_request_shop = q_find_one.是否已提计划.ToString().Trim(); }
                     string Is_request_shop = ""; if (q_find_one.是否已提计划 != null) { Is_request_shop = q_find_one.是否已提计划.ToString().Trim(); }
                     DataGridView_BOM_Hold.Rows[row_now].Cells[13].Value = Is_request_shop;//13采购计划
                     if (Is_request_shop == "已提") { DataGridView_BOM_Hold.Rows[row_now].Cells[13].Style.BackColor = Color.Green; }

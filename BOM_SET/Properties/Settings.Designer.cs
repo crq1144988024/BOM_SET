@@ -26,42 +26,11 @@ namespace BOM_SET.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=XXW-PC;Initial Catalog=bom;Integrated Security=True")]
-        public string bomConnectionString {
-            get {
-                return ((string)(this["bomConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\sql\\Database1" +
-            ".mdf;Integrated Security=True")]
-        public string Database1ConnectionString {
-            get {
-                return ((string)(this["Database1ConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=CRQ-PC\\WINCC;Initial Catalog=Database1.mdf;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.5.100;Initial Catalog=Database1.mdf;Persist Security Info=Tru" +
+            "e;User ID=sa;Password=12345678")]
         public string Database1_mdfConnectionString {
             get {
                 return ((string)(this["Database1_mdfConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=CRQ-PC\\WINCC;Initial Catalog=Database1.mdf;Persist Security Info=True" +
-            ";User ID=sa;Password=c12345678")]
-        public string Database1_mdfConnectionString1 {
-            get {
-                return ((string)(this["Database1_mdfConnectionString1"]));
             }
         }
     }

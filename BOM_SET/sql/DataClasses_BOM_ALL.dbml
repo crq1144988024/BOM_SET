@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Database1.mdf" Class="DataClasses_BOM_ALLDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=CRQ-PC\WINCC;Initial Catalog=Database1.mdf;Persist Security Info=True;User ID=sa" SettingsObjectName="BOM_SET.Properties.Settings" SettingsPropertyName="Database1_mdfConnectionString1" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.5.100;Initial Catalog=Database1.mdf;Persist Security Info=True;User ID=sa" SettingsObjectName="BOM_SET.Properties.Settings" SettingsPropertyName="Database1_mdfConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.BOM_ALL" Member="BOM_ALL">
     <Type Name="BOM_ALL">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />

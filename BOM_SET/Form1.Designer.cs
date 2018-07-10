@@ -888,6 +888,7 @@
             // 
             this.ComboBox_bom_sort.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ComboBox_bom_sort.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBox_bom_sort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_bom_sort.Font = new System.Drawing.Font("微软雅黑", 9.75F);
             this.ComboBox_bom_sort.FormattingEnabled = true;
             this.ComboBox_bom_sort.Items.AddRange(new object[] {
@@ -1041,6 +1042,7 @@
             this.ComboBox_project_name.SelectedIndexChanged += new System.EventHandler(this.ComboBox_project_name_SelectedIndexChanged);
             this.ComboBox_project_name.SelectionChangeCommitted += new System.EventHandler(this.ComboBox_project_name_SelectionChangeCommitted);
             this.ComboBox_project_name.TextUpdate += new System.EventHandler(this.ComboBox_project_name_TextUpdate);
+            this.ComboBox_project_name.Leave += new System.EventHandler(this.ComboBox_project_name_Leave);
             // 
             // skinLabel28
             // 
@@ -3239,7 +3241,7 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             this.contextMenuStrip1.Text = "刷新";
             // 
             // Form1

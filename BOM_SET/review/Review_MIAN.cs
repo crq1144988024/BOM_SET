@@ -70,5 +70,10 @@ namespace BOM_SET.review
            
           //  tool.close_bom_all(skinDataGridView_BOM_project, e.RowIndex, e.ColumnIndex, DataGridView_BOM_list);
         }
+
+        private void skinButton5_Click(object sender, EventArgs e)
+        {
+            tool.find_bom_project(skinDataGridView_BOM_project_2, true);
+        }
     }
 }

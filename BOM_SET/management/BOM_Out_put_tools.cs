@@ -650,7 +650,7 @@ namespace BOM_SET.management
                 string shop_paied_count = ""; if (q_find_one.已采购数量 != null) { shop_paied_count = q_find_one.已采购数量.ToString().Trim(); }
 
                 int cell_num4 = 12;//总数量
-                string shop_paied_count_all = ""; if (q_find_one.总数量 != null) { shop_paied_count_all = q_find_one.总数量.ToString().Trim(); }
+                string shop_paied_count_all = "0"; if (q_find_one.总数量 != null) { shop_paied_count_all = q_find_one.总数量.ToString().Trim(); }
 
                 int count_all = Convert.ToInt32(shop_paied_count_all);
                 int count_temp = Convert.ToInt32(count_use);

@@ -26,8 +26,8 @@ namespace BOM_SET.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.5.100;Initial Catalog=Database1.mdf;Persist Security Info=Tru" +
-            "e;User ID=sa;Password=12345678")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.5.113;Initial Catalog=Database1;Persist Security Info=True;Us" +
+            "er ID=sa;Password=12345678")]
         public string Database1_mdfConnectionString {
             get {
                 return ((string)(this["Database1_mdfConnectionString"]));

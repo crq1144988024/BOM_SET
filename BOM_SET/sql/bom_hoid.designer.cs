@@ -22,7 +22,7 @@ namespace BOM_SET.sql
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="Database1.mdf")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="Database1")]
 	public partial class bom_hoidDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -82,7 +82,7 @@ namespace BOM_SET.sql
 		
 		private int _ID;
 		
-		private int _project_ID;
+		private System.Nullable<int> _project_ID;
 		
 		private string _项目代号;
 		
@@ -142,7 +142,7 @@ namespace BOM_SET.sql
     partial void OnCreated();
     partial void OnIDChanging(int value);
     partial void OnIDChanged();
-    partial void Onproject_IDChanging(int value);
+    partial void Onproject_IDChanging(System.Nullable<int> value);
     partial void Onproject_IDChanged();
     partial void On项目代号Changing(string value);
     partial void On项目代号Changed();
@@ -223,8 +223,8 @@ namespace BOM_SET.sql
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_project_ID", DbType="Int NOT NULL")]
-		public int project_ID
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_project_ID", DbType="Int")]
+		public System.Nullable<int> project_ID
 		{
 			get
 			{

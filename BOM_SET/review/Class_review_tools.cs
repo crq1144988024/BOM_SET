@@ -112,7 +112,7 @@ namespace BOM_SET.review
                 {
                     var q_abc_text = from t in BOM_project_hold.Table_BOM_HOLD
 
-                                     where t.是否已提计划 == "是" && t.是否已获过审批 == "是"
+                                   where t.是否已提计划 == "是" && t.是否已获过审批 == "是"
 
                                      select t;
                     int i = 0;
@@ -180,10 +180,10 @@ namespace BOM_SET.review
                     combox8.Value = "读取";
 
                     //bool temp = false;
-                    DataGridViewButtonCell combox9 = (DataGridViewButtonCell)datagridview_1.Rows[i].Cells[9];
+                    //DataGridViewButtonCell combox9 = (DataGridViewButtonCell)datagridview_1.Rows[i].Cells[9];
 
 
-                    combox9.Value = "关闭";
+                  //  combox9.Value = "关闭";
 
 
                     i++;
@@ -885,8 +885,9 @@ namespace BOM_SET.review
                 string shop_paied_count = ""; if (q_find_one.已采购数量 != null) { shop_paied_count = q_find_one.已采购数量.ToString().Trim(); }
 
                 int cell_num4 = 12;//总数量
-                string shop_paied_count_all = ""; if (q_find_one.总数量 != null) { shop_paied_count_all = q_find_one.总数量.ToString().Trim(); }
-
+        
+                string shop_paied_count_all = "0"; if (q_find_one.总数量 != null) { shop_paied_count_all = q_find_one.总数量.ToString().Trim(); }
+              
                 int count_all = Convert.ToInt32(shop_paied_count_all);
                 int count_temp = Convert.ToInt32(count_use);
 
@@ -932,7 +933,8 @@ namespace BOM_SET.review
                 {
                     MessageBox.Show("未找到物料ID:" + q_find_one.物料ID);
                 }
-
+                row_now++;
+               continue ;
 
                 DataGridView_BOM_Hold.Rows[row_now].Cells[6].Value = count_use;//6数量
 
@@ -1016,7 +1018,9 @@ namespace BOM_SET.review
 
 
                 List<string[]> list = new List<string[]>() { };
-                int i = datagridview_1.Rows.Count;
+            int i = 0;
+            
+                i = datagridview_1.Rows.Count;
 
                 if (i > 0)
                 {
@@ -1033,22 +1037,29 @@ namespace BOM_SET.review
                     }
 
                 }
+          
+                
                 foreach (var K in q_)
                 {
+               
 
+                
                     string[] strs = new string[] { K.ID.ToString(), K.代码, K.规格型号, K.名称, K.品牌, K.技术参数, K.价格.ToString() };
                     list.Add(strs);
                     DataGridViewRow row = new DataGridViewRow();
                     datagridview_1.Rows.Add(row);
-                    if (strs[0] != "") { datagridview_1.Rows[i].Cells["ID"].Value = strs[0]; }
-                    if (strs[1] != "") { datagridview_1.Rows[i].Cells["物料代码"].Value = strs[1]; }
-                    if (strs[2] != "") { datagridview_1.Rows[i].Cells["规格型号"].Value = strs[2]; }
-                    if (strs[3] != "") { datagridview_1.Rows[i].Cells["物料名称"].Value = strs[3]; }
-                    if (strs[4] != "") { datagridview_1.Rows[i].Cells["品牌"].Value = strs[4]; }
-                    if (strs[5] != "") { datagridview_1.Rows[i].Cells["技术参数"].Value = strs[5]; }
+                //datagridview_1.Rows[0].Cells["ID"].Value = "asa";
+               
+                if (K.ID.ToString() != "") { datagridview_1.Rows[i].Cells[1].Value = K.ID.ToString(); }
+               
+                if (strs[1] != "") { datagridview_1.Rows[i].Cells[2].Value = strs[1]; }
+                if (strs[2] != "") { datagridview_1.Rows[i].Cells[3].Value = strs[2]; }
+                if (strs[3] != "") { datagridview_1.Rows[i].Cells[4].Value = strs[3]; }
+                if (strs[4] != "") { datagridview_1.Rows[i].Cells[5].Value = strs[4]; }
+                if (strs[5] != "") { datagridview_1.Rows[i].Cells[6].Value = strs[5]; }
+              
 
-
-                    if (strs[6] != "")
+                if (strs[6] != "")
                     {
                         try
                         {
@@ -1059,12 +1070,12 @@ namespace BOM_SET.review
                         {
 
                         }
-                        //totalprices
-                        datagridview_1.Rows[i].Cells["价格"].Value = strs[6];
-                    }
+                    //totalprices
+                    datagridview_1.Rows[i].Cells["价格"].Value = strs[6];
+                }
                     //BOM_ALL0 
 
-                    Global.temp_add_supplies_ID.Add(Convert.ToInt32(datagridview_1.Rows[i].Cells["ID"].Value));
+                    Global.temp_add_supplies_ID.Add(Convert.ToInt32(datagridview_1.Rows[i].Cells[1].Value));
                     erow_num_temp = i;
                     i++;
                 }

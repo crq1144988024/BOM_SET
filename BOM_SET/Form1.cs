@@ -271,7 +271,8 @@ namespace BOM_SET
                 }
                 else
                 {
-                    project_all = str_0 + "-" + str_1 + "-" + str_2 + "M";
+                   // project_all = str_0 + "-" + str_1 + "-" + str_2 + "M";
+                    project_all = str_0 + "-" + str_1 + "-" + str_2 + "E";
                 }
                     
 
@@ -335,7 +336,8 @@ namespace BOM_SET
                 if (g == 52)
                 {
                     ComboBox_mechine_number.SelectedIndex = 0;
-                    find_bom_usernoew_num("00");
+                 
+                    find_bom_usernoew_num(PROJECT_NAME, "00");
                     ComboBox_num_request.SelectedIndex = 0;
                     return;
                 }
@@ -361,13 +363,14 @@ namespace BOM_SET
             /// <summary>
             /// 提的次数更新
             /// </summary>
-        public void find_bom_usernoew_num(string  NUM)
+        public void find_bom_usernoew_num(string String_projectname, string  NUM)
         {
             ComboBox_num_request.Items.Clear();
             var customer = from cust in bomstruct_classes.Table_BOM_HOLD
 
                            where Convert.ToInt32(cust.项目负责人ID) == LOGIN.ID.login_now_ID
                            && Convert.ToInt32(cust.设备序号) == Convert.ToInt32(NUM)
+                            && cust.项目代号.Trim() == String_projectname.Trim()
                            //  where SqlMethods.Like(c.分类代码A, '%' + sort_keywords + '%')
                            //where c.代码.Contains(sort_keywords)
                            //  where A.分类代码A
@@ -1793,10 +1796,12 @@ namespace BOM_SET
 
 
                     bomstruct_classes.SubmitChanges();
+                    // ComboBox_project_name.Items()
+                    ComboboxItem comboxitem = new ComboboxItem();
 
+                    string str00 = ComboBox_project_name.Text;
 
-
-
+                    ComboBox_project_name.Items.Add(new ComboxItem(str00, str00));
                 }
                 else
                 {
@@ -2314,6 +2319,7 @@ namespace BOM_SET
         }
         private void ComboBox_project_name_SelectionChangeCommitted(object sender, EventArgs e)
         {
+            return;
             string PROJECT_NAME = "";
             try
             {
@@ -2333,6 +2339,7 @@ namespace BOM_SET
         }
         private void ComboBox_project_name_TextUpdate(object sender, EventArgs e)
         {//(ComboxItem)ComboBox_project_name.SelectedItem).Values
+            return;
             string PROJECT_NAME = ""; if (ComboBox_project_name.Text != null) { PROJECT_NAME = ComboBox_project_name.Text.ToString().Trim(); }
 
             //string str_1 = ""; if (ComboBox_num_request.Text != null) { str_0 = ComboBox_num_request.Text.Substring(0, 2); }
@@ -2351,13 +2358,23 @@ namespace BOM_SET
 
         private void ComboBox_mechine_number_SelectionChangeCommitted(object sender, EventArgs e)
         {
+            string PROJECT_NAME = "";
+            try
+            {
+                if (((ComboxItem)ComboBox_project_name.SelectedItem).Values != null) { PROJECT_NAME = ((ComboxItem)ComboBox_project_name.SelectedItem).Values.ToString().Trim(); }
+            }
+            catch
+            {
+                PROJECT_NAME = "";
+            }
+
             string str_0 = ""; if (((ComboxItem)ComboBox_mechine_number.SelectedItem).Values != null) { str_0 = ((ComboxItem)ComboBox_mechine_number.SelectedItem).Values.ToString().Trim().Substring(0,2); }
 
             //string str_1 = ""; if (ComboBox_num_request.Text != null) { str_0 = ComboBox_num_request.Text.Substring(0, 2); }
 
             if (str_0 != null)
             {
-                find_bom_usernoew_num(str_0);
+                find_bom_usernoew_num(PROJECT_NAME,str_0);
             }
         }
 
@@ -2538,6 +2555,19 @@ namespace BOM_SET
 
         private void tableLayoutPanel8_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void ComboBox_project_name_Leave(object sender, EventArgs e)
+        {
+            string PROJECT_NAME = ""; if (ComboBox_project_name.Text != null) { PROJECT_NAME = ComboBox_project_name.Text.ToString().Trim(); }
+
+            //string str_1 = ""; if (ComboBox_num_request.Text != null) { str_0 = ComboBox_num_request.Text.Substring(0, 2); }
+
+            if (PROJECT_NAME != null)
+            {
+                find_bom_usernoew(PROJECT_NAME);
+            }
 
         }
     }

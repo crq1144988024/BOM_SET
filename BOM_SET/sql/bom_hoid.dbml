@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Database1.mdf" Class="bom_hoidDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.5.100;Initial Catalog=Database1.mdf;Persist Security Info=True;User ID=sa" SettingsObjectName="BOM_SET.Properties.Settings" SettingsPropertyName="Database1_mdfConnectionString" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Database1" Class="bom_hoidDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.5.113;Initial Catalog=Database1;Persist Security Info=True;User ID=sa" SettingsObjectName="BOM_SET.Properties.Settings" SettingsPropertyName="Database1_mdfConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Table_BOM_HOLD" Member="Table_BOM_HOLD">
     <Type Name="Table_BOM_HOLD">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="project_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="project_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="项目代号" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="项目名称" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="类别" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
